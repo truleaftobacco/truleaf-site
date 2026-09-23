@@ -4,21 +4,26 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
-<meta name="description" content="Natural tobacco leaf wraps, whole tobacco leaf, cigar blunts and cones from Tru Leaf Tobacco in Miami. Distributor enquiries.">
+<link rel="icon" href="favicon-32.png" sizes="32x32">
+<meta name="description" content="Tobacco leaf wraps, whole tobacco leaf, natural cigar blunts and tobacco cones, grown in Nicaragua and distributed from Miami. Wholesale and distributor inquiries.">
+<link rel="canonical" href="https://truleafnatural.com/">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Tru Leaf Tobacco">
-<meta property="og:description" content="Natural tobacco leaf wraps, whole tobacco leaf, cigar blunts and cones from Tru Leaf Tobacco in Miami. Distributor enquiries.">
+<meta property="og:description" content="Tobacco leaf wraps, whole tobacco leaf, natural cigar blunts and tobacco cones, grown in Nicaragua and distributed from Miami. Wholesale and distributor inquiries.">
 <meta property="og:url" content="https://truleafnatural.com/">
 <meta property="og:image" content="https://truleafnatural.com/og.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
 <title>Tru Leaf Tobacco</title>
+<meta name="theme-color" content="#0A0A0A">
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Saira+Stencil+One&family=Krub:wght@400;500;600&display=swap">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Saira+Stencil+One&family=Krub:wght@400;500;600&display=swap" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Saira+Stencil+One&family=Krub:wght@400;500;600&display=swap"></noscript>
 <style>
 @font-face{font-family:"Gunplay";src:url("fonts/gunplay.otf") format("opentype");font-weight:400;font-style:normal;font-display:swap}
-:root{--green:#092404;--green-mid:#17590B;--green-90:rgba(9,36,4,.9);--green-70:rgba(9,36,4,.7);--sand:#ECE6D7;--sand-80:rgba(236,230,215,.8);--paper:#FFFCF3;--coal:#231F20;--loc:#8C9A8E;--line:#CFD6CB;
+:root{--green:#092404;--green-mid:#17590B;--green-90:rgba(9,36,4,.9);--green-70:rgba(9,36,4,.7);--sand:#ECE6D7;--sand-80:rgba(236,230,215,.8);--paper:#FFFCF3;--coal:#231F20;--loc:#8C9A8E;--line:#CFD6CB;--r:14px;--gut:clamp(16px,2.8vw,40px);
 --display:"Gunplay","Impact","Arial Narrow",sans-serif;--stencil:"Saira Stencil One","Gunplay","Arial Narrow",sans-serif;--body:"Krub","Helvetica Neue",Arial,sans-serif}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
@@ -27,151 +32,126 @@ img{max-width:100%;display:block}
 a{color:inherit}
 :focus-visible{outline:2px solid var(--green);outline-offset:3px}
 .wrap{width:min(1180px,calc(100% - 14vw));margin:0 auto}
-.btn{display:inline-block;font-family:var(--stencil);font-size:.95rem;letter-spacing:.14em;text-transform:uppercase;text-decoration:none;padding:14px 24px;background:var(--green);color:var(--sand);border:2px solid var(--green);transition:background .2s,color .2s}
-.btn:hover,.btn:focus-visible{background:var(--paper);color:var(--green);outline:none}
-.btn-sand{background:var(--sand);color:var(--green);border-color:var(--sand)}
-.btn-sand:hover,.btn-sand:focus-visible{background:var(--green);color:var(--sand)}
-.textlink{font-family:var(--stencil);font-size:.95rem;letter-spacing:.14em;text-transform:uppercase;text-decoration:none;border-bottom:2px solid var(--green);padding-bottom:3px}
-.eyebrow{display:flex;align-items:center;gap:.4em;font-family:var(--display);font-size:clamp(1.05rem,1.8vw,1.4rem);line-height:1;letter-spacing:.03em;text-transform:uppercase;color:var(--loc);margin:0 0 18px}
-.eyebrow svg{width:.7em;height:.9em;flex:none}
+.btn{display:inline-block;font-family:var(--stencil);font-size:.95rem;letter-spacing:.14em;text-transform:uppercase;text-decoration:none;padding:14px 24px;background:var(--green);color:var(--sand);border:2px solid var(--green);border-radius:6px;transition:background .2s,color .2s}
+.btn:hover,.btn:focus-visible{background:var(--paper);color:var(--green)}
+.eyebrow{font-family:var(--stencil);font-size:.84rem;line-height:1;letter-spacing:.22em;text-transform:uppercase;color:var(--loc);margin:0 0 14px}
 h1,h2{font-family:var(--display);font-weight:400;text-transform:uppercase;letter-spacing:.005em;margin:0;color:var(--green)}
 h1{font-size:clamp(2.6rem,6vw,5.2rem);line-height:.98;margin-bottom:22px}
-h2{font-size:clamp(2rem,4.2vw,3.4rem);line-height:1;margin-bottom:16px}
+h2{font-size:clamp(2.2rem,4.6vw,3.8rem);line-height:1;margin-bottom:16px}
 .lede{font-size:clamp(1.05rem,1.35vw,1.2rem);color:var(--green-70);max-width:32rem;margin:0 0 30px}
-.nav{position:sticky;top:0;z-index:20;display:flex;align-items:center;gap:32px;padding:0 7vw;height:70px;background:rgba(255,252,243,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
-.brand{display:flex;align-items:center;text-decoration:none;line-height:0}
+.nav{position:fixed;left:0;right:0;top:0;z-index:20;display:flex;align-items:center;gap:32px;padding:0 7vw;height:70px;background:rgba(255,252,243,.9);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);transition:background .4s,border-color .4s}
+.brand{display:flex;align-items:center;text-decoration:none;line-height:0;transition:opacity .4s}
 .brand .wm{width:150px}
 .brand svg{width:100%;height:auto}
 .links{display:flex;gap:26px;margin-left:auto}
 .links a{font-family:var(--stencil);font-size:.86rem;letter-spacing:.12em;text-transform:uppercase;text-decoration:none;color:var(--green-90)}
 .links a:hover{color:var(--green);text-decoration:underline}
 .nav .btn{padding:10px 16px;font-size:.82rem}
-.card{position:relative;overflow:hidden;display:flex;flex-direction:column;min-height:calc(100vh - 70px)}
-.top{position:relative;flex:1;display:flex;align-items:center;padding:clamp(48px,9vh,110px) 7vw clamp(40px,7vh,90px);z-index:1}
-.text{max-width:min(720px,58%);position:relative;z-index:2}
-.cta{display:flex;flex-wrap:wrap;align-items:center;gap:26px}
-.palm{position:absolute;right:5vw;bottom:5vh;width:clamp(260px,30vw,520px);z-index:1;pointer-events:none}
-.palm svg{width:100%;height:auto;display:block}
-.palm .s{position:absolute;inset:0;clip-path:inset(100% 0 0 0)}
-.band{position:relative;background:var(--green);color:var(--sand);min-height:clamp(170px,26vh,260px);display:flex;align-items:center;justify-content:flex-start;gap:6vw;padding:28px 7vw;z-index:0}
 .logo{width:clamp(200px,24vw,340px);line-height:0;flex:none}
 .logo svg{width:100%;height:auto}
-.band .tags{display:flex;flex-wrap:wrap;gap:10px 22px;font-family:var(--stencil);font-size:.86rem;letter-spacing:.12em;text-transform:uppercase;color:var(--sand-80);max-width:30vw}
 .sec{padding:clamp(44px,6vw,84px) 0}
 .sec-head{max-width:640px;margin-bottom:clamp(32px,5vw,56px)}
 .sec-head p{margin:0;font-size:1.08rem;color:var(--green-70);max-width:36rem}
 .gate{position:fixed;inset:0;z-index:100;background:var(--green);color:var(--sand);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:32px 24px}
 .gate[hidden]{display:none}
-.gate .mark{width:min(320px,64vw);line-height:0;margin-bottom:clamp(28px,5vh,52px)}
+.gate .mark{width:min(440px,72vw);line-height:0;margin-bottom:clamp(28px,5vh,52px)}
 .gate .mark svg{width:100%;height:auto}
-.gate h1{font-size:clamp(1.6rem,4.4vw,2.8rem);line-height:1.05;color:var(--sand);margin:0 0 clamp(22px,4vh,34px)}
+.gate .q{font-family:var(--display);font-weight:400;text-transform:uppercase;font-size:clamp(1.9rem,5vw,3.4rem);line-height:1.05;color:var(--sand);margin:0 0 clamp(22px,4vh,34px)}
 .gate .row{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
-.gate .btn{min-width:150px;cursor:pointer;font-family:var(--stencil);font-size:.9rem;background:var(--sand);color:var(--green);border-color:var(--sand)}
-.gate .btn:hover,.gate .btn:focus-visible{background:transparent;color:var(--sand)}
-.gate .note{margin:clamp(26px,4vh,38px) 0 0;font-family:var(--stencil);font-size:.76rem;letter-spacing:.18em;text-transform:uppercase;color:var(--sand-80)}
+.gate .btn{min-width:176px;padding:16px 28px;cursor:pointer;font-family:var(--stencil);font-size:.9rem;background:var(--sand);color:var(--green);border-color:var(--sand)}
+.gate .btn:hover{background:transparent;color:var(--sand)}
+.gate .btn:focus-visible{outline-offset:4px}
+.gate .note{margin:clamp(26px,4vh,38px) 0 0;font-family:var(--body);font-weight:500;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--sand-80)}
 .gate .deny{display:none;margin:22px auto 0;max-width:34rem;font-size:1rem;color:var(--sand)}
 .gate.said-no .deny{display:block}
 .gate.said-no .row{display:none}
 .gate :focus-visible{outline:2px solid var(--sand);outline-offset:3px}
-.line{padding:clamp(50px,6vw,92px) 0 clamp(38px,4.6vw,66px);background:#F7F2E6}
-.line .sec-head{margin-bottom:clamp(10px,1.4vw,18px)}
-.cat{display:flex;align-items:baseline;gap:16px;margin:clamp(30px,3.8vw,52px) 0 clamp(12px,1.6vw,20px);font-family:var(--stencil);font-size:clamp(.82rem,1.5vw,1rem);letter-spacing:.16em;text-transform:uppercase;color:var(--green)}
-.cat::after{content:"";flex:1;height:1px;background:var(--line);align-self:center}
-.cat .meta{order:3;flex:none;font-size:.8rem;letter-spacing:.1em;color:var(--green-70)}
-.sub-lab{margin:clamp(20px,2.4vw,30px) 0 clamp(8px,1vw,14px);font-family:var(--stencil);font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;color:var(--loc)}
-.shelf{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;align-items:flex-end;gap:clamp(12px,2vw,30px)}
-.shelf li{margin:0;text-align:center;flex:0 0 clamp(112px,15vw,196px)}
-.shelf img{width:auto;max-width:100%;max-height:clamp(150px,20vw,300px);margin:0 auto;filter:drop-shadow(0 16px 20px rgba(9,36,4,.15));transition:transform .5s cubic-bezier(.2,.7,.3,1),filter .5s ease}
-.shelf li:hover img,.shelf li:focus-within img{transform:translateY(-14px) scale(1.05);filter:drop-shadow(0 30px 30px rgba(9,36,4,.22))}
-.shelf span{display:block;margin-top:14px;padding-top:10px;border-top:1px solid var(--line);font-family:var(--stencil);font-size:.8rem;letter-spacing:.08em;text-transform:uppercase;color:var(--green-70);transition:color .35s,border-color .35s}
+.line{margin:0 var(--gut);border-radius:var(--r);padding:clamp(40px,4.6vw,64px) 0;background:#F7F2E6}
+.line .sec-head{margin-bottom:12px}
+.hint{display:none;margin:0;font-family:var(--stencil);font-size:.76rem;letter-spacing:.14em;text-transform:uppercase;color:var(--loc)}
+@media (hover:none){.hint{display:block}}
+.shelf{list-style:none;margin:32px 0 0;padding:0;display:grid;grid-template-columns:repeat(3,1fr);gap:36px 24px}
+.shelf li{margin:0;text-align:center}
+.shelf small{display:block;margin-top:4px;font-family:var(--body);font-weight:500;font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;color:var(--loc)}
+.shelf .pv{position:relative;isolation:isolate}
+.shelf .pv::before{content:"";position:absolute;inset:-6% -4% 22%;z-index:-1;pointer-events:none;background:radial-gradient(55% 50% at 50% 55%,rgba(9,36,4,.07),rgba(9,36,4,0));opacity:.65;transition:opacity .5s}
+.shelf li:hover .pv::before,.shelf li:focus-within .pv::before{opacity:1}
+.shelf img{display:block;width:100%;height:clamp(240px,27vw,390px);object-fit:contain;object-position:center bottom;will-change:transform;filter:drop-shadow(0 16px 20px rgba(9,36,4,.15));transition:transform .5s cubic-bezier(.2,.7,.3,1),filter .5s ease}
+.shelf li:focus-within img{transform:translateY(-14px) scale(1.05);filter:drop-shadow(0 30px 30px rgba(9,36,4,.22))}
+@media (hover:hover){.shelf li:hover img{transform:translateY(-14px) scale(1.05);filter:drop-shadow(0 30px 30px rgba(9,36,4,.22))}}
+.shelf span{display:block;margin-top:12px;padding-top:9px;border-top:1px solid var(--line);font-family:var(--body);font-weight:600;font-size:.86rem;letter-spacing:.06em;text-transform:uppercase;color:var(--green-90);text-wrap:balance;transition:color .35s,border-color .35s}
 .shelf li:hover span,.shelf li:focus-within span{color:var(--green);border-color:var(--green)}
-.shelf.small li{flex:0 0 clamp(92px,11.5vw,150px)}
-.shelf.small img{max-height:clamp(110px,14vw,215px)}
 .rise{opacity:0;transform:translateY(20px);transition:opacity .75s ease,transform .75s cubic-bezier(.2,.7,.3,1)}
 .rise.in{opacity:1;transform:none}
-.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:6px;padding:6px 6px 0;background:#F7F2E6}
-.grid figure{margin:0;position:relative;overflow:hidden;background:var(--coal)}
-.grid figure{overflow:hidden}
-.grid img{width:100%;height:min(52vh,560px);object-fit:cover;filter:saturate(.9) contrast(1.04) sepia(.07);transition:transform .8s cubic-bezier(.2,.7,.3,1)}
-.grid figure:hover img{transform:scale(1.045)}
-.grid figcaption{position:absolute;left:0;bottom:0;padding:10px 16px;background:var(--green);color:var(--sand);font-family:var(--stencil);font-size:.8rem;letter-spacing:.14em;text-transform:uppercase}
-.chain{background:var(--green-mid);color:var(--sand);padding:clamp(26px,3.6vw,48px) 0}
-.chain h2{margin-bottom:0}
-.chain h2,.chain .sec-head p{color:var(--sand)}
-.chain .sec-head p{color:var(--sand-80)}
-.chain .eyebrow{color:var(--sand-80)}
-.chain .sec-head{margin-bottom:0;max-width:none}
-.chain .eyebrow{margin-bottom:10px}
-.contact{display:grid;grid-template-columns:.95fr 1.05fr;gap:clamp(36px,5vw,72px);align-items:start}
-.lines{list-style:none;margin:0 0 30px;padding:0;display:grid;gap:12px;font-family:var(--stencil);font-size:clamp(1.05rem,1.9vw,1.55rem);line-height:1.1;letter-spacing:.03em;text-transform:uppercase;color:var(--green-90)}
-.lines span{display:inline-block;min-width:3.2em}
+#distributors{padding-top:clamp(40px,5vw,72px)}
+.contact{display:grid;grid-template-columns:.95fr 1.05fr;gap:clamp(36px,5vw,72px);align-items:stretch}
+.c-copy{display:flex;flex-direction:column}
+.c-copy figure{margin:32px 0 0;flex:1;min-height:220px;border-radius:var(--r);overflow:hidden}
+.c-copy figure img{width:100%;height:100%;object-fit:cover;object-position:50% 40%}
+.lines{list-style:none;margin:0 0 30px;padding:0;display:grid;gap:10px;font-family:var(--body);font-weight:600;font-size:clamp(1rem,1.25vw,1.15rem);line-height:1.3;letter-spacing:.02em;color:var(--green-90)}
+.lines li{display:grid;grid-template-columns:4.4em 1fr;gap:0 .5em;align-items:baseline}
+.lines span{font-family:var(--stencil);font-weight:400;font-size:.76rem;letter-spacing:.14em;text-transform:uppercase;color:var(--loc)}
+.lines span.v{font:inherit;letter-spacing:inherit;text-transform:none;color:inherit}
 .lines a{text-decoration:none;overflow-wrap:anywhere}
 .lines a:hover{text-decoration:underline}
-.stamp{width:min(320px,80%);margin:0 auto;line-height:0}
-.stamp svg{width:100%;height:auto}
-.foot{background:var(--green);color:var(--sand);padding:56px 7vw 28px}
-.foot-grid{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:40px;align-items:start;width:min(1180px,100%);margin:0 auto}
-.foot .logo{width:180px;margin-bottom:14px}
-.foot h4{font-family:var(--stencil);font-size:.82rem;letter-spacing:.2em;text-transform:uppercase;color:var(--sand);margin:0 0 12px}
-.foot p,.foot ul{margin:0;font-size:.95rem;color:var(--sand-80);line-height:1.7}
+.foot{background:var(--green);color:var(--sand);padding:56px 7vw 28px;margin-top:12px;border-radius:var(--r) var(--r) 0 0}
+.foot-grid{display:grid;grid-template-columns:1.4fr 1fr .8fr;gap:40px;align-items:start;width:min(1180px,100%);margin:0 auto}
+.foot .logo{width:200px;margin-bottom:14px}
+.foot h4{font-family:var(--body);font-weight:600;font-size:.8rem;letter-spacing:.16em;text-transform:uppercase;color:var(--sand);margin:0 0 12px}
+.foot p,.foot ul{margin:0;font-size:1rem;color:var(--sand-80);line-height:1.7}
 .foot ul{list-style:none;padding:0}
 .foot a{text-decoration:none}
 .foot a:hover{text-decoration:underline}
-.warning{width:min(1180px,100%);margin:44px auto 20px;border:3px solid var(--sand);background:#15120E;color:#fff;padding:14px 20px;font-weight:700;font-size:1rem;line-height:1.35}
-.legal{width:min(1180px,100%);margin:0 auto;display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;font-family:var(--stencil);font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;color:var(--sand-80)}
-.farm{position:relative;height:135vh;background:var(--coal)}
-.farm-pin{position:sticky;top:70px;height:calc(100vh - 70px);overflow:hidden}
-.farm-pin img{width:100%;height:100%;object-fit:cover;object-position:50% 62%;filter:saturate(.9) contrast(1.04) sepia(.07)}
-.farm-pin::after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(9,36,4,.82) 0%,rgba(9,36,4,0) 52%);pointer-events:none}
-.farm-copy{position:absolute;left:7vw;right:7vw;bottom:clamp(36px,7vh,80px);z-index:1;color:var(--sand)}
-.farm-copy .eyebrow{color:var(--sand-80);margin-bottom:12px}
-.farm-copy h2{color:var(--sand);margin:0;font-size:clamp(2.4rem,5.5vw,4.8rem)}
-.farm-copy .sub{margin:14px 0 0;font-family:var(--stencil);font-size:.88rem;letter-spacing:.14em;text-transform:uppercase;color:var(--sand-80)}
+.warning{width:min(1180px,100%);margin:44px auto 20px;border:3px solid var(--sand);background:#061A03;color:#fff;padding:14px 20px;font-family:Helvetica,Arial,sans-serif;font-weight:700;font-size:1rem;line-height:1.35}
+.legal{width:min(1180px,100%);margin:0 auto;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px 32px;font-family:var(--body);font-weight:600;font-size:.74rem;letter-spacing:.12em;text-transform:uppercase;color:var(--sand-80)}
 .pv{display:block;width:100%;margin:0;padding:0;border:0;background:none;font:inherit;color:inherit;text-align:center;cursor:zoom-in}
 .pv:focus-visible{outline:2px solid var(--green);outline-offset:6px}
-.filter{position:sticky;top:70px;z-index:6;display:flex;flex-wrap:wrap;gap:8px;margin:clamp(14px,2vw,22px) -12px 0;padding:12px;background:#F7F2E6}
-.filter button{font-family:var(--stencil);font-size:.82rem;letter-spacing:.08em;text-transform:uppercase;padding:10px 15px;border:1px solid rgba(9,36,4,.3);background:transparent;color:var(--green-90);cursor:pointer;transition:background .2s,color .2s,border-color .2s}
-.filter button:hover{border-color:var(--green);color:var(--green)}
-.filter button[aria-pressed="true"]{background:var(--green);color:var(--sand);border-color:var(--green)}
-.viewer{position:fixed;inset:0;z-index:90;display:grid;grid-template-columns:auto minmax(0,1fr) auto;align-items:center;gap:clamp(8px,2vw,26px);padding:clamp(56px,6vw,72px) clamp(14px,3vw,40px);background:rgba(5,12,4,.95)}
+.viewer{position:fixed;inset:0;z-index:90;display:grid;grid-template-columns:auto minmax(0,1fr) auto;align-items:center;gap:clamp(8px,2vw,26px);padding:clamp(56px,6vw,72px) clamp(14px,3vw,40px);background:rgba(6,6,6,.985);overscroll-behavior:contain;animation:vfade .28s ease both}
+@keyframes vfade{from{opacity:0}}
 .viewer[hidden]{display:none}
 .v-stage{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:clamp(20px,4vw,60px);align-items:center;width:100%;max-width:1080px;margin:0 auto}
-.v-fig{margin:0;display:flex;justify-content:center;align-items:center;min-height:0}
-.v-fig img{display:block;width:auto;height:auto;max-width:100%;max-height:74vh;filter:drop-shadow(0 30px 40px rgba(0,0,0,.6))}
+.v-fig{margin:0;display:flex;justify-content:center;align-items:center;min-height:0;position:relative;isolation:isolate}
+.v-fig::before{content:"";position:absolute;inset:10% 0 6%;z-index:-1;background:radial-gradient(closest-side,rgba(236,230,215,.08),transparent)}
+.v-fig img{display:block;width:auto;height:auto;max-width:100%;max-height:74vh;filter:drop-shadow(0 40px 50px rgba(0,0,0,.7));transition:opacity .22s ease}
 .v-info{color:#ECE6D7}
 .v-fam{margin:0 0 12px;font-family:var(--stencil);font-size:.84rem;letter-spacing:.14em;text-transform:uppercase;color:#9FB09F}
-.v-info h3{margin:0 0 14px;font-family:var(--display);font-weight:400;font-size:clamp(2rem,4.2vw,3.5rem);line-height:.98;text-transform:uppercase;color:#ECE6D7}
-.v-meta{margin:0 0 26px;font-family:var(--stencil);font-size:.88rem;letter-spacing:.1em;text-transform:uppercase;color:rgba(236,230,215,.75)}
-.v-count{margin:0;font-family:var(--stencil);font-size:.8rem;letter-spacing:.16em;color:rgba(236,230,215,.5)}
-.v-nav,.v-close{width:52px;height:52px;display:grid;place-items:center;border:1px solid rgba(236,230,215,.35);background:transparent;color:#ECE6D7;font-size:1.35rem;line-height:1;cursor:pointer;transition:background .2s,color .2s}
-.v-nav:hover,.v-nav:focus-visible,.v-close:hover,.v-close:focus-visible{background:#ECE6D7;color:#092404;outline:none}
+.v-info h3{margin:0 0 14px;font-family:var(--display);font-weight:400;font-size:clamp(2.4rem,5vw,4.4rem);line-height:.98;text-transform:uppercase;color:#ECE6D7}
+.v-meta{margin:0 0 20px;font-family:var(--body);font-weight:600;font-size:.88rem;letter-spacing:.1em;text-transform:uppercase;color:rgba(236,230,215,.75)}
+.v-count{margin:0;font-family:var(--body);font-weight:600;font-size:.8rem;letter-spacing:.16em;color:rgba(236,230,215,.6)}
+.viewer .btn{display:inline-block;margin:0 0 18px;background:#ECE6D7;color:#0A0A0A;border-color:#ECE6D7}
+.viewer .btn:hover,.viewer .btn:focus-visible{background:transparent;color:#ECE6D7}
+.v-nav,.v-close{width:56px;height:56px;border-radius:50%;display:grid;place-items:center;border:1px solid rgba(236,230,215,.35);background:transparent;color:#ECE6D7;font-size:1.35rem;line-height:1;cursor:pointer;transition:background .2s,color .2s}
+.v-nav:hover,.v-nav:focus-visible,.v-close:hover,.v-close:focus-visible{background:#ECE6D7;color:#092404}
 .v-close{position:absolute;top:clamp(10px,2vw,20px);right:clamp(10px,2vw,20px);font-size:1.7rem}
 .v-side{display:flex;gap:8px;margin:0 0 22px}
 .v-side[hidden]{display:none}
-.v-side button{font-family:var(--stencil);font-size:.82rem;letter-spacing:.08em;text-transform:uppercase;padding:9px 16px;border:1px solid rgba(236,230,215,.35);background:transparent;color:#ECE6D7;cursor:pointer;transition:background .2s,color .2s,border-color .2s}
-.v-side button:hover,.v-side button:focus-visible{border-color:#ECE6D7;outline:none}
+.v-side button{font-family:var(--stencil);font-size:.82rem;letter-spacing:.08em;text-transform:uppercase;padding:9px 16px;border:1px solid rgba(236,230,215,.42);border-radius:6px;background:transparent;color:#ECE6D7;cursor:pointer;transition:background .2s,color .2s,border-color .2s}
+.v-side button:hover,.v-side button:focus-visible{border-color:#ECE6D7}
 .v-side button[aria-pressed="true"]{background:#ECE6D7;color:#0A0A0A;border-color:#ECE6D7}
 .c-copy .lines{margin-bottom:0}
-.c-copy .stamp{width:min(190px,44%);margin:36px 0 0}
-.dform{background:#F7F2E6;border:2px solid var(--green);padding:clamp(20px,3vw,34px)}
-.dform .fields{display:grid;gap:16px}
-.dform label,.dform legend{display:grid;gap:7px;font-family:var(--stencil);font-size:.8rem;letter-spacing:.1em;text-transform:uppercase;color:var(--green-90)}
+.facts{list-style:none;margin:0 0 26px;padding:14px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);display:grid;grid-template-columns:1fr 1fr;gap:12px 24px;font-family:var(--body);font-weight:600;font-size:.98rem;line-height:1.3;color:var(--green-90)}
+.facts span{display:block;font-family:var(--stencil);font-weight:400;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--loc);margin-bottom:3px}
+
+.dform{background:#F7F2E6;border:1px solid rgba(9,36,4,.2);border-radius:var(--r);padding:clamp(24px,3vw,36px)}
+.dform .fields{display:grid;gap:20px}
+.dform label,.dform legend{display:grid;gap:7px;font-family:var(--body);font-weight:600;font-size:.74rem;letter-spacing:.14em;text-transform:uppercase;color:var(--green-90)}
 .dform legend{display:block;margin:0 0 9px;padding:0}
-.dform input:not([type=checkbox]),.dform textarea{box-sizing:border-box;width:100%;font-family:var(--body);font-size:1rem;letter-spacing:0;text-transform:none;color:var(--green);background:var(--paper);border:1px solid rgba(9,36,4,.32);border-radius:0;padding:12px 13px}
-.dform textarea{resize:vertical;min-height:108px}
-.dform input:focus-visible,.dform textarea:focus-visible{outline:2px solid var(--green);outline-offset:1px;border-color:var(--green)}
+.dform input:not([type=checkbox]),.dform textarea,.dform select{box-sizing:border-box;width:100%;font-family:var(--body);font-weight:400;font-size:1rem;letter-spacing:0;text-transform:none;color:var(--green);background:transparent;border:0;border-bottom:1px solid rgba(9,36,4,.42);border-radius:0;padding:10px 0}
+.dform select{padding-right:28px}
+.dform textarea{resize:vertical;min-height:88px}
+.dform input:focus-visible,.dform textarea:focus-visible,.dform select:focus-visible{outline:0;border-bottom-color:var(--green);box-shadow:0 1px 0 var(--green)}
 .dform .f2{display:grid;grid-template-columns:1fr 1fr;gap:16px}
 .dform fieldset{border:0;margin:0;padding:0;min-width:0}
-.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chips{display:flex;flex-wrap:wrap;gap:6px}
 .dform .chip{display:inline-block;position:relative}
 .chip input{position:absolute;opacity:0;width:1px;height:1px;margin:0}
-.chip span{display:inline-block;padding:9px 13px;border:1px solid rgba(9,36,4,.32);background:var(--paper);font-family:var(--stencil);font-size:.8rem;letter-spacing:.06em;text-transform:uppercase;color:var(--green);cursor:pointer;transition:background .2s,color .2s,border-color .2s}
+.chip span{display:inline-block;padding:8px 12px;border:1px solid rgba(9,36,4,.42);border-radius:6px;background:transparent;font-family:var(--stencil);font-size:.74rem;letter-spacing:.06em;text-transform:uppercase;color:var(--green);cursor:pointer;transition:background .2s,color .2s,border-color .2s}
 .chip input:checked+span{background:var(--green);color:var(--sand);border-color:var(--green)}
 .chip input:focus-visible+span{outline:2px solid var(--green);outline-offset:2px}
 .req{color:var(--green-mid)}
 .consent{margin:0;font-size:.86rem;line-height:1.5;letter-spacing:0;text-transform:none;color:var(--green-70)}
 .consent a{color:inherit}
-.dform .btn{justify-self:start;cursor:pointer}
+.dform .btn{justify-self:stretch;text-align:center;padding:16px 24px;cursor:pointer}
 .dform .btn[disabled]{opacity:.6;cursor:wait}
 .f-status{margin:14px 0 0;font-size:.98rem;line-height:1.5}
 .f-status:empty{display:none}
@@ -181,39 +161,75 @@ h2{font-size:clamp(2rem,4.2vw,3.4rem);line-height:1;margin-bottom:16px}
 .dform.sent .fields{display:none}
 .dform.sent .f-status{margin:0}
 .hp{display:none}
-@media (max-width:760px){.viewer{grid-template-columns:minmax(0,1fr);padding:64px 18px 90px}.v-stage{grid-template-columns:1fr;text-align:center;gap:18px}.v-side{justify-content:center}.v-fig img{max-height:50vh}.v-nav{position:absolute;bottom:22px}.v-prev{left:18px}.v-next{right:18px}}
-@media (max-width:640px){.dform .f2{grid-template-columns:1fr}.c-copy .stamp{width:150px}.filter{top:64px}}
-@media (max-width:1000px){.shelf li{flex:0 0 calc(25% - 18px)}.shelf.small li{flex:0 0 calc(20% - 16px)}.contact{grid-template-columns:1fr;gap:40px}.foot-grid{grid-template-columns:1fr 1fr}}
-@media (max-width:860px){.links{display:none}.nav{gap:16px}.nav .btn{margin-left:auto}.text{max-width:100%}.palm{right:-10vw;top:8vh;bottom:auto;width:62vw;opacity:.22}.band{flex-direction:column;align-items:flex-start;gap:16px;padding:26px 7vw 30px}.band .tags{max-width:none}.grid{grid-template-columns:1fr;gap:4px;padding:4px 4px 0}.grid img{height:40vh}.shelf li{flex:0 0 calc(33.33% - 12px)}.shelf.small li{flex:0 0 calc(33.33% - 12px)}.cat{gap:10px}.cat .meta{font-size:.74rem}.farm{height:130vh}.farm-copy h2{font-size:2.3rem}.foot-grid{grid-template-columns:1fr}.brand .wm{width:120px}}
+@media (max-width:760px){.viewer{grid-template-columns:minmax(0,1fr);padding:64px 18px 90px;overflow-y:auto}.v-stage{grid-template-columns:1fr;text-align:center;gap:18px}.v-side{justify-content:center}.v-fig img{max-height:min(46vh,340px)}.v-nav{position:absolute;bottom:22px}.v-prev{left:18px}.v-next{right:18px}}
+@media (max-width:640px){.dform .f2{grid-template-columns:1fr}.line .wrap{width:calc(100% - 32px)}.shelf{grid-template-columns:repeat(2,1fr);gap:28px 12px}.shelf img{height:clamp(200px,54vw,260px)}.shelf li:last-child:nth-child(odd){grid-column:span 2;justify-self:center;width:calc(50% - 6px)}}
+@media (max-width:1100px){.contact{grid-template-columns:.85fr 1.15fr}.legal{justify-content:flex-start}}
+@media (max-width:1000px){.contact{grid-template-columns:1fr;gap:40px}.c-copy figure{min-height:240px;max-height:320px}.foot-grid{grid-template-columns:1fr 1fr}}
+@media (max-width:860px){.links{display:none}.nav{gap:16px}.nav .btn{margin-left:auto}.foot-grid{grid-template-columns:1fr}.brand .wm{width:120px}}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
-img[hidden]{display:none!important}
+body:not(.past-hero) .nav{background:transparent;border-bottom-color:transparent;-webkit-backdrop-filter:none;backdrop-filter:none}
+body:not(.past-hero) .nav .links a{color:#ECE6D7}
+body:not(.past-hero) .nav .brand svg *{fill:#ECE6D7!important}
+body:not(.past-hero) .nav .btn{background:#ECE6D7;color:#0A0A0A;border-color:#ECE6D7}
+body:not(.past-hero) .nav .btn:hover,body:not(.past-hero) .nav .btn:focus-visible{background:transparent;color:#ECE6D7;border-color:#ECE6D7}
+body:not(.past-hero) .nav .brand{opacity:0;pointer-events:none}
+@media (max-width:480px){.nav{padding:0 5vw;gap:12px}.brand .wm{width:104px}.nav .btn{white-space:nowrap;padding:9px 12px;font-size:.72rem;letter-spacing:.1em}}
+section[id],#contact{scroll-margin-top:84px}
+/* ---- full-screen hero: watercolour -> drone flight, which loops between two copies (behaviour in hero.js) ---- */
+.hero{position:relative;height:100vh;height:100svh;min-height:560px;background:#0A0A0A}
+.hero .frame{position:absolute;inset:0;overflow:hidden;background:#092404;transition:inset .9s cubic-bezier(.2,.7,.2,1),border-radius .9s cubic-bezier(.2,.7,.2,1)}
+body.scrolled .hero .frame{inset:12px var(--gut);border-radius:var(--r)}
+@supports (animation-timeline:scroll()){ /* the frame follows the scroll position; the class toggle above is the fallback */
+  .hero .frame{animation:hero-frame linear both;animation-timeline:scroll(root);animation-range:0 70vh;transition:none}
+  body.scrolled .hero .frame{inset:0;border-radius:0}
+  @keyframes hero-frame{to{inset:12px var(--gut);border-radius:var(--r)}}
+}
+.hero .layers{position:absolute;inset:0;isolation:isolate;transform:scale(1.05);transition:transform 4s cubic-bezier(.2,.6,.2,1)}
+body.hero-in .hero .layers{transform:scale(1)}
+body.scrolled .hero .layers{transform:scale(1.06);transition-duration:1.2s}
+.hero .photo,.hero .paint,.hero .clip{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
+.hero .photo,.hero .clip{filter:brightness(1.07) contrast(1.05) saturate(1.12)}
+.hero .paint{z-index:3;will-change:opacity;pointer-events:none}
+.hero .clip{opacity:0;z-index:1;transition:opacity 2s ease}
+.hero .clip.on{opacity:1}
+.hero .shade{position:absolute;inset:0;pointer-events:none;background:linear-gradient(180deg,rgba(0,0,0,.55) 0,rgba(0,0,0,0) 30%,rgba(0,0,0,0) 46%,rgba(0,0,0,.66) 100%)}
+.hero-copy{position:absolute;left:0;right:0;bottom:clamp(76px,13vh,130px);display:grid;justify-items:center;gap:20px;padding:0 6vw;text-align:center;color:#ECE6D7}
+.hero-mark{margin:0;width:min(62vw,1080px);line-height:0}
+.hero-mark svg{width:100%;height:auto;filter:drop-shadow(0 8px 30px rgba(0,0,0,.45))}
+.hero-sub{margin:0;font-family:var(--stencil);font-size:clamp(.8rem,1.1vw,.95rem);letter-spacing:.3em;text-transform:uppercase;color:rgba(236,230,215,.85)}
+.sr{position:absolute;width:1px;height:1px;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
+.cue{position:absolute;left:50%;bottom:18px;width:1px;height:34px;margin-left:-.5px;background:#ECE6D7;opacity:.85;transform-origin:top;animation:cue 2.2s cubic-bezier(.2,.7,.2,1) infinite}
+@keyframes cue{0%{transform:scaleY(0)}50%{transform:scaleY(1)}100%{transform:scaleY(1);opacity:0}}
+.gate{transition:opacity 1.1s ease}
+.gate.leaving{opacity:0;pointer-events:none}
+@media (max-width:760px){.hero-mark{width:84vw}}
+@media (prefers-reduced-motion:reduce){.hero .paint,.hero .clip{display:none}.hero .layers,.gate,.hero .frame{transition:none}.hero .frame,.cue{animation:none}}
+
 
 /* ---------------- black theme ---------------- */
-:root{--paper:#0A0A0A;--green-70:rgba(236,230,215,.72);--green-90:rgba(236,230,215,.9);--line:rgba(236,230,215,.14);--loc:#A9B8A9}
+:root{--paper:#0A0A0A;--green-70:rgba(236,230,215,.72);--green-90:rgba(236,230,215,.9);--line:rgba(236,230,215,.14);--loc:#A9B8A9;color-scheme:dark}
 body{background:#0A0A0A;color:#ECE6D7}
 h1,h2{color:#ECE6D7}
 :focus-visible{outline-color:#ECE6D7}
-.nav{background:rgba(10,10,10,.92)}
+.nav{background:rgba(10,10,10,.86)}
 .links a:hover{color:#ECE6D7}
 .btn{background:#ECE6D7;color:#0A0A0A;border-color:#ECE6D7}
 .btn:hover,.btn:focus-visible{background:transparent;color:#ECE6D7;border-color:#ECE6D7}
 .textlink{border-bottom-color:#ECE6D7}
-.farm{background:#0A0A0A}
-.farm-pin::after{background:linear-gradient(to top,rgba(0,0,0,.84) 0%,rgba(0,0,0,0) 52%)}
-.line,.grid,.filter{background:#131313}
-.cat{color:#ECE6D7}
+.line{background:#131313}
+.shelf small{color:#8f9a8f}
 .shelf li:hover span,.shelf li:focus-within span{color:#ECE6D7;border-color:#ECE6D7}
 .shelf img{filter:drop-shadow(0 18px 24px rgba(0,0,0,.75))}
-.shelf li:hover img,.shelf li:focus-within img{filter:drop-shadow(0 32px 34px rgba(0,0,0,.85))}
+.shelf li:hover img,.shelf li:focus-within img{filter:drop-shadow(0 40px 40px rgba(0,0,0,.9))}
+.shelf .pv::before{background:radial-gradient(55% 50% at 50% 55%,rgba(236,230,215,.12),rgba(236,230,215,0))}
+.shelf span{border-top-color:rgba(236,230,215,.18);color:rgba(236,230,215,.92)}
 .pv:focus-visible{outline-color:#ECE6D7}
-.filter button{border-color:rgba(236,230,215,.28)}
-.filter button:hover{border-color:#ECE6D7;color:#ECE6D7}
-.filter button[aria-pressed="true"]{background:#ECE6D7;color:#0A0A0A;border-color:#ECE6D7}
-.viewer{background:rgba(0,0,0,.95)}
-.dform{background:#131313;border-color:rgba(236,230,215,.28)}
-.dform input:not([type=checkbox]),.dform textarea{background:#0A0A0A;color:#ECE6D7;border-color:rgba(236,230,215,.3)}
-.dform input:focus-visible,.dform textarea:focus-visible{outline-color:#ECE6D7;border-color:#ECE6D7}
-.chip span{background:#0A0A0A;color:#ECE6D7;border-color:rgba(236,230,215,.3)}
+.viewer{background:rgba(6,6,6,.985)}
+.dform{background:#111;border-color:rgba(236,230,215,.16)}
+.dform input:not([type=checkbox]),.dform textarea,.dform select{color:#ECE6D7;border-bottom-color:rgba(236,230,215,.42)}
+.dform select option{background:#111}
+.dform input:focus-visible,.dform textarea:focus-visible,.dform select:focus-visible{border-bottom-color:#ECE6D7;box-shadow:0 1px 0 #ECE6D7}
+.chip span{color:#ECE6D7;border-color:rgba(236,230,215,.42)}
 .chip input:checked+span{background:#ECE6D7;color:#0A0A0A;border-color:#ECE6D7}
 .chip input:focus-visible+span{outline-color:#ECE6D7}
 .req,.f-status.ok{color:#A8D68F}
@@ -225,306 +241,92 @@ h1,h2{color:#ECE6D7}
 
 <div class="gate" id="gate" role="dialog" aria-modal="true" aria-labelledby="gate-q">
   <div class="mark"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 168.8655 41.9885"><g><g><path d="M8.7,5.2v23.4h6.4V5.2h-6.4ZM0,0v4.7h23.5V0H0Z" style="fill:#ECE6D7;"/><path d="M26.4.3l.2,28.2h5.8l-.2-28.2h-5.8Z" style="fill:#ECE6D7;"/><path d="M32.7,10.9h2.8c2.8,0,3.9-.4,3.9-.4.9-.3,1.9-.6,2.4-1.7.4-.8.5-1.9,0-2.8-.2-.3-.4-.6-1-.9-1.2-.7-2.3-.8-4.5-.8h-3.7V.3h3.7c4.2,0,5.3.4,6.1.7,1.3.6,2.1,1.4,2.3,1.6,1.8,1.8,2,4,2,4.6,0,1.3-.3,2.3-.3,2.5-.1.3-.7,1.7-2,2.9,0,0-1.2,1-3.8,1.8h-.3c-.2,0-.5.1-.7.2l8.6,14h-7l-8.4-13.7v-3.9l-.1-.1Z" style="fill:#ECE6D7;"/><path d="M64.1904.309l.2,20.8c0,.2.1,1.3-.6,2.1-1,1.1-2.5.9-2.6.9v4.4c.2,0,4.8.8,7.6-2.6,2-2.3,1.8-5.1,1.8-5.7l-.2-19.9h-6.3.1ZM57.6,21l-.2-20.8h-6.1l.2,19.8c0,.7,0,3.4,1.8,5.7,2.7,3.4,7,2.8,7.3,2.8v-4.4c-.1,0-1.4,0-2.3-1-.7-.9-.7-1.9-.7-2.1Z" style="fill:#ECE6D7;"/><path d="M88.2655.1056v28.0888h-6.1V.1056h6.1ZM100.5655,28.1944h-11.7v-4.7519h11.7v4.7519Z" style="fill:#ECE6D7;"/><path d="M109.2655.1056v28.0888h-6.1V.1056h6.1ZM109.8655.1056h10v4.7519h-10V.1056ZM109.8655,11.2989h7.5v4.6463h-7.5v-4.6463ZM119.9655,28.1944h-10.1v-4.8575h10.1v4.8575Z" style="fill:#ECE6D7;"/><path d="M139.8655,0c2.5,9.3981,5.1,18.7963,7.6,28.1944h-6.9l-1.5-5.9134h-7.3l1.1-4.5407c1.7,0,3.4,0,5-.1056l-2.6-11.4045-5.7,22.0698h-6.6c2.7-9.3981,5.3-18.6907,8-28.0888h8.8l.1-.2112Z" style="fill:#ECE6D7;"/><path d="M156.2655,0v28.0888h-6V0h6ZM156.6655,0h12.2v4.6463h-12.2V0ZM156.7655,11.0877h7.8v4.6463h-7.8v-4.6463Z" style="fill:#ECE6D7;"/><path d="M50.494,41.8557v-.2651h.835v-7.6909h-.623c-1.0078,0-1.9756.3979-1.9756,1.9624h-.2646v-2.2275h7.3193v2.2275h-.2656c0-1.5645-.8223-1.9624-1.6973-1.9624h-.9014v7.6909h.835v.2651h-3.2617Z" style="fill:#ECE6D7;"/><path d="M62.6453,41.9885c-1.9355,0-4.1631-1.2598-4.1631-4.2432s2.2275-4.2432,4.1631-4.2432c1.9492,0,4.1641,1.2593,4.1641,4.2432s-2.2148,4.2432-4.1641,4.2432ZM62.6453,33.7673c-1.6709,0-2.4795,1.1934-2.4795,3.978,0,2.771.8086,3.9775,2.4795,3.9775,1.6182,0,2.4795-1.2065,2.4795-3.9775,0-2.7847-.8613-3.978-2.4795-3.978Z" style="fill:#ECE6D7;"/><path d="M74.6238,37.427c1.7236.1592,2.7051.8223,2.7051,2.188,0,1.79-1.79,2.2407-3.7656,2.2407h-3.7129v-.2651h.8359v-7.6909h-.8359v-.2651h3.501c1.8164,0,3.3945.3315,3.3945,1.8696,0,1.1934-.9551,1.7236-2.1221,1.8564v.0664ZM72.2772,33.8996v3.4478h1.0742c1.2598,0,1.8291-.4907,1.8291-1.7505,0-1.2197-.543-1.6973-1.8291-1.6973h-1.0742ZM72.2772,37.6125v3.978h1.2861c1.4717,0,2.0947-.5303,2.0947-1.9893,0-1.4053-.6631-1.9888-2.1748-1.9888h-1.2061Z" style="fill:#ECE6D7;"/><path d="M82.2547,41.8557h-2.4531v-.2651h.9814l3.208-8.0884h.332l3.4609,8.0884h.8086v.2651h-3.4346v-.2651h1.0215l-.9814-2.3472h-3.1562l-.9277,2.3472h1.1406v.2651ZM85.0789,38.965l-1.498-3.5933-1.4189,3.5933h2.917Z" style="fill:#ECE6D7;"/><path d="M97.786,36.5783c-.0791-1.2598-.7422-2.811-2.6914-2.811-1.6973,0-2.5195,1.1934-2.5195,3.978,0,2.7578.8223,3.9775,2.4932,3.9644,1.498,0,2.5195-.7954,2.6777-2.2539h.2393c-.1064,1.5513-1.2334,2.5327-2.9834,2.5327-1.9629,0-4.1104-1.2598-4.1104-4.2432s2.1475-4.2432,4.2031-4.2432c1.3262,0,1.8027.5566,2.2412.5566.2783,0,.3975-.252.3975-.4243h.2383v2.9438h-.1855Z" style="fill:#ECE6D7;"/><path d="M108.0545,36.5783c-.0791-1.2598-.7422-2.811-2.6914-2.811-1.6973,0-2.5195,1.1934-2.5195,3.978,0,2.7578.8223,3.9775,2.4932,3.9644,1.498,0,2.5195-.7954,2.6777-2.2539h.2393c-.1064,1.5513-1.2334,2.5327-2.9834,2.5327-1.9629,0-4.1104-1.2598-4.1104-4.2432s2.1475-4.2432,4.2031-4.2432c1.3262,0,1.8027.5566,2.2412.5566.2783,0,.3975-.252.3975-.4243h.2383v2.9438h-.1855Z" style="fill:#ECE6D7;"/><path d="M115.5916,41.9885c-1.9355,0-4.1631-1.2598-4.1631-4.2432s2.2275-4.2432,4.1631-4.2432c1.9492,0,4.1641,1.2593,4.1641,4.2432s-2.2148,4.2432-4.1641,4.2432ZM115.5916,33.7673c-1.6709,0-2.4795,1.1934-2.4795,3.978,0,2.771.8086,3.9775,2.4795,3.9775,1.6182,0,2.4795-1.2065,2.4795-3.9775,0-2.7847-.8613-3.978-2.4795-3.978Z" style="fill:#ECE6D7;"/></g></g></svg></div>
-  <h1 id="gate-q">Are you 21 or older?</h1>
+  <p class="q" id="gate-q">Are you 21 or older?</p>
   <div class="row">
     <button class="btn" id="gate-yes" type="button">Yes</button>
     <button class="btn" id="gate-no" type="button">No</button>
   </div>
-  <p class="deny" id="gate-deny" role="alert">You must be 21 or older to view this site.</p>
+  <p class="deny" id="gate-deny" role="alert" tabindex="-1">You must be 21 or older to view this site.</p>
   <p class="note">Tru Leaf products are for adults 21 and over</p>
 </div>
 
 <header class="nav" id="top">
   <a class="brand" href="#top" aria-label="Tru Leaf Tobacco, home"><span class="wm"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 168.8655 41.9885"><g><g><path d="M8.7,5.2v23.4h6.4V5.2h-6.4ZM0,0v4.7h23.5V0H0Z" style="fill:#ECE6D7;"/><path d="M26.4.3l.2,28.2h5.8l-.2-28.2h-5.8Z" style="fill:#ECE6D7;"/><path d="M32.7,10.9h2.8c2.8,0,3.9-.4,3.9-.4.9-.3,1.9-.6,2.4-1.7.4-.8.5-1.9,0-2.8-.2-.3-.4-.6-1-.9-1.2-.7-2.3-.8-4.5-.8h-3.7V.3h3.7c4.2,0,5.3.4,6.1.7,1.3.6,2.1,1.4,2.3,1.6,1.8,1.8,2,4,2,4.6,0,1.3-.3,2.3-.3,2.5-.1.3-.7,1.7-2,2.9,0,0-1.2,1-3.8,1.8h-.3c-.2,0-.5.1-.7.2l8.6,14h-7l-8.4-13.7v-3.9l-.1-.1Z" style="fill:#ECE6D7;"/><path d="M64.1904.309l.2,20.8c0,.2.1,1.3-.6,2.1-1,1.1-2.5.9-2.6.9v4.4c.2,0,4.8.8,7.6-2.6,2-2.3,1.8-5.1,1.8-5.7l-.2-19.9h-6.3.1ZM57.6,21l-.2-20.8h-6.1l.2,19.8c0,.7,0,3.4,1.8,5.7,2.7,3.4,7,2.8,7.3,2.8v-4.4c-.1,0-1.4,0-2.3-1-.7-.9-.7-1.9-.7-2.1Z" style="fill:#ECE6D7;"/><path d="M88.2655.1056v28.0888h-6.1V.1056h6.1ZM100.5655,28.1944h-11.7v-4.7519h11.7v4.7519Z" style="fill:#ECE6D7;"/><path d="M109.2655.1056v28.0888h-6.1V.1056h6.1ZM109.8655.1056h10v4.7519h-10V.1056ZM109.8655,11.2989h7.5v4.6463h-7.5v-4.6463ZM119.9655,28.1944h-10.1v-4.8575h10.1v4.8575Z" style="fill:#ECE6D7;"/><path d="M139.8655,0c2.5,9.3981,5.1,18.7963,7.6,28.1944h-6.9l-1.5-5.9134h-7.3l1.1-4.5407c1.7,0,3.4,0,5-.1056l-2.6-11.4045-5.7,22.0698h-6.6c2.7-9.3981,5.3-18.6907,8-28.0888h8.8l.1-.2112Z" style="fill:#ECE6D7;"/><path d="M156.2655,0v28.0888h-6V0h6ZM156.6655,0h12.2v4.6463h-12.2V0ZM156.7655,11.0877h7.8v4.6463h-7.8v-4.6463Z" style="fill:#ECE6D7;"/><path d="M50.494,41.8557v-.2651h.835v-7.6909h-.623c-1.0078,0-1.9756.3979-1.9756,1.9624h-.2646v-2.2275h7.3193v2.2275h-.2656c0-1.5645-.8223-1.9624-1.6973-1.9624h-.9014v7.6909h.835v.2651h-3.2617Z" style="fill:#ECE6D7;"/><path d="M62.6453,41.9885c-1.9355,0-4.1631-1.2598-4.1631-4.2432s2.2275-4.2432,4.1631-4.2432c1.9492,0,4.1641,1.2593,4.1641,4.2432s-2.2148,4.2432-4.1641,4.2432ZM62.6453,33.7673c-1.6709,0-2.4795,1.1934-2.4795,3.978,0,2.771.8086,3.9775,2.4795,3.9775,1.6182,0,2.4795-1.2065,2.4795-3.9775,0-2.7847-.8613-3.978-2.4795-3.978Z" style="fill:#ECE6D7;"/><path d="M74.6238,37.427c1.7236.1592,2.7051.8223,2.7051,2.188,0,1.79-1.79,2.2407-3.7656,2.2407h-3.7129v-.2651h.8359v-7.6909h-.8359v-.2651h3.501c1.8164,0,3.3945.3315,3.3945,1.8696,0,1.1934-.9551,1.7236-2.1221,1.8564v.0664ZM72.2772,33.8996v3.4478h1.0742c1.2598,0,1.8291-.4907,1.8291-1.7505,0-1.2197-.543-1.6973-1.8291-1.6973h-1.0742ZM72.2772,37.6125v3.978h1.2861c1.4717,0,2.0947-.5303,2.0947-1.9893,0-1.4053-.6631-1.9888-2.1748-1.9888h-1.2061Z" style="fill:#ECE6D7;"/><path d="M82.2547,41.8557h-2.4531v-.2651h.9814l3.208-8.0884h.332l3.4609,8.0884h.8086v.2651h-3.4346v-.2651h1.0215l-.9814-2.3472h-3.1562l-.9277,2.3472h1.1406v.2651ZM85.0789,38.965l-1.498-3.5933-1.4189,3.5933h2.917Z" style="fill:#ECE6D7;"/><path d="M97.786,36.5783c-.0791-1.2598-.7422-2.811-2.6914-2.811-1.6973,0-2.5195,1.1934-2.5195,3.978,0,2.7578.8223,3.9775,2.4932,3.9644,1.498,0,2.5195-.7954,2.6777-2.2539h.2393c-.1064,1.5513-1.2334,2.5327-2.9834,2.5327-1.9629,0-4.1104-1.2598-4.1104-4.2432s2.1475-4.2432,4.2031-4.2432c1.3262,0,1.8027.5566,2.2412.5566.2783,0,.3975-.252.3975-.4243h.2383v2.9438h-.1855Z" style="fill:#ECE6D7;"/><path d="M108.0545,36.5783c-.0791-1.2598-.7422-2.811-2.6914-2.811-1.6973,0-2.5195,1.1934-2.5195,3.978,0,2.7578.8223,3.9775,2.4932,3.9644,1.498,0,2.5195-.7954,2.6777-2.2539h.2393c-.1064,1.5513-1.2334,2.5327-2.9834,2.5327-1.9629,0-4.1104-1.2598-4.1104-4.2432s2.1475-4.2432,4.2031-4.2432c1.3262,0,1.8027.5566,2.2412.5566.2783,0,.3975-.252.3975-.4243h.2383v2.9438h-.1855Z" style="fill:#ECE6D7;"/><path d="M115.5916,41.9885c-1.9355,0-4.1631-1.2598-4.1631-4.2432s2.2275-4.2432,4.1631-4.2432c1.9492,0,4.1641,1.2593,4.1641,4.2432s-2.2148,4.2432-4.1641,4.2432ZM115.5916,33.7673c-1.6709,0-2.4795,1.1934-2.4795,3.978,0,2.771.8086,3.9775,2.4795,3.9775,1.6182,0,2.4795-1.2065,2.4795-3.9775,0-2.7847-.8613-3.978-2.4795-3.978Z" style="fill:#ECE6D7;"/></g></g></svg></span></a>
-  <nav class="links" aria-label="Sections"><a href="#products">Lorem</a><a href="#farm">Ipsum</a><a href="#chain">Dolor sit</a><a href="#distributors">Amet</a><a href="#contact">Elit</a></nav>
-  <a class="btn" href="#distributors">Become a distributor</a>
+  <nav class="links" aria-label="Sections"><a href="#products">Products</a><a href="#distributors">Wholesale</a><a href="#contact">Contact</a></nav>
+  <a class="btn" href="#distributors">Inquire</a>
 </header>
 
-<section class="card" aria-labelledby="hero-title">
-  <div class="top">
-    <div class="text">
-      <p class="eyebrow"><svg viewBox="0 0 24 32" aria-hidden="true" focusable="false"><path d="M12 0C5.4 0 0 5.3 0 11.9 0 20.3 12 32 12 32s12-11.7 12-20.1C24 5.3 18.6 0 12 0zm0 16.5a4.6 4.6 0 1 1 0-9.2 4.6 4.6 0 0 1 0 9.2z" fill="currentColor"/></svg>Lorem ipsum · Dolor sit</p>
-      <h1 id="hero-title">Lorem ipsum dolor.<br>Sit amet elit.</h1>
-      <p class="lede">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt.</p>
-      <div class="cta"><a class="btn" href="#distributors">Become a distributor</a><a class="textlink" href="#leaf">Lorem ipsum</a></div>
+<section class="hero" aria-label="Tru Leaf Tobacco">
+  <div class="frame">
+    <div class="layers">
+      <img class="photo" loading="eager" src="img/field-wide-1600.jpg" alt="Rows of young tobacco plants running to the tree line on the Tru Leaf farm in Nicaragua">
+      <video class="clip" muted playsinline preload="none" aria-hidden="true" data-lg="drone-field-2560.mp4" data-sm="drone-field-1280.mp4"></video>
+      <video class="clip" muted playsinline preload="none" aria-hidden="true" data-lg="drone-field-2560.mp4" data-sm="drone-field-1280.mp4"></video>
+      <img class="paint" loading="eager" fetchpriority="high" src="img/wc-field-wide-2000.webp" alt="">
     </div>
-  </div>
-  <div class="palm" aria-hidden="true">
-    <div class="g"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 231.8457 244.6145"><g><g><path d="M81.3474,227.34c-5.1073,4.0215-8.5389,9.9714-13.1642,14.7348-1.0657,1.4241-4.3861,2.8405-3.9331-.3089.3993-2.2645,1.9179-4.0327,3.1298-5.7841,2.5367-3.78,3.7289-9.0085,5.9137-13.0621,5.6328-10.7557,14.1604-28.3599,17.5125-42.2882,1.2124-11.2673,4.2771-23.2672,5.424-34.6279.0068-15.6795.9589-31.6459.297-47.463.1414-2.0386-.9742-3.4859-2.7452-3.5433-1.9171-.3559-3.7336-.9745-5.7794-.8491-4.2815.1247-7.1554,4.1792-10.5565,6.5675-16.3493,9.7947-25.1265,29.4765-35.5248,45.7542-2.3094,4.4263-6.556,17.1097-6.2061,3.4115-.1377-2.1585,1.1599-4.5375,1.0984-6.6958-.4487-.854-1.232.6781-1.7708,1.2544-1.9345,2.6702-3.9802,5.3532-5.554,8.3134-2.2024,3.3945-3.305,8.3855-6.5129,10.6739-1.592.6444-2.3539-1.4275-2.2196-2.9618.0772-7.3464,4.1663-13.8679,4.9237-20.9903.0739-2.373,2.109-3.4303,3.0523-5.3197,1.7331-3.1149,3.3616-7.2474,5.26-10.6784,6.1457-9.943,13.2602-21.4119,22.4465-27.5929,1.2343-2.0894,2.3944-2.7185,4.4464-3.0963,1.4419-.6617,4.6859-1.8322,2.7179.6155-9.7337,3.3093-37.7837,41.946-35.6586,53.8872.663,1.3455,1.6403-.2104,2.2468-1.0358,1.0705-1.4638,2.5507-3.1511,3.5326-4.5427.9471-1.0527.8862-2.6226,1.5804-3.8019,1.5751-1.5329,3.289-3.0182,4.5531-4.9245,1.8014-2.6145,3.6104-1.8324,6.0401-1.4219,1.0177-.0385,1.6987-.9859,2.27-1.8746,2.6637-4.135,5.5527-8.0466,8.4977-11.9297,5.9336-8.3121,12.1753-13.5829,20.2402-19.9189,1.8287-1.3852,2.8924-3.7704,5.0499-4.3998,3.1675-.9788,6.5595-3.0813,9.8693-2.8115,2.5468.1314,3.779,2.5565,6.1277,3.2635,3.8746.5063,3.1891,5.9099,3.9587,9.1921.4685,20.9303,1.1746,42.4566-1.271,63.2688-.5202,3.8606-1.1917,7.9204-1.3522,11.6027-.127,1.5481.6433,3.1419.073,4.5653-3.2415,3.3482-3.1979,8.8578-4.8804,13.1949-2.0342,6.3808-4.5339,12.7883-7.0498,18.2904-1.3515,3.3738-3.7263,7.2422-5.1205,10.9541-.0953.4612.0543.6149.4577.3939,3.0461-2.1439,5.2679-5.6882,7.0665-9.1983,1.9104-3.7393,3.443-8.026,4.3393-12.2508.6673-2.0335.4564-5.5985,1.6906-6.9716.8694,4.2613-.1432,11.6987-.2904,15.7179.0712,8.9813-8.4892,11.3414-14.189,14.6629l-.0374.0248Z" style="fill:#ECE6D7;"/><path d="M204.0003,95.949c1.3563,1.2008,2.7973,2.2242,4.4842,2.7804,1.43.4487,3.2534,1.7296,4.442,1.2458.6586-.6713-.3317-1.7621-.8201-2.2111-1.3294-1.2249-2.9971-1.4203-4.2207-2.634-1.0334-1.058-1.4025-2.4136-2.4324-3.2383-4.9801-4.1499-20.763-10.9152-31.2886-14.8973-3.7321-1.3849-6.424-2.4194-10.0461-3.3555-8.5551-1.7944-24.483-6.0026-32.6355-2.7842-1.021.3875-1.9807.8181-2.9936.9725-1.6078.2108-1.4133-.8188-.3872-1.6671,12.0877-9.0438,27.3428-12.2433,41.3078-16.1388,1.5062-.519,1.9954-1.6727,3.464-2.0644,2.7044-.4558,5.5069-.0543,8.1952-.6039,7.365-1.1982,15.7534-4.0315,23.1283-4.4525,7.5484-.1391,16.5136,1.3603,23.6733,3.2577,1.3823.5108,3.4768.9276,3.9746,2.4869.0259,1.1362-5.5755.1849-6.3904.0562-2.1946-.4446-4.1905-1.8227-6.3537-2.2532-5.6252-.886-15.5216-2.3005-21.1395.1123-2.9382,1.99-4.6062,2.01-7.9223,1.8037-2.6143-.1396-5.0738.1286-7.6222.5831-5.5015.9548-11.1285,2.2712-16.5465,3.7221-8.8149,2.4888-17.3883,5.8707-25.9041,9.4301-1.5051.8303-1.8545,2.199.1007,2.3809,1.3324.0461,2.6666-.0115,4.0963.1283,19.8138,1.781,34.7476,9.3129,53.3227,15.9049,2.7625.8594,5.0057,1.2407,7.8389,2.7615,1.2909.6875,2.5343,1.5479,3.6572,2.5612,1.6917,1.4468,2.7642,3.1085,4.5119,4.1006,1.5067.8279,3.7716.7618,4.3083,2.9817.3155,1.0517.5191,2.2483.9725,3.2573,1.145,2.6383,2.9298,4.006,4.434,6.1846,2.3462,3.4897,2.81,8.5504,3.7295,12.7513.369,1.2973.8125,4.4751-.8977,3.0568-.7586-.7663-1.1871-2.0411-1.642-3.0756-.9518-2.4325-2.6793-4.482-4.1626-6.6036-2.5728-3.329-4.7948-6.9632-8.0944-9.3485-2.8077-1.9693-6.1163-3.8921-9.4569-4.1804-1.637.1428-1.159,1.5143-.08,2.427,2.2326,1.9897,5.4305,4.0025,7.847,6.1024,6.3703,6.0814,8.8147,15.8797,11.9259,24.3231.3594,1.0515.6989,2.0981.9852,3.1709.5824,2.0564,1.0602,4.4061-1.4529,4.6216-3.4074.5236-3.885-.8726-5.0508-4.014-4.2128-7.7368-10.8473-14.4522-17.0564-20.4405-17.6832-16.6478-36.1706-27.91-59.2101-30.1165-.8165-.1291-2.0931-.1205-2.4844.5266-1.0882,1.6166,2.3577,5.208,3.2014,6.6185,1.2807,1.8434,3.3027,2.6342,4.3885,4.6563,2.962,5.434,6.3956,11.6471,8.1048,17.7891.9688,2.8453-1.4165,3.5433-3.2531,2.3314-1.8844-1.4938-2.9132-4.3843-4.3027-6.4172-4.5201-6.6236-15.2885-12.7752-22.1312-15.1516-7.6465-1.7042-9.0281,3.1869-9.1197,10.9337-.4195,10.0443,3.2854,16.3517,2.6152,25.7439-.0613,1.1036-.1818,2.1852-.1139,3.197.1957,1.6389.2896,3.2954-.5925,4.639-.9048,1.7576-4.0977,2.6145-4.446-.047-.2134-1.9179.5145-3.8033.5739-5.7288.1659-3.1172.0028-6.2974-.1305-9.4316-.6482-9.5392-.1999-19.136-.5589-28.718.6091-4.5046,4.6837-4.0243,7.7552-3.6134,3.5002.4484,6.8835,1.0625,10.283,1.8909,2.106.3553,3.2651,2.4192,4.8919,3.7501,2.0003,1.5626,4.3628,2.6276,6.7299,3.1906,1.8048.345.6527-1.5654.0857-2.4016-.9251-1.4534-1.9993-2.9314-3.015-4.2094-2.4563-2.9687-4.4761-6.9872-7.7384-8.8686-1.1144-.5549-2.7887-1.4615-2.1097-3.1356.4172-1.0721,1.5189-1.2432,2.4448-.986,1.441.3538,3.1017.8152,4.6444.9755,10.9489,1.3215,22.1393,2.239,32.341,7.3709,3.0748,1.4105,6.0854,3.0371,9.2064,4.2996,1.8913.7679,3.6201.5842,5.118,1.9449,2.3144,2.1056,5.7195,5.6952,8.3115,8.1033,6.1539,5.4621,13.9089,11.2033,19.6476,17.2476,1.6873,1.6292,2.8982,3.7516,4.2194,5.7714,1.1058,1.6466,3.0126,3.0096,1.9943-.5715-2.2517-7.4642-6.2539-14.5126-11.5665-19.519-1.8698-1.6407-4.0887-3.2697-6.0345-4.8669-1.108-.9535-1.9884-1.5336-2.7414-2.6923-.9795-1.9955-.7392-3.1784-2.8893-3.9469.0226-.021.1772-.0289.442-.0314,2.8511.235,7.4156-1.0709,9.602.2479l.0339.0227ZM220.6852,136.0501c.3551-.8938-1.178-3.6261-1.9095-4.1725-.387-.319-.7612-.1951-.6556.4526.1371.9885,1.6125,4.2701,2.5495,3.7401l.0156-.0202Z" style="fill:#ECE6D7;"/><path d="M78.9992,36.6709c6.8757,6.7841,15.7367,15.4757,15.7008,26.5996-.0868,1.1852-.1815,2.7307-1.3161,2.8064-2.8621-.3838-7.6979-4.5955-10.5021-6.0684-.3985-.216-.7868-.3837-1.2162-.4156-.9617-.0726-2.0884.6159-3.2816.5831-2.6196-.2714-5.5532-1.8166-8.2479-2.6408-11.225-3.1247-22.7155-3.6009-34.1858-1.6921-4.4807.7845-9.2058,1.9877-13.5456,3.743-1.9031.7562-2.4227,1.8995-.2917,2.7215,1.9125.7744,4.6911.925,6.5079,1.287.4354.0735,1.533.5733.5517.858-.6518.1996-1.9991.0263-2.8255.2357-1.4913.3768-2.3117,2.084-3.3494,3.2478-1.801,2.007-3.133,4.2664-5.0526,6.2675-.7305.7731-1.5684,1.5612-2.0406,2.5619-.7261,1.5684.2754,1.9909,1.619,1.5357,4.2853-1.3641,8.4654-3.2747,12.7518-4.6254,19.9937-6.091,42.7104-6.5118,62.0921,2.3147,1.0964.4905,3.062,1.5428,2.2035,3.0342-2.0905,2.2012-10.0819-3.5935-13.3318-3.5798-2.5593-.3658-4.8846.0128-7.4319-.0102-18.6291-.8354-32.5957-5.8088-50.2958,3.7157-4.1341,2.3391-8.8252,4.6554-12.6908,7.4614-1.5329,1.0769-2.6104,3.0155-3.1445,4.9134-.1621.499-.2953,1.0196-.5364,1.4547-1.1092,1.828-3.8682,1.3647-5.6275.9711-4.529-1.3905,2.5071-6.5352,3.0435-9.0239.5308-1.2123.5566-2.5889,1.4539-3.5134,3.8164-4.2708,11.1176-12.1344,13.5332-14.9893.2827-.4397.2518-.9027-.2961-1.2667-1.0806-.6878-2.8512-.3203-4.1003-.045-2.3157.5278-4.0428,1.49-5.6991,2.2741-1.3614.6649-2.747,1.0888-4.1168,1.7796-1.0676.4126-3.0603,2.1666-3.8832,1.0149-1.0203-6.8882,16.3868-17.4649,21.9082-18.9341.4004-.1362.7382-.2807,1.0397-.571.4231-.3986.4255-.8273.8178-1.003,3.7301-.2511,9.9955.0064,14.3251-.0716,4.442-.0217,8.5361-.2055,12.8941-.083,3.9495.117,7.5886.0385,11.7783.1876,1.8319.1701,3.6469-.1371,5.0705,1.2065.6889.6134,1.4145,1.3679,2.2434,1.808,3.2837,1.6611,8.0966,3.4665,11.6838,4.6455,2.4244.7899,3.811.6621,2.013-2.125-7.227-11.5712-15.2823-19.3615-27.0293-24.7675-1.0499-.5103-1.5539-.94-2.59-1.9121-2.9328-2.7117-7.7383-7.1099-10.395-9.5639-.5371-.4872-1.3028-1.1065-1.3381-1.5301-.0782-1.1296,1.5416-1.0287,2.3233-.7954,3.8461,1.3515,7.8612,2.4395,11.4738,4.4495,7.3113,4.1859,15.6129,10.1617,21.2989,15.5165l.0342.0331Z" style="fill:#ECE6D7;"/><path d="M64.609,8.6413c.4204.8012,1.1787,1.2373,2.0502,1.7078,3.3699,1.8102,7.9628,3.7021,11.6297,5.3936,14.1178,6.8398,25.1898,21.2118,30.805,37.3179.3502,1.1839.6,2.4745.7449,3.7339.0994.6895.2086,2.0052.8083,2.1179.9318.1082,2.0604-1.6723,2.8169-2.7477,4.2549-6.4355,7.8204-12.3007,14.0577-16.8314,8.1835-5.7144,20.001-10.8465,30.3816-14.1585,1.2658-.3619,2.3919-.6747,3.706-.9091.4732-.0756.9919-.125,1.4416-.0589.1995.0337.3362.0964.3878.1876.1108.1807-.1465.4802-.6359.799-.3175.2102-.7232.4242-1.1159.6337-4.4085,2.3499-8.8925,4.5356-13.2442,6.9938-2.6596,1.4979-5.3021,3.0711-7.9504,4.5812-5.1722,2.989-10.8255,5.947-15.3935,10.1529-4.1133,3.9098-8.4021,9.3502-11.0088,14.6431-.8409,1.8342-1.4094,2.9983-.4267,4.763.6691,1.3185.3611,3.3693,1.6731,4.083.4797.2798,1.0799.4146,1.5671.6812.5938.3085.9103.7424.7297,1.4951-.1165.5556-.4171,1.1931-.4842,1.7637-.2215,1.5625,1.0248,2.459,1.863,3.5111,1.211,1.5675,2.1693,3.9377,1.7541,5.8784-.6495,2.8289-4.2041,3.4578-7.037.7083-.6953-.6403-1.4489-1.5893-2.3043-1.8235-.8228-.2431-1.5921.3312-2.3266.7176-2.6541,1.5099-6.7296.819-7.6717-1.9757-.5446-1.5926.0974-3.6376,1.3944-4.5122,1.7291-1.2361,4.4971-.3244,5.9278-.0022.305.0837.7646.1138.8502-.2148.0414-.5773-.4197-1.1505-.7348-1.6293-1.1263-1.7309-3.5639-3.0912-3.1707-5.1094.258-1.2211,1.5123-2.3026,1.9126-3.528.2424-.7152.1471-1.4666.0221-2.2131-.3825-2.2591-1.2648-6.3235-1.9023-8.9223-.5118-2.3478-1.1677-3.5939-2.118-5.4784-.7496-1.5181-1.4977-3.3517-2.1768-4.9317-3.1969-7.8864-7.8877-14.0801-13.7631-19.3207-7.9785-7.1256-17.1134-10.7955-26.1438-15.9176-2.2791-1.0359-2.7624.2938-.5071,1.4978.896.5434,1.4653,1.4264,2.15,2.2235.5144.6314,1.3914,1.484,1.4403,1.8595-.1408.5367-1.1201-.1728-1.4993-.3171-.8918-.4439-2.1462-1.0683-3.572-1.7779-4.5714-2.2678-10.3413-5.1599-12.6835-6.3067-1.0158-.4757-2.1711-.2682-3.2143-.7823-1.0083-.4491-1.6292-1.462-2.5948-1.9716-2.613-1.2241-6.7033-1.2336-10.768-1.2646-1.358.0183-2.6252.0808-3.6605.1652-.7807.0665-1.4588.0201-1.6567-.3333-.0629-.1115-.0752-.2369-.0461-.3718,4.8729-7.485,28.3515,2.0011,35.5817,3.6376,1.7134.2393,3.1577.3408,4.0947,2.1301l.0204.0326Z" style="fill:#ECE6D7;"/><path d="M114.2781,152.9562c.4259.742.9175,1.4399,1.2605,2.2417.4041.9396.5789,1.9624.6829,3.0124.3007,3.2539-.3855,6.9279-.6145,10.3799-.1131,1.6254-.1282,3.2124-.1509,4.8481.0103,1.8315-.1439,3.8606.17,5.5054.2517,1.1729.7004,2.424.3853,3.6241-.2531.9856-.5576,1.9422-.4578,2.9859.1668,3.36,1.1585,9.5621,1.8027,13.6729,1.0458,6.7433,2.3289,15.9005,3.9082,23.2204.2367.9353.3601,1.8156.7654,2.6397.283.4832.8053.9206.926,1.4632.1462.6341-.1608,1.2355-.3129,1.8476-.206.7302-.2295,1.4827-.0824,2.2674.3179,2.0004,1.6523,3.4248,2.5642,5.0744.6885,1.2593.8759,2.7921,1.7886,4.0223.8126,1.2969,3.6949,2.8755,1.9901,4.5628-1.2525.8029-3.0079-.2469-4.2342-.9053-.9215-.5523-1.5922-1.2439-2.0859-2.2558-1.4783-2.9894-2.7657-9.4264-3.7383-12.0849-.1882-.6469-.9516-1.76-1.5329-1.1395-.6512.8756-.0793,2.819-1.2246,3.3758-.5576.3456-1.3166.3665-1.7897-.1595-.5237-.4882-.6782-2.067-.8447-3.2532-.0199-.9451-1.0234-5.6088.2512-5.4983,1.5493.3939,1.6799,3.1444,3.2759,3.4221.459.0568.5979-.4281.5025-.8831-.5105-2.8924-2.4499-13.6787-3.3925-18.9517-.2971-1.6708-.6097-3.0706-.5956-4.6018-.1125-5.9817-.4196-12.2023-1.5345-18.0501-.6344-3.4769-.4347-6.6586-.7423-10.27-.4962-7.5442-1.7074-16.2667-.0586-23.6991.2872-1.0305,1.018-2.8677,1.5637-2.2476.2869.3954.3356,1.6859.5238,2.7591.1692,1.0763.4637,2.1257,1.0049,3.0286l.0263.0462Z" style="fill:#ECE6D7;"/><path d="M181.0952,37.894c7.6967-.2084,16.1155-.3205,23.8563.3691,4.9929.452,12.0303,1.3107,16.2364,3.0622.825.3384,1.9703,1.2736,2.0757,2.1739.0595.8274-1.0265.5692-1.6101.3696-1.4288-.5073-2.8301-1.2414-4.2914-1.7572-1.2794-.4646-2.5957-.7471-3.9033-.9742-11.3125-1.8051-25.4821-2.4581-36.457.8353-1.8742.615-4.3441,1.4828-6.3354,1.8209-1.0243.1633-1.9086.2417-2.5804-.0707-.8429-.3676-1.1102-1.4691-.6592-2.4823.8438-1.6813,2.5128-2.2845,4.0388-3.1717,2.1033-1.1016,4.5179-2.174,6.3691-3.1761,2.9837-1.4998,5.2602-4.2608,8.3456-5.5676.9425-.4181,2.053-.6314,2.9187-1.1962,1.3576-.952.244-1.8781-.8272-1.9626-4.5888-.3123-9.233.7941-13.8005-.2884-4.7506-1.0126-3.4694-2.9889.3398-4.1484,1.3003-.4082,2.9541-.7027,4.3316-.854,8.3575-.7911,17.5665.1557,25.8548,1.6381.8882.1252,2.4511.5269,2.467,1.6765-.0057.9079-1.1215,1.4122-1.8739,1.5875-6.0573,1.3384-12.3811,3.2128-17.9774,6.1064-2.1828,1.1478-4.6939,2.5986-6.2756,4.6281-.3275.4193-.6573,1.2104-.2639,1.369l.0212.0128Z" style="fill:#ECE6D7;"/><path d="M153.6724,39.1334c.0497.4061-.5683.8758-.9083,1.1908-.7515.638-1.567,1.2412-2.3683,1.8-3.1165,2.2171-6.9359,3.6641-10.1563,5.7508-1.3326.8133-2.2113,1.9607-3.2837,3.1191-2.9776,3.1213-6.8652,4.8755-9.9223,7.9795-1.3497,1.1527-4.4931,4.8964-6.0754,3.5508-.7098-1.7487,5.1126-6.2477,6.3819-7.4817.4731-.4182.8514-.8286,1.1481-1.3103.6101-.9633.8697-2.1386,1.8226-2.7061,2.9841-1.9173,8.4958-5.1489,12.0505-7.32,3.353-2.0043,7.0121-4.2335,10.653-4.7449.3539-.0261.5896.0218.6517.1569l.0064.0153Z" style="fill:#ECE6D7;"/><path d="M111.7196,218.7524c-2.2196,1.3256-4.2743-20.6202-4.8047-23.1862-.0944-.6793-.1335-1.717.4346-1.9767,1.4672-.3701,2.784,1.7317,3.4167,3.1211,1.8029,4.462,2.0408,11.1025,2.3231,15.8654.065,1.3535-.22,2.6686-.6003,3.9458-.2397.88-.449,1.8641-.7497,2.2091l-.0196.0215Z" style="fill:#ECE6D7;"/><path d="M106.988,186.8365c-.4424.0707-1.0039-.6967-1.2885-1.1638-.8701-1.3918-1.2502-2.7868-1.0413-4.4491.1422-1.2659.6064-2.4458.4821-3.721-.1299-1.891-.4373-6.2406-.6766-9.6623-.0787-1.1213-.1503-2.1421-.2064-2.9423-.0521-1.0712-.2345-1.7095.4475-1.8938,3.1196-.1244,3.5019,4.6932,3.6858,7.4369.1971,2.8517.3388,7.0258.3231,9.9618-.005.9553-.0442,1.8841-.2326,2.8197-.1523.7778-.4108,1.604-.6591,2.3879-.1451.4488-.413,1.158-.8072,1.2217l-.0268.0042Z" style="fill:#ECE6D7;"/><path d="M76.18,83.6253c-.0034.2499-.4544.601-.69.8238-2.4119,2.0642-5.172,3.6893-7.9049,5.1531-.3311.1407-.9845.5968-1.239.464.0075-.2317.4358-.6078.6565-.8409,2.2974-2.2177,5.0909-4.1048,7.8995-5.2992.3646-.1219.9812-.4772,1.2734-.3119l.0045.0111Z" style="fill:#ECE6D7;"/><path d="M118.4211,239.0955c-.2068.314-.8957-.0551-1.2095-.2418-.8395-.5046-1.5756-1.1609-1.7268-2.0236-.173-.824.5397-1.4626,1.2044-1.4274.9515-.1078,2.0801,2.8302,1.7498,3.6658l-.0179.027Z" style="fill:#ECE6D7;"/><path d="M83.9531,78.9663c.17.2607-.0629.6324-.2264.8575-.7201.9718-2.2706,1.4875-3.4921,1.8473-.2579.0553-.6604.2261-.8579.0486-.1062-1.0338,3.7919-3.4139,4.5584-2.7751l.018.0216Z" style="fill:#ECE6D7;"/></g></g></svg></div>
-    <div class="s"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 231.8457 244.6145"><g><g><path d="M81.3474,227.34c-5.1073,4.0215-8.5389,9.9714-13.1642,14.7348-1.0657,1.4241-4.3861,2.8405-3.9331-.3089.3993-2.2645,1.9179-4.0327,3.1298-5.7841,2.5367-3.78,3.7289-9.0085,5.9137-13.0621,5.6328-10.7557,14.1604-28.3599,17.5125-42.2882,1.2124-11.2673,4.2771-23.2672,5.424-34.6279.0068-15.6795.9589-31.6459.297-47.463.1414-2.0386-.9742-3.4859-2.7452-3.5433-1.9171-.3559-3.7336-.9745-5.7794-.8491-4.2815.1247-7.1554,4.1792-10.5565,6.5675-16.3493,9.7947-25.1265,29.4765-35.5248,45.7542-2.3094,4.4263-6.556,17.1097-6.2061,3.4115-.1377-2.1585,1.1599-4.5375,1.0984-6.6958-.4487-.854-1.232.6781-1.7708,1.2544-1.9345,2.6702-3.9802,5.3532-5.554,8.3134-2.2024,3.3945-3.305,8.3855-6.5129,10.6739-1.592.6444-2.3539-1.4275-2.2196-2.9618.0772-7.3464,4.1663-13.8679,4.9237-20.9903.0739-2.373,2.109-3.4303,3.0523-5.3197,1.7331-3.1149,3.3616-7.2474,5.26-10.6784,6.1457-9.943,13.2602-21.4119,22.4465-27.5929,1.2343-2.0894,2.3944-2.7185,4.4464-3.0963,1.4419-.6617,4.6859-1.8322,2.7179.6155-9.7337,3.3093-37.7837,41.946-35.6586,53.8872.663,1.3455,1.6403-.2104,2.2468-1.0358,1.0705-1.4638,2.5507-3.1511,3.5326-4.5427.9471-1.0527.8862-2.6226,1.5804-3.8019,1.5751-1.5329,3.289-3.0182,4.5531-4.9245,1.8014-2.6145,3.6104-1.8324,6.0401-1.4219,1.0177-.0385,1.6987-.9859,2.27-1.8746,2.6637-4.135,5.5527-8.0466,8.4977-11.9297,5.9336-8.3121,12.1753-13.5829,20.2402-19.9189,1.8287-1.3852,2.8924-3.7704,5.0499-4.3998,3.1675-.9788,6.5595-3.0813,9.8693-2.8115,2.5468.1314,3.779,2.5565,6.1277,3.2635,3.8746.5063,3.1891,5.9099,3.9587,9.1921.4685,20.9303,1.1746,42.4566-1.271,63.2688-.5202,3.8606-1.1917,7.9204-1.3522,11.6027-.127,1.5481.6433,3.1419.073,4.5653-3.2415,3.3482-3.1979,8.8578-4.8804,13.1949-2.0342,6.3808-4.5339,12.7883-7.0498,18.2904-1.3515,3.3738-3.7263,7.2422-5.1205,10.9541-.0953.4612.0543.6149.4577.3939,3.0461-2.1439,5.2679-5.6882,7.0665-9.1983,1.9104-3.7393,3.443-8.026,4.3393-12.2508.6673-2.0335.4564-5.5985,1.6906-6.9716.8694,4.2613-.1432,11.6987-.2904,15.7179.0712,8.9813-8.4892,11.3414-14.189,14.6629l-.0374.0248Z" style="fill:#ECE6D7;"/><path d="M204.0003,95.949c1.3563,1.2008,2.7973,2.2242,4.4842,2.7804,1.43.4487,3.2534,1.7296,4.442,1.2458.6586-.6713-.3317-1.7621-.8201-2.2111-1.3294-1.2249-2.9971-1.4203-4.2207-2.634-1.0334-1.058-1.4025-2.4136-2.4324-3.2383-4.9801-4.1499-20.763-10.9152-31.2886-14.8973-3.7321-1.3849-6.424-2.4194-10.0461-3.3555-8.5551-1.7944-24.483-6.0026-32.6355-2.7842-1.021.3875-1.9807.8181-2.9936.9725-1.6078.2108-1.4133-.8188-.3872-1.6671,12.0877-9.0438,27.3428-12.2433,41.3078-16.1388,1.5062-.519,1.9954-1.6727,3.464-2.0644,2.7044-.4558,5.5069-.0543,8.1952-.6039,7.365-1.1982,15.7534-4.0315,23.1283-4.4525,7.5484-.1391,16.5136,1.3603,23.6733,3.2577,1.3823.5108,3.4768.9276,3.9746,2.4869.0259,1.1362-5.5755.1849-6.3904.0562-2.1946-.4446-4.1905-1.8227-6.3537-2.2532-5.6252-.886-15.5216-2.3005-21.1395.1123-2.9382,1.99-4.6062,2.01-7.9223,1.8037-2.6143-.1396-5.0738.1286-7.6222.5831-5.5015.9548-11.1285,2.2712-16.5465,3.7221-8.8149,2.4888-17.3883,5.8707-25.9041,9.4301-1.5051.8303-1.8545,2.199.1007,2.3809,1.3324.0461,2.6666-.0115,4.0963.1283,19.8138,1.781,34.7476,9.3129,53.3227,15.9049,2.7625.8594,5.0057,1.2407,7.8389,2.7615,1.2909.6875,2.5343,1.5479,3.6572,2.5612,1.6917,1.4468,2.7642,3.1085,4.5119,4.1006,1.5067.8279,3.7716.7618,4.3083,2.9817.3155,1.0517.5191,2.2483.9725,3.2573,1.145,2.6383,2.9298,4.006,4.434,6.1846,2.3462,3.4897,2.81,8.5504,3.7295,12.7513.369,1.2973.8125,4.4751-.8977,3.0568-.7586-.7663-1.1871-2.0411-1.642-3.0756-.9518-2.4325-2.6793-4.482-4.1626-6.6036-2.5728-3.329-4.7948-6.9632-8.0944-9.3485-2.8077-1.9693-6.1163-3.8921-9.4569-4.1804-1.637.1428-1.159,1.5143-.08,2.427,2.2326,1.9897,5.4305,4.0025,7.847,6.1024,6.3703,6.0814,8.8147,15.8797,11.9259,24.3231.3594,1.0515.6989,2.0981.9852,3.1709.5824,2.0564,1.0602,4.4061-1.4529,4.6216-3.4074.5236-3.885-.8726-5.0508-4.014-4.2128-7.7368-10.8473-14.4522-17.0564-20.4405-17.6832-16.6478-36.1706-27.91-59.2101-30.1165-.8165-.1291-2.0931-.1205-2.4844.5266-1.0882,1.6166,2.3577,5.208,3.2014,6.6185,1.2807,1.8434,3.3027,2.6342,4.3885,4.6563,2.962,5.434,6.3956,11.6471,8.1048,17.7891.9688,2.8453-1.4165,3.5433-3.2531,2.3314-1.8844-1.4938-2.9132-4.3843-4.3027-6.4172-4.5201-6.6236-15.2885-12.7752-22.1312-15.1516-7.6465-1.7042-9.0281,3.1869-9.1197,10.9337-.4195,10.0443,3.2854,16.3517,2.6152,25.7439-.0613,1.1036-.1818,2.1852-.1139,3.197.1957,1.6389.2896,3.2954-.5925,4.639-.9048,1.7576-4.0977,2.6145-4.446-.047-.2134-1.9179.5145-3.8033.5739-5.7288.1659-3.1172.0028-6.2974-.1305-9.4316-.6482-9.5392-.1999-19.136-.5589-28.718.6091-4.5046,4.6837-4.0243,7.7552-3.6134,3.5002.4484,6.8835,1.0625,10.283,1.8909,2.106.3553,3.2651,2.4192,4.8919,3.7501,2.0003,1.5626,4.3628,2.6276,6.7299,3.1906,1.8048.345.6527-1.5654.0857-2.4016-.9251-1.4534-1.9993-2.9314-3.015-4.2094-2.4563-2.9687-4.4761-6.9872-7.7384-8.8686-1.1144-.5549-2.7887-1.4615-2.1097-3.1356.4172-1.0721,1.5189-1.2432,2.4448-.986,1.441.3538,3.1017.8152,4.6444.9755,10.9489,1.3215,22.1393,2.239,32.341,7.3709,3.0748,1.4105,6.0854,3.0371,9.2064,4.2996,1.8913.7679,3.6201.5842,5.118,1.9449,2.3144,2.1056,5.7195,5.6952,8.3115,8.1033,6.1539,5.4621,13.9089,11.2033,19.6476,17.2476,1.6873,1.6292,2.8982,3.7516,4.2194,5.7714,1.1058,1.6466,3.0126,3.0096,1.9943-.5715-2.2517-7.4642-6.2539-14.5126-11.5665-19.519-1.8698-1.6407-4.0887-3.2697-6.0345-4.8669-1.108-.9535-1.9884-1.5336-2.7414-2.6923-.9795-1.9955-.7392-3.1784-2.8893-3.9469.0226-.021.1772-.0289.442-.0314,2.8511.235,7.4156-1.0709,9.602.2479l.0339.0227ZM220.6852,136.0501c.3551-.8938-1.178-3.6261-1.9095-4.1725-.387-.319-.7612-.1951-.6556.4526.1371.9885,1.6125,4.2701,2.5495,3.7401l.0156-.0202Z" style="fill:#ECE6D7;"/><path d="M78.9992,36.6709c6.8757,6.7841,15.7367,15.4757,15.7008,26.5996-.0868,1.1852-.1815,2.7307-1.3161,2.8064-2.8621-.3838-7.6979-4.5955-10.5021-6.0684-.3985-.216-.7868-.3837-1.2162-.4156-.9617-.0726-2.0884.6159-3.2816.5831-2.6196-.2714-5.5532-1.8166-8.2479-2.6408-11.225-3.1247-22.7155-3.6009-34.1858-1.6921-4.4807.7845-9.2058,1.9877-13.5456,3.743-1.9031.7562-2.4227,1.8995-.2917,2.7215,1.9125.7744,4.6911.925,6.5079,1.287.4354.0735,1.533.5733.5517.858-.6518.1996-1.9991.0263-2.8255.2357-1.4913.3768-2.3117,2.084-3.3494,3.2478-1.801,2.007-3.133,4.2664-5.0526,6.2675-.7305.7731-1.5684,1.5612-2.0406,2.5619-.7261,1.5684.2754,1.9909,1.619,1.5357,4.2853-1.3641,8.4654-3.2747,12.7518-4.6254,19.9937-6.091,42.7104-6.5118,62.0921,2.3147,1.0964.4905,3.062,1.5428,2.2035,3.0342-2.0905,2.2012-10.0819-3.5935-13.3318-3.5798-2.5593-.3658-4.8846.0128-7.4319-.0102-18.6291-.8354-32.5957-5.8088-50.2958,3.7157-4.1341,2.3391-8.8252,4.6554-12.6908,7.4614-1.5329,1.0769-2.6104,3.0155-3.1445,4.9134-.1621.499-.2953,1.0196-.5364,1.4547-1.1092,1.828-3.8682,1.3647-5.6275.9711-4.529-1.3905,2.5071-6.5352,3.0435-9.0239.5308-1.2123.5566-2.5889,1.4539-3.5134,3.8164-4.2708,11.1176-12.1344,13.5332-14.9893.2827-.4397.2518-.9027-.2961-1.2667-1.0806-.6878-2.8512-.3203-4.1003-.045-2.3157.5278-4.0428,1.49-5.6991,2.2741-1.3614.6649-2.747,1.0888-4.1168,1.7796-1.0676.4126-3.0603,2.1666-3.8832,1.0149-1.0203-6.8882,16.3868-17.4649,21.9082-18.9341.4004-.1362.7382-.2807,1.0397-.571.4231-.3986.4255-.8273.8178-1.003,3.7301-.2511,9.9955.0064,14.3251-.0716,4.442-.0217,8.5361-.2055,12.8941-.083,3.9495.117,7.5886.0385,11.7783.1876,1.8319.1701,3.6469-.1371,5.0705,1.2065.6889.6134,1.4145,1.3679,2.2434,1.808,3.2837,1.6611,8.0966,3.4665,11.6838,4.6455,2.4244.7899,3.811.6621,2.013-2.125-7.227-11.5712-15.2823-19.3615-27.0293-24.7675-1.0499-.5103-1.5539-.94-2.59-1.9121-2.9328-2.7117-7.7383-7.1099-10.395-9.5639-.5371-.4872-1.3028-1.1065-1.3381-1.5301-.0782-1.1296,1.5416-1.0287,2.3233-.7954,3.8461,1.3515,7.8612,2.4395,11.4738,4.4495,7.3113,4.1859,15.6129,10.1617,21.2989,15.5165l.0342.0331Z" style="fill:#ECE6D7;"/><path d="M64.609,8.6413c.4204.8012,1.1787,1.2373,2.0502,1.7078,3.3699,1.8102,7.9628,3.7021,11.6297,5.3936,14.1178,6.8398,25.1898,21.2118,30.805,37.3179.3502,1.1839.6,2.4745.7449,3.7339.0994.6895.2086,2.0052.8083,2.1179.9318.1082,2.0604-1.6723,2.8169-2.7477,4.2549-6.4355,7.8204-12.3007,14.0577-16.8314,8.1835-5.7144,20.001-10.8465,30.3816-14.1585,1.2658-.3619,2.3919-.6747,3.706-.9091.4732-.0756.9919-.125,1.4416-.0589.1995.0337.3362.0964.3878.1876.1108.1807-.1465.4802-.6359.799-.3175.2102-.7232.4242-1.1159.6337-4.4085,2.3499-8.8925,4.5356-13.2442,6.9938-2.6596,1.4979-5.3021,3.0711-7.9504,4.5812-5.1722,2.989-10.8255,5.947-15.3935,10.1529-4.1133,3.9098-8.4021,9.3502-11.0088,14.6431-.8409,1.8342-1.4094,2.9983-.4267,4.763.6691,1.3185.3611,3.3693,1.6731,4.083.4797.2798,1.0799.4146,1.5671.6812.5938.3085.9103.7424.7297,1.4951-.1165.5556-.4171,1.1931-.4842,1.7637-.2215,1.5625,1.0248,2.459,1.863,3.5111,1.211,1.5675,2.1693,3.9377,1.7541,5.8784-.6495,2.8289-4.2041,3.4578-7.037.7083-.6953-.6403-1.4489-1.5893-2.3043-1.8235-.8228-.2431-1.5921.3312-2.3266.7176-2.6541,1.5099-6.7296.819-7.6717-1.9757-.5446-1.5926.0974-3.6376,1.3944-4.5122,1.7291-1.2361,4.4971-.3244,5.9278-.0022.305.0837.7646.1138.8502-.2148.0414-.5773-.4197-1.1505-.7348-1.6293-1.1263-1.7309-3.5639-3.0912-3.1707-5.1094.258-1.2211,1.5123-2.3026,1.9126-3.528.2424-.7152.1471-1.4666.0221-2.2131-.3825-2.2591-1.2648-6.3235-1.9023-8.9223-.5118-2.3478-1.1677-3.5939-2.118-5.4784-.7496-1.5181-1.4977-3.3517-2.1768-4.9317-3.1969-7.8864-7.8877-14.0801-13.7631-19.3207-7.9785-7.1256-17.1134-10.7955-26.1438-15.9176-2.2791-1.0359-2.7624.2938-.5071,1.4978.896.5434,1.4653,1.4264,2.15,2.2235.5144.6314,1.3914,1.484,1.4403,1.8595-.1408.5367-1.1201-.1728-1.4993-.3171-.8918-.4439-2.1462-1.0683-3.572-1.7779-4.5714-2.2678-10.3413-5.1599-12.6835-6.3067-1.0158-.4757-2.1711-.2682-3.2143-.7823-1.0083-.4491-1.6292-1.462-2.5948-1.9716-2.613-1.2241-6.7033-1.2336-10.768-1.2646-1.358.0183-2.6252.0808-3.6605.1652-.7807.0665-1.4588.0201-1.6567-.3333-.0629-.1115-.0752-.2369-.0461-.3718,4.8729-7.485,28.3515,2.0011,35.5817,3.6376,1.7134.2393,3.1577.3408,4.0947,2.1301l.0204.0326Z" style="fill:#ECE6D7;"/><path d="M114.2781,152.9562c.4259.742.9175,1.4399,1.2605,2.2417.4041.9396.5789,1.9624.6829,3.0124.3007,3.2539-.3855,6.9279-.6145,10.3799-.1131,1.6254-.1282,3.2124-.1509,4.8481.0103,1.8315-.1439,3.8606.17,5.5054.2517,1.1729.7004,2.424.3853,3.6241-.2531.9856-.5576,1.9422-.4578,2.9859.1668,3.36,1.1585,9.5621,1.8027,13.6729,1.0458,6.7433,2.3289,15.9005,3.9082,23.2204.2367.9353.3601,1.8156.7654,2.6397.283.4832.8053.9206.926,1.4632.1462.6341-.1608,1.2355-.3129,1.8476-.206.7302-.2295,1.4827-.0824,2.2674.3179,2.0004,1.6523,3.4248,2.5642,5.0744.6885,1.2593.8759,2.7921,1.7886,4.0223.8126,1.2969,3.6949,2.8755,1.9901,4.5628-1.2525.8029-3.0079-.2469-4.2342-.9053-.9215-.5523-1.5922-1.2439-2.0859-2.2558-1.4783-2.9894-2.7657-9.4264-3.7383-12.0849-.1882-.6469-.9516-1.76-1.5329-1.1395-.6512.8756-.0793,2.819-1.2246,3.3758-.5576.3456-1.3166.3665-1.7897-.1595-.5237-.4882-.6782-2.067-.8447-3.2532-.0199-.9451-1.0234-5.6088.2512-5.4983,1.5493.3939,1.6799,3.1444,3.2759,3.4221.459.0568.5979-.4281.5025-.8831-.5105-2.8924-2.4499-13.6787-3.3925-18.9517-.2971-1.6708-.6097-3.0706-.5956-4.6018-.1125-5.9817-.4196-12.2023-1.5345-18.0501-.6344-3.4769-.4347-6.6586-.7423-10.27-.4962-7.5442-1.7074-16.2667-.0586-23.6991.2872-1.0305,1.018-2.8677,1.5637-2.2476.2869.3954.3356,1.6859.5238,2.7591.1692,1.0763.4637,2.1257,1.0049,3.0286l.0263.0462Z" style="fill:#ECE6D7;"/><path d="M181.0952,37.894c7.6967-.2084,16.1155-.3205,23.8563.3691,4.9929.452,12.0303,1.3107,16.2364,3.0622.825.3384,1.9703,1.2736,2.0757,2.1739.0595.8274-1.0265.5692-1.6101.3696-1.4288-.5073-2.8301-1.2414-4.2914-1.7572-1.2794-.4646-2.5957-.7471-3.9033-.9742-11.3125-1.8051-25.4821-2.4581-36.457.8353-1.8742.615-4.3441,1.4828-6.3354,1.8209-1.0243.1633-1.9086.2417-2.5804-.0707-.8429-.3676-1.1102-1.4691-.6592-2.4823.8438-1.6813,2.5128-2.2845,4.0388-3.1717,2.1033-1.1016,4.5179-2.174,6.3691-3.1761,2.9837-1.4998,5.2602-4.2608,8.3456-5.5676.9425-.4181,2.053-.6314,2.9187-1.1962,1.3576-.952.244-1.8781-.8272-1.9626-4.5888-.3123-9.233.7941-13.8005-.2884-4.7506-1.0126-3.4694-2.9889.3398-4.1484,1.3003-.4082,2.9541-.7027,4.3316-.854,8.3575-.7911,17.5665.1557,25.8548,1.6381.8882.1252,2.4511.5269,2.467,1.6765-.0057.9079-1.1215,1.4122-1.8739,1.5875-6.0573,1.3384-12.3811,3.2128-17.9774,6.1064-2.1828,1.1478-4.6939,2.5986-6.2756,4.6281-.3275.4193-.6573,1.2104-.2639,1.369l.0212.0128Z" style="fill:#ECE6D7;"/><path d="M153.6724,39.1334c.0497.4061-.5683.8758-.9083,1.1908-.7515.638-1.567,1.2412-2.3683,1.8-3.1165,2.2171-6.9359,3.6641-10.1563,5.7508-1.3326.8133-2.2113,1.9607-3.2837,3.1191-2.9776,3.1213-6.8652,4.8755-9.9223,7.9795-1.3497,1.1527-4.4931,4.8964-6.0754,3.5508-.7098-1.7487,5.1126-6.2477,6.3819-7.4817.4731-.4182.8514-.8286,1.1481-1.3103.6101-.9633.8697-2.1386,1.8226-2.7061,2.9841-1.9173,8.4958-5.1489,12.0505-7.32,3.353-2.0043,7.0121-4.2335,10.653-4.7449.3539-.0261.5896.0218.6517.1569l.0064.0153Z" style="fill:#ECE6D7;"/><path d="M111.7196,218.7524c-2.2196,1.3256-4.2743-20.6202-4.8047-23.1862-.0944-.6793-.1335-1.717.4346-1.9767,1.4672-.3701,2.784,1.7317,3.4167,3.1211,1.8029,4.462,2.0408,11.1025,2.3231,15.8654.065,1.3535-.22,2.6686-.6003,3.9458-.2397.88-.449,1.8641-.7497,2.2091l-.0196.0215Z" style="fill:#ECE6D7;"/><path d="M106.988,186.8365c-.4424.0707-1.0039-.6967-1.2885-1.1638-.8701-1.3918-1.2502-2.7868-1.0413-4.4491.1422-1.2659.6064-2.4458.4821-3.721-.1299-1.891-.4373-6.2406-.6766-9.6623-.0787-1.1213-.1503-2.1421-.2064-2.9423-.0521-1.0712-.2345-1.7095.4475-1.8938,3.1196-.1244,3.5019,4.6932,3.6858,7.4369.1971,2.8517.3388,7.0258.3231,9.9618-.005.9553-.0442,1.8841-.2326,2.8197-.1523.7778-.4108,1.604-.6591,2.3879-.1451.4488-.413,1.158-.8072,1.2217l-.0268.0042Z" style="fill:#ECE6D7;"/><path d="M76.18,83.6253c-.0034.2499-.4544.601-.69.8238-2.4119,2.0642-5.172,3.6893-7.9049,5.1531-.3311.1407-.9845.5968-1.239.464.0075-.2317.4358-.6078.6565-.8409,2.2974-2.2177,5.0909-4.1048,7.8995-5.2992.3646-.1219.9812-.4772,1.2734-.3119l.0045.0111Z" style="fill:#ECE6D7;"/><path d="M118.4211,239.0955c-.2068.314-.8957-.0551-1.2095-.2418-.8395-.5046-1.5756-1.1609-1.7268-2.0236-.173-.824.5397-1.4626,1.2044-1.4274.9515-.1078,2.0801,2.8302,1.7498,3.6658l-.0179.027Z" style="fill:#ECE6D7;"/><path d="M83.9531,78.9663c.17.2607-.0629.6324-.2264.8575-.7201.9718-2.2706,1.4875-3.4921,1.8473-.2579.0553-.6604.2261-.8579.0486-.1062-1.0338,3.7919-3.4139,4.5584-2.7751l.018.0216Z" style="fill:#ECE6D7;"/></g></g></svg></div>
-  </div>
-  <div class="band">
-    <div class="logo"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 168.8655 41.9885"><g><g><path d="M8.7,5.2v23.4h6.4V5.2h-6.4ZM0,0v4.7h23.5V0H0Z" style="fill:#ECE6D7;"/><path d="M26.4.3l.2,28.2h5.8l-.2-28.2h-5.8Z" style="fill:#ECE6D7;"/><path d="M32.7,10.9h2.8c2.8,0,3.9-.4,3.9-.4.9-.3,1.9-.6,2.4-1.7.4-.8.5-1.9,0-2.8-.2-.3-.4-.6-1-.9-1.2-.7-2.3-.8-4.5-.8h-3.7V.3h3.7c4.2,0,5.3.4,6.1.7,1.3.6,2.1,1.4,2.3,1.6,1.8,1.8,2,4,2,4.6,0,1.3-.3,2.3-.3,2.5-.1.3-.7,1.7-2,2.9,0,0-1.2,1-3.8,1.8h-.3c-.2,0-.5.1-.7.2l8.6,14h-7l-8.4-13.7v-3.9l-.1-.1Z" style="fill:#ECE6D7;"/><path d="M64.1904.309l.2,20.8c0,.2.1,1.3-.6,2.1-1,1.1-2.5.9-2.6.9v4.4c.2,0,4.8.8,7.6-2.6,2-2.3,1.8-5.1,1.8-5.7l-.2-19.9h-6.3.1ZM57.6,21l-.2-20.8h-6.1l.2,19.8c0,.7,0,3.4,1.8,5.7,2.7,3.4,7,2.8,7.3,2.8v-4.4c-.1,0-1.4,0-2.3-1-.7-.9-.7-1.9-.7-2.1Z" style="fill:#ECE6D7;"/><path d="M88.2655.1056v28.0888h-6.1V.1056h6.1ZM100.5655,28.1944h-11.7v-4.7519h11.7v4.7519Z" style="fill:#ECE6D7;"/><path d="M109.2655.1056v28.0888h-6.1V.1056h6.1ZM109.8655.1056h10v4.7519h-10V.1056ZM109.8655,11.2989h7.5v4.6463h-7.5v-4.6463ZM119.9655,28.1944h-10.1v-4.8575h10.1v4.8575Z" style="fill:#ECE6D7;"/><path d="M139.8655,0c2.5,9.3981,5.1,18.7963,7.6,28.1944h-6.9l-1.5-5.9134h-7.3l1.1-4.5407c1.7,0,3.4,0,5-.1056l-2.6-11.4045-5.7,22.0698h-6.6c2.7-9.3981,5.3-18.6907,8-28.0888h8.8l.1-.2112Z" style="fill:#ECE6D7;"/><path d="M156.2655,0v28.0888h-6V0h6ZM156.6655,0h12.2v4.6463h-12.2V0ZM156.7655,11.0877h7.8v4.6463h-7.8v-4.6463Z" style="fill:#ECE6D7;"/><path d="M50.494,41.8557v-.2651h.835v-7.6909h-.623c-1.0078,0-1.9756.3979-1.9756,1.9624h-.2646v-2.2275h7.3193v2.2275h-.2656c0-1.5645-.8223-1.9624-1.6973-1.9624h-.9014v7.6909h.835v.2651h-3.2617Z" style="fill:#ECE6D7;"/><path d="M62.6453,41.9885c-1.9355,0-4.1631-1.2598-4.1631-4.2432s2.2275-4.2432,4.1631-4.2432c1.9492,0,4.1641,1.2593,4.1641,4.2432s-2.2148,4.2432-4.1641,4.2432ZM62.6453,33.7673c-1.6709,0-2.4795,1.1934-2.4795,3.978,0,2.771.8086,3.9775,2.4795,3.9775,1.6182,0,2.4795-1.2065,2.4795-3.9775,0-2.7847-.8613-3.978-2.4795-3.978Z" style="fill:#ECE6D7;"/><path d="M74.6238,37.427c1.7236.1592,2.7051.8223,2.7051,2.188,0,1.79-1.79,2.2407-3.7656,2.2407h-3.7129v-.2651h.8359v-7.6909h-.8359v-.2651h3.501c1.8164,0,3.3945.3315,3.3945,1.8696,0,1.1934-.9551,1.7236-2.1221,1.8564v.0664ZM72.2772,33.8996v3.4478h1.0742c1.2598,0,1.8291-.4907,1.8291-1.7505,0-1.2197-.543-1.6973-1.8291-1.6973h-1.0742ZM72.2772,37.6125v3.978h1.2861c1.4717,0,2.0947-.5303,2.0947-1.9893,0-1.4053-.6631-1.9888-2.1748-1.9888h-1.2061Z" style="fill:#ECE6D7;"/><path d="M82.2547,41.8557h-2.4531v-.2651h.9814l3.208-8.0884h.332l3.4609,8.0884h.8086v.2651h-3.4346v-.2651h1.0215l-.9814-2.3472h-3.1562l-.9277,2.3472h1.1406v.2651ZM85.0789,38.965l-1.498-3.5933-1.4189,3.5933h2.917Z" style="fill:#ECE6D7;"/><path d="M97.786,36.5783c-.0791-1.2598-.7422-2.811-2.6914-2.811-1.6973,0-2.5195,1.1934-2.5195,3.978,0,2.7578.8223,3.9775,2.4932,3.9644,1.498,0,2.5195-.7954,2.6777-2.2539h.2393c-.1064,1.5513-1.2334,2.5327-2.9834,2.5327-1.9629,0-4.1104-1.2598-4.1104-4.2432s2.1475-4.2432,4.2031-4.2432c1.3262,0,1.8027.5566,2.2412.5566.2783,0,.3975-.252.3975-.4243h.2383v2.9438h-.1855Z" style="fill:#ECE6D7;"/><path d="M108.0545,36.5783c-.0791-1.2598-.7422-2.811-2.6914-2.811-1.6973,0-2.5195,1.1934-2.5195,3.978,0,2.7578.8223,3.9775,2.4932,3.9644,1.498,0,2.5195-.7954,2.6777-2.2539h.2393c-.1064,1.5513-1.2334,2.5327-2.9834,2.5327-1.9629,0-4.1104-1.2598-4.1104-4.2432s2.1475-4.2432,4.2031-4.2432c1.3262,0,1.8027.5566,2.2412.5566.2783,0,.3975-.252.3975-.4243h.2383v2.9438h-.1855Z" style="fill:#ECE6D7;"/><path d="M115.5916,41.9885c-1.9355,0-4.1631-1.2598-4.1631-4.2432s2.2275-4.2432,4.1631-4.2432c1.9492,0,4.1641,1.2593,4.1641,4.2432s-2.2148,4.2432-4.1641,4.2432ZM115.5916,33.7673c-1.6709,0-2.4795,1.1934-2.4795,3.978,0,2.771.8086,3.9775,2.4795,3.9775,1.6182,0,2.4795-1.2065,2.4795-3.9775,0-2.7847-.8613-3.978-2.4795-3.978Z" style="fill:#ECE6D7;"/></g></g></svg></div>
-    <div class="tags"><span>Lorem ipsum</span><span>Dolor sit</span><span>Amet elit</span><span>Sed tempor</span></div>
+    <div class="shade"></div>
+    <div class="hero-copy">
+      <h1 class="hero-mark"><span class="sr">Tru Leaf Tobacco</span><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 168.8655 41.9885"><g><g><path d="M8.7,5.2v23.4h6.4V5.2h-6.4ZM0,0v4.7h23.5V0H0Z" style="fill:#ECE6D7;"/><path d="M26.4.3l.2,28.2h5.8l-.2-28.2h-5.8Z" style="fill:#ECE6D7;"/><path d="M32.7,10.9h2.8c2.8,0,3.9-.4,3.9-.4.9-.3,1.9-.6,2.4-1.7.4-.8.5-1.9,0-2.8-.2-.3-.4-.6-1-.9-1.2-.7-2.3-.8-4.5-.8h-3.7V.3h3.7c4.2,0,5.3.4,6.1.7,1.3.6,2.1,1.4,2.3,1.6,1.8,1.8,2,4,2,4.6,0,1.3-.3,2.3-.3,2.5-.1.3-.7,1.7-2,2.9,0,0-1.2,1-3.8,1.8h-.3c-.2,0-.5.1-.7.2l8.6,14h-7l-8.4-13.7v-3.9l-.1-.1Z" style="fill:#ECE6D7;"/><path d="M64.1904.309l.2,20.8c0,.2.1,1.3-.6,2.1-1,1.1-2.5.9-2.6.9v4.4c.2,0,4.8.8,7.6-2.6,2-2.3,1.8-5.1,1.8-5.7l-.2-19.9h-6.3.1ZM57.6,21l-.2-20.8h-6.1l.2,19.8c0,.7,0,3.4,1.8,5.7,2.7,3.4,7,2.8,7.3,2.8v-4.4c-.1,0-1.4,0-2.3-1-.7-.9-.7-1.9-.7-2.1Z" style="fill:#ECE6D7;"/><path d="M88.2655.1056v28.0888h-6.1V.1056h6.1ZM100.5655,28.1944h-11.7v-4.7519h11.7v4.7519Z" style="fill:#ECE6D7;"/><path d="M109.2655.1056v28.0888h-6.1V.1056h6.1ZM109.8655.1056h10v4.7519h-10V.1056ZM109.8655,11.2989h7.5v4.6463h-7.5v-4.6463ZM119.9655,28.1944h-10.1v-4.8575h10.1v4.8575Z" style="fill:#ECE6D7;"/><path d="M139.8655,0c2.5,9.3981,5.1,18.7963,7.6,28.1944h-6.9l-1.5-5.9134h-7.3l1.1-4.5407c1.7,0,3.4,0,5-.1056l-2.6-11.4045-5.7,22.0698h-6.6c2.7-9.3981,5.3-18.6907,8-28.0888h8.8l.1-.2112Z" style="fill:#ECE6D7;"/><path d="M156.2655,0v28.0888h-6V0h6ZM156.6655,0h12.2v4.6463h-12.2V0ZM156.7655,11.0877h7.8v4.6463h-7.8v-4.6463Z" style="fill:#ECE6D7;"/><path d="M50.494,41.8557v-.2651h.835v-7.6909h-.623c-1.0078,0-1.9756.3979-1.9756,1.9624h-.2646v-2.2275h7.3193v2.2275h-.2656c0-1.5645-.8223-1.9624-1.6973-1.9624h-.9014v7.6909h.835v.2651h-3.2617Z" style="fill:#ECE6D7;"/><path d="M62.6453,41.9885c-1.9355,0-4.1631-1.2598-4.1631-4.2432s2.2275-4.2432,4.1631-4.2432c1.9492,0,4.1641,1.2593,4.1641,4.2432s-2.2148,4.2432-4.1641,4.2432ZM62.6453,33.7673c-1.6709,0-2.4795,1.1934-2.4795,3.978,0,2.771.8086,3.9775,2.4795,3.9775,1.6182,0,2.4795-1.2065,2.4795-3.9775,0-2.7847-.8613-3.978-2.4795-3.978Z" style="fill:#ECE6D7;"/><path d="M74.6238,37.427c1.7236.1592,2.7051.8223,2.7051,2.188,0,1.79-1.79,2.2407-3.7656,2.2407h-3.7129v-.2651h.8359v-7.6909h-.8359v-.2651h3.501c1.8164,0,3.3945.3315,3.3945,1.8696,0,1.1934-.9551,1.7236-2.1221,1.8564v.0664ZM72.2772,33.8996v3.4478h1.0742c1.2598,0,1.8291-.4907,1.8291-1.7505,0-1.2197-.543-1.6973-1.8291-1.6973h-1.0742ZM72.2772,37.6125v3.978h1.2861c1.4717,0,2.0947-.5303,2.0947-1.9893,0-1.4053-.6631-1.9888-2.1748-1.9888h-1.2061Z" style="fill:#ECE6D7;"/><path d="M82.2547,41.8557h-2.4531v-.2651h.9814l3.208-8.0884h.332l3.4609,8.0884h.8086v.2651h-3.4346v-.2651h1.0215l-.9814-2.3472h-3.1562l-.9277,2.3472h1.1406v.2651ZM85.0789,38.965l-1.498-3.5933-1.4189,3.5933h2.917Z" style="fill:#ECE6D7;"/><path d="M97.786,36.5783c-.0791-1.2598-.7422-2.811-2.6914-2.811-1.6973,0-2.5195,1.1934-2.5195,3.978,0,2.7578.8223,3.9775,2.4932,3.9644,1.498,0,2.5195-.7954,2.6777-2.2539h.2393c-.1064,1.5513-1.2334,2.5327-2.9834,2.5327-1.9629,0-4.1104-1.2598-4.1104-4.2432s2.1475-4.2432,4.2031-4.2432c1.3262,0,1.8027.5566,2.2412.5566.2783,0,.3975-.252.3975-.4243h.2383v2.9438h-.1855Z" style="fill:#ECE6D7;"/><path d="M108.0545,36.5783c-.0791-1.2598-.7422-2.811-2.6914-2.811-1.6973,0-2.5195,1.1934-2.5195,3.978,0,2.7578.8223,3.9775,2.4932,3.9644,1.498,0,2.5195-.7954,2.6777-2.2539h.2393c-.1064,1.5513-1.2334,2.5327-2.9834,2.5327-1.9629,0-4.1104-1.2598-4.1104-4.2432s2.1475-4.2432,4.2031-4.2432c1.3262,0,1.8027.5566,2.2412.5566.2783,0,.3975-.252.3975-.4243h.2383v2.9438h-.1855Z" style="fill:#ECE6D7;"/><path d="M115.5916,41.9885c-1.9355,0-4.1631-1.2598-4.1631-4.2432s2.2275-4.2432,4.1631-4.2432c1.9492,0,4.1641,1.2593,4.1641,4.2432s-2.2148,4.2432-4.1641,4.2432ZM115.5916,33.7673c-1.6709,0-2.4795,1.1934-2.4795,3.978,0,2.771.8086,3.9775,2.4795,3.9775,1.6182,0,2.4795-1.2065,2.4795-3.9775,0-2.7847-.8613-3.978-2.4795-3.978Z" style="fill:#ECE6D7;"/></g></g></svg></h1>
+      <p class="hero-sub">Grown in rows. Picked by hand.</p>
+    </div>
+    <a class="cue" href="#products" aria-label="See the products"></a>
   </div>
 </section>
 
 <section class="sec line" id="products">
   <div class="wrap">
-    <div class="sec-head rise"><p class="eyebrow">Lorem ipsum</p><h2>Dolor sit amet.</h2></div>
-    <div class="filter" role="group" aria-label="Filter products by family">
-      <button type="button" data-f="all" aria-pressed="true">All</button>
-      <button type="button" data-f="wraps" aria-pressed="false">Tobacco Leaf Wraps</button>
-      <button type="button" data-f="leaf" aria-pressed="false">Whole Tobacco Leaf</button>
-      <button type="button" data-f="blunt" aria-pressed="false">Natural Cigar Blunt</button>
-      <button type="button" data-f="cones" aria-pressed="false">Tobacco Cones</button>
-    </div>
+    <div class="sec-head rise"><p class="eyebrow">Leaf to shelf. We own every step.</p><h2>Wraps, whole leaf, blunts, cones.</h2><p>Natural tobacco leaf, grown and cured in Nicaragua and packed for the counter. Sold to licensed retailers and distributors.</p></div>
+    <p class="hint">Tap a pack to see both sides</p>
 
-    <div class="fam" data-fam="wraps">
-      <p class="cat rise">Tobacco Leaf Wraps<span class="meta">5 wraps per pack</span></p>
-      <ul class="shelf">
-        <li class="rise" style="transition-delay:0ms"><button type="button" class="pv" data-name="Natural Broadleaf" data-fam="Tobacco Leaf Wraps" data-meta="Retail pouch · 5 wraps per pack" data-back="img/pb-pm-natural-broadleaf-5wrap-540-trimw.webp"><img loading="lazy" decoding="async" src="img/pt-pm-natural-broadleaf-5wrap-540-trimw.webp" alt="Tru Leaf Natural Broadleaf tobacco leaf wraps, five wraps per pack"><span>Natural Broadleaf</span></button></li>
-        <li class="rise" style="transition-delay:60ms"><button type="button" class="pv" data-name="Natural Havana" data-fam="Tobacco Leaf Wraps" data-meta="Retail pouch · 5 wraps per pack" data-back="img/pb-pm-natural-havana-5wrap-540-trimw.webp"><img loading="lazy" decoding="async" src="img/pt-pm-natural-havana-5wrap-540-trimw.webp" alt="Tru Leaf Natural Havana tobacco leaf wraps, five wraps per pack"><span>Natural Havana</span></button></li>
-        <li class="rise" style="transition-delay:120ms"><button type="button" class="pv" data-name="Russian Cream" data-fam="Tobacco Leaf Wraps" data-meta="Retail pouch · 5 wraps per pack" data-back="img/pb-pm-russian-cream-5wrap-540-trimw.webp"><img loading="lazy" decoding="async" src="img/pt-pm-russian-cream-5wrap-540-trimw.webp" alt="Tru Leaf Russian Cream tobacco leaf wraps, five wraps per pack"><span>Russian Cream</span></button></li>
-        <li class="rise" style="transition-delay:180ms"><button type="button" class="pv" data-name="Honey Bourban" data-fam="Tobacco Leaf Wraps" data-meta="Retail pouch · 5 wraps per pack" data-back="img/pb-pm-honey-bourbon-5wrap-540-trimw.webp"><img loading="lazy" decoding="async" src="img/pt-pm-honey-bourbon-5wrap-540-trimw.webp" alt="Tru Leaf Honey Bourban tobacco leaf wraps, five wraps per pack"><span>Honey Bourban</span></button></li>
-        <li class="rise" style="transition-delay:240ms"><button type="button" class="pv" data-name="Bananas" data-fam="Tobacco Leaf Wraps" data-meta="Retail pouch · 5 wraps per pack" data-back="img/pb-pm-bananas-5wrap-540-trimw.webp"><img loading="lazy" decoding="async" src="img/pt-pm-bananas-5wrap-540-trimw.webp" alt="Tru Leaf Bananas tobacco leaf wraps, five wraps per pack"><span>Bananas</span></button></li>
-      </ul>
-      <p class="sub-lab rise">Retail display</p>
-      <ul class="shelf small">
-        <li class="rise" style="transition-delay:0ms"><button type="button" class="pv" data-name="Natural Broadleaf" data-fam="Tobacco Leaf Wraps" data-meta="Retail display box" data-back="img/pb-pm-natural-broadleaf-display-540-trimw.webp"><img loading="lazy" decoding="async" src="img/pt-pm-natural-broadleaf-display-540-trimw.webp" alt="Tru Leaf Natural Broadleaf retail display box"><span>Natural Broadleaf</span></button></li>
-        <li class="rise" style="transition-delay:60ms"><button type="button" class="pv" data-name="Natural Havana" data-fam="Tobacco Leaf Wraps" data-meta="Retail display box" data-back="img/pb-pm-natural-havana-display-540-trimw.webp"><img loading="lazy" decoding="async" src="img/pt-pm-natural-havana-display-540-trimw.webp" alt="Tru Leaf Natural Havana retail display box"><span>Natural Havana</span></button></li>
-        <li class="rise" style="transition-delay:120ms"><button type="button" class="pv" data-name="Russian Cream" data-fam="Tobacco Leaf Wraps" data-meta="Retail display box" data-back="img/pb-pm-russian-cream-display-540-trimw.webp"><img loading="lazy" decoding="async" src="img/pt-pm-russian-cream-display-540-trimw.webp" alt="Tru Leaf Russian Cream retail display box"><span>Russian Cream</span></button></li>
-        <li class="rise" style="transition-delay:180ms"><button type="button" class="pv" data-name="Honey Bourban" data-fam="Tobacco Leaf Wraps" data-meta="Retail display box" data-back="img/pb-pm-honey-bourbon-display-540-trimw.webp"><img loading="lazy" decoding="async" src="img/pt-pm-honey-bourbon-display-540-trimw.webp" alt="Tru Leaf Honey Bourban retail display box"><span>Honey Bourban</span></button></li>
-        <li class="rise" style="transition-delay:240ms"><button type="button" class="pv" data-name="Bananas" data-fam="Tobacco Leaf Wraps" data-meta="Retail display box" data-back="img/pb-pm-bananas-display-540-trimw.webp"><img loading="lazy" decoding="async" src="img/pt-pm-bananas-display-540-trimw.webp" alt="Tru Leaf Bananas retail display box"><span>Bananas</span></button></li>
-      </ul>
-    </div>
-
-    <div class="fam" data-fam="leaf">
-      <p class="cat rise">Whole Tobacco Leaf<span class="meta">Natural</span></p>
-      <ul class="shelf">
-        <li class="rise" style="transition-delay:0ms"><button type="button" class="pv" data-name="Natural" data-fam="Whole Tobacco Leaf" data-meta="Green pack" data-back="img/pb-pm-whole-leaf-green-540-trimw.webp"><img loading="lazy" decoding="async" src="img/pt-pm-whole-leaf-green-540-trimw.webp" alt="Tru Leaf Natural whole tobacco leaf, green pack"><span>Green pack</span></button></li>
-        <li class="rise" style="transition-delay:60ms"><button type="button" class="pv" data-name="Natural" data-fam="Whole Tobacco Leaf" data-meta="Golden pack" data-back="img/pb-pm-whole-leaf-golden-540-trimw.webp"><img loading="lazy" decoding="async" src="img/pt-pm-whole-leaf-golden-540-trimw.webp" alt="Tru Leaf Natural whole tobacco leaf, golden pack"><span>Golden pack</span></button></li>
-      </ul>
-      <p class="sub-lab rise">Retail display</p>
-      <ul class="shelf small">
-        <li class="rise" style="transition-delay:0ms"><button type="button" class="pv" data-name="Natural" data-fam="Whole Tobacco Leaf" data-meta="Retail display box" data-back="img/pb-pm-whole-leaf-display-540-trimw.webp"><img loading="lazy" decoding="async" src="img/pt-pm-whole-leaf-display-540-trimw.webp" alt="Tru Leaf whole tobacco leaf retail display box"><span>Display box</span></button></li>
-      </ul>
-    </div>
-
-    <div class="fam" data-fam="blunt">
-      <p class="cat rise">Natural Cigar Blunt<span class="meta">3 per pack</span></p>
-      <ul class="shelf">
-        <li class="rise" style="transition-delay:0ms"><button type="button" class="pv" data-name="Natural Cigar Blunt" data-fam="Natural Cigar Blunt" data-meta="3 per pack" data-back="img/pb-pm-cigar-blunt-3pack-540-trimw.webp"><img loading="lazy" decoding="async" src="img/pt-pm-cigar-blunt-3pack-540-trimw.webp" alt="Tru Leaf Natural Cigar Blunt, three per pack"><span>Three pack</span></button></li>
-      </ul>
-      <p class="sub-lab rise">Retail display</p>
-      <ul class="shelf small">
-        <li class="rise" style="transition-delay:0ms"><button type="button" class="pv" data-name="Natural Cigar Blunt" data-fam="Natural Cigar Blunt" data-meta="Retail display box" data-back="img/pb-pm-cigar-blunt-10pack-display-540-trimw.webp"><img loading="lazy" decoding="async" src="img/pt-pm-cigar-blunt-10pack-display-540-trimw.webp" alt="Tru Leaf cigar blunt retail display box"><span>Display box</span></button></li>
-      </ul>
-    </div>
-
-    <div class="fam" data-fam="cones">
-      <p class="cat rise">Tobacco Cones<span class="meta">3 per pack</span></p>
-      <ul class="shelf">
-        <li class="rise" style="transition-delay:0ms"><button type="button" class="pv" data-name="Tobacco Cones" data-fam="Tobacco Cones" data-meta="3 per pack" data-back="img/pb-pm-cones-3pack-540-trimw.webp"><img loading="lazy" decoding="async" src="img/pt-pm-cones-3pack-540-trimw.webp" alt="Tru Leaf Tobacco Cones, three per pack"><span>Three pack</span></button></li>
-      </ul>
-      <p class="sub-lab rise">Retail display</p>
-      <ul class="shelf small">
-        <li class="rise" style="transition-delay:0ms"><button type="button" class="pv" data-name="Tobacco Cones" data-fam="Tobacco Cones" data-meta="Retail display box" data-back="img/pb-pm-cones-10pack-display-540-trimw.webp"><img loading="lazy" decoding="async" src="img/pt-pm-cones-10pack-display-540-trimw.webp" alt="Tru Leaf tobacco cones retail display box"><span>Display box</span></button></li>
-      </ul>
-    </div>
-  </div>
-</section>
-
-<section class="farm" id="farm" aria-labelledby="farm-title">
-  <div class="farm-pin">
-    <picture>
-      <source media="(max-width:700px)" srcset="img/field-tall-820.jpg">
-      <img loading="lazy" decoding="async" src="img/field-wide-1700.jpg" alt="Rows of young tobacco plants in a field in Nicaragua, with a tree line and pale sky behind">
-    </picture>
-    <div class="farm-copy"><p class="eyebrow">Lorem ipsum</p><h2 id="farm-title">Lorem ipsum dolor.<br>Consectetur elit.</h2><p class="sub">Dolor sit &middot; Amet elit</p></div>
-  </div>
-</section>
-
-<section class="grid" id="leaf" aria-label="Grown, picked and cured">
-  <figure><img loading="lazy" decoding="async" src="img/leaf-backlit-950.jpg" alt="Sunlight coming through the leaves of a growing tobacco plant"><figcaption>Lorem</figcaption></figure>
-  <figure><img loading="lazy" decoding="async" src="img/field-worker-950.jpg" alt="A picker working a row of tobacco plants under mountains and cumulus cloud"><figcaption>Ipsum</figcaption></figure>
-  <figure><img loading="lazy" decoding="async" src="img/barn-close-900.jpg" alt="Bundles of cured tobacco leaf hanging from barn poles"><figcaption>Dolor</figcaption></figure>
-</section>
-
-<section class="sec chain" id="chain">
-  <div class="wrap">
-    <div class="sec-head"><p class="eyebrow">Lorem ipsum</p><h2>Dolor sit amet consectetur.</h2></div>
+    <ul class="shelf">
+        <li class="rise" data-fam="wraps" style="transition-delay:0ms"><button type="button" class="pv" data-name="Natural Broadleaf" data-fam="Tobacco Leaf Wraps" data-meta="Retail pouch on its display box &middot; 5 wraps per pack" data-back="img/pcb-wraps-natural-broadleaf-600-trimw.webp"><img loading="lazy" decoding="async" src="img/pc-wraps-natural-broadleaf-600-trimw.webp" alt="Tru Leaf Natural Broadleaf tobacco leaf wraps, five-wrap pouch standing in front of its display carton"><span>Natural Broadleaf</span><small>Tobacco Leaf Wraps</small></button></li>
+        <li class="rise" data-fam="wraps" style="transition-delay:50ms"><button type="button" class="pv" data-name="Natural Havana" data-fam="Tobacco Leaf Wraps" data-meta="Retail pouch on its display box &middot; 5 wraps per pack" data-back="img/pcb-wraps-natural-havana-600-trimw.webp"><img loading="lazy" decoding="async" src="img/pc-wraps-natural-havana-600-trimw.webp" alt="Tru Leaf Natural Havana tobacco leaf wraps, five-wrap pouch standing in front of its display carton"><span>Natural Havana</span><small>Tobacco Leaf Wraps</small></button></li>
+        <li class="rise" data-fam="wraps" style="transition-delay:100ms"><button type="button" class="pv" data-name="Russian Cream" data-fam="Tobacco Leaf Wraps" data-meta="Retail pouch on its display box &middot; 5 wraps per pack" data-back="img/pcb-wraps-russian-cream-600-trimw.webp"><img loading="lazy" decoding="async" src="img/pc-wraps-russian-cream-600-trimw.webp" alt="Tru Leaf Russian Cream tobacco leaf wraps, five-wrap pouch standing in front of its display carton"><span>Russian Cream</span><small>Tobacco Leaf Wraps</small></button></li>
+        <li class="rise" data-fam="wraps" style="transition-delay:150ms"><button type="button" class="pv" data-name="Honey Bourban" data-fam="Tobacco Leaf Wraps" data-meta="Retail pouch on its display box &middot; 5 wraps per pack" data-back="img/pcb-wraps-honey-bourbon-600-trimw.webp"><img loading="lazy" decoding="async" src="img/pc-wraps-honey-bourbon-600-trimw.webp" alt="Tru Leaf Honey Bourban tobacco leaf wraps, five-wrap pouch standing in front of its display carton"><span>Honey Bourban</span><small>Tobacco Leaf Wraps</small></button></li>
+        <li class="rise" data-fam="wraps" style="transition-delay:200ms"><button type="button" class="pv" data-name="Bananas" data-fam="Tobacco Leaf Wraps" data-meta="Retail pouch on its display box &middot; 5 wraps per pack" data-back="img/pcb-wraps-bananas-600-trimw.webp"><img loading="lazy" decoding="async" src="img/pc-wraps-bananas-600-trimw.webp" alt="Tru Leaf Bananas tobacco leaf wraps, five-wrap pouch standing in front of its display carton"><span>Bananas</span><small>Tobacco Leaf Wraps</small></button></li>
+        <li class="rise" data-fam="leaf" style="transition-delay:250ms"><button type="button" class="pv" data-name="Green pack" data-fam="Whole Tobacco Leaf" data-meta="Whole tobacco leaf pack" data-back="img/pb-pm-whole-leaf-green-540-trimw.webp"><img loading="lazy" decoding="async" src="img/pt-pm-whole-leaf-green-540-trimw.webp" alt="Tru Leaf Natural whole tobacco leaf, green pack"><span>Green pack</span><small>Whole Tobacco Leaf</small></button></li>
+        <li class="rise" data-fam="leaf" style="transition-delay:300ms"><button type="button" class="pv" data-name="Golden pack" data-fam="Whole Tobacco Leaf" data-meta="Whole tobacco leaf pack" data-back="img/pb-pm-whole-leaf-golden-540-trimw.webp"><img loading="lazy" decoding="async" src="img/pt-pm-whole-leaf-golden-540-trimw.webp" alt="Tru Leaf Natural whole tobacco leaf, golden pack"><span>Golden pack</span><small>Whole Tobacco Leaf</small></button></li>
+        <li class="rise" data-fam="blunt" style="transition-delay:350ms"><button type="button" class="pv" data-name="Three pack" data-fam="Natural Cigar Blunt" data-meta="3 per pack" data-back="img/pb-pm-cigar-blunt-3pack-540-trimw.webp"><img loading="lazy" decoding="async" src="img/pt-pm-cigar-blunt-3pack-540-trimw.webp" alt="Tru Leaf Natural Cigar Blunt, three per pack"><span>Three pack</span><small>Natural Cigar Blunt</small></button></li>
+        <li class="rise" data-fam="cones" style="transition-delay:400ms"><button type="button" class="pv" data-name="Three pack" data-fam="Tobacco Cones" data-meta="3 per pack" data-back="img/pb-pm-cones-3pack-540-trimw.webp"><img loading="lazy" decoding="async" src="img/pt-pm-cones-3pack-540-trimw.webp" alt="Tru Leaf Tobacco Cones, three per pack"><span>Three pack</span><small>Tobacco Cones</small></button></li>
+    </ul>
   </div>
 </section>
 
 <section class="sec" id="distributors">
   <div class="wrap contact">
     <div class="c-copy">
-      <p class="eyebrow" id="contact">Lorem ipsum · Dolor</p>
-      <h2>Sed do eiusmod tempor.</h2>
-      <p class="lede">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-      <ul class="lines">
-        <li><span>Dist:</span> <a href="mailto:distributors@truleaf-tobacco.com?subject=Distributor%20enquiry">distributors@<wbr>truleaf-tobacco.com</a></li>
-        <li><span>Off:</span> +1 (XXX) XXX-XXXX</li>
-        <li><span>Mob:</span> +1 (XXX) XXX-XXXX</li>
-        <li><span>Web:</span> truleafnatural.com</li>
+      <p class="eyebrow">Wholesale · Retail · Distribution</p>
+      <h2>Stock Tru Leaf.</h2>
+      <p class="lede">Display-ready packs for smoke shops, convenience stores and distributors. Tell us where you sell and we’ll reply with case sizes and wholesale pricing.</p>
+      <ul class="facts">
+        <li><span>Farm</span>Nicaragua</li>
+        <li><span>Distribution</span>Miami, FL</li>
+        <li><span>Packaging</span>Display-ready</li>
+        <li><span>Sold to</span>Licensed trade only</li>
       </ul>
-      <div class="stamp"><svg aria-hidden="true" focusable="false" fill="#ECE6D7" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256.18 270.02">
-  <defs>
-    <style>
-      .truleaf-badge-black-1 {
-        fill-rule: evenodd;
-      }
-
-      .truleaf-badge-black-2 {
-        fill: #0A0A0A;
-      }
-    </style>
-  </defs>
-  <path class="truleaf-badge-black-2" d="M116.83,19.65c-59.52,0-107.77,48.25-107.77,107.77s48.25,107.76,107.77,107.76,107.77-48.24,107.77-107.76S176.35,19.65,116.83,19.65ZM218.4,159.5c-1.64,5.15-3.68,10.17-6.09,15.01-2.34,4.72-5.05,9.27-8.08,13.58-3.06,4.35-6.44,8.48-10.11,12.33-3.62,3.8-7.53,7.32-11.67,10.54-4.22,3.27-8.66,6.24-13.32,8.84-4.72,2.64-9.66,4.91-14.72,6.8-5.03,1.87-10.2,3.35-15.45,4.43-5.51,1.12-11.11,1.81-16.72,2.06-5.57.25-11.15.05-16.68-.58-5.53-.64-11-1.68-16.36-3.17-5.22-1.45-10.33-3.32-15.27-5.55-4.81-2.18-9.46-4.72-13.89-7.61-4.46-2.9-8.71-6.14-12.69-9.67-3.93-3.48-7.59-7.25-10.95-11.28-3.41-4.09-6.53-8.43-9.3-12.99-2.79-4.6-5.21-9.42-7.28-14.39-2.06-4.94-3.73-10.04-5-15.24-1.31-5.4-2.19-10.91-2.65-16.44-.47-5.59-.49-11.22-.06-16.81.42-5.54,1.27-11.06,2.55-16.47,1.24-5.23,2.89-10.36,4.92-15.33,2.04-4.97,4.42-9.79,7.18-14.4,2.76-4.6,5.87-8.98,9.28-13.11,3.32-4.02,6.94-7.8,10.82-11.28,3.98-3.58,8.23-6.86,12.69-9.8,4.39-2.89,9-5.45,13.78-7.64,4.95-2.28,10.06-4.19,15.3-5.68,5.32-1.51,10.76-2.57,16.24-3.24,5.56-.67,11.16-.9,16.75-.69,5.6.21,11.18.87,16.67,1.96,5.29,1.04,10.5,2.5,15.57,4.35,5.05,1.86,9.97,4.09,14.69,6.68,4.61,2.54,9.03,5.43,13.21,8.64,4.22,3.24,8.21,6.76,11.9,10.59,3.72,3.85,7.13,7.98,10.23,12.34,3.04,4.27,5.76,8.77,8.13,13.46,2.44,4.84,4.52,9.88,6.2,15.04,1.66,5.12,2.93,10.38,3.78,15.71.89,5.6,1.35,11.26,1.35,16.93s-.43,10.87-1.25,16.25c-.82,5.37-2.06,10.66-3.7,15.83Z"/>
-  <path class="truleaf-badge-black-2" d="M215.71,127.42c0,2.67-.11,5.35-.32,8.02-.1,1.29-.23,2.58-.38,3.86-.04.33-.08.66-.13.98-.01.08-.01.15-.03.22v.04s-.01.07-.01.1c0,.02-.01.03-.01.05-.01.08-.02.18-.04.27-.09.65-.18,1.3-.29,1.94-.81,5.06-2.01,10.05-3.59,14.92-.78,2.4-1.65,4.78-2.62,7.11-.06.15-.12.29-.18.44-.01.04-.03.07-.04.11,0,0-.01.02-.03.06h0s-.01.04-.02.05c-.02.05-.03.07-.03.07-.11.25-.22.5-.33.76-.25.58-.51,1.16-.77,1.73-.52,1.13-1.06,2.24-1.61,3.35-2.26,4.47-4.86,8.77-7.76,12.85-.7.99-1.43,1.97-2.17,2.93-.03.04-.06.08-.09.12h0s-.03.03-.03.04h0v.02c-.11.12-.2.24-.3.37-.19.24-.39.49-.58.73-.4.49-.79.98-1.19,1.46-1.59,1.9-3.24,3.75-4.96,5.53-1.72,1.78-3.51,3.5-5.35,5.15-.94.83-1.89,1.65-2.85,2.45-.47.39-.95.78-1.43,1.16-.23.18-.47.37-.71.56-.08.06-.17.13-.26.2,0,0-.01,0-.03.03l-.08.05s-.04.04-.06.05c-.03.03-.05.05-.08.07-3.97,3.04-8.17,5.78-12.55,8.19-2.19,1.21-4.43,2.33-6.7,3.37-.58.26-1.16.52-1.74.77-.12.05-.25.1-.37.16-.03,0-.1.04-.17.07-.02.01-.04.02-.06.03-.02,0-.03.01-.03.01-.07.03-.09.04-.09.04-.23.09-.46.18-.7.28-1.18.49-2.36.95-3.56,1.39-4.79,1.75-9.71,3.12-14.7,4.11-1.28.26-2.57.49-3.86.69-.65.1-1.29.2-1.94.29-.06,0-.11.01-.17.02s-.08.01-.08.01c-.12,0-.24.03-.35.05-.33.04-.65.08-.98.12-2.64.3-5.29.51-7.94.61-5.28.19-10.58-.02-15.83-.65-.3-.04-.6-.08-.9-.12-.04,0-.07,0-.11,0,0,0-.02,0-.08-.01-.19-.03-.38-.05-.57-.08-.62-.09-1.24-.18-1.86-.28-1.29-.21-2.57-.44-3.85-.7-2.51-.51-4.99-1.11-7.46-1.81-2.43-.69-4.85-1.48-7.22-2.35-1.2-.45-2.38-.91-3.56-1.4-.13-.05-.25-.1-.37-.15h0s-.02-.01-.03-.02c-.01,0-.02,0-.03,0-.02-.01-.03-.01-.05-.02-.02-.01-.03-.01-.05-.02-.01,0-.02-.01-.03-.01-.3-.13-.61-.26-.91-.4-.56-.24-1.12-.49-1.67-.74-4.56-2.1-8.96-4.54-13.15-7.3-2.07-1.37-4.08-2.82-6.06-4.33-.06-.04-.11-.09-.14-.11-.11-.08-.21-.16-.31-.24-.27-.21-.53-.42-.8-.63-.48-.39-.95-.77-1.42-1.17-.95-.79-1.89-1.6-2.81-2.43-3.69-3.31-7.13-6.89-10.28-10.71-.4-.49-.79-.97-1.18-1.46-.2-.25-.39-.49-.59-.74-.04-.05-.08-.11-.12-.16h-.01s-.01-.02-.01-.02c0,0-.01-.02-.02-.03l-.03-.03s-.03-.05-.05-.07c-.05-.08-.12-.17-.15-.21-.76-.99-1.51-2-2.23-3.03-1.43-2.03-2.79-4.12-4.07-6.25-1.28-2.14-2.48-4.33-3.6-6.56-.56-1.11-1.09-2.23-1.6-3.36-.27-.57-.52-1.15-.77-1.74-.07-.14-.13-.29-.19-.43-.01-.02-.01-.04-.02-.05t-.01-.02s-.04-.1-.06-.15c-.12-.28-.24-.56-.35-.83-1.92-4.7-3.47-9.55-4.64-14.48-.6-2.51-1.1-5.03-1.5-7.58-.1-.63-.19-1.26-.27-1.89-.01-.04-.01-.09-.02-.13,0-.03-.01-.05-.01-.07-.01-.01-.01-.03-.01-.04-.02-.17-.04-.33-.06-.49-.04-.33-.08-.66-.12-.98-.15-1.32-.28-2.63-.37-3.95-.4-5.29-.39-10.6.05-15.88.1-1.3.24-2.61.4-3.9.03-.32.07-.63.11-.94.01-.02.01-.04.01-.06,0-.02,0-.04,0-.06v-.02s.01-.03.01-.05c.02-.16.04-.33.07-.49.09-.65.19-1.29.29-1.94.42-2.54.93-5.06,1.54-7.56,1.21-4.95,2.8-9.81,4.75-14.52.03-.08.07-.16.11-.24,0,0,.01-.02.03-.07.03-.08.06-.15.09-.22.12-.29.25-.59.38-.88.25-.58.51-1.16.78-1.73.53-1.15,1.08-2.29,1.65-3.42,1.13-2.22,2.35-4.4,3.65-6.53,1.29-2.13,2.66-4.2,4.1-6.23.37-.51.74-1.01,1.11-1.52.17-.23.35-.46.52-.69.09-.12.19-.24.28-.37.04-.05.09-.11.13-.17l.02-.02s.03-.04.04-.05c.02-.03.04-.05.04-.05.72-.93,1.47-1.87,2.24-2.78,3.18-3.81,6.65-7.39,10.37-10.69.92-.82,1.86-1.62,2.82-2.41.48-.4.97-.79,1.46-1.18.23-.18.45-.36.68-.53.03-.02.06-.05.09-.07.01-.02.02-.02.03-.03.03-.02.13-.1.13-.1.11-.08.22-.17.33-.25,1.97-1.5,4.01-2.93,6.09-4.29,4.19-2.71,8.58-5.12,13.13-7.18.57-.26,1.16-.52,1.74-.77.1-.04.2-.08.31-.13.01,0,.05-.02.09-.04.04-.02.08-.04.1-.04.01,0,.02-.01.03-.01.32-.14.64-.27.96-.4,1.15-.47,2.32-.92,3.49-1.34,2.38-.87,4.8-1.64,7.25-2.32,2.49-.69,5.01-1.29,7.55-1.78,1.25-.25,2.51-.47,3.78-.66.57-.09,1.16-.17,1.74-.25h.02s.06-.01.09-.02c.02,0,.05,0,.09,0,.08-.01.16-.03.19-.03.14-.02.27-.03.41-.05.35-.04.71-.09,1.06-.13,5.26-.59,10.56-.78,15.85-.54,2.62.11,5.24.33,7.84.65.27.03.53.07.79.1t.02,0h.04s.02.01.03.01c.03-.01.07,0,.1.01.05,0,.09.01.11.01.19.03.38.05.57.08.64.09,1.29.19,1.94.3,1.26.21,2.51.44,3.76.69,5.02,1.03,9.95,2.44,14.75,4.23,1.17.44,2.33.9,3.48,1.37.03.02.1.05.17.08.02.01.04.02.06.03.01,0,.02,0,.03.01.04.02.07.03.08.03.09.04.18.07.27.11.29.13.58.25.87.38.58.26,1.16.52,1.73.78,2.27,1.06,4.5,2.19,6.68,3.41,2.18,1.22,4.3,2.51,6.38,3.89,1.05.69,2.08,1.4,3.1,2.13.49.36.97.71,1.46,1.07.25.19.5.37.75.56.12.1.25.19.37.29.03.02.06.05.09.07.01.01.02.02.03.02.01.01.02.01.02.02,3.94,3.05,7.65,6.4,11.08,10.01,1.71,1.79,3.36,3.65,4.93,5.56.39.47.77.95,1.15,1.43.18.23.35.45.52.67,0,.01.02.03.04.04.01.01.02.03.03.04h0s.03.04.04.05c.01.02.02.03.03.04h0v.02c.1.12.2.25.29.37.76,1,1.5,2.01,2.22,3.04,2.87,4.08,5.42,8.37,7.64,12.83.57,1.13,1.11,2.28,1.63,3.43.26.58.52,1.16.77,1.74.02.06.05.12.07.18h.01s0,.03.01.04c0,.01.01.02.01.03s.01.02.01.02c.01.04.03.07.04.1.03.07.06.14.07.17.12.29.25.59.36.88.96,2.36,1.82,4.75,2.59,7.17,1.56,4.89,2.73,9.91,3.51,14.99.05.3.09.59.14.89.02.16.04.32.06.49,0,.04.02.14.03.23.01.02.01.03.01.05v.06s.01.03.01.05c.08.54.15,1.09.21,1.63.14,1.25.26,2.5.36,3.75.19,2.56.29,5.12.29,7.69Z"/>
-  <path class="truleaf-badge-black-2" d="M154.59,223.33c-.53.21-1.07.41-1.61.61-.7.26-1.4.5-2.11.74l-.58-1.69c.82-.28,1.64-.57,2.45-.87.4-.15.8-.3,1.2-.47l.65,1.68Z"/>
-  <path class="truleaf-badge-black-2" d="M162.76,219.75c-.91.45-1.83.89-2.75,1.31-.27.12-.54.24-.81.36l-.72-1.64c1.18-.52,2.34-1.06,3.5-1.63l.78,1.6Z"/>
-  <path class="truleaf-badge-black-2" d="M170.68,215.42c-1.15.7-2.31,1.37-3.48,2.02l-.86-1.56c.15-.08.31-.16.46-.25,1-.56,1.98-1.13,2.96-1.73l.92,1.52Z"/>
-  <path class="truleaf-badge-black-2" d="M178.14,210.47c-1.07.78-2.15,1.54-3.25,2.27l-1-1.49c1.07-.72,2.13-1.46,3.18-2.23l1.07,1.45Z"/>
-  <path class="truleaf-badge-black-2" d="M128.51,229.62c-1.31.14-2.63.26-3.95.34l-.12-1.79c1.29-.08,2.59-.19,3.88-.33l.19,1.78Z"/>
-  <path class="truleaf-badge-black-2" d="M137.33,228.3c-1.26.25-2.52.47-3.79.67-.03,0-.05.01-.08.01l-.28-1.78c1.27-.19,2.54-.41,3.81-.66l.34,1.76Z"/>
-  <path class="truleaf-badge-black-2" d="M146.1,226.18c-1.29.37-2.59.72-3.89,1.04l-.42-1.73c1.28-.31,2.55-.65,3.82-1.02l.49,1.71Z"/>
-  <path class="truleaf-badge-black-2" d="M101.96,227.2l-.28,1.78c-.14-.02-.27-.04-.41-.06-1.16-.19-2.34-.4-3.5-.64l.35-1.75c1.28.25,2.55.47,3.84.67Z"/>
-  <path class="truleaf-badge-black-2" d="M110.67,228.17l-.12,1.79c-1.31-.09-2.62-.2-3.92-.33l.19-1.79c1.28.13,2.57.25,3.85.33Z"/>
-  <path class="truleaf-badge-black-2" d="M119.57,230.18c-1.34.02-2.68.02-4.03,0l.04-1.79c1.32.03,2.63.03,3.95,0l.04,1.79Z"/>
-  <path class="truleaf-badge-black-2" d="M68.78,215.85l-.87,1.57c-1.17-.65-2.33-1.32-3.48-2.01l.93-1.54c1.12.69,2.26,1.35,3.42,1.98Z"/>
-  <path class="truleaf-badge-black-2" d="M81.24,221.54l-.04.11c-1.53-.59-3.04-1.22-4.54-1.89l.05-.1c1.47.7,3.01,1.27,4.53,1.88Z"/>
-  <path class="truleaf-badge-black-2" d="M84.82,222.97l-.58,1.69c-.8-.26-1.59-.55-2.38-.84-.44-.16-.87-.33-1.31-.5l.65-1.67c1.2.47,2.4.91,3.62,1.32Z"/>
-  <path class="truleaf-badge-black-2" d="M93.32,225.48l-.43,1.72c-1.16-.28-2.31-.59-3.46-.91-.14-.04-.28-.08-.42-.12l.49-1.71c.33.1.65.19.98.28.94.26,1.89.51,2.84.74Z"/>
-  <path class="truleaf-badge-black-2" d="M54.17,206.02l-1.13,1.39c-.38-.3-.75-.6-1.12-.91-.64-.54-1.28-1.08-1.91-1.64l1.17-1.35c.98.86,1.97,1.69,2.99,2.51Z"/>
-  <path class="truleaf-badge-black-2" d="M61.22,211.23l-1,1.48c-1.09-.73-2.16-1.49-3.21-2.26l1.05-1.44c1.04.76,2.09,1.5,3.16,2.22Z"/>
-  <path class="truleaf-badge-black-2" d="M41.45,193.78l-1.34,1.17c-.65-.73-1.28-1.47-1.9-2.22-.22-.26-.43-.53-.64-.79l1.39-1.12c.37.45.74.9,1.11,1.34.46.55.92,1.09,1.38,1.62Z"/>
-  <path class="truleaf-badge-black-2" d="M47.56,200.2l-1.23,1.29c-.97-.94-1.92-1.89-2.85-2.86l1.29-1.23c.9.95,1.84,1.88,2.79,2.8Z"/>
-  <path class="truleaf-badge-black-2" d="M22.13,160.09l-.12.04c-.54-1.55-1.03-3.11-1.48-4.69l.12-.03c.23.78.43,1.58.69,2.35l.79,2.33Z"/>
-  <path class="truleaf-badge-black-2" d="M23.34,163.78l-1.68.65c-.47-1.23-.92-2.47-1.35-3.72l1.7-.58c.42,1.23.86,2.45,1.33,3.65Z"/>
-  <path class="truleaf-badge-black-2" d="M26.85,171.82l-1.61.79c-.46-.94-.9-1.88-1.34-2.83-.11-.25-.22-.49-.32-.74l1.65-.72c.52,1.18,1.06,2.34,1.62,3.5Z"/>
-  <path class="truleaf-badge-black-2" d="M31.09,179.61l-1.52.92c-.07-.12-.15-.25-.22-.37-.62-1.03-1.21-2.07-1.79-3.12l1.55-.86c.64,1.16,1.3,2.3,1.98,3.43Z"/>
-  <path class="truleaf-badge-black-2" d="M35.97,186.92l-1.44,1.06c-.31-.42-.61-.85-.91-1.27-.46-.65-.92-1.31-1.37-1.98l1.49-.99c.72,1.08,1.47,2.14,2.23,3.18Z"/>
-  <path class="truleaf-badge-black-2" d="M16.61,125.42c-.03,1.32-.03,2.64,0,3.95l-1.79.04c-.02-1.35-.02-2.69,0-4.03l1.79.04Z"/>
-  <path class="truleaf-badge-black-2" d="M17.16,138.16l-1.79.19c-.1-.98-.19-1.97-.27-2.96-.02-.33-.05-.66-.06-.99l1.78-.12c.03.5.07.99.11,1.49.07.8.14,1.6.23,2.39Z"/>
-  <path class="truleaf-badge-black-2" d="M17.16,116.66c-.11,1.02-.2,2.05-.28,3.07-.02.26-.04.52-.05.78l-1.79-.12c.03-.54.07-1.09.12-1.63.06-.77.13-1.53.22-2.29l1.78.19Z"/>
-  <path class="truleaf-badge-black-2" d="M18.46,146.83l-1.76.34c-.26-1.29-.49-2.58-.69-3.87l1.78-.27c.2,1.27.42,2.54.67,3.8Z"/>
-  <path class="truleaf-badge-black-2" d="M18.47,107.96c-.26,1.27-.48,2.55-.68,3.83l-1.77-.27c.03-.19.06-.38.09-.57.18-1.12.38-2.23.6-3.34l1.76.35Z"/>
-  <path class="truleaf-badge-black-2" d="M20.53,155.44l-1.71.5c-.37-1.29-.72-2.58-1.04-3.89l1.73-.42c.31,1.28.65,2.55,1.02,3.81Z"/>
-  <path class="truleaf-badge-black-2" d="M20.55,99.34c-.37,1.26-.71,2.54-1.02,3.82l-1.74-.43c.32-1.3.67-2.6,1.04-3.88l1.72.49Z"/>
-  <path class="truleaf-badge-black-2" d="M23.35,91.04c-.47,1.2-.91,2.4-1.33,3.62l-1.68-.58c.41-1.24.86-2.47,1.34-3.69l1.67.65Z"/>
-  <path class="truleaf-badge-black-2" d="M26.88,82.98c-.58,1.16-1.12,2.34-1.65,3.52l-1.64-.73c.18-.42.37-.83.55-1.24.37-.78.74-1.56,1.13-2.34l1.61.79Z"/>
-  <path class="truleaf-badge-black-2" d="M31.12,75.2c-.09.14-.17.27-.25.41-.6.99-1.17,1.99-1.72,3.01l-1.57-.87c.65-1.18,1.32-2.34,2.01-3.48l1.53.93Z"/>
-  <path class="truleaf-badge-black-2" d="M35.99,67.9c-.76,1.04-1.5,2.09-2.22,3.16l-1.48-1c.56-.83,1.13-1.66,1.71-2.47.18-.25.36-.5.53-.75l1.46,1.06Z"/>
-  <path class="truleaf-badge-black-2" d="M41.48,61.02c-.6.68-1.18,1.37-1.76,2.07-.25.3-.49.6-.74.91l-1.39-1.12c.32-.41.65-.81.99-1.21.51-.62,1.03-1.23,1.56-1.83l1.34,1.18Z"/>
-  <path class="truleaf-badge-black-2" d="M47.6,54.6c-.95.91-1.89,1.85-2.8,2.8l-1.28-1.23c.93-.97,1.88-1.92,2.85-2.85l1.23,1.28Z"/>
-  <path class="truleaf-badge-black-2" d="M54.18,48.81c-1,.8-1.99,1.63-2.96,2.48l-1.18-1.34c.77-.68,1.56-1.35,2.35-2,.22-.18.44-.36.66-.54l1.13,1.4Z"/>
-  <path class="truleaf-badge-black-2" d="M61.26,43.58c-1.08.72-2.15,1.47-3.19,2.24l-1.06-1.45c1.07-.78,2.15-1.54,3.25-2.28l1,1.49Z"/>
-  <path class="truleaf-badge-black-2" d="M68.82,38.96c-1.16.63-2.3,1.29-3.43,1.97l-.92-1.52c1.15-.69,2.31-1.36,3.49-2.01l.86,1.56Z"/>
-  <path class="truleaf-badge-black-2" d="M76.68,35.06c-.45.2-.9.4-1.35.61-.73.33-1.45.67-2.16,1.02l-.78-1.6c.99-.5,1.98-.97,2.98-1.42.19-.09.38-.17.58-.25l.73,1.64Z"/>
-  <path class="truleaf-badge-black-2" d="M84.87,31.85c-1.22.41-2.44.86-3.65,1.33l-.65-1.68c.61-.23,1.23-.47,1.84-.69.63-.22,1.25-.44,1.88-.66l.58,1.7Z"/>
-  <path class="truleaf-badge-black-2" d="M93.37,29.35c-1.15.28-2.29.58-3.43.9-.13.04-.26.07-.39.11l-.49-1.7c.31-.09.63-.18.94-.27.98-.27,1.96-.53,2.94-.77l.43,1.73Z"/>
-  <path class="truleaf-badge-black-2" d="M101.98,27.64c-1.28.19-2.55.41-3.81.66l-.35-1.76s.06-.01.09-.02c1.26-.25,2.52-.47,3.79-.66l.28,1.78Z"/>
-  <path class="truleaf-badge-black-2" d="M110.72,26.66c-1.29.09-2.59.2-3.88.34l-.19-1.79c1.31-.14,2.63-.25,3.95-.34l.12,1.79Z"/>
-  <path class="truleaf-badge-black-2" d="M119.62,24.67l-.04,1.77c-1.32-.02-2.64-.02-3.95,0l-.04-1.78c1.34-.02,2.69-.02,4.03.01Z"/>
-  <path class="truleaf-badge-black-2" d="M128.53,25.21l-.19,1.79c-1.28-.14-2.56-.25-3.85-.33l.12-1.79c1.31.09,2.62.2,3.92.33Z"/>
-  <path class="truleaf-badge-black-2" d="M137.38,26.55l-.34,1.75c-1.27-.25-2.55-.47-3.83-.67l.27-1.77c.25.04.49.08.74.12,1.06.17,2.11.36,3.16.57Z"/>
-  <path class="truleaf-badge-black-2" d="M146.15,28.67l-.49,1.71c-1.27-.37-2.54-.71-3.83-1.02l.43-1.74c1.3.33,2.6.68,3.89,1.05Z"/>
-  <path class="truleaf-badge-black-2" d="M154.61,31.51l-.65,1.68c-.58-.23-1.16-.45-1.74-.66-.63-.23-1.26-.46-1.89-.67l.58-1.69c.91.31,1.8.63,2.7.96.33.13.67.25,1,.38Z"/>
-  <path class="truleaf-badge-black-2" d="M162.81,35.11l-.78,1.61c-1.16-.58-2.34-1.13-3.53-1.65l.73-1.65c.46.21.92.42,1.39.63.73.34,1.46.7,2.19,1.06Z"/>
-  <path class="truleaf-badge-black-2" d="M170.73,39.43l-.92,1.53c-1.13-.68-2.27-1.35-3.43-1.99l.86-1.55c.12.06.25.13.37.2,1.05.59,2.09,1.2,3.12,1.81Z"/>
-  <path class="truleaf-badge-black-2" d="M178.15,44.38l-1.06,1.45c-1.04-.77-2.09-1.51-3.16-2.22l1-1.48c.88.58,1.75,1.19,2.61,1.8.2.15.41.3.61.45Z"/>
-  <path class="truleaf-badge-black-2" d="M185.15,49.98l-1.18,1.35c-.97-.86-1.97-1.69-2.98-2.5l1.13-1.41c1.03.84,2.04,1.69,3.03,2.56Z"/>
-  <path class="truleaf-badge-black-2" d="M191.68,56.2l-1.29,1.24c-.06-.06-.11-.12-.17-.18-.86-.89-1.73-1.77-2.62-2.62l1.23-1.29c.97.93,1.92,1.88,2.85,2.85Z"/>
-  <path class="truleaf-badge-black-2" d="M197.58,62.89l-1.4,1.13c-.8-1-1.63-1.99-2.48-2.96l1.35-1.18c.71.82,1.41,1.64,2.1,2.48.14.18.29.35.43.53Z"/>
-  <path class="truleaf-badge-black-2" d="M202.9,70.1l-1.48,1c-.47-.69-.94-1.38-1.43-2.06-.27-.38-.54-.76-.82-1.13l1.46-1.06c.35.49.7.98,1.05,1.48.41.59.82,1.18,1.22,1.77Z"/>
-  <path class="truleaf-badge-black-2" d="M207.6,77.8l-1.56.86c-.63-1.15-1.29-2.29-1.98-3.42l1.53-.92c.69,1.14,1.36,2.31,2.01,3.48Z"/>
-  <path class="truleaf-badge-black-2" d="M211.58,85.79l-1.64.73c-.52-1.18-1.07-2.35-1.63-3.51l1.6-.79c.51,1.03,1.01,2.08,1.48,3.14.06.14.13.29.19.43Z"/>
-  <path class="truleaf-badge-black-2" d="M214.85,94.13l-1.7.58c-.42-1.23-.86-2.45-1.33-3.66l1.67-.64c.48,1.23.93,2.47,1.36,3.72Z"/>
-  <path class="truleaf-badge-black-2" d="M217.37,102.78l-1.72.43c-.31-1.28-.65-2.55-1.02-3.82l1.71-.49c.38,1.29.72,2.58,1.03,3.88Z"/>
-  <path class="truleaf-badge-black-2" d="M219.14,111.54l-1.78.28c-.02-.19-.05-.38-.08-.57-.17-1.08-.36-2.16-.57-3.24l1.75-.35c.25,1.29.48,2.58.68,3.88Z"/>
-  <path class="truleaf-badge-black-2" d="M185.11,204.89c-.71.63-1.43,1.24-2.16,1.84-.28.23-.56.47-.85.69l-1.13-1.39c1.01-.81,2-1.64,2.97-2.48l1.17,1.34Z"/>
-  <path class="truleaf-badge-black-2" d="M191.64,198.67s-.06.07-.1.11c-.9.93-1.82,1.85-2.75,2.74l-1.23-1.29c.95-.91,1.89-1.84,2.8-2.79l1.28,1.23Z"/>
-  <path class="truleaf-badge-black-2" d="M197.57,191.96c-.28.34-.55.68-.83,1.02-.56.68-1.13,1.35-1.72,2.01l-1.35-1.18c.86-.98,1.69-1.97,2.51-2.98l1.39,1.13Z"/>
-  <path class="truleaf-badge-black-2" d="M202.86,184.77c-.5.77-1.03,1.53-1.56,2.28-.23.32-.45.63-.69.95l-1.44-1.06c.39-.53.77-1.06,1.14-1.59.37-.52.73-1.05,1.08-1.58l1.47,1Z"/>
-  <path class="truleaf-badge-black-2" d="M207.58,177.08c-.65,1.17-1.33,2.34-2.02,3.49l-1.52-.93c.68-1.12,1.34-2.26,1.98-3.42l1.56.86Z"/>
-  <path class="truleaf-badge-black-2" d="M211.57,169.06c-.15.34-.3.68-.45,1.02-.4.87-.81,1.73-1.23,2.58l-1.61-.79c.57-1.16,1.12-2.34,1.65-3.53l1.64.72Z"/>
-  <path d="M222,110.49c-.85-5.33-2.12-10.59-3.78-15.71-1.68-5.16-3.76-10.2-6.2-15.04-2.37-4.69-5.09-9.19-8.13-13.46-3.1-4.36-6.51-8.49-10.23-12.34-3.69-3.83-7.68-7.35-11.9-10.59-4.18-3.21-8.6-6.1-13.21-8.64-4.72-2.59-9.64-4.82-14.69-6.68-5.07-1.85-10.28-3.31-15.57-4.35-5.49-1.09-11.07-1.75-16.67-1.96-5.59-.21-11.19.02-16.75.69-5.48.67-10.92,1.73-16.24,3.24-5.24,1.49-10.35,3.4-15.3,5.68-4.78,2.19-9.39,4.75-13.78,7.64-4.46,2.94-8.71,6.22-12.69,9.8-3.88,3.48-7.5,7.26-10.82,11.28-3.41,4.13-6.52,8.51-9.28,13.11-2.76,4.61-5.14,9.43-7.18,14.4-2.03,4.97-3.68,10.1-4.92,15.33-1.28,5.41-2.13,10.93-2.55,16.47-.43,5.59-.41,11.22.06,16.81.46,5.53,1.34,11.04,2.65,16.44,1.27,5.2,2.94,10.3,5,15.24,2.07,4.97,4.49,9.79,7.28,14.39,2.77,4.56,5.89,8.9,9.3,12.99,3.36,4.03,7.02,7.8,10.95,11.28,3.98,3.53,8.23,6.77,12.69,9.67,4.43,2.89,9.08,5.43,13.89,7.61,4.94,2.23,10.05,4.1,15.27,5.55,5.36,1.49,10.83,2.53,16.36,3.17,5.53.63,11.11.83,16.68.58,5.61-.25,11.21-.94,16.72-2.06,5.25-1.08,10.42-2.56,15.45-4.43,5.06-1.89,10-4.16,14.72-6.8,4.66-2.6,9.1-5.57,13.32-8.84,4.14-3.22,8.05-6.74,11.67-10.54,3.67-3.85,7.05-7.98,10.11-12.33,3.03-4.31,5.74-8.86,8.08-13.58,2.41-4.84,4.45-9.86,6.09-15.01,1.64-5.17,2.88-10.46,3.7-15.83.82-5.38,1.25-10.81,1.25-16.25s-.46-11.33-1.35-16.93ZM220.05,119.36c.03.36.05.72.07,1.08l-1.79.12c-.08-1.3-.19-2.59-.34-3.88l1.79-.19c.11.96.2,1.91.27,2.87ZM218.46,107.66c.25,1.29.48,2.58.68,3.88l-1.78.28c-.02-.19-.05-.38-.08-.57-.17-1.08-.36-2.16-.57-3.24l1.75-.35ZM217.37,102.78l-1.72.43c-.31-1.28-.65-2.55-1.02-3.82l1.71-.49c.38,1.29.72,2.58,1.03,3.88ZM213.49,90.41c.48,1.23.93,2.47,1.36,3.72l-1.7.58c-.42-1.23-.86-2.45-1.33-3.66l1.67-.64ZM209.91,82.22c.51,1.03,1.01,2.08,1.48,3.14.06.14.13.29.19.43l-1.64.73c-.52-1.18-1.07-2.35-1.63-3.51l1.6-.79ZM205.59,74.32c.69,1.14,1.36,2.31,2.01,3.48l-1.56.86c-.63-1.15-1.29-2.29-1.98-3.42l1.53-.92ZM200.63,66.85c.35.49.7.98,1.05,1.48.41.59.82,1.18,1.22,1.77l-1.48,1c-.47-.69-.94-1.38-1.43-2.06-.27-.38-.54-.76-.82-1.13l1.46-1.06ZM195.05,59.88c.71.82,1.41,1.64,2.1,2.48.14.18.29.35.43.53l-1.4,1.13c-.8-1-1.63-1.99-2.48-2.96l1.35-1.18ZM188.83,53.35c.97.93,1.92,1.88,2.85,2.85l-1.29,1.24c-.06-.06-.11-.12-.17-.18-.86-.89-1.73-1.77-2.62-2.62l1.23-1.29ZM182.12,47.42c1.03.84,2.04,1.69,3.03,2.56l-1.18,1.35c-.97-.86-1.97-1.69-2.98-2.5l1.13-1.41ZM174.93,42.13c.88.58,1.75,1.19,2.61,1.8.2.15.41.3.61.45l-1.06,1.45c-1.04-.77-2.09-1.51-3.16-2.22l1-1.48ZM167.24,37.42c.12.06.25.13.37.2,1.05.59,2.09,1.2,3.12,1.81l-.92,1.53c-1.13-.68-2.27-1.35-3.43-1.99l.86-1.55ZM159.23,33.42c.46.21.92.42,1.39.63.73.34,1.46.7,2.19,1.06l-.78,1.61c-1.16-.58-2.34-1.13-3.53-1.65l.73-1.65ZM150.91,30.17c.91.31,1.8.63,2.7.96.33.13.67.25,1,.38l-.65,1.68c-.58-.23-1.16-.45-1.74-.66-.63-.23-1.26-.46-1.89-.67l.58-1.69ZM142.26,27.62c1.3.33,2.6.68,3.89,1.05l-.49,1.71c-1.27-.37-2.54-.71-3.83-1.02l.43-1.74ZM133.48,25.86c.25.04.49.08.74.12,1.06.17,2.11.36,3.16.57l-.34,1.75c-1.27-.25-2.55-.47-3.83-.67l.27-1.77ZM124.61,24.88c1.31.09,2.62.2,3.92.33l-.19,1.79c-1.28-.14-2.56-.25-3.85-.33l.12-1.79ZM119.62,24.67l-.04,1.77c-1.32-.02-2.64-.02-3.95,0l-.04-1.78c1.34-.02,2.69-.02,4.03.01ZM110.6,24.87l.12,1.79c-1.29.09-2.59.2-3.88.34l-.19-1.79c1.31-.14,2.63-.25,3.95-.34ZM97.91,26.52c1.26-.25,2.52-.47,3.79-.66l.28,1.78c-1.28.19-2.55.41-3.81.66l-.35-1.76s.06-.01.09-.02ZM90,28.39c.98-.27,1.96-.53,2.94-.77l.43,1.73c-1.15.28-2.29.58-3.43.9-.13.04-.26.07-.39.11l-.49-1.7c.31-.09.63-.18.94-.27ZM82.41,30.81c.63-.22,1.25-.44,1.88-.66l.58,1.7c-1.22.41-2.44.86-3.65,1.33l-.65-1.68c.61-.23,1.23-.47,1.84-.69ZM75.37,33.67c.19-.09.38-.17.58-.25l.73,1.64c-.45.2-.9.4-1.35.61-.73.33-1.45.67-2.16,1.02l-.78-1.6c.99-.5,1.98-.97,2.98-1.42ZM67.96,37.4l.86,1.56c-1.16.63-2.3,1.29-3.43,1.97l-.92-1.52c1.15-.69,2.31-1.36,3.49-2.01ZM60.26,42.09l1,1.49c-1.08.72-2.15,1.47-3.19,2.24l-1.06-1.45c1.07-.78,2.15-1.54,3.25-2.28ZM52.39,47.95c.22-.18.44-.36.66-.54l1.13,1.4c-1,.8-1.99,1.63-2.96,2.48l-1.18-1.34c.77-.68,1.56-1.35,2.35-2ZM46.37,53.32l1.23,1.28c-.95.91-1.89,1.85-2.8,2.8l-1.28-1.23c.93-.97,1.88-1.92,2.85-2.85ZM38.58,61.67c.51-.62,1.03-1.23,1.56-1.83l1.34,1.18c-.6.68-1.18,1.37-1.76,2.07-.25.3-.49.6-.74.91l-1.39-1.12c.32-.41.65-.81.99-1.21ZM34,67.59c.18-.25.36-.5.53-.75l1.46,1.06c-.76,1.04-1.5,2.09-2.22,3.16l-1.48-1c.56-.83,1.13-1.66,1.71-2.47ZM29.59,74.27l1.53.93c-.09.14-.17.27-.25.41-.6.99-1.17,1.99-1.72,3.01l-1.57-.87c.65-1.18,1.32-2.34,2.01-3.48ZM24.14,84.53c.37-.78.74-1.56,1.13-2.34l1.61.79c-.58,1.16-1.12,2.34-1.65,3.52l-1.64-.73c.18-.42.37-.83.55-1.24ZM21.68,90.39l1.67.65c-.47,1.2-.91,2.4-1.33,3.62l-1.68-.58c.41-1.24.86-2.47,1.34-3.69ZM18.83,98.85l1.72.49c-.37,1.26-.71,2.54-1.02,3.82l-1.74-.43c.32-1.3.67-2.6,1.04-3.88ZM16.11,110.95c.18-1.12.38-2.23.6-3.34l1.76.35c-.26,1.27-.48,2.55-.68,3.83l-1.77-.27c.03-.19.06-.38.09-.57ZM15.16,118.76c.06-.77.13-1.53.22-2.29l1.78.19c-.11,1.02-.2,2.05-.28,3.07-.02.26-.04.52-.05.78l-1.79-.12c.03-.54.07-1.09.12-1.63ZM14.82,125.38l1.79.04c-.03,1.32-.03,2.64,0,3.95l-1.79.04c-.02-1.35-.02-2.69,0-4.03ZM15.1,135.39c-.02-.33-.05-.66-.06-.99l1.78-.12c.03.5.07.99.11,1.49.07.8.14,1.6.23,2.39l-1.79.19c-.1-.98-.19-1.97-.27-2.96ZM16.01,143.3l1.78-.27c.2,1.27.42,2.54.67,3.8l-1.76.34c-.26-1.29-.49-2.58-.69-3.87ZM21.66,164.43c-.47-1.23-.92-2.47-1.35-3.72l1.7-.58c-.54-1.55-1.03-3.11-1.48-4.69l-1.71.5c-.37-1.29-.72-2.58-1.04-3.89l1.73-.42c.31,1.28.65,2.55,1.02,3.81l.12-.03c.23.78.43,1.58.69,2.35l.79,2.33-.12.04c.42,1.23.86,2.45,1.33,3.65l-1.68.65ZM25.24,172.61c-.46-.94-.9-1.88-1.34-2.83-.11-.25-.22-.49-.32-.74l1.65-.72c.52,1.18,1.06,2.34,1.62,3.5l-1.61.79ZM29.57,180.53c-.07-.12-.15-.25-.22-.37-.62-1.03-1.21-2.07-1.79-3.12l1.55-.86c.64,1.16,1.3,2.3,1.98,3.43l-1.52.92ZM34.53,187.98c-.31-.42-.61-.85-.91-1.27-.46-.65-.92-1.31-1.37-1.98l1.49-.99c.72,1.08,1.47,2.14,2.23,3.18l-1.44,1.06ZM40.11,194.95c-.65-.73-1.28-1.47-1.9-2.22-.22-.26-.43-.53-.64-.79l1.39-1.12c.37.45.74.9,1.11,1.34.46.55.92,1.09,1.38,1.62l-1.34,1.17ZM46.33,201.49c-.97-.94-1.92-1.89-2.85-2.86l1.29-1.23c.9.95,1.84,1.88,2.79,2.8l-1.23,1.29ZM53.04,207.41c-.38-.3-.75-.6-1.12-.91-.64-.54-1.28-1.08-1.91-1.64l1.17-1.35c.98.86,1.97,1.69,2.99,2.51l-1.13,1.39ZM60.22,212.71c-1.09-.73-2.16-1.49-3.21-2.26l1.05-1.44c1.04.76,2.09,1.5,3.16,2.22l-1,1.48ZM67.91,217.42c-1.17-.65-2.33-1.32-3.48-2.01l.93-1.54c1.12.69,2.26,1.35,3.42,1.98l-.87,1.57ZM84.24,224.66c-.8-.26-1.59-.55-2.38-.84-.44-.16-.87-.33-1.31-.5l.65-1.67c-1.53-.59-3.04-1.22-4.54-1.89l.05-.1c1.47.7,3.01,1.27,4.53,1.88l-.04.11c1.2.47,2.4.91,3.62,1.32l-.58,1.69ZM92.89,227.2c-1.16-.28-2.31-.59-3.46-.91-.14-.04-.28-.08-.42-.12l.49-1.71c.33.1.65.19.98.28.94.26,1.89.51,2.84.74l-.43,1.72ZM101.68,228.98c-.14-.02-.27-.04-.41-.06-1.16-.19-2.34-.4-3.5-.64l.35-1.75c1.28.25,2.55.47,3.84.67l-.28,1.78ZM110.55,229.96c-1.31-.09-2.62-.2-3.92-.33l.19-1.79c1.28.13,2.57.25,3.85.33l-.12,1.79ZM115.54,230.18l.04-1.79c1.32.03,2.63.03,3.95,0l.04,1.79c-1.34.02-2.68.02-4.03,0ZM124.56,229.96l-.12-1.79c1.29-.08,2.59-.19,3.88-.33l.19,1.78c-1.31.14-2.63.26-3.95.34ZM133.54,228.97s-.05.01-.08.01l-.28-1.78c1.27-.19,2.54-.41,3.81-.66l.34,1.76c-1.26.25-2.52.47-3.79.67ZM142.21,227.22l-.42-1.73c1.28-.31,2.55-.65,3.82-1.02l.49,1.71c-1.29.37-2.59.72-3.89,1.04ZM152.98,223.94c-.7.26-1.4.5-2.11.74l-.58-1.69c.82-.28,1.64-.57,2.45-.87.4-.15.8-.3,1.2-.47l.65,1.68c-.53.21-1.07.41-1.61.61ZM160.01,221.06c-.27.12-.54.24-.81.36l-.72-1.64c1.18-.52,2.34-1.06,3.5-1.63l.78,1.6c-.91.45-1.83.89-2.75,1.31ZM167.2,217.44l-.86-1.56c.15-.08.31-.16.46-.25,1-.56,1.98-1.13,2.96-1.73l.92,1.52c-1.15.7-2.31,1.37-3.48,2.02ZM174.89,212.74l-1-1.49c1.07-.72,2.13-1.46,3.18-2.23l1.07,1.45c-1.07.78-2.15,1.54-3.25,2.27ZM182.95,206.73c-.28.23-.56.47-.85.69l-1.13-1.39c1.01-.81,2-1.64,2.97-2.48l1.17,1.34c-.71.63-1.43,1.24-2.16,1.84ZM191.54,198.78c-.9.93-1.82,1.85-2.75,2.74l-1.23-1.29c.95-.91,1.89-1.84,2.8-2.79l1.28,1.23s-.06.07-.1.11ZM196.74,192.98c-.56.68-1.13,1.35-1.72,2.01l-1.35-1.18c.86-.98,1.69-1.97,2.51-2.98l1.39,1.13c-.28.34-.55.68-.83,1.02ZM201.3,187.05c-.23.32-.45.63-.69.95l-1.44-1.06c.39-.53.77-1.06,1.14-1.59.37-.52.73-1.05,1.08-1.58l1.47,1c-.5.77-1.03,1.53-1.56,2.28ZM205.56,180.57l-1.52-.93c.68-1.12,1.34-2.26,1.98-3.42l1.56.86c-.65,1.17-1.33,2.34-2.02,3.49ZM208.07,165.48s-.01.02-.03.06h0s-.01.04-.02.05c-.02.05-.03.07-.03.07-.11.25-.22.5-.33.76-.25.58-.51,1.16-.77,1.73-.52,1.13-1.06,2.24-1.61,3.35-2.26,4.47-4.86,8.77-7.76,12.85-.7.99-1.43,1.97-2.17,2.93-.03.04-.06.08-.09.12h0s-.03.03-.03.04h0v.02c-.11.12-.2.24-.3.37-.19.24-.39.49-.58.73-.4.49-.79.98-1.19,1.46-1.59,1.9-3.24,3.75-4.96,5.53-1.72,1.78-3.51,3.5-5.35,5.15-.94.83-1.89,1.65-2.85,2.45-.47.39-.95.78-1.43,1.16-.23.18-.47.37-.71.56-.08.06-.17.13-.26.2,0,0-.01,0-.03.03l-.08.05s-.04.04-.06.05c-.03.03-.05.05-.08.07-3.97,3.04-8.17,5.78-12.55,8.19-2.19,1.21-4.43,2.33-6.7,3.37-.58.26-1.16.52-1.74.77-.12.05-.25.1-.37.16-.03,0-.1.04-.17.07-.02.01-.04.02-.06.03-.02,0-.03.01-.03.01-.07.03-.09.04-.09.04-.23.09-.46.18-.7.28-1.18.49-2.36.95-3.56,1.39-4.79,1.75-9.71,3.12-14.7,4.11-1.28.26-2.57.49-3.86.69-.65.1-1.29.2-1.94.29-.06,0-.11.01-.17.02s-.08.01-.08.01c-.12,0-.24.03-.35.05-.33.04-.65.08-.98.12-2.64.3-5.29.51-7.94.61-5.28.19-10.58-.02-15.83-.65-.3-.04-.6-.08-.9-.12-.04,0-.07,0-.11,0,0,0-.02,0-.08-.01-.19-.03-.38-.05-.57-.08-.62-.09-1.24-.18-1.86-.28-1.29-.21-2.57-.44-3.85-.7-2.51-.51-4.99-1.11-7.46-1.81-2.43-.69-4.85-1.48-7.22-2.35-1.2-.45-2.38-.91-3.56-1.4-.13-.05-.25-.1-.37-.15h0s-.02-.01-.03-.02c-.01,0-.02,0-.03,0-.02-.01-.03-.01-.05-.02-.02-.01-.03-.01-.05-.02-.01,0-.02-.01-.03-.01-.3-.13-.61-.26-.91-.4-.56-.24-1.12-.49-1.67-.74-4.56-2.1-8.96-4.54-13.15-7.3-2.07-1.37-4.08-2.82-6.06-4.33-.06-.04-.11-.09-.14-.11-.11-.08-.21-.16-.31-.24-.27-.21-.53-.42-.8-.63-.48-.39-.95-.77-1.42-1.17-.95-.79-1.89-1.6-2.81-2.43-3.69-3.31-7.13-6.89-10.28-10.71-.4-.49-.79-.97-1.18-1.46-.2-.25-.39-.49-.59-.74-.04-.05-.08-.11-.12-.16h-.01s-.01-.02-.01-.02c0,0-.01-.02-.02-.03l-.03-.03s-.03-.05-.05-.07c-.05-.08-.12-.17-.15-.21-.76-.99-1.51-2-2.23-3.03-1.43-2.03-2.79-4.12-4.07-6.25-1.28-2.14-2.48-4.33-3.6-6.56-.56-1.11-1.09-2.23-1.6-3.36-.27-.57-.52-1.15-.77-1.74-.07-.14-.13-.29-.19-.43-.01-.02-.01-.04-.02-.05t-.01-.02s-.04-.1-.06-.15c-.12-.28-.24-.56-.35-.83-1.92-4.7-3.47-9.55-4.64-14.48-.6-2.51-1.1-5.03-1.5-7.58-.1-.63-.19-1.26-.27-1.89-.01-.04-.01-.09-.02-.13,0-.03-.01-.05-.01-.07-.01-.01-.01-.03-.01-.04-.02-.17-.04-.33-.06-.49-.04-.33-.08-.66-.12-.98-.15-1.32-.28-2.63-.37-3.95-.4-5.29-.39-10.6.05-15.88.1-1.3.24-2.61.4-3.9.03-.32.07-.63.11-.94.01-.02.01-.04.01-.06,0-.02,0-.04,0-.06v-.02s.01-.03.01-.05c.02-.16.04-.33.07-.49.09-.65.19-1.29.29-1.94.42-2.54.93-5.06,1.54-7.56,1.21-4.95,2.8-9.81,4.75-14.52.03-.08.07-.16.11-.24,0,0,.01-.02.03-.07.03-.08.06-.15.09-.22.12-.29.25-.59.38-.88.25-.58.51-1.16.78-1.73.53-1.15,1.08-2.29,1.65-3.42,1.13-2.22,2.35-4.4,3.65-6.53,1.29-2.13,2.66-4.2,4.1-6.23.37-.51.74-1.01,1.11-1.52.17-.23.35-.46.52-.69.09-.12.19-.24.28-.37.04-.05.09-.11.13-.17l.02-.02s.03-.04.04-.05c.02-.03.04-.05.04-.05.72-.93,1.47-1.87,2.24-2.78,3.18-3.81,6.65-7.39,10.37-10.69.92-.82,1.86-1.62,2.82-2.41.48-.4.97-.79,1.46-1.18.23-.18.45-.36.68-.53.03-.02.06-.05.09-.07.01-.02.02-.02.03-.03.03-.02.13-.1.13-.1.11-.08.22-.17.33-.25,1.97-1.5,4.01-2.93,6.09-4.29,4.19-2.71,8.58-5.12,13.13-7.18.57-.26,1.16-.52,1.74-.77.1-.04.2-.08.31-.13.01,0,.05-.02.09-.04.04-.02.08-.04.1-.04.01,0,.02-.01.03-.01.32-.14.64-.27.96-.4,1.15-.47,2.32-.92,3.49-1.34,2.38-.87,4.8-1.64,7.25-2.32,2.49-.69,5.01-1.29,7.55-1.78,1.25-.25,2.51-.47,3.78-.66.57-.09,1.16-.17,1.74-.25h.02s.06-.01.09-.02c.02,0,.05,0,.09,0,.08-.01.16-.03.19-.03.14-.02.27-.03.41-.05.35-.04.71-.09,1.06-.13,5.26-.59,10.56-.78,15.85-.54,2.62.11,5.24.33,7.84.65.27.03.53.07.79.1t.02,0h.04s.02.01.03.01c.03-.01.07,0,.1.01.05,0,.09.01.11.01.19.03.38.05.57.08.64.09,1.29.19,1.94.3,1.26.21,2.51.44,3.76.69,5.02,1.03,9.95,2.44,14.75,4.23,1.17.44,2.33.9,3.48,1.37.03.02.1.05.17.08.02.01.04.02.06.03.01,0,.02,0,.03.01.04.02.07.03.08.03.09.04.18.07.27.11.29.13.58.25.87.38.58.26,1.16.52,1.73.78,2.27,1.06,4.5,2.19,6.68,3.41,2.18,1.22,4.3,2.51,6.38,3.89,1.05.69,2.08,1.4,3.1,2.13.49.36.97.71,1.46,1.07.25.19.5.37.75.56.12.1.25.19.37.29.03.02.06.05.09.07.01.01.02.02.03.02.01.01.02.01.02.02,3.94,3.05,7.65,6.4,11.08,10.01,1.71,1.79,3.36,3.65,4.93,5.56.39.47.77.95,1.15,1.43.18.23.35.45.52.67,0,.01.02.03.04.04.01.01.02.03.03.04h0s.03.04.04.05c.01.02.02.03.03.04h0v.02c.1.12.2.25.29.37.76,1,1.5,2.01,2.22,3.04,2.87,4.08,5.42,8.37,7.64,12.83.57,1.13,1.11,2.28,1.63,3.43.26.58.52,1.16.77,1.74.02.06.05.12.07.18h.01s0,.03.01.04c0,.01.01.02.01.03s.01.02.01.02c.01.04.03.07.04.1.03.07.06.14.07.17.12.29.25.59.36.88.96,2.36,1.82,4.75,2.59,7.17,1.56,4.89,2.73,9.91,3.51,14.99.05.3.09.59.14.89.02.16.04.32.06.49,0,.04.02.14.03.23.01.02.01.03.01.05v.06s.01.03.01.05c.08.54.15,1.09.21,1.63.14,1.25.26,2.5.36,3.75.19,2.56.29,5.12.29,7.69s-.11,5.35-.32,8.02c-.1,1.29-.23,2.58-.38,3.86-.04.33-.08.66-.13.98-.01.08-.01.15-.03.22v.04s-.01.07-.01.1c0,.02-.01.03-.01.05-.01.08-.02.18-.04.27-.09.65-.18,1.3-.29,1.94-.81,5.06-2.01,10.05-3.59,14.92-.78,2.4-1.65,4.78-2.62,7.11-.06.15-.12.29-.18.44-.01.04-.03.07-.04.11ZM211.12,170.08c-.4.87-.81,1.73-1.23,2.58l-1.61-.79c.57-1.16,1.12-2.34,1.65-3.53l1.64.72c-.15.34-.3.68-.45,1.02ZM213.49,164.45l-1.68-.65c.47-1.2.91-2.41,1.33-3.63l1.69.59c-.42,1.24-.87,2.47-1.34,3.69ZM216.32,155.99l-1.71-.49c.37-1.27.71-2.55,1.03-3.83l1.73.43c-.32,1.31-.67,2.6-1.05,3.89ZM219.09,143.64c-.19,1.2-.41,2.39-.64,3.58l-1.75-.34c.24-1.27.47-2.55.66-3.83l1.78.27c-.02.11-.03.21-.05.32ZM219.45,141.21v-.07s.01-.01.01-.02c0,.03,0,.06-.01.09ZM220.02,135.82c-.07.85-.15,1.7-.24,2.55l-1.79-.19c.14-1.28.25-2.57.34-3.85l1.78.12c-.02.46-.05.91-.09,1.37ZM220.33,129.46l-1.78-.04c.01-.67.02-1.33.02-2s-.01-1.3-.02-1.95l1.78-.04c.01.66.02,1.33.02,1.99s-.01,1.36-.02,2.04Z"/>
-  <path class="truleaf-badge-black-2" d="M214.83,160.76c-.42,1.24-.87,2.47-1.34,3.69l-1.68-.65c.47-1.2.91-2.41,1.33-3.63l1.69.59Z"/>
-  <path class="truleaf-badge-black-2" d="M217.37,152.1c-.32,1.31-.67,2.6-1.05,3.89l-1.71-.49c.37-1.27.71-2.55,1.03-3.83l1.73.43Z"/>
-  <path class="truleaf-badge-black-2" d="M219.14,143.32c-.02.11-.03.21-.05.32-.19,1.2-.41,2.39-.64,3.58l-1.75-.34c.24-1.27.47-2.55.66-3.83l1.78.27Z"/>
-  <path class="truleaf-badge-black-2" d="M219.46,141.12s0,.06-.01.09v-.07s.01-.01.01-.02Z"/>
-  <path class="truleaf-badge-black-2" d="M220.11,134.45c-.02.46-.05.91-.09,1.37-.07.85-.15,1.7-.24,2.55l-1.79-.19c.14-1.28.25-2.57.34-3.85l1.78.12Z"/>
-  <path class="truleaf-badge-black-2" d="M220.35,127.42c0,.68,0,1.36-.02,2.04l-1.78-.04c.01-.67.02-1.33.02-2s-.01-1.3-.02-1.95l1.78-.04c.01.66.02,1.33.02,1.99Z"/>
-  <path class="truleaf-badge-black-2" d="M220.12,120.44l-1.79.12c-.08-1.3-.19-2.59-.34-3.88l1.79-.19c.11.96.2,1.91.27,2.87.03.36.05.72.07,1.08Z"/>
-  <path class="truleaf-badge-black-1" d="M219.46,141.12s0,.06-.01.09v-.07s.01-.01.01-.02Z"/>
-  <path class="truleaf-badge-black-1" d="M81.24,221.54l-.04.11c-1.53-.59-3.04-1.22-4.54-1.89l.05-.1c1.47.7,3.01,1.27,4.53,1.88Z"/>
-  <path class="truleaf-badge-black-1" d="M22.13,160.09l-.12.04c-.54-1.55-1.03-3.11-1.48-4.69l.12-.03c.23.78.43,1.58.69,2.35l.79,2.33Z"/>
-  <path d="M20.31,140.49c0-.05,0-.04,0,0h0Z"/>
-  <path d="M22.13,160.09l-.12.04c-.54-1.55-1.03-3.11-1.48-4.69l.12-.03c.23.78.43,1.58.69,2.35l.79,2.33Z"/>
-  <path d="M39.87,187.37s-.02-.02-.03-.03c-.01-.02-.03-.05-.05-.07.04.04.07.07.08.1Z"/>
-  <path d="M79.52,36.93s-.03.02-.06.03c-.01.01-.03.01-.04.01.04-.02.08-.04.1-.04Z"/>
-  <path d="M81.24,221.54l-.04.11c-1.53-.59-3.04-1.22-4.54-1.89l.05-.1c1.47.7,3.01,1.27,4.53,1.88Z"/>
-  <path d="M130.75,30.16s-.05-.01-.07-.01h.04s.02.01.03.01Z"/>
-  <path d="M195.34,67.53v.02s-.02-.04-.04-.06c.02.02.03.03.04.04Z"/>
-  <path d="M195.37,67.57h0s-.02-.01-.02-.01c.01,0,.01.01.02.01Z"/>
-  <path d="M214.84,140.57v.07s-.01.03-.01.05c.01-.04.01-.08.01-.12Z"/>
-  <path d="M67.84,58.73l-.66.48-4.44-6.09.71-.52c.69-.51,1.57-.67,2.48.57l.21-.15-1.29-1.76-5.8,4.22,1.29,1.77.21-.16c-.9-1.24-.37-2.11.43-2.69l.5-.36,4.44,6.09-.67.48.16.21,2.58-1.88-.15-.21Z"/>
-  <path d="M76.75,53.18l-.13.08c-.43.25-.86.17-1.87-.86-1.08-1.08-1.87-1.23-3.1-.58l-.04-.07c1.21-.89,1.89-1.88,1.2-3.04-.81-1.37-2.33-.88-3.86.03l-3.06,1.82.14.22.7-.42,3.85,6.48-.7.42.13.22,2.75-1.63-.13-.22-.7.41-1.86-3.12.82-.5c2.14-1.26,2.71,2.93,4.94,1.6l1.05-.62-.13-.22ZM70.76,52.2l-.83.49-1.86-3.13,1.01-.59c1.13-.67,1.76-.45,2.43.67.64,1.08.45,1.85-.75,2.56Z"/>
-  <path d="M82.08,47.81l-2.13-4.49.74-.35-.11-.23-2.07.98.12.23,1.03-.49,2.09,4.41c.82,1.73.42,2.79-.82,3.37-1.36.65-2.45.33-3.3-1.46l-2.07-4.38.74-.35-.11-.23-2.89,1.37.11.23.74-.35,2.07,4.37c.93,1.95,2.48,2.25,4.42,1.33,1.52-.72,2.44-1.85,1.44-3.96Z"/>
-  <path d="M92.26,44.64l-.25.08c.54,1.61-.13,2.25-1.04,2.56l-1.72.58-2.4-7.15.77-.27-.08-.24-3.03,1.02.08.24.78-.26,2.4,7.15-.78.26.09.25,5.93-1.99-.75-2.23Z"/>
-  <path d="M99.31,42.83l-.24.06c.43,1.65-.3,2.24-1.22,2.48l-2.19.57-.95-3.65.91-.24c1.33-.34,1.54-.11,1.82.97l.24-.06-.76-2.95-.24.06c.26,1.02.21,1.38-1.13,1.73l-.9.24-.88-3.4,2.06-.54c1.13-.29,1.82-.17,2.21,1.32l.24-.06-.53-2.03-6.35,1.65.06.25.8-.2,1.89,7.3-.8.2.07.26,6.48-1.68-.59-2.28Z"/>
-  <path d="M108.7,43.48l-.78.12-4.55-7.33-.32.05-1.92,8.31-.95.15.04.25,2.38-.36-.04-.26-1.1.17.55-2.41,3.06-.47,1.3,2.13-.99.15.03.26,3.33-.51-.04-.25ZM102.08,41.88l.85-3.69,1.98,3.26-2.83.43Z"/>
-  <path d="M115.07,35.31l-6.54.39.02.26.81-.05.46,7.53-.82.05.02.26,3.19-.19-.02-.26-.82.05-.21-3.49.89-.05c1.39-.09,1.53.19,1.6,1.29h.26s-.18-3.05-.18-3.05l-.26.02c.06,1.05-.05,1.39-1.44,1.48l-.88.05-.23-3.78,2.12-.13c1.17-.07,1.82.18,1.91,1.72h.25s-.13-2.1-.13-2.1Z"/>
-  <path d="M119.21,35.29l-.13,2.18.26.02c.09-1.53,1.06-1.87,2.05-1.81l.61.03-.44,7.53-.81-.05-.02.26,3.19.18.02-.26-.82-.05.43-7.52.88.05c.86.05,1.64.49,1.55,2.02h.26s.13-2.17.13-2.17l-7.16-.41Z"/>
-  <path d="M131.7,36.3c-1.88-.29-4.23.6-4.67,3.49-.45,2.89,1.52,4.45,3.4,4.74,1.89.29,4.22-.6,4.67-3.49.44-2.89-1.51-4.44-3.4-4.74ZM133.47,40.79c-.42,2.68-1.43,3.72-3,3.48-1.62-.25-2.22-1.54-1.81-4.22.42-2.7,1.38-3.74,3-3.49,1.56.24,2.22,1.53,1.81,4.23Z"/>
-  <path d="M140.62,38.27l-3.32-.87-.06.25.79.21-1.9,7.3-.79-.21-.06.25,3.52.92c1.87.49,3.68.5,4.12-1.2.34-1.29-.43-2.17-2.02-2.74v-.07c1.15.17,2.19-.1,2.48-1.23.38-1.46-1.03-2.17-2.76-2.61ZM141.34,44.5c-.36,1.38-1.08,1.73-2.48,1.37l-1.22-.32.98-3.77,1.15.29c1.43.38,1.92,1.09,1.57,2.43ZM141.88,40.58c-.32,1.2-.98,1.52-2.17,1.21l-1.02-.27.85-3.27,1.02.27c1.22.31,1.62.9,1.32,2.06Z"/>
-  <path d="M150.06,49.51l-.48-8.61-.31-.11-5.67,6.38-.9-.33-.09.24,2.26.82.09-.24-1.05-.38,1.64-1.85,2.91,1.05.12,2.49-.94-.34-.09.25,3.16,1.15.09-.25-.74-.27ZM145.76,45.21l2.51-2.84.17,3.82-2.68-.98Z"/>
-  <path d="M160.32,45.68c-.07.15-.28.32-.53.21-.39-.19-.58-.88-1.75-1.44-1.83-.85-4.26-.63-5.5,2.01-1.25,2.65.13,4.66,1.87,5.48,1.55.74,2.96.34,3.7-1l-.21-.1c-.75,1.23-1.99,1.51-3.32.89-1.48-.69-1.7-2.12-.55-4.56,1.16-2.47,2.39-3.19,3.9-2.48,1.73.81,1.67,2.47,1.21,3.62l.16.08,1.23-2.61-.21-.1Z"/>
-  <path d="M167.82,49.96c-.08.15-.31.3-.54.16-.37-.21-.5-.92-1.62-1.58-1.74-1.02-4.18-1.02-5.66,1.5-1.48,2.53-.29,4.66,1.37,5.63,1.48.87,2.92.6,3.78-.66l-.2-.12c-.86,1.16-2.12,1.32-3.39.58-1.42-.82-1.51-2.26-.14-4.59,1.38-2.36,2.67-2.96,4.11-2.11,1.65.96,1.44,2.6.88,3.71l.15.09,1.47-2.49-.21-.12Z"/>
-  <path d="M172.88,53.31c-1.54-1.11-4.03-1.4-5.75.97-1.72,2.36-.68,4.65.85,5.76,1.55,1.13,4.03,1.4,5.75-.96,1.72-2.37.69-4.64-.85-5.77ZM172.4,58.11c-1.6,2.19-2.98,2.65-4.26,1.72-1.33-.96-1.27-2.39.33-4.58,1.6-2.21,2.93-2.69,4.25-1.73,1.29.94,1.28,2.38-.32,4.59Z"/>
-  <path d="M52.22,175.72l-.22.15.45.68-2.83,1.88-2.18-3.27,2.84-1.88.45.68.22-.15-1.76-2.66-.22.14.45.69-6.28,4.16-.46-.68-.21.15,1.77,2.66.21-.14-.45-.68,3.23-2.15,2.17,3.27-3.23,2.15-.45-.69-.22.15,1.77,2.66.22-.14-.46-.68,6.29-4.17.45.68.22-.14-1.77-2.67Z"/>
-  <path d="M57.06,181.85l-.21-.25-8.1,2.69-.62-.73-.2.16,1.55,1.84.2-.16-.72-.86,2.35-.78,1.99,2.37-1.14,2.21-.65-.76-.2.16,2.17,2.58.2-.16-.51-.61,3.89-7.7ZM51.59,183.67l3.6-1.2-1.76,3.39-1.84-2.19Z"/>
-  <path d="M63.73,189.04l-.18.19.83.79-3.75,3.9.49-7.39-1.31-1.26-.18.19.59.57-5.22,5.44-.6-.57-.17.19,1.65,1.58.18-.19-.83-.79,4.27-4.44-.57,8.54.18.18,5.5-5.72.59.56.18-.18-1.65-1.59Z"/>
-  <path d="M68.63,193.19l-2.81-2.17-.16.21.65.5-4.6,5.97-.65-.5-.16.21,2.81,2.16c1.81,1.39,4.34,1.83,6.06-.42,1.73-2.24.66-4.57-1.14-5.96ZM68.47,198.15c-1.6,2.08-2.98,2.46-4.6,1.22l-.93-.72,4.6-5.97.93.71c1.61,1.25,1.6,2.67,0,4.76Z"/>
-  <path d="M81.15,201.25c-.08.14-.3.3-.54.17-.37-.21-.51-.92-1.65-1.56-1.75-.99-4.19-.95-5.63,1.6-1.44,2.55-.21,4.66,1.47,5.61,1.49.84,2.93.54,3.77-.73l-.21-.12c-.84,1.17-2.09,1.36-3.37.64-1.43-.79-1.55-2.23-.22-4.59,1.34-2.38,2.62-3,4.07-2.18,1.66.94,1.48,2.58.94,3.7l.16.09,1.42-2.52-.21-.11Z"/>
-  <path d="M85.26,203.12l-3.25-1.41-.1.24.75.33-3,6.91-.75-.33-.11.24,2.94,1.28.1-.24-.75-.33,1.45-3.34.88.39c2.28.98-.79,3.9,1.6,4.94l1.12.48.1-.23-.14-.07c-.46-.19-.65-.59-.4-2.01.24-1.51-.1-2.24-1.35-2.85l.03-.07c1.44.45,2.64.43,3.17-.81.64-1.47-.65-2.41-2.29-3.12ZM86.03,205.72c-.5,1.16-1.23,1.45-2.51.9l-.88-.39,1.45-3.33,1.07.46c1.21.52,1.39,1.17.87,2.36Z"/>
-  <path d="M94.41,214.62l-.89-8.58-.31-.1-5.36,6.64-.92-.28-.08.25,2.3.71.08-.25-1.07-.33,1.55-1.93,2.96.92.23,2.48-.95-.29-.08.24,3.22,1,.08-.25-.76-.23ZM89.9,210.54l2.38-2.96.36,3.8-2.74-.84Z"/>
-  <path d="M97.73,207.42l-.05.26.8.16-1.51,7.39-.8-.16-.05.25,3.13.64.05-.25-.8-.16.7-3.43.87.17c1.36.28,1.43.59,1.21,1.67l.26.05.6-2.98-.25-.05c-.21,1.03-.41,1.34-1.77,1.06l-.87-.18.76-3.71,2.08.43c1.14.23,1.71.64,1.4,2.16l.24.04.42-2.05-6.42-1.31Z"/>
-  <path d="M104.59,208.79l-.26,2.17.26.03c.18-1.52,1.17-1.8,2.15-1.69l.61.07-.87,7.49-.82-.09-.03.26,3.18.36.03-.25-.81-.1.87-7.49.87.1c.86.1,1.61.58,1.44,2.11l.25.03.25-2.17-7.12-.83Z"/>
-  <path d="M118.51,215.41c-.03,1.7-.89,2.08-1.84,2.06l-2.26-.03.05-3.77.94.02c1.38.02,1.51.29,1.5,1.41h.25l.04-3.04h-.25c-.01,1.05-.16,1.39-1.54,1.37l-.93-.02.05-3.51,2.13.03c1.17.02,1.8.32,1.78,1.86h.25s.03-2.09.03-2.09l-6.57-.09v.26h.82s-.11,7.55-.11,7.55h-.82s0,.25,0,.25l6.69.09.03-2.35h-.24Z"/>
-  <path d="M123.08,209.4l-3.54.32.03.26.81-.07.68,7.51-.82.07.03.26,3.53-.32c2.27-.2,4.43-1.6,4.17-4.42-.25-2.82-2.63-3.81-4.89-3.61ZM123.78,217.17l-1.17.11-.68-7.51,1.17-.11c2.03-.18,2.99.87,3.23,3.5.23,2.61-.52,3.83-2.55,4.01Z"/>
-  <path d="M138.87,212.44l-.24.06c.38,1.65-.36,2.23-1.28,2.45l-2.21.51-.86-3.67.92-.21c1.34-.32,1.54-.08,1.79,1.01l.24-.06-.69-2.96-.24.06c.24,1.02.18,1.38-1.16,1.7l-.91.21-.8-3.42,2.07-.48c1.14-.27,1.83-.14,2.18,1.37l.24-.06-.48-2.03-6.39,1.49.06.25.8-.18,1.71,7.34-.79.18.06.26,6.51-1.53-.53-2.29Z"/>
-  <path d="M145.94,210.25c-.96-2.86-5.25-.69-5.92-2.69-.23-.69.04-1.34,1.15-1.71,1.24-.42,2.45.16,2.88,1.43l.25-.08-.76-2.27-.25.08c.07.2.03.35-.22.43-.31.11-.93-.19-1.99.16-1.58.53-2.19,1.7-1.8,2.87.95,2.83,5.29.6,6.02,2.8.26.76-.08,1.43-1.31,1.84-1.49.5-3.15-.35-3.68-1.93l-.25.08,1,2.97.25-.08c-.12-.36-.08-.58.22-.68.39-.13,1.25.33,2.59-.11,1.73-.58,2.27-1.74,1.82-3.11Z"/>
-  <path d="M152.31,209.7l-.75.32-3.02-6.9.81-.36c.79-.34,1.68-.3,2.3,1.1l.23-.1-.87-2-6.57,2.86.87,2,.24-.1c-.62-1.4.1-2.14,1-2.53l.56-.25,3.02,6.91-.75.33.1.23,2.93-1.27-.1-.24Z"/>
-  <path d="M160.44,201.11c-1.4-2.46-3.97-2.38-5.95-1.26l-3.08,1.75.13.22.71-.4,3.71,6.56-.71.4.13.23,3.09-1.75c1.97-1.12,3.36-3.28,1.97-5.75ZM158.34,206.62l-1.02.58-3.72-6.56,1.02-.58c1.78-1,3.08-.44,4.38,1.86,1.3,2.28,1.11,3.7-.66,4.7Z"/>
-  <path d="M162.27,198.38c-.28-.42-.84-.54-1.24-.27-.42.28-.53.84-.25,1.26.27.42.83.52,1.25.23.4-.26.52-.81.24-1.22ZM164.75,202.07c-.29-.42-.85-.53-1.25-.26-.42.28-.53.84-.25,1.26.28.41.83.51,1.25.23.4-.27.52-.82.25-1.23Z"/>
-  <path d="M176.25,193.53l-.63.53-4.9-5.72.62-.53-.17-.2-1.83,1.56,2.21,6.47-6.14-3.1-1.84,1.59.16.19.63-.53,4.91,5.73-.62.53.16.2,1.67-1.43-.17-.2-.8.68-4.62-5.39,7.32,3.6.24-.21-2.6-7.57,4.59,5.35-.59.51.17.2,2.4-2.06-.17-.2Z"/>
-  <path d="M179.35,190.19l-.57.59-5.41-5.25.57-.59-.19-.18-2.23,2.29.19.19.57-.59,5.41,5.25-.57.59.19.18,2.22-2.3-.18-.18Z"/>
-  <path d="M185.51,182.95l-.5.61-8.28-2.43-.2.25,4.1,7.47-.61.74.2.17,1.53-1.85-.2-.17-.71.86-1.19-2.16,1.97-2.39,2.38.73-.63.77.2.16,2.14-2.59-.2-.17ZM179.51,186.18l-1.83-3.31,3.65,1.11-1.82,2.2Z"/>
-  <path d="M193.61,169.56l-.38.73-6.7-3.46.38-.73-.23-.12-1.47,2.84.23.12.38-.72,6.7,3.45-.38.73.23.12,1.47-2.84-.23-.12Z"/>
-  <path d="M194.84,126.76c0,1.43-.04,2.86-.12,4.27-.08,1.5-.21,3-.38,4.48-.55,4.8-1.55,9.47-2.95,13.96-1.5,4.8-3.46,9.4-5.83,13.73-1.51,2.78-3.19,5.44-5.03,7.99-1.35,1.88-2.79,3.69-4.3,5.43-13.95,16.07-34.53,26.23-57.48,26.23-9.75,0-19.06-1.83-27.63-5.18-1.24-.48-2.47-.99-3.68-1.54-1.57-.71-3.1-1.47-4.61-2.28-1.4-.75-2.77-1.54-4.11-2.38-2.04-1.26-4.02-2.61-5.92-4.06-2.76-2.09-5.38-4.37-7.83-6.82-13.78-13.77-22.31-32.8-22.31-53.83,0-3.64.26-7.22.76-10.72.13-1.03.3-2.05.49-3.06,1.6-8.75,4.7-16.98,9.02-24.41.56-.96,1.14-1.91,1.73-2.84,1.9-2.96,4-5.77,6.28-8.43,1.83-2.14,3.78-4.18,5.84-6.1,3.16-2.97,6.57-5.66,10.21-8.04,1.27-.85,2.57-1.65,3.9-2.41,8.16-4.69,17.27-7.91,26.98-9.29,3.55-.52,7.19-.78,10.88-.78.62,0,1.24.01,1.85.02,9.91.24,19.35,2.37,27.97,6.05.91.38,1.81.79,2.7,1.21,4.33,2.04,8.43,4.49,12.26,7.29.66.48,1.32.97,1.96,1.48h.01c10.83,8.45,19.31,19.75,24.31,32.78.68,1.77,1.3,3.57,1.84,5.4.57,1.87,1.06,3.78,1.47,5.72.16.71.3,1.43.43,2.15.33,1.71.59,3.44.78,5.19.18,1.52.31,3.05.39,4.59.08,1.39.12,2.79.12,4.2Z"/>
-  <g>
-    <path class="truleaf-badge-black-2" d="M75.02,143.69c-.01,3.23-.06,6.45-.18,9.67-.23,7.43-.76,14.82-1.75,22.13-.55,3.53-1.24,7.22-1.46,10.62-2.76-2.09-5.38-4.37-7.83-6.82,1.55-7.85,3.48-15.85,4.37-23.55,0-.91.01-1.82.02-2.73.02-3.58.1-7.17.19-10.78.13-4.95.27-9.92.34-14.89.05-3.13.06-6.26.03-9.38-.03-2.76-.11-5.52-.24-8.28.11-1.4-.48-2.51-1.53-3.06-.44-.23-.96-.36-1.54-.38-2.14-.35-4.16-.95-6.44-.83-1.59.04-3.02.51-4.34,1.2-2.65,1.37-4.91,3.63-7.44,5.18-1.73.9-3.38,1.89-4.97,2.95.13-1.03.3-2.05.49-3.06,1.25-.88,2.54-1.77,3.88-2.68,2.04-1.35,3.22-3.66,5.63-4.27,1.05-.28,2.13-.66,3.22-1.05,2.56-.91,5.2-1.86,7.79-1.68,2.25.1,3.58,1.6,5.34,2.56.46.25.95.47,1.5.61,4.32.49,3.55,5.73,4.41,8.92.03,1.04.05,2.08.08,3.12.09,3.56.19,7.14.27,10.72.11,5.24.19,10.5.16,15.76Z"/>
-    <path class="truleaf-badge-black-2" d="M213.99,129.64c-1.03-4.07-1.55-8.99-4.16-12.37-1.68-2.12-3.67-3.44-4.95-6.01-.51-.97-.73-2.14-1.09-3.16-.59-2.15-3.12-2.09-4.8-2.89-1.95-.96-3.15-2.58-5.03-3.98-1.26-.98-2.64-1.82-4.08-2.49-.42-.2-.83-.37-1.24-.53-2.6-1.05-4.84-1.42-7.51-2.15-.39-.12-.77-.24-1.15-.36-.59-.18-1.17-.36-1.75-.55-19.4-6.16-35.52-12.87-56.58-14.52-1.6-.14-3.09-.08-4.57-.13-2.18-.17-1.79-1.5-.11-2.31,9.49-3.45,19.06-6.73,28.89-9.15,6.05-1.41,12.32-2.68,18.46-3.61-.64-.51-1.3-1-1.96-1.48-2.86.43-5.83.1-8.69.52-1.63.38-2.18,1.5-3.86,2-15.58,3.78-32.6,6.89-46.08,15.66-1.15.83-1.36,1.83.43,1.62,1.13-.15,2.2-.57,3.34-.94,9.1-3.13,26.86.96,36.41,2.7,4.04.91,7.04,1.91,11.2,3.26,5.29,1.74,11.76,4.03,17.79,6.38,2.47.97,4.87,1.94,7.08,2.9,4.37,1.89,8.01,3.7,10.04,5.17.17.12.32.25.46.39.83.8,1.27,1.88,2.25,2.76,1.37,1.18,3.23,1.37,4.71,2.55.54.44,1.65,1.5.91,2.15-1.32.47-3.36-.77-4.95-1.21-.5-.14-.99-.32-1.45-.53-1.28-.55-2.44-1.31-3.55-2.17l-.04-.02c-2.44-1.28-7.53-.01-10.71-.24-.3,0-.47.01-.5.03,2.4.75,2.14,1.89,3.23,3.83.84,1.13,1.82,1.69,3.06,2.61,2.17,1.55,4.64,3.13,6.73,4.73,1.19.98,2.32,2.03,3.38,3.16,4.26,4.47,7.51,10,9.52,15.78,1.14,3.48-.99,2.15-2.22.55-1.48-1.96-2.83-4.02-4.71-5.6-.83-.76-1.69-1.51-2.59-2.26-4.1-3.43-8.82-6.77-13.3-10-2.09-1.52-4.13-3.01-6.03-4.48-.6-.48-1.23-1.01-1.89-1.57-2.52-2.14-5.33-4.67-7.38-6.29-1.67-1.32-3.6-1.14-5.71-1.89-.68-.24-1.35-.49-2.02-.75-2.77-1.08-5.49-2.32-8.25-3.42-.88-.38-1.76-.74-2.65-1.08-4.81-1.83-9.79-3-14.84-3.84-.04-.01-.07-.01-.11-.02-3.95-.66-7.94-1.12-11.93-1.54-.08,0-.15-.01-.23-.02-.71-.07-1.44-.15-2.15-.22-.08-.01-.15-.01-.23-.02-1.09-.11-2.2-.23-3.29-.34h-.01c-.16-.02-.3-.03-.46-.05-.06-.01-.12-.01-.18-.02-1.72-.16-3.57-.61-5.18-.95-1.03-.25-2.26-.08-2.73.96-.42.9-.03,1.57.62,2.08.05.04.1.08.15.11.49.37,1.09.63,1.59.85,2.87,1.44,4.88,4.18,6.95,6.68.04.05.08.09.12.14.51.62,1.02,1.22,1.56,1.79,1.13,1.24,2.33,2.67,3.36,4.08.64.81,1.92,2.67-.09,2.33-2.64-.54-5.28-1.58-7.51-3.09-.07-.05-.15-.11-.22-.17-.08-.05-.15-.11-.23-.17-1.59-1.29-2.86-2.99-5.01-3.3-2.45-.52-4.89-.95-7.37-1.31-.08-.02-.16-.03-.24-.04-1.28-.18-2.56-.34-3.86-.49-1.8-.21-3.92-.44-5.62.04-1.52.42-2.71,1.4-3.03,3.47.2,4.55.18,9.1.19,13.65,0,.98.01,1.95.02,2.93.02,3.77.12,7.53.41,11.29.15,3.04.33,6.13.15,9.15-.07,1.87-.88,3.7-.64,5.56,0,.03.01.05.02.08.44,2.49,3.94,1.65,4.94-.03.98-1.31.88-2.91.66-4.5-.08-.99.06-2.04.13-3.11.23-2.89-.02-5.47-.47-7.97-.27-1.59-.63-3.14-.99-4.71-.85-3.75-1.69-7.61-1.46-12.3,0-.25,0-.5,0-.74.08-2.51.33-4.68,1-6.36,1.14-2.85,3.44-4.32,8-3.69.08.01.16.02.24.03.29.04.6.09.92.15,3.45,1.04,7.79,2.83,11.99,5.07.08.04.15.08.23.13,5,2.69,9.75,6.03,12.47,9.5.33.42.64.88.94,1.35.08.12.15.24.23.36,1.06,1.66,2.09,3.46,3.63,4.52,2.05,1.18,4.71.5,3.63-2.26-1.58-4.91-4.45-9.87-7.26-14.41-.08-.13-.15-.25-.23-.38-.53-.84-1.04-1.67-1.55-2.48-1.21-1.96-3.47-2.73-4.9-4.52-.27-.41-.81-1-1.4-1.67-.07-.09-.15-.18-.23-.27-1.32-1.55-2.74-3.44-1.94-4.48.32-.46,1.16-.59,1.94-.58.08,0,.15.01.23.01.21,0,.42.03.6.06.52.04,1.04.09,1.55.15.08.01.15.01.23.02,5.52.55,10.8,1.51,15.9,2.85.07.02.13.03.2.06h0c3.64.94,7.18,2.09,10.64,3.43,3.66,1.4,7.23,3,10.72,4.79,2.95,1.51,5.85,3.15,8.71,4.91,5.4,3.32,10.65,7.07,15.84,11.2.75.59,1.51,1.2,2.26,1.82,3.15,2.65,6.4,5.44,9.45,8.41,3.65,3.55,7.01,7.34,9.57,11.43,1.3,3.04,1.84,4.4,5.64,3.89,2.8-.21,2.27-2.49,1.62-4.48-.32-1.04-.7-2.06-1.1-3.08-3.47-8.2-6.2-17.7-13.31-23.61-.75-.57-1.58-1.13-2.43-1.69-2.18-1.44-4.53-2.84-6.32-4.23-1.2-.89-1.74-2.22.09-2.35,1.84.14,3.69.67,5.45,1.39,1.8.74,3.52,1.7,5.1,2.66,3.68,2.32,6.16,5.84,9.03,9.08,1.65,2.05,3.58,4.04,4.64,6.4.51,1.01.99,2.25,1.83,2.99,1.91,1.38,1.42-1.71,1.01-2.97ZM204.88,142.03c.82.53,2.53,3.18,2.13,4.05l-.02.02c-1.04.51-2.69-2.67-2.84-3.63-.12-.63.3-.75.73-.44Z"/>
-    <path class="truleaf-badge-black-2" d="M59.77,76l-6.28,8.43c1.9-2.96,4-5.77,6.28-8.43Z"/>
-    <path class="truleaf-badge-black-2" d="M66.32,90.74c-2.27,2.07-10.76-3.19-14.56-3.47.56-.96,1.14-1.91,1.73-2.84,3.54.91,7,2.02,10.38,3.36,1.22.48,3.41,1.5,2.45,2.95Z"/>
-    <path class="truleaf-badge-black-2" d="M65,78.17c-1.43-.16-3.31-1.08-5.23-2.17,1.83-2.14,3.78-4.18,5.84-6.1.56,1.78.87,3.63.86,5.55-.1,1.15-.2,2.65-1.47,2.72Z"/>
-    <path class="truleaf-badge-black-2" d="M106.7,50.16c-1.26.68-2.47,1.36-3.62,2.06-6.96,4.39-10.93,10.09-15.68,16.33-.84,1.04-2.1,2.77-3.14,2.67-.67-.11-.79-1.39-.9-2.06-.17-1.22-.44-2.47-.84-3.62-.83-2.06-1.76-4.1-2.8-6.09-1.33.76-2.63,1.56-3.9,2.41.19.38.38.74.58,1.09,1.07,1.83,1.8,3.04,2.37,5.31.71,2.53,1.69,6.47,2.12,8.66.14.73.25,1.46-.02,2.15-.45,1.19-1.85,2.24-2.14,3.43-.44,1.95,2.28,3.27,3.54,4.95.35.47.86,1.02.82,1.59-.1.31-.61.28-.95.2-1.6-.31-4.68-1.19-6.61.01-1.45.84-2.17,2.83-1.56,4.37.06.16.14.32.23.46,1.3,2.23,5.19,2.8,7.97,1.62h.01c.12-.05.24-.1.35-.16.82-.37,1.68-.93,2.6-.69.95.22,1.79,1.14,2.57,1.77,3.16,2.66,7.12,2.05,7.85-.69.46-1.89-.61-4.19-1.96-5.71-.94-1.02-2.33-1.89-2.08-3.4.08-.56.41-1.18.54-1.72.2-.73-.15-1.15-.81-1.45-.55-.26-1.22-.39-1.75-.66-1.46-.69-1.12-2.68-1.87-3.96-1.09-1.71-.46-2.84.48-4.62,2.91-5.14,7.69-10.42,12.28-14.21,5.09-4.09,11.4-6.96,17.17-9.86.63-.31,1.25-.62,1.88-.94l-12.73.76Z"/>
-    <path class="truleaf-badge-black-2" d="M89.95,196.37c-.1-.84-.18-1.6-.22-2.25-.11-1.01.23-1.94.51-2.89.35-1.17-.15-2.38-.43-3.52-.35-1.6-.18-3.57-.19-5.34.03-1.59.04-3.13.17-4.71.26-3.35,1.02-6.91.69-10.07-.12-1.02-.31-2.01-.77-2.93-.38-.77-.93-1.45-1.4-2.17l-.03-.05c-.61-.87-.93-1.89-1.12-2.94-.21-1.04-.27-2.29-.59-2.67-.61-.61-1.42,1.18-1.74,2.18-1.84,7.21-.49,15.68.06,23,.35,3.5.12,6.59.83,9.96.21.94.39,1.9.55,2.86l3.68,1.54Z"/>
-    <path class="truleaf-badge-black-2" d="M150.1,56.66c-.68.05-1.28.02-1.77-.18-.49-.19-.81-.57-.93-1.03.91.38,1.81.79,2.7,1.21Z"/>
-    <path class="truleaf-badge-black-2" d="M132.26,52.03c.06.39-.63.85-1.01,1.16-.84.62-1.75,1.2-2.64,1.75-3.48,2.15-7.74,3.56-11.33,5.58-1.49.79-2.47,1.9-3.66,3.03-3.32,3.03-7.66,4.73-11.07,7.74-1.51,1.12-5.01,4.75-6.78,3.45-.79-1.7,5.7-6.06,7.12-7.26.53-.41.95-.8,1.28-1.27.68-.93.97-2.08,2.03-2.63,3.33-1.86,9.48-5,13.44-7.1,3.74-1.95,7.82-4.11,11.88-4.6.39-.03.66.02.73.15h0Z"/>
-    <path class="truleaf-badge-black-2" d="M80.18,195.37c-.49.07-1.12-.68-1.44-1.13-.97-1.35-1.39-2.7-1.16-4.32.16-1.23.68-2.37.54-3.61-.14-1.84-.49-6.06-.75-9.38l-.23-2.86c-.06-1.04-.26-1.66.5-1.84,3.48-.12,3.91,4.55,4.11,7.22.22,2.77.38,6.82.36,9.67,0,.93-.05,1.83-.26,2.74-.17.75-.46,1.56-.74,2.32-.16.44-.46,1.12-.9,1.19h-.03Z"/>
-    <path class="truleaf-badge-black-2" d="M54.48,90.68c.19.25-.07.61-.25.83-.8.94-2.53,1.44-3.9,1.79-.29.05-.74.22-.96.05-.12-1,4.23-3.31,5.09-2.69l.02.02Z"/>
-  </g>
-  <path d="M191.6,173.66l-.44.69-6.34-4.07.44-.69-.22-.14-1.3,2.03,3.98,5.55-6.77-1.2-1.31,2.05.22.14.44-.69,6.35,4.06-.44.69.22.14,1.18-1.85-.22-.14-.56.89-5.98-3.82,8.03,1.33.18-.28-4.67-6.49,5.93,3.8-.42.66.22.14,1.7-2.66-.22-.14Z"/>
-</svg></div>
+      <ul class="lines">
+        <li><span>Email</span> <a href="mailto:distributors@truleaf-tobacco.com?subject=Distributor%20inquiry">distributors@<wbr>truleaf-tobacco.com</a></li>
+        <li><span>Office</span> <span class="v"><a href="tel:+16452439880">+1 (645) 243-9880</a></span></li>
+        <li><span>Mobile</span> <span class="v"><a href="tel:+12193319278">+1 (219) 331-9278</a></span></li>
+        <li><span>Web</span> <span class="v">truleafnatural.com</span></li>
+      </ul>
+      <figure><img src="img/leaf-backlit-1200.jpg" alt="Sunlight coming through the leaves of a growing tobacco plant" loading="lazy"></figure>
     </div>
-    <form class="dform" name="distributor" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+    <form class="dform" id="contact" name="distributor" method="POST" data-netlify="true" netlify-honeypot="bot-field">
       <input type="hidden" name="form-name" value="distributor">
-      <input type="hidden" name="subject" value="Distributor enquiry, truleafnatural.com">
+      <input type="hidden" name="subject" value="Distributor inquiry, truleafnatural.com">
       <p class="hp"><label>Leave this field empty <input name="bot-field" tabindex="-1" autocomplete="off"></label></p>
       <div class="fields">
         <div class="f2">
           <label><span class="lt">Name <span class="req" aria-hidden="true">*</span></span><input name="name" required autocomplete="name"></label>
-          <label><span class="lt">Company <span class="req" aria-hidden="true">*</span></span><input name="company" required autocomplete="organization"></label>
+          <label><span class="lt">Business name <span class="req" aria-hidden="true">*</span></span><input name="company" required autocomplete="organization"></label>
         </div>
         <div class="f2">
           <label><span class="lt">Email <span class="req" aria-hidden="true">*</span></span><input type="email" name="email" required autocomplete="email"></label>
           <label><span class="lt">Phone</span><input type="tel" name="phone" autocomplete="tel"></label>
         </div>
-        <label><span class="lt">City and state</span><input name="location" autocomplete="address-level2"></label>
+        <label><span class="lt">Business type <span class="req" aria-hidden="true">*</span></span><select name="business_type" required><option value="">Choose one</option><option>Smoke shop or tobacco retailer</option><option>Convenience store or chain</option><option>Distributor or wholesaler</option><option>Other</option></select></label>
+        <label><span class="lt">Location (city, state)</span><input name="location" autocomplete="address-level2"></label>
         <fieldset>
           <legend>Interested in</legend>
           <div class="chips">
@@ -534,11 +336,11 @@ h1,h2{color:#ECE6D7}
             <label class="chip"><input type="checkbox" name="interest" value="Tobacco Cones"><span>Tobacco Cones</span></label>
           </div>
         </fieldset>
-        <label><span class="lt">Message</span><textarea name="message" rows="4"></textarea></label>
-        <p class="consent">Fields marked * are required. By sending this you agree to our <a href="privacy.html">Privacy Notice</a>.</p>
-        <button class="btn" type="submit">Become a distributor</button>
+        <label><span class="lt">Message</span><textarea name="message" rows="3" placeholder="How many locations, where they are, and what you’d like to carry"></textarea></label>
+        <p class="consent">Fields marked * are required. We supply licensed tobacco retailers and distributors only. By sending this you agree to our <a href="privacy.html">Privacy Notice</a>.</p>
+        <button class="btn" type="submit">Send inquiry</button>
       </div>
-      <p class="f-status" id="f-status" role="status" aria-live="polite"></p>
+      <p class="f-status" id="f-status" role="status" aria-live="polite" tabindex="-1"></p>
     </form>
   </div>
 </section>
@@ -546,8 +348,8 @@ h1,h2{color:#ECE6D7}
 <footer class="foot">
   <div class="foot-grid">
     <div><div class="logo"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 168.8655 41.9885"><g><g><path d="M8.7,5.2v23.4h6.4V5.2h-6.4ZM0,0v4.7h23.5V0H0Z" style="fill:#ECE6D7;"/><path d="M26.4.3l.2,28.2h5.8l-.2-28.2h-5.8Z" style="fill:#ECE6D7;"/><path d="M32.7,10.9h2.8c2.8,0,3.9-.4,3.9-.4.9-.3,1.9-.6,2.4-1.7.4-.8.5-1.9,0-2.8-.2-.3-.4-.6-1-.9-1.2-.7-2.3-.8-4.5-.8h-3.7V.3h3.7c4.2,0,5.3.4,6.1.7,1.3.6,2.1,1.4,2.3,1.6,1.8,1.8,2,4,2,4.6,0,1.3-.3,2.3-.3,2.5-.1.3-.7,1.7-2,2.9,0,0-1.2,1-3.8,1.8h-.3c-.2,0-.5.1-.7.2l8.6,14h-7l-8.4-13.7v-3.9l-.1-.1Z" style="fill:#ECE6D7;"/><path d="M64.1904.309l.2,20.8c0,.2.1,1.3-.6,2.1-1,1.1-2.5.9-2.6.9v4.4c.2,0,4.8.8,7.6-2.6,2-2.3,1.8-5.1,1.8-5.7l-.2-19.9h-6.3.1ZM57.6,21l-.2-20.8h-6.1l.2,19.8c0,.7,0,3.4,1.8,5.7,2.7,3.4,7,2.8,7.3,2.8v-4.4c-.1,0-1.4,0-2.3-1-.7-.9-.7-1.9-.7-2.1Z" style="fill:#ECE6D7;"/><path d="M88.2655.1056v28.0888h-6.1V.1056h6.1ZM100.5655,28.1944h-11.7v-4.7519h11.7v4.7519Z" style="fill:#ECE6D7;"/><path d="M109.2655.1056v28.0888h-6.1V.1056h6.1ZM109.8655.1056h10v4.7519h-10V.1056ZM109.8655,11.2989h7.5v4.6463h-7.5v-4.6463ZM119.9655,28.1944h-10.1v-4.8575h10.1v4.8575Z" style="fill:#ECE6D7;"/><path d="M139.8655,0c2.5,9.3981,5.1,18.7963,7.6,28.1944h-6.9l-1.5-5.9134h-7.3l1.1-4.5407c1.7,0,3.4,0,5-.1056l-2.6-11.4045-5.7,22.0698h-6.6c2.7-9.3981,5.3-18.6907,8-28.0888h8.8l.1-.2112Z" style="fill:#ECE6D7;"/><path d="M156.2655,0v28.0888h-6V0h6ZM156.6655,0h12.2v4.6463h-12.2V0ZM156.7655,11.0877h7.8v4.6463h-7.8v-4.6463Z" style="fill:#ECE6D7;"/><path d="M50.494,41.8557v-.2651h.835v-7.6909h-.623c-1.0078,0-1.9756.3979-1.9756,1.9624h-.2646v-2.2275h7.3193v2.2275h-.2656c0-1.5645-.8223-1.9624-1.6973-1.9624h-.9014v7.6909h.835v.2651h-3.2617Z" style="fill:#ECE6D7;"/><path d="M62.6453,41.9885c-1.9355,0-4.1631-1.2598-4.1631-4.2432s2.2275-4.2432,4.1631-4.2432c1.9492,0,4.1641,1.2593,4.1641,4.2432s-2.2148,4.2432-4.1641,4.2432ZM62.6453,33.7673c-1.6709,0-2.4795,1.1934-2.4795,3.978,0,2.771.8086,3.9775,2.4795,3.9775,1.6182,0,2.4795-1.2065,2.4795-3.9775,0-2.7847-.8613-3.978-2.4795-3.978Z" style="fill:#ECE6D7;"/><path d="M74.6238,37.427c1.7236.1592,2.7051.8223,2.7051,2.188,0,1.79-1.79,2.2407-3.7656,2.2407h-3.7129v-.2651h.8359v-7.6909h-.8359v-.2651h3.501c1.8164,0,3.3945.3315,3.3945,1.8696,0,1.1934-.9551,1.7236-2.1221,1.8564v.0664ZM72.2772,33.8996v3.4478h1.0742c1.2598,0,1.8291-.4907,1.8291-1.7505,0-1.2197-.543-1.6973-1.8291-1.6973h-1.0742ZM72.2772,37.6125v3.978h1.2861c1.4717,0,2.0947-.5303,2.0947-1.9893,0-1.4053-.6631-1.9888-2.1748-1.9888h-1.2061Z" style="fill:#ECE6D7;"/><path d="M82.2547,41.8557h-2.4531v-.2651h.9814l3.208-8.0884h.332l3.4609,8.0884h.8086v.2651h-3.4346v-.2651h1.0215l-.9814-2.3472h-3.1562l-.9277,2.3472h1.1406v.2651ZM85.0789,38.965l-1.498-3.5933-1.4189,3.5933h2.917Z" style="fill:#ECE6D7;"/><path d="M97.786,36.5783c-.0791-1.2598-.7422-2.811-2.6914-2.811-1.6973,0-2.5195,1.1934-2.5195,3.978,0,2.7578.8223,3.9775,2.4932,3.9644,1.498,0,2.5195-.7954,2.6777-2.2539h.2393c-.1064,1.5513-1.2334,2.5327-2.9834,2.5327-1.9629,0-4.1104-1.2598-4.1104-4.2432s2.1475-4.2432,4.2031-4.2432c1.3262,0,1.8027.5566,2.2412.5566.2783,0,.3975-.252.3975-.4243h.2383v2.9438h-.1855Z" style="fill:#ECE6D7;"/><path d="M108.0545,36.5783c-.0791-1.2598-.7422-2.811-2.6914-2.811-1.6973,0-2.5195,1.1934-2.5195,3.978,0,2.7578.8223,3.9775,2.4932,3.9644,1.498,0,2.5195-.7954,2.6777-2.2539h.2393c-.1064,1.5513-1.2334,2.5327-2.9834,2.5327-1.9629,0-4.1104-1.2598-4.1104-4.2432s2.1475-4.2432,4.2031-4.2432c1.3262,0,1.8027.5566,2.2412.5566.2783,0,.3975-.252.3975-.4243h.2383v2.9438h-.1855Z" style="fill:#ECE6D7;"/><path d="M115.5916,41.9885c-1.9355,0-4.1631-1.2598-4.1631-4.2432s2.2275-4.2432,4.1631-4.2432c1.9492,0,4.1641,1.2593,4.1641,4.2432s-2.2148,4.2432-4.1641,4.2432ZM115.5916,33.7673c-1.6709,0-2.4795,1.1934-2.4795,3.978,0,2.771.8086,3.9775,2.4795,3.9775,1.6182,0,2.4795-1.2065,2.4795-3.9775,0-2.7847-.8613-3.978-2.4795-3.978Z" style="fill:#ECE6D7;"/></g></g></svg></div><p>Tru Leaf International LLC<br>Miami, Florida</p></div>
-    <div><h4>Lorem</h4><p><a href="mailto:distributors@truleaf-tobacco.com">distributors@<wbr>truleaf-tobacco.com</a><br>+1 (XXX) XXX-XXXX<br><a href="https://www.instagram.com/truleafnatural/" rel="noopener">@truleafnatural</a> · truleafnatural.com</p></div>
-    <div><h4>Ipsum</h4><ul><li><a href="#leaf">Lorem ipsum</a></li><li><a href="#leaf">Dolor sit</a></li><li><a href="#leaf">Amet elit</a></li><li><a href="#leaf">Sed tempor</a></li></ul></div>
+    <div><h4>Contact</h4><p><a href="mailto:distributors@truleaf-tobacco.com">distributors@<wbr>truleaf-tobacco.com</a><br><a href="tel:+16452439880">+1 (645) 243-9880</a><br><a href="https://www.instagram.com/truleafnatural/" rel="noopener">@truleafnatural</a> · truleafnatural.com</p></div>
+    <div><h4>Site</h4><ul><li><a href="#top">Home</a></li><li><a href="#products">Products</a></li><li><a href="#distributors">Wholesale</a></li><li><a href="#contact">Contact</a></li></ul></div>
   </div>
   <div class="warning" role="note">WARNING: This product contains nicotine. Nicotine is an addictive chemical.</div>
   <div class="legal"><span>© 2026 Tru Leaf International LLC</span><span><a href="terms.html">Terms of Use</a> · <a href="privacy.html">Privacy Notice</a></span><span>For adults 21 and over. Not for sale to minors.</span></div>
@@ -558,12 +360,13 @@ h1,h2{color:#ECE6D7}
   <button type="button" class="v-nav v-prev" aria-label="Previous product">&larr;</button>
   <div class="v-stage">
     <figure class="v-fig"><img loading="lazy" decoding="async" id="v-img" alt=""></figure>
-    <div class="v-info">
+    <div class="v-info" aria-live="polite">
       <p class="v-fam" id="v-fam"></p>
       <h3 id="v-name"></h3>
       <p class="v-meta" id="v-meta"></p>
       <div class="v-side" id="v-side" role="group" aria-label="Pack side"><button type="button" data-side="front" aria-pressed="true">Front</button><button type="button" data-side="back" aria-pressed="false">Back</button></div>
-      <p class="v-count" id="v-count" aria-live="polite"></p>
+      <a class="btn v-cta" href="#contact">Inquire about this product</a>
+      <p class="v-count" id="v-count"></p>
     </div>
   </div>
   <button type="button" class="v-nav v-next" aria-label="Next product">&rarr;</button>
@@ -583,19 +386,21 @@ h1,h2{color:#ECE6D7}
   }
   if(passed()){g.hidden=true;return}
   document.documentElement.style.overflow='hidden';
+  var behind=[].slice.call(document.querySelectorAll('.nav,.hero,#products,#distributors,.foot'));behind.forEach(function(el){el.inert=true});
   var yes=document.getElementById('gate-yes'),no=document.getElementById('gate-no');
   yes.addEventListener('click',function(){
     try{window.localStorage.setItem(KEY,String(Date.now()))}catch(e){}
-    g.hidden=true;document.documentElement.style.overflow='';
+    document.documentElement.style.overflow='';behind.forEach(function(el){el.inert=false});g.classList.add('leaving');
+    setTimeout(function(){g.hidden=true;g.classList.remove('leaving')},window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches?0:1100);
   });
   no.addEventListener('click',function(){
     g.classList.add('said-no');
-    var d=document.getElementById('gate-deny');if(d)d.focus&&d.focus();
+    var d=document.getElementById('gate-deny');if(d)d.focus();
   });
   // keep focus inside the gate while it is up
   g.addEventListener('keydown',function(e){
     if(e.key!=='Tab'||g.hidden)return;
-    var f=g.querySelectorAll('button:not([hidden])');if(!f.length)return;
+    var f=[].filter.call(g.querySelectorAll('button'),function(b){return b.offsetParent!==null});if(!f.length){e.preventDefault();return}
     var first=f[0],last=f[f.length-1];
     if(e.shiftKey&&document.activeElement===first){e.preventDefault();last.focus()}
     else if(!e.shiftKey&&document.activeElement===last){e.preventDefault();first.focus()}
@@ -604,15 +409,6 @@ h1,h2{color:#ECE6D7}
 })();
 (function(){
   var reduce=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  var palm=document.querySelector('.palm'),band=document.querySelector('.card .band');
-  function cut(){
-    if(!palm||!band)return;
-    var g=palm.querySelector('.g'),s=palm.querySelector('.s'),pr=palm.getBoundingClientRect(),br=band.getBoundingClientRect();
-    var over=Math.max(0,Math.min(pr.height,pr.bottom-br.top));
-    g.style.clipPath='inset(0 0 '+over+'px 0)';s.style.clipPath='inset('+(pr.height-over)+'px 0 0 0)';
-  }
-  cut();window.addEventListener('resize',cut);window.addEventListener('load',cut);setTimeout(cut,400);
-
   var rises=[].slice.call(document.querySelectorAll('.rise'));
   if(reduce||!('IntersectionObserver' in window)){rises.forEach(function(el){el.classList.add('in')});}
   else{
@@ -621,29 +417,33 @@ h1,h2{color:#ECE6D7}
   }
 })();
 
+(function(){ // tilt toward the mouse and glide with it; back to rest on leave
+  if(window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches)return;
+  var q=false,ev=null;
+  function frame(){q=false;var li=ev.target.closest&&ev.target.closest('.shelf li');if(!li)return;var img=li.querySelector('img');if(!img)return;
+    var r=li.getBoundingClientRect(),x=(ev.clientX-r.left)/r.width*2-1,y=(ev.clientY-r.top)/r.height*2-1;
+    img.style.transition='transform .32s cubic-bezier(.2,.7,.3,1),filter .5s ease';
+    img.style.transform='perspective(800px) rotateX('+(-y*8).toFixed(2)+'deg) rotateY('+(x*11).toFixed(2)+'deg) translate3d('+(x*9).toFixed(1)+'px,'+(y*7-14).toFixed(1)+'px,0) scale(1.06)'}
+  [].forEach.call(document.querySelectorAll('.shelf'),function(shelf){
+    shelf.addEventListener('pointermove',function(e){if(e.pointerType&&e.pointerType!=='mouse')return;ev=e;if(!q){q=true;requestAnimationFrame(frame)}});
+    shelf.addEventListener('pointerout',function(e){var li=e.target.closest&&e.target.closest('.shelf li');if(!li||li.contains(e.relatedTarget))return;
+      var img=li.querySelector('img');if(img){img.style.transition='transform .8s cubic-bezier(.2,.7,.3,1),filter .5s ease';img.style.transform=''}});
+  });
+})();
 (function(){
-  var fams=[].slice.call(document.querySelectorAll('.fam')),fb=[].slice.call(document.querySelectorAll('.filter button'));
-  fb.forEach(function(b){b.addEventListener('click',function(){
-    var f=b.getAttribute('data-f');
-    fb.forEach(function(x){x.setAttribute('aria-pressed',String(x===b))});
-    fams.forEach(function(el){
-      el.hidden=!(f==='all'||el.getAttribute('data-fam')===f);
-      if(!el.hidden)[].forEach.call(el.querySelectorAll('.rise'),function(r){r.classList.add('in')});
-    });
-  })});
-
   var v=document.getElementById('viewer');if(!v)return;
   var img=document.getElementById('v-img'),nm=document.getElementById('v-name'),fm=document.getElementById('v-fam'),
       mt=document.getElementById('v-meta'),ct=document.getElementById('v-count'),
       pvs=[].slice.call(document.querySelectorAll('.pv')),list=[],idx=0,opener=null;
-  function visible(){return pvs.filter(function(p){return !p.closest('.fam').hidden})}
+  function visible(){return pvs}
+  function swap(src,alt){if(img.src===src){img.alt=alt;img.style.opacity='1';return}img.style.opacity='0';img.onload=img.onerror=function(){img.style.opacity='1'};img.src=src;img.alt=alt}
   var side=document.getElementById('v-side'),sideBtns=side?[].slice.call(side.querySelectorAll('button')):[];
   function setSide(which,p){
     p=p||list[idx];
     var back=p.getAttribute('data-back'),im=p.querySelector('img');
     if(side)side.hidden=!back;
-    if(which==='back'&&back){img.src=back;img.alt=im.alt+', back of pack'}
-    else{which='front';img.src=im.src;img.alt=im.alt}
+    if(which==='back'&&back)swap(back,im.alt+', back of pack');
+    else{which='front';swap(im.src,im.alt)}
     sideBtns.forEach(function(b){b.setAttribute('aria-pressed',String(b.getAttribute('data-side')===which))});
   }
   sideBtns.forEach(function(b){b.addEventListener('click',function(){setSide(b.getAttribute('data-side'))})});
@@ -654,10 +454,12 @@ h1,h2{color:#ECE6D7}
     nm.textContent=p.getAttribute('data-name');fm.textContent=p.getAttribute('data-fam');
     mt.textContent=p.getAttribute('data-meta');ct.textContent=(idx+1)+' / '+list.length;
   }
-  function open(p){opener=p;list=visible();show(list.indexOf(p));v.hidden=false;document.documentElement.style.overflow='hidden';v.querySelector('.v-close').focus()}
+  function open(p){opener=p;list=visible();show(list.indexOf(p));var b=p.getAttribute('data-back');if(b)(new Image()).src=b;v.hidden=false;document.documentElement.style.overflow='hidden';v.querySelector('.v-close').focus()}
   function close(){v.hidden=true;document.documentElement.style.overflow='';if(opener)opener.focus()}
   pvs.forEach(function(p){p.addEventListener('click',function(){open(p)})});
   v.querySelector('.v-close').addEventListener('click',close);
+  v.querySelector('.v-cta').addEventListener('click',function(){ // to the form, with this product's family already ticked
+    var fam=list[idx].getAttribute('data-fam');[].forEach.call(document.querySelectorAll('.chip input'),function(c){if(c.value===fam)c.checked=true});close()});
   v.querySelector('.v-prev').addEventListener('click',function(){show(idx-1)});
   v.querySelector('.v-next').addEventListener('click',function(){show(idx+1)});
   v.addEventListener('click',function(e){if(e.target===v)close()});
@@ -667,7 +469,7 @@ h1,h2{color:#ECE6D7}
     else if(e.key==='ArrowLeft')show(idx-1);
     else if(e.key==='ArrowRight')show(idx+1);
     else if(e.key==='Tab'){
-      var bs=[].slice.call(v.querySelectorAll('button')),first=bs[0],end=bs[bs.length-1];
+      var bs=[].slice.call(v.querySelectorAll('button,a.btn')),first=bs[0],end=bs[bs.length-1];
       if(e.shiftKey&&document.activeElement===first){e.preventDefault();end.focus()}
       else if(!e.shiftKey&&document.activeElement===end){e.preventDefault();first.focus()}
     }
@@ -684,14 +486,78 @@ h1,h2{color:#ECE6D7}
       .then(function(r){
         if(!r.ok)throw new Error('HTTP '+r.status);
         f.classList.add('sent');st.className='f-status ok';
-        st.textContent='Thank you. We have your details and will be in touch.';
+        st.textContent='Thank you. We have your details and will be in touch. Need it sooner? Email distributors@truleaf-tobacco.com.';st.focus();
       })
       .catch(function(){
-        btn.disabled=false;st.className='f-status err';
-        st.innerHTML='That did not send. Please email <a href="mailto:distributors@truleaf-tobacco.com?subject=Distributor%20enquiry">distributors@<wbr>truleaf-tobacco.com</a> instead.';
+        btn.disabled=false;st.className='f-status err';st.focus();
+        st.innerHTML='That did not send. Please email <a href="mailto:distributors@truleaf-tobacco.com?subject=Distributor%20inquiry">distributors@<wbr>truleaf-tobacco.com</a> instead.';
       });
   });
 })();
+</script>
+<script>
+// Full-screen hero: the watercolour dissolves once into the drone flight, and the flight then loops without a cut:
+// two copies of the clip alternate, the next fading in over the last seconds of the current one, so the picture is
+// always moving. The dissolve runs on a fixed clock (the network cannot delay it), the flight starts as soon as the
+// clip can play, nothing downloads until the hero starts, the second copy is primed only once the first is playing,
+// and playback recovers after a hidden tab or a stalled copy. Nothing changes the video's speed.
+(function(){
+  var hero=document.querySelector('.hero');if(!hero)return;
+  var L=hero.querySelector('.layers'),photo=L.querySelector('.photo'),paint=L.querySelector('.paint'),clips=[].slice.call(L.querySelectorAll('.clip'));
+  var reduce=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var canFly=clips.length>0&&!reduce&&!(navigator.connection&&navigator.connection.saveData);
+  var big=window.matchMedia&&window.matchMedia('(min-width:1100px)').matches;
+  var T={hold:400,dissolve:2400,wake:1300,lead:2.6,cross:2000};   // ms, except lead: seconds before a copy ends
+  var EASE='cubic-bezier(.45,0,.25,1)',body=document.body,cur=null,switching=false,visible=true,started=false,primed=false,timer;
+
+  function src(v){return v.getAttribute(big?'data-lg':'data-sm')||v.getAttribute('data-sm')}
+  function fade(to,ms){paint.style.transition='opacity '+ms+'ms '+EASE;paint.style.opacity=String(to)}
+  function play(v){var p=v.play();if(p&&p.catch)p.catch(function(){})}
+  function show(v,instant){if(instant){v.style.transition='none';v.classList.add('on');void v.offsetWidth;v.style.transition=''}else v.classList.add('on')}
+  function active(v){return v===cur||(switching&&v.classList.contains('on'))}
+  function resume(){clips.forEach(function(v){if(!visible||document.hidden)v.pause();else if(active(v))play(v)})}
+  function prime(v){ // the muted, invisible second copy: load it and let it buffer, so the hand-over is ready on every platform
+    if(!v||primed)return;primed=true;v.preload='auto';if(!v.getAttribute('src'))v.src=src(v);v.load();
+    var p=v.play();if(p&&p.then)p.then(function(){v.pause();v.currentTime=0}).catch(function(){});
+  }
+  function handover(){ // the other copy starts from the top and fades in over the end of this one
+    var from=cur,to=clips[(clips.indexOf(cur)+1)%clips.length];
+    if(to===from||to.readyState<3)return;   // not buffered yet: try again on the next timeupdate, or restart on ended
+    switching=true;to.currentTime=0;to.style.zIndex='2';from.style.zIndex='1';show(to);if(visible&&!document.hidden)play(to);
+    clearTimeout(timer);timer=setTimeout(function(){from.classList.remove('on');from.pause();from.currentTime=0;cur=to;switching=false},T.cross);
+  }
+  clips.forEach(function(v){
+    v.addEventListener('timeupdate',function(){if(started&&v===cur&&!switching&&v.duration&&v.duration-v.currentTime<=T.lead)handover()});
+    v.addEventListener('ended',function(){if(started&&active(v)){v.currentTime=0;if(visible&&!document.hidden)play(v)}});   // no frozen last frame, ever
+  });
+  if(canFly){
+    if('IntersectionObserver' in window)new IntersectionObserver(function(es){es.forEach(function(e){visible=e.isIntersecting;if(started)resume()})},{threshold:.15}).observe(hero);
+    document.addEventListener('visibilitychange',function(){if(started)resume()});
+  }
+
+  function imagesReady(fn){var n=2;[photo,paint].forEach(function(i){if(i.complete&&i.naturalWidth){--n||fn()}else{var d=function(){--n||fn()};i.addEventListener('load',d,{once:true});i.addEventListener('error',d,{once:true})}})}
+  function begin(){imagesReady(function(){
+    if(reduce){paint.style.opacity='0';return}
+    setTimeout(function(){fade(0,T.dissolve)},T.hold);   // painting -> photograph, always on time
+    if(!canFly)return;
+    cur=clips[0];cur.preload='auto';cur.src=src(cur);cur.load();
+    var t0=Date.now(),go=function(){cur.style.zIndex='2';show(cur,true);   // its first frame is the photograph, so this is invisible
+      var wait=Math.max(0,T.hold+T.wake-(Date.now()-t0));
+      setTimeout(function(){started=true;if(visible&&!document.hidden)play(cur)},wait)};
+    if(cur.readyState>=3)go();else cur.addEventListener('canplay',go,{once:true});
+    cur.addEventListener('playing',function(){prime(clips[1])},{once:true});
+  })}
+  // the hero settles in (a slow scale down) from the moment the gate starts to fade, and the loop begins once it has gone
+  var gate=document.getElementById('gate');
+  if(gate&&!gate.hidden)new MutationObserver(function(m,o){if(gate.classList.contains('leaving'))body.classList.add('hero-in');if(gate.hidden){o.disconnect();body.classList.add('hero-in');begin()}}).observe(gate,{attributes:true,attributeFilter:['hidden','class']});
+  else{body.classList.add('hero-in');begin()}
+
+  // scrolling: the hero pulls into a rounded frame, and the nav turns solid once past it
+  var sq=false,raf=window.requestAnimationFrame.bind(window);
+  function onScroll(){sq=false;var y=window.scrollY;body.classList.toggle('scrolled',y>40);body.classList.toggle('past-hero',y>window.innerHeight*.8)}
+  window.addEventListener('scroll',function(){if(!sq){sq=true;raf(onScroll)}},{passive:true});onScroll();
+})();
+
 </script>
 
 </body>

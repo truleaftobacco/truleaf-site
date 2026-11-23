@@ -1,4 +1,4 @@
 # Static site: no build step, publish the repository root.
-# Netlify Forms picks up the <form data-netlify="true"> in index.html at deploy time.
+# Netlify Forms picks up every <form data-netlify="true"> at deploy time (enable form detection first).
 [build]
   publish = "."

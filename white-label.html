@@ -1,0 +1,558 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="icon" href="favicon-32.png" sizes="32x32">
+<title>Tru Leaf White Label</title>
+<meta name="description" content="Buy Tru Leaf tobacco leaf wraps, whole leaf, blunts and cones under your own brand, with in-house packaging design and help with distribution.">
+<meta name="theme-color" content="#092404">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Krub:wght@400;500;600&display=swap" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Krub:wght@400;500;600&display=swap"></noscript>
+<style>
+@font-face{font-family:"Gunplay";src:url("fonts/gunplay.otf") format("opentype");font-weight:400;font-style:normal;font-display:swap}
+:root{--green:#092404;--green-mid:#17590B;--green-90:rgba(9,36,4,.9);--green-70:rgba(9,36,4,.7);--sand:#ECE6D7;--sand-80:rgba(236,230,215,.8);--paper:#FFFCF3;--coal:#231F20;--loc:#8C9A8E;--line:#CFD6CB;--r:14px;--gut:clamp(16px,2.8vw,40px);
+--display:"Gunplay","Impact","Arial Narrow",sans-serif;--stencil:var(--display);--body:"Krub","Helvetica Neue",Arial,sans-serif}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--green);font-family:var(--body);font-size:17px;line-height:1.55;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--green);outline-offset:3px}
+.btn{display:inline-block;font-family:var(--stencil);font-size:.95rem;letter-spacing:.14em;text-transform:uppercase;text-decoration:none;padding:14px 24px;background:var(--green);color:var(--sand);border:2px solid var(--green);border-radius:6px;transition:background .2s,color .2s}
+.btn:hover,.btn:focus-visible{background:var(--paper);color:var(--green)}
+h1,h2{font-family:var(--display);font-weight:400;text-transform:uppercase;letter-spacing:.005em;margin:0;color:var(--green)}
+h1{font-size:clamp(2.6rem,6vw,5.2rem);line-height:.98;margin-bottom:22px}
+h2{font-size:clamp(2.2rem,4.6vw,3.8rem);line-height:1;margin-bottom:16px}
+.lede{font-size:clamp(1.05rem,1.35vw,1.2rem);color:var(--green-70);max-width:32rem;margin:0 0 30px}
+.nav{position:fixed;left:0;right:0;top:0;z-index:20;display:flex;align-items:center;gap:32px;padding:0 var(--gut);height:70px;background:var(--green);transition:background .4s}
+.brand{display:flex;align-items:center;text-decoration:none;line-height:0;transition:opacity .4s}
+.brand .wm{width:150px}
+.brand svg{width:100%;height:auto}
+.links{display:flex;gap:26px;margin-left:auto}
+.links a{font-family:var(--stencil);font-size:.86rem;letter-spacing:.12em;text-transform:uppercase;text-decoration:none;color:var(--sand)}
+.links a:hover{text-decoration:underline}
+.nav .btn{padding:10px 16px;font-size:.82rem;background:var(--sand);color:var(--green);border-color:var(--sand)}
+.nav .btn:hover,.nav .btn:focus-visible{background:transparent;color:var(--sand)}
+.logo{width:clamp(200px,24vw,340px);line-height:0;flex:none}
+.logo svg{width:100%;height:auto}
+.gate{position:fixed;inset:0;z-index:100;background:var(--green);color:var(--sand);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:32px 24px}
+.gate[hidden]{display:none}
+.gate .mark{width:min(440px,72vw);line-height:0;margin-bottom:clamp(28px,5vh,52px)}
+.gate .mark svg{width:100%;height:auto}
+.gate .q{font-family:var(--display);font-weight:400;text-transform:uppercase;font-size:clamp(1.9rem,5vw,3.4rem);line-height:1.05;color:var(--sand);margin:0 0 clamp(22px,4vh,34px)}
+.gate .row{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+.gate .btn{min-width:176px;padding:16px 28px;cursor:pointer;font-family:var(--stencil);font-size:.9rem;background:var(--sand);color:var(--green);border-color:var(--sand)}
+.gate .btn:hover{background:transparent;color:var(--sand)}
+.gate .btn:focus-visible{outline-offset:4px}
+.gate .note{margin:clamp(26px,4vh,38px) 0 0;font-family:var(--body);font-weight:500;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--sand-80)}
+.gate .deny{display:none;margin:22px auto 0;max-width:34rem;font-size:1rem;color:var(--sand)}
+.gate.said-no .deny{display:block}
+.gate.said-no .row{display:none}
+.gate :focus-visible{outline:2px solid var(--sand);outline-offset:3px}
+.contact{display:grid;grid-template-columns:1fr 1fr}
+.c-copy{--green-90:rgba(236,230,215,.94);--green-70:rgba(236,230,215,.86);--line:rgba(236,230,215,.28);--loc:#C5D0BF;position:relative;isolation:isolate;display:flex;flex-direction:column;justify-content:flex-end;padding:clamp(40px,5vw,72px) var(--gut);color:var(--sand);background:var(--green)}
+.c-copy h2{color:var(--sand);font-size:clamp(3rem,6.2vw,6.4rem);line-height:.95}
+.c-copy .lines{margin:0}
+.lines{list-style:none;margin:0 0 30px;padding:0;display:grid;gap:10px;font-family:var(--body);font-weight:600;font-size:clamp(1rem,1.25vw,1.15rem);line-height:1.3;letter-spacing:.02em;color:var(--green-90)}
+.lines li{display:grid;grid-template-columns:4.4em 1fr;gap:0 .5em;align-items:baseline}
+.lines span{font-family:var(--stencil);font-weight:400;font-size:.76rem;letter-spacing:.14em;text-transform:uppercase;color:var(--loc)}
+.lines span.v{font:inherit;letter-spacing:inherit;text-transform:none;color:inherit}
+.lines a{text-decoration:none;overflow-wrap:anywhere}
+.lines a:hover{text-decoration:underline}
+.foot{background:var(--green);color:var(--sand);padding:56px var(--gut) 28px}
+.foot-grid{display:grid;grid-template-columns:1.4fr 1fr .8fr;gap:40px;align-items:start}
+.foot .logo{width:200px;margin-bottom:14px}
+.foot h4{font-family:var(--body);font-weight:600;font-size:.8rem;letter-spacing:.16em;text-transform:uppercase;color:var(--sand);margin:0 0 12px}
+.foot p,.foot ul{margin:0;font-size:1rem;color:var(--sand-80);line-height:1.7}
+.foot ul{list-style:none;padding:0}
+.foot a{text-decoration:none}
+.foot a:hover{text-decoration:underline}
+.warning{margin:44px 0 20px;border:3px solid var(--sand);background:#061A03;color:#fff;padding:14px 20px;font-family:Helvetica,Arial,sans-serif;font-weight:700;font-size:1rem;line-height:1.35}
+.legal{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px 32px;font-family:var(--body);font-weight:600;font-size:.74rem;letter-spacing:.12em;text-transform:uppercase;color:var(--sand-80)}
+.pv{display:block;width:100%;margin:0;padding:0;border:0;background:none;font:inherit;color:inherit;text-align:center;cursor:zoom-in}
+.pv:focus-visible{outline:2px solid var(--green);outline-offset:6px}
+.viewer{position:fixed;inset:0;z-index:90;display:grid;grid-template-columns:auto minmax(0,1fr) auto;align-items:center;gap:clamp(8px,2vw,26px);padding:clamp(56px,6vw,72px) clamp(14px,3vw,40px);background:var(--bg,#092404);color:var(--ink,#ECE6D7);transition:background .3s;overscroll-behavior:contain;animation:vfade .28s ease both}
+@keyframes vfade{from{opacity:0}}
+.viewer[hidden]{display:none}
+.v-stage{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:clamp(20px,4vw,60px);align-items:center;width:100%;max-width:1080px;margin:0 auto}
+.v-fig{margin:0;display:flex;justify-content:center;align-items:center;min-height:0;position:relative;isolation:isolate}
+.v-fig img{display:block;width:auto;height:auto;max-width:100%;max-height:74vh;filter:drop-shadow(0 30px 36px rgba(0,0,0,.4));transition:opacity .22s ease}
+.v-info{color:inherit}
+.v-fam{margin:0 0 12px;font-family:var(--stencil);font-size:.84rem;letter-spacing:.14em;text-transform:uppercase}
+.v-info h3{margin:0 0 14px;font-family:var(--display);font-weight:400;font-size:clamp(2.4rem,5vw,4.4rem);line-height:.98;text-transform:uppercase}
+.v-meta{margin:0 0 20px;font-family:var(--body);font-weight:600;font-size:.88rem;letter-spacing:.1em;text-transform:uppercase}
+.v-count{margin:0;font-family:var(--body);font-weight:600;font-size:.8rem;letter-spacing:.16em}
+.viewer .btn{display:inline-block;margin:0 0 18px;background:var(--ink);color:var(--on);border-color:var(--ink)}
+.viewer .btn:hover,.viewer .btn:focus-visible{background:transparent;color:var(--ink)}
+.v-nav,.v-close{width:56px;height:56px;border-radius:50%;display:grid;place-items:center;border:1px solid var(--ink);background:transparent;color:inherit;font-size:1.35rem;line-height:1;cursor:pointer;transition:background .2s,color .2s}
+.v-nav:hover,.v-nav:focus-visible,.v-close:hover,.v-close:focus-visible{background:var(--ink);color:var(--bg)}
+.v-close{position:absolute;top:clamp(10px,2vw,20px);right:clamp(10px,2vw,20px);font-size:1.7rem}
+.v-side{display:flex;gap:8px;margin:0 0 22px}
+.v-side[hidden]{display:none}
+.v-side button{font-family:var(--stencil);font-size:.82rem;letter-spacing:.08em;text-transform:uppercase;padding:9px 16px;border:1px solid var(--ink);border-radius:6px;background:transparent;color:inherit;cursor:pointer;transition:background .2s,color .2s,border-color .2s}
+.v-side button[aria-pressed="true"]{background:var(--ink);color:var(--on)}
+.facts{list-style:none;margin:0 0 26px;padding:14px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);display:grid;grid-template-columns:1fr 1fr;gap:12px 24px;font-family:var(--body);font-weight:600;font-size:.98rem;line-height:1.3;color:var(--green-90)}
+.facts span{display:block;font-family:var(--stencil);font-weight:400;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--loc);margin-bottom:3px}
+
+.dform{background:var(--sand);padding:clamp(40px,5vw,72px) var(--gut)}
+.dform .fields{display:grid;gap:20px}
+.dform label,.dform legend{display:grid;gap:7px;font-family:var(--body);font-weight:600;font-size:.74rem;letter-spacing:.14em;text-transform:uppercase;color:var(--green-90)}
+.dform legend{display:block;margin:0 0 9px;padding:0}
+.dform input:not([type=checkbox]),.dform textarea,.dform select{box-sizing:border-box;width:100%;font-family:var(--body);font-weight:400;font-size:1rem;letter-spacing:0;text-transform:none;color:var(--green);background:transparent;border:0;border-bottom:1px solid rgba(9,36,4,.42);border-radius:0;padding:10px 0}
+.dform select{padding-right:28px}
+.dform textarea{resize:vertical;min-height:88px}
+.dform input:focus-visible,.dform textarea:focus-visible,.dform select:focus-visible{outline:0;border-bottom-color:var(--green);box-shadow:0 1px 0 var(--green)}
+.dform .f2{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.dform fieldset{border:0;margin:0;padding:0;min-width:0}
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.dform .chip{display:inline-block;position:relative}
+.chip input{position:absolute;opacity:0;width:1px;height:1px;margin:0}
+.chip span{display:inline-block;padding:8px 12px;border:1px solid rgba(9,36,4,.42);border-radius:6px;background:transparent;font-family:var(--stencil);font-size:.74rem;letter-spacing:.06em;text-transform:uppercase;color:var(--green);cursor:pointer;transition:background .2s,color .2s,border-color .2s}
+.chip input:checked+span{background:var(--green);color:var(--sand);border-color:var(--green)}
+.chip input:focus-visible+span{outline:2px solid var(--green);outline-offset:2px}
+.req{color:var(--green-mid)}
+.consent{margin:0;font-size:.86rem;line-height:1.5;letter-spacing:0;text-transform:none;color:var(--green-70)}
+.consent a{color:inherit}
+.dform .btn{justify-self:stretch;text-align:center;padding:16px 24px;cursor:pointer}
+.dform .btn[disabled]{opacity:.6;cursor:wait}
+.f-status{margin:14px 0 0;font-size:.98rem;line-height:1.5}
+.f-status:empty{display:none}
+.f-status.ok{color:var(--green-mid);font-weight:600}
+.f-status.err{color:#8A1F1F}
+.f-status a{color:inherit}
+.dform.sent .fields{display:none}
+.dform.sent .f-status{margin:0}
+.hp{display:none}
+@media (max-width:760px){.viewer{grid-template-columns:minmax(0,1fr);padding:64px 18px 90px;overflow-y:auto}.v-stage{grid-template-columns:1fr;text-align:center;gap:18px}.v-side{justify-content:center}.v-fig img{max-height:min(46vh,340px)}.v-nav{position:absolute;bottom:22px}.v-prev{left:18px}.v-next{right:18px}}
+@media (max-width:640px){.dform .f2{grid-template-columns:1fr}}
+@media (max-width:1100px){.legal{justify-content:flex-start}}
+@media (max-width:1000px){.contact{grid-template-columns:1fr}.foot-grid{grid-template-columns:1fr 1fr}}
+@media (max-width:860px){.links{display:none}.nav{gap:16px}.nav .btn{margin-left:auto}.foot-grid{grid-template-columns:1fr}.brand .wm{width:120px}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+@media (max-width:480px){.nav{gap:12px}.brand .wm{width:104px}.nav .btn{white-space:nowrap;padding:9px 12px;font-size:.72rem;letter-spacing:.1em}}
+section[id],#contact{scroll-margin-top:84px}
+.sr{position:absolute;width:1px;height:1px;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
+#products{padding-top:70px}
+.nav :focus-visible,.intro :focus-visible,.c-copy :focus-visible,.foot :focus-visible{outline-color:var(--sand)}
+.viewer :focus-visible{outline-color:var(--ink)}
+.intro{display:grid;grid-template-columns:3fr 1fr;gap:24px clamp(32px,6vw,96px);align-items:end;padding:clamp(48px,6vw,88px) var(--gut);background:var(--green);color:var(--sand)}
+.intro h2{margin:0;color:var(--sand);font-size:clamp(2.7rem,5.4vw,5.6rem);line-height:.95}
+.nb{white-space:nowrap}
+.intro p{margin:0;max-width:30rem;font-size:clamp(1rem,1.25vw,1.15rem);color:var(--sand-80)}
+.hint{display:none}
+@media (hover:none){.hint{display:inline}}
+@media (max-width:760px){.intro{grid-template-columns:1fr}}
+
+.nav{display:grid;grid-template-columns:1fr auto 1fr}
+.nav .links,.nav .menu{grid-column:1;grid-row:1;margin-left:0}
+.nav .brand{grid-column:2;grid-row:1}
+.nav>.btn{grid-column:3;grid-row:1;justify-self:end}
+.links a[aria-current]{text-decoration:underline;text-underline-offset:6px}
+@media (max-width:1180px){.links{gap:18px}.links a{font-size:.78rem;letter-spacing:.1em}}
+.menu{display:none;justify-self:start}
+.menu summary{list-style:none;cursor:pointer;padding:10px 0;font-family:var(--stencil);font-size:.82rem;letter-spacing:.12em;text-transform:uppercase;color:var(--sand)}
+.menu summary::-webkit-details-marker{display:none}
+.menu[open] summary{text-decoration:underline;text-underline-offset:6px}
+.menu nav{position:fixed;top:70px;left:0;right:0;display:grid;padding:4px var(--gut) 24px;background:var(--green);border-top:1px solid rgba(236,230,215,.18)}
+.menu nav a{padding:14px 0;border-bottom:1px solid rgba(236,230,215,.14);font-family:var(--display);font-size:1.6rem;line-height:1;text-transform:uppercase;text-decoration:none;color:var(--sand)}
+.menu nav a[aria-current]{text-decoration:underline;text-underline-offset:6px}
+@media (max-width:860px){.menu{display:block}}
+.wall{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,1fr);grid-template-rows:repeat(3,1fr);gap:2px;background:var(--green);height:calc(100svh - 70px);min-height:540px;scroll-margin-top:70px}
+.wall li{position:relative;min-width:0;overflow:hidden;background:var(--sand)}
+.wall .pv,.wall .tile{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;gap:clamp(8px,1.2vw,16px);padding:clamp(14px,2.2vw,32px) 10px clamp(12px,1.6vw,22px);color:var(--green)}
+.wall .pv:focus-visible{outline:2px solid var(--green);outline-offset:-8px}
+.wall img{flex:1 1 0;min-height:0;width:100%;object-fit:contain;will-change:transform;filter:drop-shadow(0 14px 16px rgba(9,36,4,.22));transition:transform .5s cubic-bezier(.2,.7,.3,1)}
+.wall span{order:2;font-family:var(--display);font-size:clamp(.8rem,1.5vw,1.5rem);line-height:1.05;text-transform:uppercase;text-align:center;text-wrap:balance}
+.wall .pk:focus-within img{transform:translateY(-6px) scale(1.04)}
+@media (hover:hover){.wall .pk:hover img{transform:translateY(-6px) scale(1.04)}}
+@media (prefers-reduced-motion:reduce){.wall img{transition:none}}
+.follow{display:grid;justify-items:center;gap:14px;text-align:center;padding:clamp(48px,6vw,88px) var(--gut);background:var(--paper);border-top:2px solid var(--green)}
+.follow h2{margin:0;font-size:clamp(2.6rem,6vw,5.6rem);line-height:.95}
+.follow p{margin:0;font-family:var(--body);font-weight:600;font-size:.8rem;letter-spacing:.16em;text-transform:uppercase;color:var(--green-70)}
+.follow a{display:inline-flex;align-items:center;gap:10px;font-family:var(--display);font-size:clamp(1rem,1.4vw,1.25rem);letter-spacing:.04em;text-decoration:none;text-transform:uppercase}
+.follow a:hover{text-decoration:underline}
+.follow svg{width:28px;height:28px}
+.c-copy{justify-content:flex-start}
+.c-copy h1{color:var(--sand);font-size:clamp(3rem,6.2vw,6.4rem);line-height:.95}
+.wl-card{margin-top:clamp(32px,4vw,48px);padding-top:clamp(24px,3vw,36px);border-top:1px solid var(--line)}
+.wl-card h3{margin:0 0 8px;font-family:var(--display);font-weight:400;font-size:clamp(1.6rem,2.4vw,2.2rem);line-height:1;text-transform:uppercase;color:var(--sand)}
+.wl-card p{margin:0 0 20px;color:var(--green-90)}
+.wl-card .btn,.intro .btn{background:var(--sand);color:var(--green);border-color:var(--sand)}
+.wl-card .btn:hover,.wl-card .btn:focus-visible,.intro .btn:hover,.intro .btn:focus-visible{background:transparent;color:var(--sand)}
+#wl,#jobs,#inq{padding-top:70px}
+.intro h1{margin:0;color:var(--sand);font-size:clamp(2.7rem,5.4vw,5.6rem);line-height:.95}
+.intro .btn{margin-top:22px}
+.steps{list-style:none;margin:0;padding:clamp(48px,6vw,88px) var(--gut);display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(28px,4vw,64px);background:var(--paper);border-top:2px solid var(--green);counter-reset:step}
+.steps li{counter-increment:step;min-width:0}
+.steps li::before{content:counter(step);display:block;margin-bottom:12px;font-family:var(--display);font-size:clamp(2.8rem,5vw,4.4rem);line-height:1;color:var(--green-mid)}
+.steps h3{margin:0 0 10px;font-family:var(--display);font-weight:400;font-size:clamp(1.5rem,2.3vw,2.1rem);line-height:1;text-transform:uppercase}
+.steps p{margin:0;max-width:24rem;color:var(--green-70)}
+@media (max-width:760px){.steps{grid-template-columns:1fr}}
+.wall{border-top:2px solid var(--green)}
+:root{--paper:var(--sand)}
+.intro{background:var(--sand);color:var(--green);border-top:2px solid var(--green)}
+.intro h1,.intro h2{color:var(--green);font-size:clamp(2.2rem,4.2vw,4rem)}
+.intro p{color:var(--green-70)}
+.intro .btn,.wl-card .btn{background:var(--green);color:var(--sand);border-color:var(--green)}
+.intro .btn:hover,.intro .btn:focus-visible,.wl-card .btn:hover,.wl-card .btn:focus-visible{background:transparent;color:var(--green)}
+.intro :focus-visible,.c-copy :focus-visible{outline-color:var(--green)}
+.contact{border-top:2px solid var(--green)}
+.c-copy{--green-90:rgba(9,36,4,.9);--green-70:rgba(9,36,4,.7);--line:rgba(9,36,4,.18);--loc:var(--green-mid);color:var(--green);background:var(--sand);border-right:2px solid var(--green)}
+.c-copy h1,.c-copy h2{color:var(--green);font-size:clamp(2.4rem,4.4vw,4.2rem)}
+.wl-card h3{color:var(--green)}
+@media (max-width:1000px){.c-copy{border-right:0;border-bottom:2px solid var(--green)}}
+.steps{padding:0;gap:2px;background:var(--green)}
+.steps li{background:var(--sand);padding:clamp(32px,4vw,56px) var(--gut)}
+.steps li::before{font-size:clamp(2rem,3.4vw,3rem)}
+.roles-wrap{border-top:2px solid var(--green)}
+.follow{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:12px 32px;text-align:left;padding:clamp(28px,3.5vw,48px) var(--gut)}
+.follow h2{font-size:clamp(1.8rem,3.2vw,3rem)}
+:root{--paper:#FBFAF7}
+.wall li,.intro,.c-copy,.dform,.steps li{background:var(--paper)}
+.wall,.steps{gap:1px}
+.wall,.intro,.contact,.roles-wrap{border-top-width:1px}
+.follow{border-top:1px solid var(--green)}
+.c-copy{border-right-width:1px}
+@media (max-width:1000px){.c-copy{border-bottom-width:1px}}
+.wall .pv,.wall .tile{padding:clamp(24px,3.4vw,52px) 16px clamp(16px,2vw,28px);gap:clamp(10px,1.4vw,18px)}
+.wall img{filter:drop-shadow(0 16px 22px rgba(9,36,4,.13))}
+.wall span{font-size:clamp(.72rem,1.05vw,1.05rem);letter-spacing:.06em}
+.wall .pk:focus-within img{transform:translateY(-4px) scale(1.025)}
+@media (hover:hover){.wall .pk:hover img{transform:translateY(-4px) scale(1.025)}}
+h2{font-size:clamp(1.9rem,3.2vw,3rem)}
+.intro h1,.intro h2{font-size:clamp(2rem,3.4vw,3.3rem);line-height:1}
+.c-copy h1,.c-copy h2{font-size:clamp(2.2rem,3.6vw,3.6rem);line-height:1}
+.follow h2{font-size:clamp(1.5rem,2.4vw,2.2rem)}
+.steps li::before{font-size:clamp(1.6rem,2.4vw,2.2rem);color:var(--green)}
+.steps h3{font-size:clamp(1.2rem,1.8vw,1.6rem)}
+.btn{border-radius:2px;border-width:1px;font-size:.8rem;letter-spacing:.16em;padding:13px 22px}
+.nav .btn{background:transparent;color:var(--sand);border-color:rgba(236,230,215,.6)}
+.nav .btn:hover,.nav .btn:focus-visible{background:var(--sand);color:var(--green)}
+.chip span{border-radius:2px}
+:root{--rule:rgba(9,36,4,.2)}
+.nav-r{grid-column:3;grid-row:1;justify-self:end;display:flex;align-items:center;gap:26px}
+.nav-r .links{margin-left:0}
+.legal-links{display:flex;flex-wrap:wrap;gap:10px 28px;margin-top:16px;padding-top:16px;border-top:1px solid rgba(236,230,215,.18);font-family:var(--body);font-weight:600;font-size:.72rem;letter-spacing:.12em;text-transform:uppercase}
+.legal-links a{color:var(--sand-80);text-decoration:none}
+.legal-links a:hover,.legal-links a[aria-current]{color:var(--sand);text-decoration:underline;text-underline-offset:4px}
+.ck-bar{position:fixed;left:0;right:0;bottom:0;z-index:80;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:14px 32px;padding:18px var(--gut) calc(18px + env(safe-area-inset-bottom,0px));background:var(--green);color:var(--sand);border-top:1px solid rgba(236,230,215,.18)}
+.ck-bar[hidden]{display:none}
+.ck-bar p{flex:1 1 28rem;max-width:48rem;margin:0;font-size:.92rem;line-height:1.5}
+.ck-bar a{color:var(--sand);text-underline-offset:3px}
+.ck-bar .row{display:flex;flex-wrap:wrap;gap:12px}
+.ck-bar .btn{min-width:120px;cursor:pointer;background:var(--sand);color:var(--green);border-color:var(--sand)}
+.ck-bar .btn:hover{background:transparent;color:var(--sand)}
+.ck-bar :focus-visible{outline:2px solid var(--sand);outline-offset:3px}
+.rows-wrap{padding:clamp(48px,6vw,88px) var(--gut);background:var(--paper);border-top:1px solid var(--rule)}
+.rows-wrap>h2{margin:0 0 12px}
+.rows-wrap>p{margin:0 0 28px;max-width:34rem;color:var(--green-70)}
+.rows{list-style:none;margin:0;padding:0;border-bottom:1px solid var(--rule)}
+.rows li{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,2fr);gap:6px 32px;align-items:baseline;padding:20px 0;border-top:1px solid var(--rule)}
+.rows h3{margin:0;font-family:var(--display);font-weight:400;font-size:clamp(1.15rem,1.6vw,1.4rem);line-height:1.1;text-transform:uppercase}
+.rows p{margin:0;max-width:40rem;color:var(--green-70)}
+@media (max-width:760px){.rows li{grid-template-columns:1fr}}
+.wall.fams{grid-template-columns:repeat(4,1fr);grid-template-rows:none;grid-auto-rows:clamp(260px,26vw,400px);height:auto;min-height:0}
+@media (max-width:700px){.wall.fams{grid-template-columns:repeat(2,1fr);grid-auto-rows:clamp(220px,62vw,300px)}}
+.steps.five{grid-template-columns:repeat(5,1fr)}
+@media (max-width:1100px){.steps.five{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:760px){.steps.five{grid-template-columns:1fr}}
+.faq details{border-top:1px solid var(--rule)}
+.faq details:last-child{border-bottom:1px solid var(--rule)}
+.faq summary{display:flex;justify-content:space-between;gap:16px;padding:18px 0;cursor:pointer;list-style:none;font-family:var(--display);font-size:clamp(1.1rem,1.5vw,1.35rem);line-height:1.15;text-transform:uppercase}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";flex:none}
+.faq details[open] summary::after{content:"\2212"}
+.faq summary:focus-visible{outline:2px solid var(--green);outline-offset:4px}
+.faq details p{margin:0 0 20px;max-width:44rem;color:var(--green-70)}
+</style>
+</head>
+<body>
+
+
+<div class="gate" id="gate" role="dialog" aria-modal="true" aria-labelledby="gate-q">
+  <div class="mark"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 168.8655 41.9885"><g><g><path d="M8.7,5.2v23.4h6.4V5.2h-6.4ZM0,0v4.7h23.5V0H0Z" style="fill:#ECE6D7;"/><path d="M26.4.3l.2,28.2h5.8l-.2-28.2h-5.8Z" style="fill:#ECE6D7;"/><path d="M32.7,10.9h2.8c2.8,0,3.9-.4,3.9-.4.9-.3,1.9-.6,2.4-1.7.4-.8.5-1.9,0-2.8-.2-.3-.4-.6-1-.9-1.2-.7-2.3-.8-4.5-.8h-3.7V.3h3.7c4.2,0,5.3.4,6.1.7,1.3.6,2.1,1.4,2.3,1.6,1.8,1.8,2,4,2,4.6,0,1.3-.3,2.3-.3,2.5-.1.3-.7,1.7-2,2.9,0,0-1.2,1-3.8,1.8h-.3c-.2,0-.5.1-.7.2l8.6,14h-7l-8.4-13.7v-3.9l-.1-.1Z" style="fill:#ECE6D7;"/><path d="M64.1904.309l.2,20.8c0,.2.1,1.3-.6,2.1-1,1.1-2.5.9-2.6.9v4.4c.2,0,4.8.8,7.6-2.6,2-2.3,1.8-5.1,1.8-5.7l-.2-19.9h-6.3.1ZM57.6,21l-.2-20.8h-6.1l.2,19.8c0,.7,0,3.4,1.8,5.7,2.7,3.4,7,2.8,7.3,2.8v-4.4c-.1,0-1.4,0-2.3-1-.7-.9-.7-1.9-.7-2.1Z" style="fill:#ECE6D7;"/><path d="M88.2655.1056v28.0888h-6.1V.1056h6.1ZM100.5655,28.1944h-11.7v-4.7519h11.7v4.7519Z" style="fill:#ECE6D7;"/><path d="M109.2655.1056v28.0888h-6.1V.1056h6.1ZM109.8655.1056h10v4.7519h-10V.1056ZM109.8655,11.2989h7.5v4.6463h-7.5v-4.6463ZM119.9655,28.1944h-10.1v-4.8575h10.1v4.8575Z" style="fill:#ECE6D7;"/><path d="M139.8655,0c2.5,9.3981,5.1,18.7963,7.6,28.1944h-6.9l-1.5-5.9134h-7.3l1.1-4.5407c1.7,0,3.4,0,5-.1056l-2.6-11.4045-5.7,22.0698h-6.6c2.7-9.3981,5.3-18.6907,8-28.0888h8.8l.1-.2112Z" style="fill:#ECE6D7;"/><path d="M156.2655,0v28.0888h-6V0h6ZM156.6655,0h12.2v4.6463h-12.2V0ZM156.7655,11.0877h7.8v4.6463h-7.8v-4.6463Z" style="fill:#ECE6D7;"/><path d="M50.494,41.8557v-.2651h.835v-7.6909h-.623c-1.0078,0-1.9756.3979-1.9756,1.9624h-.2646v-2.2275h7.3193v2.2275h-.2656c0-1.5645-.8223-1.9624-1.6973-1.9624h-.9014v7.6909h.835v.2651h-3.2617Z" style="fill:#ECE6D7;"/><path d="M62.6453,41.9885c-1.9355,0-4.1631-1.2598-4.1631-4.2432s2.2275-4.2432,4.1631-4.2432c1.9492,0,4.1641,1.2593,4.1641,4.2432s-2.2148,4.2432-4.1641,4.2432ZM62.6453,33.7673c-1.6709,0-2.4795,1.1934-2.4795,3.978,0,2.771.8086,3.9775,2.4795,3.9775,1.6182,0,2.4795-1.2065,2.4795-3.9775,0-2.7847-.8613-3.978-2.4795-3.978Z" style="fill:#ECE6D7;"/><path d="M74.6238,37.427c1.7236.1592,2.7051.8223,2.7051,2.188,0,1.79-1.79,2.2407-3.7656,2.2407h-3.7129v-.2651h.8359v-7.6909h-.8359v-.2651h3.501c1.8164,0,3.3945.3315,3.3945,1.8696,0,1.1934-.9551,1.7236-2.1221,1.8564v.0664ZM72.2772,33.8996v3.4478h1.0742c1.2598,0,1.8291-.4907,1.8291-1.7505,0-1.2197-.543-1.6973-1.8291-1.6973h-1.0742ZM72.2772,37.6125v3.978h1.2861c1.4717,0,2.0947-.5303,2.0947-1.9893,0-1.4053-.6631-1.9888-2.1748-1.9888h-1.2061Z" style="fill:#ECE6D7;"/><path d="M82.2547,41.8557h-2.4531v-.2651h.9814l3.208-8.0884h.332l3.4609,8.0884h.8086v.2651h-3.4346v-.2651h1.0215l-.9814-2.3472h-3.1562l-.9277,2.3472h1.1406v.2651ZM85.0789,38.965l-1.498-3.5933-1.4189,3.5933h2.917Z" style="fill:#ECE6D7;"/><path d="M97.786,36.5783c-.0791-1.2598-.7422-2.811-2.6914-2.811-1.6973,0-2.5195,1.1934-2.5195,3.978,0,2.7578.8223,3.9775,2.4932,3.9644,1.498,0,2.5195-.7954,2.6777-2.2539h.2393c-.1064,1.5513-1.2334,2.5327-2.9834,2.5327-1.9629,0-4.1104-1.2598-4.1104-4.2432s2.1475-4.2432,4.2031-4.2432c1.3262,0,1.8027.5566,2.2412.5566.2783,0,.3975-.252.3975-.4243h.2383v2.9438h-.1855Z" style="fill:#ECE6D7;"/><path d="M108.0545,36.5783c-.0791-1.2598-.7422-2.811-2.6914-2.811-1.6973,0-2.5195,1.1934-2.5195,3.978,0,2.7578.8223,3.9775,2.4932,3.9644,1.498,0,2.5195-.7954,2.6777-2.2539h.2393c-.1064,1.5513-1.2334,2.5327-2.9834,2.5327-1.9629,0-4.1104-1.2598-4.1104-4.2432s2.1475-4.2432,4.2031-4.2432c1.3262,0,1.8027.5566,2.2412.5566.2783,0,.3975-.252.3975-.4243h.2383v2.9438h-.1855Z" style="fill:#ECE6D7;"/><path d="M115.5916,41.9885c-1.9355,0-4.1631-1.2598-4.1631-4.2432s2.2275-4.2432,4.1631-4.2432c1.9492,0,4.1641,1.2593,4.1641,4.2432s-2.2148,4.2432-4.1641,4.2432ZM115.5916,33.7673c-1.6709,0-2.4795,1.1934-2.4795,3.978,0,2.771.8086,3.9775,2.4795,3.9775,1.6182,0,2.4795-1.2065,2.4795-3.9775,0-2.7847-.8613-3.978-2.4795-3.978Z" style="fill:#ECE6D7;"/></g></g></svg></div>
+  <p class="q" id="gate-q">Are you 21 or older?</p>
+  <div class="row">
+    <button class="btn" id="gate-yes" type="button">Yes</button>
+    <button class="btn" id="gate-no" type="button">No</button>
+  </div>
+  <p class="deny" id="gate-deny" role="alert" tabindex="-1">You must be 21 or older to view this site.</p>
+  <p class="note">Tru Leaf products are for adults 21 and over</p>
+</div>
+
+<header class="nav" id="top">
+  <a class="brand" href="index.html" aria-label="Tru Leaf Tobacco, home"><span class="wm"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 168.8655 41.9885"><g><g><path d="M8.7,5.2v23.4h6.4V5.2h-6.4ZM0,0v4.7h23.5V0H0Z" style="fill:#ECE6D7;"/><path d="M26.4.3l.2,28.2h5.8l-.2-28.2h-5.8Z" style="fill:#ECE6D7;"/><path d="M32.7,10.9h2.8c2.8,0,3.9-.4,3.9-.4.9-.3,1.9-.6,2.4-1.7.4-.8.5-1.9,0-2.8-.2-.3-.4-.6-1-.9-1.2-.7-2.3-.8-4.5-.8h-3.7V.3h3.7c4.2,0,5.3.4,6.1.7,1.3.6,2.1,1.4,2.3,1.6,1.8,1.8,2,4,2,4.6,0,1.3-.3,2.3-.3,2.5-.1.3-.7,1.7-2,2.9,0,0-1.2,1-3.8,1.8h-.3c-.2,0-.5.1-.7.2l8.6,14h-7l-8.4-13.7v-3.9l-.1-.1Z" style="fill:#ECE6D7;"/><path d="M64.1904.309l.2,20.8c0,.2.1,1.3-.6,2.1-1,1.1-2.5.9-2.6.9v4.4c.2,0,4.8.8,7.6-2.6,2-2.3,1.8-5.1,1.8-5.7l-.2-19.9h-6.3.1ZM57.6,21l-.2-20.8h-6.1l.2,19.8c0,.7,0,3.4,1.8,5.7,2.7,3.4,7,2.8,7.3,2.8v-4.4c-.1,0-1.4,0-2.3-1-.7-.9-.7-1.9-.7-2.1Z" style="fill:#ECE6D7;"/><path d="M88.2655.1056v28.0888h-6.1V.1056h6.1ZM100.5655,28.1944h-11.7v-4.7519h11.7v4.7519Z" style="fill:#ECE6D7;"/><path d="M109.2655.1056v28.0888h-6.1V.1056h6.1ZM109.8655.1056h10v4.7519h-10V.1056ZM109.8655,11.2989h7.5v4.6463h-7.5v-4.6463ZM119.9655,28.1944h-10.1v-4.8575h10.1v4.8575Z" style="fill:#ECE6D7;"/><path d="M139.8655,0c2.5,9.3981,5.1,18.7963,7.6,28.1944h-6.9l-1.5-5.9134h-7.3l1.1-4.5407c1.7,0,3.4,0,5-.1056l-2.6-11.4045-5.7,22.0698h-6.6c2.7-9.3981,5.3-18.6907,8-28.0888h8.8l.1-.2112Z" style="fill:#ECE6D7;"/><path d="M156.2655,0v28.0888h-6V0h6ZM156.6655,0h12.2v4.6463h-12.2V0ZM156.7655,11.0877h7.8v4.6463h-7.8v-4.6463Z" style="fill:#ECE6D7;"/><path d="M50.494,41.8557v-.2651h.835v-7.6909h-.623c-1.0078,0-1.9756.3979-1.9756,1.9624h-.2646v-2.2275h7.3193v2.2275h-.2656c0-1.5645-.8223-1.9624-1.6973-1.9624h-.9014v7.6909h.835v.2651h-3.2617Z" style="fill:#ECE6D7;"/><path d="M62.6453,41.9885c-1.9355,0-4.1631-1.2598-4.1631-4.2432s2.2275-4.2432,4.1631-4.2432c1.9492,0,4.1641,1.2593,4.1641,4.2432s-2.2148,4.2432-4.1641,4.2432ZM62.6453,33.7673c-1.6709,0-2.4795,1.1934-2.4795,3.978,0,2.771.8086,3.9775,2.4795,3.9775,1.6182,0,2.4795-1.2065,2.4795-3.9775,0-2.7847-.8613-3.978-2.4795-3.978Z" style="fill:#ECE6D7;"/><path d="M74.6238,37.427c1.7236.1592,2.7051.8223,2.7051,2.188,0,1.79-1.79,2.2407-3.7656,2.2407h-3.7129v-.2651h.8359v-7.6909h-.8359v-.2651h3.501c1.8164,0,3.3945.3315,3.3945,1.8696,0,1.1934-.9551,1.7236-2.1221,1.8564v.0664ZM72.2772,33.8996v3.4478h1.0742c1.2598,0,1.8291-.4907,1.8291-1.7505,0-1.2197-.543-1.6973-1.8291-1.6973h-1.0742ZM72.2772,37.6125v3.978h1.2861c1.4717,0,2.0947-.5303,2.0947-1.9893,0-1.4053-.6631-1.9888-2.1748-1.9888h-1.2061Z" style="fill:#ECE6D7;"/><path d="M82.2547,41.8557h-2.4531v-.2651h.9814l3.208-8.0884h.332l3.4609,8.0884h.8086v.2651h-3.4346v-.2651h1.0215l-.9814-2.3472h-3.1562l-.9277,2.3472h1.1406v.2651ZM85.0789,38.965l-1.498-3.5933-1.4189,3.5933h2.917Z" style="fill:#ECE6D7;"/><path d="M97.786,36.5783c-.0791-1.2598-.7422-2.811-2.6914-2.811-1.6973,0-2.5195,1.1934-2.5195,3.978,0,2.7578.8223,3.9775,2.4932,3.9644,1.498,0,2.5195-.7954,2.6777-2.2539h.2393c-.1064,1.5513-1.2334,2.5327-2.9834,2.5327-1.9629,0-4.1104-1.2598-4.1104-4.2432s2.1475-4.2432,4.2031-4.2432c1.3262,0,1.8027.5566,2.2412.5566.2783,0,.3975-.252.3975-.4243h.2383v2.9438h-.1855Z" style="fill:#ECE6D7;"/><path d="M108.0545,36.5783c-.0791-1.2598-.7422-2.811-2.6914-2.811-1.6973,0-2.5195,1.1934-2.5195,3.978,0,2.7578.8223,3.9775,2.4932,3.9644,1.498,0,2.5195-.7954,2.6777-2.2539h.2393c-.1064,1.5513-1.2334,2.5327-2.9834,2.5327-1.9629,0-4.1104-1.2598-4.1104-4.2432s2.1475-4.2432,4.2031-4.2432c1.3262,0,1.8027.5566,2.2412.5566.2783,0,.3975-.252.3975-.4243h.2383v2.9438h-.1855Z" style="fill:#ECE6D7;"/><path d="M115.5916,41.9885c-1.9355,0-4.1631-1.2598-4.1631-4.2432s2.2275-4.2432,4.1631-4.2432c1.9492,0,4.1641,1.2593,4.1641,4.2432s-2.2148,4.2432-4.1641,4.2432ZM115.5916,33.7673c-1.6709,0-2.4795,1.1934-2.4795,3.978,0,2.771.8086,3.9775,2.4795,3.9775,1.6182,0,2.4795-1.2065,2.4795-3.9775,0-2.7847-.8613-3.978-2.4795-3.978Z" style="fill:#ECE6D7;"/></g></g></svg></span></a>
+  <details class="menu"><summary>Menu</summary><nav aria-label="Pages"><a href="index.html#packs">Products</a><a href="find-a-store.html">Find a Store</a><a href="white-label.html" aria-current="page">White Label</a><a href="careers.html">Careers</a><a href="contact.html">Contact</a><a href="inquire.html">Inquire</a></nav></details>
+  <nav class="links" aria-label="Pages"><a href="index.html#packs">Products</a><a href="find-a-store.html">Find a Store</a><a href="white-label.html" aria-current="page">White Label</a></nav>
+  <div class="nav-r"><nav class="links" aria-label="More pages"><a href="careers.html">Careers</a><a href="contact.html">Contact</a></nav><a class="btn" href="inquire.html">Inquire</a></div>
+</header>
+
+<main id="wl">
+  <div class="intro">
+    <h1>Your brand.<br>Our leaf.</h1>
+    <div><p>Buy Tru Leaf wraps, whole leaf, blunts and cones and sell them under your own brand. Our in-house design team can create your packaging, and we can introduce you to the distributors and retailers we work with. For licensed tobacco businesses.</p><a class="btn" href="#apply">Apply</a></div>
+  </div>
+  <h2 class="sr">What we can make for you</h2>
+  <ul class="wall fams">
+    <li class="pk"><div class="tile"><span>Tobacco Leaf Wraps</span><img loading="lazy" decoding="async" src="img/pc-wraps-natural-havana-600-trimw.webp" alt="Tobacco leaf wraps, a five-wrap pouch with its display carton"></div></li>
+    <li class="pk"><div class="tile"><span>Whole Tobacco Leaf</span><img loading="lazy" decoding="async" src="img/pt-pm-whole-leaf-green-1400-trimw.webp" alt="Whole tobacco leaf pack"></div></li>
+    <li class="pk"><div class="tile"><span>Natural Cigar Blunt</span><img loading="lazy" decoding="async" src="img/pt-pm-cigar-blunt-3pack-1400-trimw.webp" alt="Natural cigar blunt, three per pack"></div></li>
+    <li class="pk"><div class="tile"><span>Tobacco Cones</span><img loading="lazy" decoding="async" src="img/pt-pm-cones-3pack-1400-trimw.webp" alt="Tobacco cones, three per pack"></div></li>
+  </ul>
+  <section class="rows-wrap" aria-labelledby="custom-h">
+    <h2 id="custom-h">What you choose</h2>
+    <p>Build one product or a full line. Every option is confirmed in writing with your quote.</p>
+    <ul class="rows">
+      <li><h3>Format</h3><p>Tobacco leaf wraps, whole tobacco leaf, natural cigar blunts and tobacco cones.</p></li>
+      <li><h3>Leaf</h3><p>Choose from our current wrap varieties and natural whole leaf, grown and cured on our farm in Nicaragua.</p></li>
+      <li><h3>Pack size</h3><p>Five wraps to a pouch, or three blunts or cones to a box.</p></li>
+      <li><h3>Packaging</h3><p>Your name, logo and colors on the pouch or box, printed with the nicotine warning.</p></li>
+      <li><h3>Display</h3><p>Counter display cartons in your branding.</p></li>
+      <li><h3>Design</h3><p>Send finished artwork, or have our in-house design team create your packaging and display, from your logo or from scratch.</p></li>
+      <li><h3>Distribution</h3><p>Sell through your own accounts, or let us introduce you to the distributors and retailers we work with.</p></li>
+      <li><h3>Minimums and timing</h3><p>Set by format and quantity. We confirm both with your quote.</p></li>
+    </ul>
+  </section>
+  <h2 class="sr">How it works</h2>
+  <ol class="steps five">
+    <li><h3>Apply</h3><p>Tell us about your business, where you sell and what you want under your name.</p></li>
+    <li><h3>Options and samples</h3><p>We reply with formats, pricing and minimums, and samples of the formats you’re considering.</p></li>
+    <li><h3>Design</h3><p>Send your artwork, or work with our design team on it. We send you a proof to approve.</p></li>
+    <li><h3>Production</h3><p>Once you approve the proof, we make your line in Nicaragua.</p></li>
+    <li><h3>Launch</h3><p>We ship your order from Miami and, if you want, introduce you to distributors and retailers.</p></li>
+  </ol>
+  <section class="rows-wrap faq" aria-labelledby="faq-h">
+    <h2 id="faq-h">Questions</h2>
+    <details><summary>Who can apply?</summary><p>Licensed tobacco retailers, distributors and brands in the United States. We check your license before we take an order.</p></details>
+    <details><summary>Do I need finished artwork?</summary><p>No. Our in-house design team can create your packaging and display, starting from your logo or from nothing at all. If you already have artwork, we set it on our pack templates.</p></details>
+    <details><summary>Can you help me sell it?</summary><p>Yes. If you want, we introduce you to distributors and retailers we work with. Any deal you make is between you and them, and we can’t promise sales.</p></details>
+    <details><summary>What is the minimum order?</summary><p>It depends on the format and pack. We confirm your minimum with your quote.</p></details>
+    <details><summary>How long does it take?</summary><p>It depends on the format, the quantity and how quickly the artwork is approved. We give you a timeline with your quote.</p></details>
+    <details><summary>Where are the products made?</summary><p>In Nicaragua, from leaf grown and cured on our farm there.</p></details>
+    <details><summary>Who handles compliance?</summary><p>Your packs carry the same nicotine warning as ours. You stay responsible for your licenses, taxes and any state or local rules where you sell, including limits on flavored products.</p></details>
+  </section>
+  <section class="contact" id="apply">
+    <div class="c-copy">
+      <h2>Start<br>your line.</h2>
+      <p class="lede">Tell us about your business and what you want to sell. We’ll reply with options and pricing.</p>
+    </div>
+    <form class="dform" id="wl-form" name="white-label" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+      <input type="hidden" name="form-name" value="white-label">
+      <input type="hidden" name="subject" value="White-label application, truleaf-tobacco.com">
+      <p class="hp"><label>Leave this field empty <input name="bot-field" tabindex="-1" autocomplete="off"></label></p>
+      <div class="fields">
+        <div class="f2">
+          <label><span class="lt">Company name <span class="req" aria-hidden="true">*</span></span><input id="wl-company" name="company" required autocomplete="organization"></label>
+          <label><span class="lt">Your name <span class="req" aria-hidden="true">*</span></span><input id="wl-name" name="name" required autocomplete="name"></label>
+        </div>
+        <div class="f2">
+          <label><span class="lt">Email <span class="req" aria-hidden="true">*</span></span><input id="wl-email" type="email" name="email" required autocomplete="email"></label>
+          <label><span class="lt">Phone</span><input id="wl-phone" type="tel" name="phone" autocomplete="tel"></label>
+        </div>
+        <div class="f2">
+          <label><span class="lt">Business type <span class="req" aria-hidden="true">*</span></span><select id="wl-type" name="business_type" required><option value="">Choose one</option><option>Smoke shop or tobacco retailer</option><option>Convenience store or chain</option><option>Distributor or wholesaler</option><option>Brand</option><option>Other</option></select></label>
+          <label><span class="lt">Website or Instagram</span><input id="wl-web" name="website"></label>
+        </div>
+        <label><span class="lt">Business address</span><input id="wl-address" name="address" autocomplete="street-address"></label>
+        <div class="f2">
+          <label><span class="lt">Tax ID (EIN)</span><input id="wl-tax" name="tax_id" autocomplete="off" spellcheck="false" aria-describedby="wl-optional"></label>
+          <label><span class="lt">Tobacco license number</span><input id="wl-license" name="tobacco_license" autocomplete="off" spellcheck="false" aria-describedby="wl-optional"></label>
+        </div>
+        <p class="consent" id="wl-optional">Both optional. Use your business EIN, never a Social Security number.</p>
+        <fieldset>
+          <legend>Products for your line</legend>
+          <div class="chips"><label class="chip"><input type="checkbox" name="products" value="Tobacco Leaf Wraps"><span>Tobacco Leaf Wraps</span></label><label class="chip"><input type="checkbox" name="products" value="Whole Tobacco Leaf"><span>Whole Tobacco Leaf</span></label><label class="chip"><input type="checkbox" name="products" value="Natural Cigar Blunt"><span>Natural Cigar Blunt</span></label><label class="chip"><input type="checkbox" name="products" value="Tobacco Cones"><span>Tobacco Cones</span></label></div>
+        </fieldset>
+        <div class="f2">
+          <label><span class="lt">Your branding</span><select id="wl-brand" name="branding"><option value="">Choose one</option><option>I have finished artwork</option><option>I have a logo and need packaging design</option><option>I need a logo and packaging design</option></select></label>
+          <label><span class="lt">Help with distribution</span><select id="wl-dist" name="distribution_help"><option value="">Choose one</option><option>Yes, introduce me to distributors and retailers</option><option>No, I have my own accounts</option><option>Not sure yet</option></select></label>
+        </div>
+        <label><span class="lt">Estimated first order</span><input id="wl-qty" name="first_order" placeholder="For example, 50 cases"></label>
+        <label><span class="lt">Anything else</span><textarea id="wl-msg" name="message" rows="3" placeholder="Where you sell, how many locations, and when you want to launch"></textarea></label>
+        <p class="consent">Fields marked * are required. We work with licensed tobacco businesses only. By sending this you agree to our <a href="privacy.html">Privacy Policy</a>.</p>
+        <button class="btn" type="submit">Send application</button>
+      </div>
+      <p class="f-status" id="f-status" role="status" aria-live="polite" tabindex="-1"></p>
+    </form>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="foot-grid">
+    <div><div class="logo"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 168.8655 41.9885"><g><g><path d="M8.7,5.2v23.4h6.4V5.2h-6.4ZM0,0v4.7h23.5V0H0Z" style="fill:#ECE6D7;"/><path d="M26.4.3l.2,28.2h5.8l-.2-28.2h-5.8Z" style="fill:#ECE6D7;"/><path d="M32.7,10.9h2.8c2.8,0,3.9-.4,3.9-.4.9-.3,1.9-.6,2.4-1.7.4-.8.5-1.9,0-2.8-.2-.3-.4-.6-1-.9-1.2-.7-2.3-.8-4.5-.8h-3.7V.3h3.7c4.2,0,5.3.4,6.1.7,1.3.6,2.1,1.4,2.3,1.6,1.8,1.8,2,4,2,4.6,0,1.3-.3,2.3-.3,2.5-.1.3-.7,1.7-2,2.9,0,0-1.2,1-3.8,1.8h-.3c-.2,0-.5.1-.7.2l8.6,14h-7l-8.4-13.7v-3.9l-.1-.1Z" style="fill:#ECE6D7;"/><path d="M64.1904.309l.2,20.8c0,.2.1,1.3-.6,2.1-1,1.1-2.5.9-2.6.9v4.4c.2,0,4.8.8,7.6-2.6,2-2.3,1.8-5.1,1.8-5.7l-.2-19.9h-6.3.1ZM57.6,21l-.2-20.8h-6.1l.2,19.8c0,.7,0,3.4,1.8,5.7,2.7,3.4,7,2.8,7.3,2.8v-4.4c-.1,0-1.4,0-2.3-1-.7-.9-.7-1.9-.7-2.1Z" style="fill:#ECE6D7;"/><path d="M88.2655.1056v28.0888h-6.1V.1056h6.1ZM100.5655,28.1944h-11.7v-4.7519h11.7v4.7519Z" style="fill:#ECE6D7;"/><path d="M109.2655.1056v28.0888h-6.1V.1056h6.1ZM109.8655.1056h10v4.7519h-10V.1056ZM109.8655,11.2989h7.5v4.6463h-7.5v-4.6463ZM119.9655,28.1944h-10.1v-4.8575h10.1v4.8575Z" style="fill:#ECE6D7;"/><path d="M139.8655,0c2.5,9.3981,5.1,18.7963,7.6,28.1944h-6.9l-1.5-5.9134h-7.3l1.1-4.5407c1.7,0,3.4,0,5-.1056l-2.6-11.4045-5.7,22.0698h-6.6c2.7-9.3981,5.3-18.6907,8-28.0888h8.8l.1-.2112Z" style="fill:#ECE6D7;"/><path d="M156.2655,0v28.0888h-6V0h6ZM156.6655,0h12.2v4.6463h-12.2V0ZM156.7655,11.0877h7.8v4.6463h-7.8v-4.6463Z" style="fill:#ECE6D7;"/><path d="M50.494,41.8557v-.2651h.835v-7.6909h-.623c-1.0078,0-1.9756.3979-1.9756,1.9624h-.2646v-2.2275h7.3193v2.2275h-.2656c0-1.5645-.8223-1.9624-1.6973-1.9624h-.9014v7.6909h.835v.2651h-3.2617Z" style="fill:#ECE6D7;"/><path d="M62.6453,41.9885c-1.9355,0-4.1631-1.2598-4.1631-4.2432s2.2275-4.2432,4.1631-4.2432c1.9492,0,4.1641,1.2593,4.1641,4.2432s-2.2148,4.2432-4.1641,4.2432ZM62.6453,33.7673c-1.6709,0-2.4795,1.1934-2.4795,3.978,0,2.771.8086,3.9775,2.4795,3.9775,1.6182,0,2.4795-1.2065,2.4795-3.9775,0-2.7847-.8613-3.978-2.4795-3.978Z" style="fill:#ECE6D7;"/><path d="M74.6238,37.427c1.7236.1592,2.7051.8223,2.7051,2.188,0,1.79-1.79,2.2407-3.7656,2.2407h-3.7129v-.2651h.8359v-7.6909h-.8359v-.2651h3.501c1.8164,0,3.3945.3315,3.3945,1.8696,0,1.1934-.9551,1.7236-2.1221,1.8564v.0664ZM72.2772,33.8996v3.4478h1.0742c1.2598,0,1.8291-.4907,1.8291-1.7505,0-1.2197-.543-1.6973-1.8291-1.6973h-1.0742ZM72.2772,37.6125v3.978h1.2861c1.4717,0,2.0947-.5303,2.0947-1.9893,0-1.4053-.6631-1.9888-2.1748-1.9888h-1.2061Z" style="fill:#ECE6D7;"/><path d="M82.2547,41.8557h-2.4531v-.2651h.9814l3.208-8.0884h.332l3.4609,8.0884h.8086v.2651h-3.4346v-.2651h1.0215l-.9814-2.3472h-3.1562l-.9277,2.3472h1.1406v.2651ZM85.0789,38.965l-1.498-3.5933-1.4189,3.5933h2.917Z" style="fill:#ECE6D7;"/><path d="M97.786,36.5783c-.0791-1.2598-.7422-2.811-2.6914-2.811-1.6973,0-2.5195,1.1934-2.5195,3.978,0,2.7578.8223,3.9775,2.4932,3.9644,1.498,0,2.5195-.7954,2.6777-2.2539h.2393c-.1064,1.5513-1.2334,2.5327-2.9834,2.5327-1.9629,0-4.1104-1.2598-4.1104-4.2432s2.1475-4.2432,4.2031-4.2432c1.3262,0,1.8027.5566,2.2412.5566.2783,0,.3975-.252.3975-.4243h.2383v2.9438h-.1855Z" style="fill:#ECE6D7;"/><path d="M108.0545,36.5783c-.0791-1.2598-.7422-2.811-2.6914-2.811-1.6973,0-2.5195,1.1934-2.5195,3.978,0,2.7578.8223,3.9775,2.4932,3.9644,1.498,0,2.5195-.7954,2.6777-2.2539h.2393c-.1064,1.5513-1.2334,2.5327-2.9834,2.5327-1.9629,0-4.1104-1.2598-4.1104-4.2432s2.1475-4.2432,4.2031-4.2432c1.3262,0,1.8027.5566,2.2412.5566.2783,0,.3975-.252.3975-.4243h.2383v2.9438h-.1855Z" style="fill:#ECE6D7;"/><path d="M115.5916,41.9885c-1.9355,0-4.1631-1.2598-4.1631-4.2432s2.2275-4.2432,4.1631-4.2432c1.9492,0,4.1641,1.2593,4.1641,4.2432s-2.2148,4.2432-4.1641,4.2432ZM115.5916,33.7673c-1.6709,0-2.4795,1.1934-2.4795,3.978,0,2.771.8086,3.9775,2.4795,3.9775,1.6182,0,2.4795-1.2065,2.4795-3.9775,0-2.7847-.8613-3.978-2.4795-3.978Z" style="fill:#ECE6D7;"/></g></g></svg></div><p>Tru Leaf International LLC<br>Miami, Florida</p></div>
+    <div><h4>Contact</h4><p><a href="mailto:distributors@truleaf-tobacco.com">distributors@<wbr>truleaf-tobacco.com</a><br><a href="tel:+16452439880">+1 (645) 243-9880</a><br><a href="https://www.instagram.com/truleaftobacco/" rel="noopener">@truleaftobacco</a> · truleaf-tobacco.com</p></div>
+    <div><h4>Site</h4><ul><li><a href="index.html">Home</a></li><li><a href="index.html#packs">Products</a></li><li><a href="find-a-store.html">Find a Store</a></li><li><a href="white-label.html" aria-current="page">White Label</a></li><li><a href="careers.html">Careers</a></li><li><a href="contact.html">Contact</a></li><li><a href="inquire.html">Inquire</a></li></ul></div>
+  </div>
+  <div class="warning" role="note">WARNING: This product contains nicotine. Nicotine is an addictive chemical.</div>
+  <div class="legal"><span>© 2026 Tru Leaf International LLC</span><span>For adults 21 and over. Not for sale to minors.</span></div>
+  <nav class="legal-links" aria-label="Legal"><a href="privacy.html">Privacy Policy</a><a href="florida-notice.html">Florida Privacy Notice</a><a href="california-notice.html">California Privacy Notice</a><a href="terms.html">Terms of Use</a><a href="do-not-sell.html">Do Not Sell or Share My Personal Information</a><a href="do-not-sell.html#cookies">Cookie Choices</a></nav>
+</footer>
+
+
+<div class="ck-bar" id="ck-bar" role="region" aria-label="Cookie choices" hidden>
+  <p>With your OK, we use Google Analytics to see how the site is used and the Meta Pixel to measure our marketing. Neither runs unless you accept. <a href="do-not-sell.html#cookies">Cookie choices</a></p>
+  <div class="row"><button class="btn" type="button" data-ck="yes">Accept</button><button class="btn" type="button" data-ck="no">Reject</button></div>
+</div>
+
+<script>
+(function(){
+  var GA_ID='',PIXEL_ID=''; // ponytail: fill in the GA4 measurement ID (G-...) and the Meta Pixel ID before launch
+  var KEY='tlconsent',MAX=365*864e5,gpc=navigator.globalPrivacyControl===true;
+  function get(){try{var c=JSON.parse(localStorage.getItem(KEY));if(c&&Date.now()-c.t<MAX)return c}catch(e){}return null}
+  function put(a,m){var c={a:!!a,m:!!m&&!gpc,t:Date.now()};try{localStorage.setItem(KEY,JSON.stringify(c))}catch(e){}return c}
+  function add(src){var s=document.createElement('script');s.async=true;s.src=src;document.head.appendChild(s)}
+  function load(c){
+    if(c.a&&GA_ID&&!window.gtag){window.dataLayer=window.dataLayer||[];window.gtag=function(){dataLayer.push(arguments)};
+      gtag('js',new Date());gtag('config',GA_ID,{allow_google_signals:false,allow_ad_personalization_signals:false});add('https://www.googletagmanager.com/gtag/js?id='+GA_ID)}
+    if(c.m&&!gpc&&PIXEL_ID&&!window.fbq){var n=window.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+      window._fbq=n;n.push=n;n.loaded=true;n.version='2.0';n.queue=[];add('https://connect.facebook.net/en_US/fbevents.js');
+      fbq('set','autoConfig',false,PIXEL_ID);fbq('init',PIXEL_ID);fbq('track','PageView')}}
+  function wipe(pre){document.cookie.split('; ').forEach(function(k){var n=k.split('=')[0];
+    if(pre.some(function(p){return n.indexOf(p)===0}))['',';domain='+location.hostname.replace(/^www\./,'')].forEach(function(d){document.cookie=n+'=;max-age=0;path=/'+d})})}
+  function save(a,m,stay){var old=get(),c=put(a,m);if(!c.a)wipe(['_ga']);if(!c.m)wipe(['_fbp','_fbc']);
+    // ponytail: a tag that has loaded can't be unloaded, so turning one off reloads the page
+    if(!stay&&old&&((old.a&&!c.a)||(old.m&&!c.m))){try{sessionStorage.setItem('tlck','1')}catch(e){}location.reload();return c}
+    load(c);return c}
+  var bar=document.getElementById('ck-bar'),c=get();
+  if(c)load(c);else if(bar&&(GA_ID||PIXEL_ID))bar.hidden=false; // no banner until a tag ID is filled in
+  if(bar)bar.addEventListener('click',function(e){var b=e.target.closest('[data-ck]');if(!b)return;var y=b.getAttribute('data-ck')==='yes';bar.hidden=true;save(y,y)});
+  // Cookie Choices form on do-not-sell.html
+  var f=document.getElementById('ck-form');
+  if(f){var st=document.getElementById('ck-status'),cur=c||{a:false,m:false};
+    f.elements.a.checked=cur.a;f.elements.m.checked=cur.m&&!gpc;
+    if(gpc){f.elements.m.disabled=true;document.getElementById('ck-gpc').hidden=false}
+    function said(c){st.textContent='Saved. Analytics is '+(c.a?'on':'off')+' and advertising is '+(c.m?'on':'off')+' in this browser.'}
+    try{if(sessionStorage.getItem('tlck')){sessionStorage.removeItem('tlck');said(cur)}}catch(e){}
+    f.addEventListener('submit',function(e){e.preventDefault();if(bar)bar.hidden=true;said(save(f.elements.a.checked,f.elements.m.checked))})}
+  // an opt-out of sale or sharing sent through the privacy form also turns advertising off in this browser
+  var o=document.getElementById('optout-form');
+  if(o)o.addEventListener('submit',function(){var x=[].some.call(o.querySelectorAll('input[name=request]'),function(i){return i.checked&&/^Do not (sell|share)/.test(i.value)});
+    if(x){var k=get();save(k?k.a:false,false,true);if(f)f.elements.m.checked=false}});
+})();
+</script>
+<script>
+(function(){
+  var g=document.getElementById('gate');if(!g)return;
+  var KEY='tl21',DAYS=30;
+  function passed(){
+    try{
+      var v=window.localStorage.getItem(KEY);
+      if(!v)return false;
+      var t=parseInt(v,10);
+      return !!t&&(Date.now()-t)<DAYS*864e5;
+    }catch(e){return false}
+  }
+  if(passed()){g.hidden=true;return}
+  document.documentElement.style.overflow='hidden';
+  var behind=[].slice.call(document.querySelectorAll('.nav,#wl,.foot'));behind.forEach(function(el){el.inert=true});
+  var yes=document.getElementById('gate-yes'),no=document.getElementById('gate-no');
+  yes.addEventListener('click',function(){
+    try{window.localStorage.setItem(KEY,String(Date.now()))}catch(e){}
+    document.documentElement.style.overflow='';behind.forEach(function(el){el.inert=false});g.classList.add('leaving');
+    setTimeout(function(){g.hidden=true;g.classList.remove('leaving')},window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches?0:1100);
+  });
+  no.addEventListener('click',function(){
+    g.classList.add('said-no');
+    var d=document.getElementById('gate-deny');if(d)d.focus();
+  });
+  // keep focus inside the gate while it is up
+  g.addEventListener('keydown',function(e){
+    if(e.key!=='Tab'||g.hidden)return;
+    var f=[].filter.call(g.querySelectorAll('button'),function(b){return b.offsetParent!==null});if(!f.length){e.preventDefault();return}
+    var first=f[0],last=f[f.length-1];
+    if(e.shiftKey&&document.activeElement===first){e.preventDefault();last.focus()}
+    else if(!e.shiftKey&&document.activeElement===last){e.preventDefault();first.focus()}
+  });
+  setTimeout(function(){if(!g.hidden)yes.focus()},60);
+})();
+(function(){ // tilt toward the mouse and glide with it; back to rest on leave
+  if(window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches)return;
+  var q=false,ev=null;
+  function frame(){q=false;var li=ev.target.closest&&ev.target.closest('.wall .pk');if(!li)return;var img=li.querySelector('img');if(!img)return;
+    var r=li.getBoundingClientRect(),x=(ev.clientX-r.left)/r.width*2-1,y=(ev.clientY-r.top)/r.height*2-1;
+    img.style.transition='transform .32s cubic-bezier(.2,.7,.3,1)';
+    img.style.transform='perspective(800px) rotateX('+(-y*8).toFixed(2)+'deg) rotateY('+(x*11).toFixed(2)+'deg) translate3d('+(x*9).toFixed(1)+'px,'+(y*7-14).toFixed(1)+'px,0) scale(1.06)'}
+  [].forEach.call(document.querySelectorAll('.wall'),function(shelf){
+    shelf.addEventListener('pointermove',function(e){if(e.pointerType&&e.pointerType!=='mouse')return;ev=e;if(!q){q=true;requestAnimationFrame(frame)}});
+    shelf.addEventListener('pointerout',function(e){var li=e.target.closest&&e.target.closest('.wall .pk');if(!li||li.contains(e.relatedTarget))return;
+      var img=li.querySelector('img');if(img){img.style.transition='transform .8s cubic-bezier(.2,.7,.3,1)';img.style.transform=''}});
+  });
+})();
+(function(){
+  var v=document.getElementById('viewer');if(!v)return;
+  var img=document.getElementById('v-img'),nm=document.getElementById('v-name'),fm=document.getElementById('v-fam'),
+      mt=document.getElementById('v-meta'),ct=document.getElementById('v-count'),
+      pvs=[].slice.call(document.querySelectorAll('.pv')),list=[],idx=0,opener=null;
+  function visible(){return pvs}
+  function swap(src,alt){if(img.src===src){img.alt=alt;img.style.opacity='1';return}img.style.opacity='0';img.onload=img.onerror=function(){img.style.opacity='1'};img.src=src;img.alt=alt}
+  var side=document.getElementById('v-side'),sideBtns=side?[].slice.call(side.querySelectorAll('button')):[];
+  function setSide(which,p){
+    p=p||list[idx];
+    var back=p.getAttribute('data-back'),im=p.querySelector('img');
+    if(side)side.hidden=!back;
+    if(which==='back'&&back)swap(back,im.alt+', back of pack');
+    else{which='front';var fr=p.getAttribute('data-front');swap(fr||im.src,fr?im.alt+', standing in front of its display carton':im.alt)}
+    sideBtns.forEach(function(b){b.setAttribute('aria-pressed',String(b.getAttribute('data-side')===which))});
+  }
+  sideBtns.forEach(function(b){b.addEventListener('click',function(){setSide(b.getAttribute('data-side'))})});
+  function show(i){
+    idx=(i+list.length)%list.length;
+    var p=list[idx],li=p.parentNode;
+    v.style.setProperty('--bg',li.style.getPropertyValue('--bg'));v.style.setProperty('--ink',li.style.getPropertyValue('--ink'));v.style.setProperty('--on',li.style.getPropertyValue('--on'));
+    setSide('front',p);
+    nm.textContent=p.getAttribute('data-name');fm.textContent=p.getAttribute('data-fam');
+    mt.textContent=p.getAttribute('data-meta');ct.textContent=(idx+1)+' / '+list.length;
+  }
+  function open(p){opener=p;list=visible();show(list.indexOf(p));var b=p.getAttribute('data-back');if(b)(new Image()).src=b;v.hidden=false;document.documentElement.style.overflow='hidden';v.querySelector('.v-close').focus()}
+  function close(){v.hidden=true;document.documentElement.style.overflow='';if(opener)opener.focus()}
+  pvs.forEach(function(p){p.addEventListener('click',function(){open(p)})});
+  v.querySelector('.v-close').addEventListener('click',close);
+  v.querySelector('.v-cta').addEventListener('click',function(){ // to the form, with this product's family already ticked
+    try{sessionStorage.setItem('tlfam',list[idx].getAttribute('data-fam'))}catch(e){}});
+  v.querySelector('.v-prev').addEventListener('click',function(){show(idx-1)});
+  v.querySelector('.v-next').addEventListener('click',function(){show(idx+1)});
+  v.addEventListener('click',function(e){if(e.target===v)close()});
+  document.addEventListener('keydown',function(e){
+    if(v.hidden)return;
+    if(e.key==='Escape')close();
+    else if(e.key==='ArrowLeft')show(idx-1);
+    else if(e.key==='ArrowRight')show(idx+1);
+    else if(e.key==='Tab'){
+      var bs=[].slice.call(v.querySelectorAll('button,a.btn')),first=bs[0],end=bs[bs.length-1];
+      if(e.shiftKey&&document.activeElement===first){e.preventDefault();end.focus()}
+      else if(!e.shiftKey&&document.activeElement===end){e.preventDefault();first.focus()}
+    }
+  });
+})();
+
+[].forEach.call(document.querySelectorAll('.menu a'),function(a){a.addEventListener('click',function(){a.closest('details').open=false})});
+(function(){
+  var f=document.querySelector('.dform');if(!f)return;
+  var st=document.getElementById('f-status'),btn=f.querySelector('button[type=submit]');
+  try{var fam=sessionStorage.getItem('tlfam');if(fam){sessionStorage.removeItem('tlfam');[].forEach.call(f.querySelectorAll('.chip input'),function(c){if(c.value===fam)c.checked=true})}}catch(e){}
+  f.addEventListener('submit',function(e){
+    e.preventDefault();
+    var file=f.querySelector('input[type=file]');
+    if(file&&file.files[0]&&file.files[0].size>8e6){st.className='f-status err';st.textContent='That file is over 8 MB. Please attach a smaller PDF or Word file.';st.focus();return}
+    btn.disabled=true;st.className='f-status';st.textContent='Sending\u2026';
+    var fd=new FormData(f);
+    fetch('/',f.enctype==='multipart/form-data'?{method:'POST',body:fd}:{method:'POST',headers:{'Content-Type':'application/x-www-form-urlencoded'},body:new URLSearchParams(fd).toString()})
+      .then(function(r){
+        if(!r.ok)throw new Error('HTTP '+r.status);
+        f.classList.add('sent');st.className='f-status ok';
+        st.textContent=f.getAttribute('data-ok')||'Thank you. We have your details and will be in touch. Need it sooner? Email distributors@truleaf-tobacco.com.';st.focus();
+      })
+      .catch(function(){
+        btn.disabled=false;st.className='f-status err';st.focus();
+        st.innerHTML='That did not send. Please email <a href="mailto:distributors@truleaf-tobacco.com?subject='+encodeURIComponent(f.elements.subject.value)+'">distributors@<wbr>truleaf-tobacco.com</a> instead.';
+      });
+  });
+})();
+</script>
+
+</body>
+</html>

@@ -5,130 +5,706 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="icon" href="favicon-32.png" sizes="32x32">
-<title>Privacy Notice · Tru Leaf Tobacco</title>
+<title>Tru Leaf Privacy Policy</title>
+<meta name="description" content="How Tru Leaf International LLC collects, uses and protects personal information.">
+<meta name="theme-color" content="#092404">
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
-<meta name="description" content="How Tru Leaf Tobacco handles information sent through its website.">
-<meta name="robots" content="noindex, follow">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Saira+Stencil+One&family=Krub:wght@400;500;600&display=swap">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Krub:wght@400;500;600&display=swap" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Krub:wght@400;500;600&display=swap"></noscript>
 <style>
-:root{--green:#092404;--green-mid:#17590B;--green-90:rgba(9,36,4,.9);--green-70:rgba(9,36,4,.7);--sand:#ECE6D7;--sand-80:rgba(236,230,215,.8);--paper:#FFFCF3;--shelf:#F7F2E6;--loc:#8C9A8E;--line:#CFD6CB;
---stencil:"Saira Stencil One","Arial Narrow",sans-serif;--body:"Krub","Helvetica Neue",Arial,sans-serif}
+@font-face{font-family:"Gunplay";src:url("fonts/gunplay.otf") format("opentype");font-weight:400;font-style:normal;font-display:swap}
+:root{--green:#092404;--green-mid:#17590B;--green-90:rgba(9,36,4,.9);--green-70:rgba(9,36,4,.7);--sand:#ECE6D7;--sand-80:rgba(236,230,215,.8);--paper:#FFFCF3;--coal:#231F20;--loc:#8C9A8E;--line:#CFD6CB;--r:14px;--gut:clamp(16px,2.8vw,40px);
+--display:"Gunplay","Impact","Arial Narrow",sans-serif;--stencil:var(--display);--body:"Krub","Helvetica Neue",Arial,sans-serif}
 *{box-sizing:border-box}
-body{margin:0;background:var(--paper);color:var(--green);font-family:var(--body);font-size:17px;line-height:1.65;-webkit-font-smoothing:antialiased}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--green);font-family:var(--body);font-size:17px;line-height:1.55;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
 a{color:inherit}
 :focus-visible{outline:2px solid var(--green);outline-offset:3px}
-.wrap{width:min(760px,calc(100% - 12vw));margin:0 auto}
-.nav{position:sticky;top:0;z-index:20;display:flex;align-items:center;gap:24px;padding:0 7vw;height:70px;background:rgba(255,252,243,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
-.brand{display:flex;align-items:center;text-decoration:none;line-height:0}
+.btn{display:inline-block;font-family:var(--stencil);font-size:.95rem;letter-spacing:.14em;text-transform:uppercase;text-decoration:none;padding:14px 24px;background:var(--green);color:var(--sand);border:2px solid var(--green);border-radius:6px;transition:background .2s,color .2s}
+.btn:hover,.btn:focus-visible{background:var(--paper);color:var(--green)}
+h1,h2{font-family:var(--display);font-weight:400;text-transform:uppercase;letter-spacing:.005em;margin:0;color:var(--green)}
+h1{font-size:clamp(2.6rem,6vw,5.2rem);line-height:.98;margin-bottom:22px}
+h2{font-size:clamp(2.2rem,4.6vw,3.8rem);line-height:1;margin-bottom:16px}
+.lede{font-size:clamp(1.05rem,1.35vw,1.2rem);color:var(--green-70);max-width:32rem;margin:0 0 30px}
+.nav{position:fixed;left:0;right:0;top:0;z-index:20;display:flex;align-items:center;gap:32px;padding:0 var(--gut);height:70px;background:var(--green);transition:background .4s}
+.brand{display:flex;align-items:center;text-decoration:none;line-height:0;transition:opacity .4s}
 .brand .wm{width:150px}
 .brand svg{width:100%;height:auto}
-.back{margin-left:auto;font-family:var(--stencil);font-size:.82rem;letter-spacing:.14em;text-transform:uppercase;text-decoration:none;border-bottom:2px solid var(--green);padding-bottom:3px}
-header.head{background:var(--shelf);border-bottom:1px solid var(--line);padding:clamp(46px,7vw,84px) 0 clamp(32px,4.6vw,54px)}
-h1{font-family:var(--stencil);font-weight:400;font-size:clamp(1.9rem,4.6vw,3rem);line-height:1.05;letter-spacing:.02em;text-transform:uppercase;margin:0 0 14px}
-.updated{margin:0;font-family:var(--stencil);font-size:.76rem;letter-spacing:.18em;text-transform:uppercase;color:var(--green-70)}
-main{padding:clamp(40px,6vw,72px) 0 clamp(56px,7vw,90px)}
-.draft{border:2px solid var(--green);background:var(--shelf);padding:16px 20px;margin:0 0 clamp(32px,4vw,48px);font-size:.98rem}
-.draft strong{font-family:var(--stencil);font-weight:400;letter-spacing:.1em;text-transform:uppercase;display:block;margin-bottom:6px}
-h2{font-family:var(--stencil);font-weight:400;font-size:clamp(1.05rem,2.1vw,1.3rem);line-height:1.25;letter-spacing:.08em;text-transform:uppercase;margin:clamp(34px,4.4vw,52px) 0 12px;padding-top:16px;border-top:1px solid var(--line)}
-h2:first-of-type{border-top:0;padding-top:0;margin-top:0}
-p,li{color:var(--green-90)}
-p{margin:0 0 16px}
-ul{margin:0 0 16px;padding-left:1.2em}
-li{margin-bottom:8px}
-.fill{background:rgba(23,89,11,.12);padding:1px 6px;border-radius:2px;font-family:var(--stencil);font-size:.86em;letter-spacing:.06em}
-.foot{background:var(--green);color:var(--sand);padding:44px 7vw 26px}
-.foot .logo{width:170px;line-height:0;margin-bottom:14px}
-.foot .logo svg{width:100%;height:auto}
-.foot p{color:var(--sand-80);font-size:.95rem;margin:0}
-.warning{width:min(1180px,100%);margin:34px auto 18px;border:3px solid var(--sand);background:#15120E;color:#fff;padding:14px 20px;font-weight:700;font-size:1rem;line-height:1.35}
-.legal{width:min(1180px,100%);margin:0 auto;display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;font-family:var(--stencil);font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--sand-80)}
-.legal a{text-decoration:none}
-.legal a:hover{text-decoration:underline}
-@media (max-width:860px){.brand .wm{width:120px}.wrap{width:calc(100% - 12vw)}}
+.links{display:flex;gap:26px;margin-left:auto}
+.links a{font-family:var(--stencil);font-size:.86rem;letter-spacing:.12em;text-transform:uppercase;text-decoration:none;color:var(--sand)}
+.links a:hover{text-decoration:underline}
+.nav .btn{padding:10px 16px;font-size:.82rem;background:var(--sand);color:var(--green);border-color:var(--sand)}
+.nav .btn:hover,.nav .btn:focus-visible{background:transparent;color:var(--sand)}
+.logo{width:clamp(200px,24vw,340px);line-height:0;flex:none}
+.logo svg{width:100%;height:auto}
+.gate{position:fixed;inset:0;z-index:100;background:var(--green);color:var(--sand);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:32px 24px}
+.gate[hidden]{display:none}
+.gate .mark{width:min(440px,72vw);line-height:0;margin-bottom:clamp(28px,5vh,52px)}
+.gate .mark svg{width:100%;height:auto}
+.gate .q{font-family:var(--display);font-weight:400;text-transform:uppercase;font-size:clamp(1.9rem,5vw,3.4rem);line-height:1.05;color:var(--sand);margin:0 0 clamp(22px,4vh,34px)}
+.gate .row{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+.gate .btn{min-width:176px;padding:16px 28px;cursor:pointer;font-family:var(--stencil);font-size:.9rem;background:var(--sand);color:var(--green);border-color:var(--sand)}
+.gate .btn:hover{background:transparent;color:var(--sand)}
+.gate .btn:focus-visible{outline-offset:4px}
+.gate .note{margin:clamp(26px,4vh,38px) 0 0;font-family:var(--body);font-weight:500;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--sand-80)}
+.gate .deny{display:none;margin:22px auto 0;max-width:34rem;font-size:1rem;color:var(--sand)}
+.gate.said-no .deny{display:block}
+.gate.said-no .row{display:none}
+.gate :focus-visible{outline:2px solid var(--sand);outline-offset:3px}
+.contact{display:grid;grid-template-columns:1fr 1fr}
+.c-copy{--green-90:rgba(236,230,215,.94);--green-70:rgba(236,230,215,.86);--line:rgba(236,230,215,.28);--loc:#C5D0BF;position:relative;isolation:isolate;display:flex;flex-direction:column;justify-content:flex-end;padding:clamp(40px,5vw,72px) var(--gut);color:var(--sand);background:var(--green)}
+.c-copy h2{color:var(--sand);font-size:clamp(3rem,6.2vw,6.4rem);line-height:.95}
+.c-copy .lines{margin:0}
+.lines{list-style:none;margin:0 0 30px;padding:0;display:grid;gap:10px;font-family:var(--body);font-weight:600;font-size:clamp(1rem,1.25vw,1.15rem);line-height:1.3;letter-spacing:.02em;color:var(--green-90)}
+.lines li{display:grid;grid-template-columns:4.4em 1fr;gap:0 .5em;align-items:baseline}
+.lines span{font-family:var(--stencil);font-weight:400;font-size:.76rem;letter-spacing:.14em;text-transform:uppercase;color:var(--loc)}
+.lines span.v{font:inherit;letter-spacing:inherit;text-transform:none;color:inherit}
+.lines a{text-decoration:none;overflow-wrap:anywhere}
+.lines a:hover{text-decoration:underline}
+.foot{background:var(--green);color:var(--sand);padding:56px var(--gut) 28px}
+.foot-grid{display:grid;grid-template-columns:1.4fr 1fr .8fr;gap:40px;align-items:start}
+.foot .logo{width:200px;margin-bottom:14px}
+.foot h4{font-family:var(--body);font-weight:600;font-size:.8rem;letter-spacing:.16em;text-transform:uppercase;color:var(--sand);margin:0 0 12px}
+.foot p,.foot ul{margin:0;font-size:1rem;color:var(--sand-80);line-height:1.7}
+.foot ul{list-style:none;padding:0}
+.foot a{text-decoration:none}
+.foot a:hover{text-decoration:underline}
+.warning{margin:44px 0 20px;border:3px solid var(--sand);background:#061A03;color:#fff;padding:14px 20px;font-family:Helvetica,Arial,sans-serif;font-weight:700;font-size:1rem;line-height:1.35}
+.legal{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px 32px;font-family:var(--body);font-weight:600;font-size:.74rem;letter-spacing:.12em;text-transform:uppercase;color:var(--sand-80)}
+.pv{display:block;width:100%;margin:0;padding:0;border:0;background:none;font:inherit;color:inherit;text-align:center;cursor:zoom-in}
+.pv:focus-visible{outline:2px solid var(--green);outline-offset:6px}
+.viewer{position:fixed;inset:0;z-index:90;display:grid;grid-template-columns:auto minmax(0,1fr) auto;align-items:center;gap:clamp(8px,2vw,26px);padding:clamp(56px,6vw,72px) clamp(14px,3vw,40px);background:var(--bg,#092404);color:var(--ink,#ECE6D7);transition:background .3s;overscroll-behavior:contain;animation:vfade .28s ease both}
+@keyframes vfade{from{opacity:0}}
+.viewer[hidden]{display:none}
+.v-stage{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:clamp(20px,4vw,60px);align-items:center;width:100%;max-width:1080px;margin:0 auto}
+.v-fig{margin:0;display:flex;justify-content:center;align-items:center;min-height:0;position:relative;isolation:isolate}
+.v-fig img{display:block;width:auto;height:auto;max-width:100%;max-height:74vh;filter:drop-shadow(0 30px 36px rgba(0,0,0,.4));transition:opacity .22s ease}
+.v-info{color:inherit}
+.v-fam{margin:0 0 12px;font-family:var(--stencil);font-size:.84rem;letter-spacing:.14em;text-transform:uppercase}
+.v-info h3{margin:0 0 14px;font-family:var(--display);font-weight:400;font-size:clamp(2.4rem,5vw,4.4rem);line-height:.98;text-transform:uppercase}
+.v-meta{margin:0 0 20px;font-family:var(--body);font-weight:600;font-size:.88rem;letter-spacing:.1em;text-transform:uppercase}
+.v-count{margin:0;font-family:var(--body);font-weight:600;font-size:.8rem;letter-spacing:.16em}
+.viewer .btn{display:inline-block;margin:0 0 18px;background:var(--ink);color:var(--on);border-color:var(--ink)}
+.viewer .btn:hover,.viewer .btn:focus-visible{background:transparent;color:var(--ink)}
+.v-nav,.v-close{width:56px;height:56px;border-radius:50%;display:grid;place-items:center;border:1px solid var(--ink);background:transparent;color:inherit;font-size:1.35rem;line-height:1;cursor:pointer;transition:background .2s,color .2s}
+.v-nav:hover,.v-nav:focus-visible,.v-close:hover,.v-close:focus-visible{background:var(--ink);color:var(--bg)}
+.v-close{position:absolute;top:clamp(10px,2vw,20px);right:clamp(10px,2vw,20px);font-size:1.7rem}
+.v-side{display:flex;gap:8px;margin:0 0 22px}
+.v-side[hidden]{display:none}
+.v-side button{font-family:var(--stencil);font-size:.82rem;letter-spacing:.08em;text-transform:uppercase;padding:9px 16px;border:1px solid var(--ink);border-radius:6px;background:transparent;color:inherit;cursor:pointer;transition:background .2s,color .2s,border-color .2s}
+.v-side button[aria-pressed="true"]{background:var(--ink);color:var(--on)}
+.facts{list-style:none;margin:0 0 26px;padding:14px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);display:grid;grid-template-columns:1fr 1fr;gap:12px 24px;font-family:var(--body);font-weight:600;font-size:.98rem;line-height:1.3;color:var(--green-90)}
+.facts span{display:block;font-family:var(--stencil);font-weight:400;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--loc);margin-bottom:3px}
 
-/* ---------------- black theme ---------------- */
-:root{--paper:#0A0A0A;--shelf:#131313;--green-90:rgba(236,230,215,.9);--green-70:rgba(236,230,215,.72);--line:rgba(236,230,215,.14)}
-body{background:#0A0A0A;color:#ECE6D7}
-:focus-visible{outline-color:#ECE6D7}
-.nav{background:rgba(10,10,10,.94)}
-.back{border-bottom-color:#ECE6D7}
-.draft{border-color:rgba(236,230,215,.45)}
-.fill{background:rgba(236,230,215,.14);color:#ECE6D7}
+.dform{background:var(--sand);padding:clamp(40px,5vw,72px) var(--gut)}
+.dform .fields{display:grid;gap:20px}
+.dform label,.dform legend{display:grid;gap:7px;font-family:var(--body);font-weight:600;font-size:.74rem;letter-spacing:.14em;text-transform:uppercase;color:var(--green-90)}
+.dform legend{display:block;margin:0 0 9px;padding:0}
+.dform input:not([type=checkbox]),.dform textarea,.dform select{box-sizing:border-box;width:100%;font-family:var(--body);font-weight:400;font-size:1rem;letter-spacing:0;text-transform:none;color:var(--green);background:transparent;border:0;border-bottom:1px solid rgba(9,36,4,.42);border-radius:0;padding:10px 0}
+.dform select{padding-right:28px}
+.dform textarea{resize:vertical;min-height:88px}
+.dform input:focus-visible,.dform textarea:focus-visible,.dform select:focus-visible{outline:0;border-bottom-color:var(--green);box-shadow:0 1px 0 var(--green)}
+.dform .f2{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.dform fieldset{border:0;margin:0;padding:0;min-width:0}
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.dform .chip{display:inline-block;position:relative}
+.chip input{position:absolute;opacity:0;width:1px;height:1px;margin:0}
+.chip span{display:inline-block;padding:8px 12px;border:1px solid rgba(9,36,4,.42);border-radius:6px;background:transparent;font-family:var(--stencil);font-size:.74rem;letter-spacing:.06em;text-transform:uppercase;color:var(--green);cursor:pointer;transition:background .2s,color .2s,border-color .2s}
+.chip input:checked+span{background:var(--green);color:var(--sand);border-color:var(--green)}
+.chip input:focus-visible+span{outline:2px solid var(--green);outline-offset:2px}
+.req{color:var(--green-mid)}
+.consent{margin:0;font-size:.86rem;line-height:1.5;letter-spacing:0;text-transform:none;color:var(--green-70)}
+.consent a{color:inherit}
+.dform .btn{justify-self:stretch;text-align:center;padding:16px 24px;cursor:pointer}
+.dform .btn[disabled]{opacity:.6;cursor:wait}
+.f-status{margin:14px 0 0;font-size:.98rem;line-height:1.5}
+.f-status:empty{display:none}
+.f-status.ok{color:var(--green-mid);font-weight:600}
+.f-status.err{color:#8A1F1F}
+.f-status a{color:inherit}
+.dform.sent .fields{display:none}
+.dform.sent .f-status{margin:0}
+.hp{display:none}
+@media (max-width:760px){.viewer{grid-template-columns:minmax(0,1fr);padding:64px 18px 90px;overflow-y:auto}.v-stage{grid-template-columns:1fr;text-align:center;gap:18px}.v-side{justify-content:center}.v-fig img{max-height:min(46vh,340px)}.v-nav{position:absolute;bottom:22px}.v-prev{left:18px}.v-next{right:18px}}
+@media (max-width:640px){.dform .f2{grid-template-columns:1fr}}
+@media (max-width:1100px){.legal{justify-content:flex-start}}
+@media (max-width:1000px){.contact{grid-template-columns:1fr}.foot-grid{grid-template-columns:1fr 1fr}}
+@media (max-width:860px){.links{display:none}.nav{gap:16px}.nav .btn{margin-left:auto}.foot-grid{grid-template-columns:1fr}.brand .wm{width:120px}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+@media (max-width:480px){.nav{gap:12px}.brand .wm{width:104px}.nav .btn{white-space:nowrap;padding:9px 12px;font-size:.72rem;letter-spacing:.1em}}
+section[id],#contact{scroll-margin-top:84px}
+.sr{position:absolute;width:1px;height:1px;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
+#products{padding-top:70px}
+.nav :focus-visible,.intro :focus-visible,.c-copy :focus-visible,.foot :focus-visible{outline-color:var(--sand)}
+.viewer :focus-visible{outline-color:var(--ink)}
+.intro{display:grid;grid-template-columns:3fr 1fr;gap:24px clamp(32px,6vw,96px);align-items:end;padding:clamp(48px,6vw,88px) var(--gut);background:var(--green);color:var(--sand)}
+.intro h2{margin:0;color:var(--sand);font-size:clamp(2.7rem,5.4vw,5.6rem);line-height:.95}
+.nb{white-space:nowrap}
+.intro p{margin:0;max-width:30rem;font-size:clamp(1rem,1.25vw,1.15rem);color:var(--sand-80)}
+.hint{display:none}
+@media (hover:none){.hint{display:inline}}
+@media (max-width:760px){.intro{grid-template-columns:1fr}}
+
+.nav{display:grid;grid-template-columns:1fr auto 1fr}
+.nav .links,.nav .menu{grid-column:1;grid-row:1;margin-left:0}
+.nav .brand{grid-column:2;grid-row:1}
+.nav>.btn{grid-column:3;grid-row:1;justify-self:end}
+.links a[aria-current]{text-decoration:underline;text-underline-offset:6px}
+@media (max-width:1180px){.links{gap:18px}.links a{font-size:.78rem;letter-spacing:.1em}}
+.menu{display:none;justify-self:start}
+.menu summary{list-style:none;cursor:pointer;padding:10px 0;font-family:var(--stencil);font-size:.82rem;letter-spacing:.12em;text-transform:uppercase;color:var(--sand)}
+.menu summary::-webkit-details-marker{display:none}
+.menu[open] summary{text-decoration:underline;text-underline-offset:6px}
+.menu nav{position:fixed;top:70px;left:0;right:0;display:grid;padding:4px var(--gut) 24px;background:var(--green);border-top:1px solid rgba(236,230,215,.18)}
+.menu nav a{padding:14px 0;border-bottom:1px solid rgba(236,230,215,.14);font-family:var(--display);font-size:1.6rem;line-height:1;text-transform:uppercase;text-decoration:none;color:var(--sand)}
+.menu nav a[aria-current]{text-decoration:underline;text-underline-offset:6px}
+@media (max-width:860px){.menu{display:block}}
+.wall{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,1fr);grid-template-rows:repeat(3,1fr);gap:2px;background:var(--green);height:calc(100svh - 70px);min-height:540px;scroll-margin-top:70px}
+.wall li{position:relative;min-width:0;overflow:hidden;background:var(--sand)}
+.wall .pv,.wall .tile{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;gap:clamp(8px,1.2vw,16px);padding:clamp(14px,2.2vw,32px) 10px clamp(12px,1.6vw,22px);color:var(--green)}
+.wall .pv:focus-visible{outline:2px solid var(--green);outline-offset:-8px}
+.wall img{flex:1 1 0;min-height:0;width:100%;object-fit:contain;will-change:transform;filter:drop-shadow(0 14px 16px rgba(9,36,4,.22));transition:transform .5s cubic-bezier(.2,.7,.3,1)}
+.wall span{order:2;font-family:var(--display);font-size:clamp(.8rem,1.5vw,1.5rem);line-height:1.05;text-transform:uppercase;text-align:center;text-wrap:balance}
+.wall .pk:focus-within img{transform:translateY(-6px) scale(1.04)}
+@media (hover:hover){.wall .pk:hover img{transform:translateY(-6px) scale(1.04)}}
+@media (prefers-reduced-motion:reduce){.wall img{transition:none}}
+.follow{display:grid;justify-items:center;gap:14px;text-align:center;padding:clamp(48px,6vw,88px) var(--gut);background:var(--paper);border-top:2px solid var(--green)}
+.follow h2{margin:0;font-size:clamp(2.6rem,6vw,5.6rem);line-height:.95}
+.follow p{margin:0;font-family:var(--body);font-weight:600;font-size:.8rem;letter-spacing:.16em;text-transform:uppercase;color:var(--green-70)}
+.follow a{display:inline-flex;align-items:center;gap:10px;font-family:var(--display);font-size:clamp(1rem,1.4vw,1.25rem);letter-spacing:.04em;text-decoration:none;text-transform:uppercase}
+.follow a:hover{text-decoration:underline}
+.follow svg{width:28px;height:28px}
+.c-copy{justify-content:flex-start}
+.c-copy h1{color:var(--sand);font-size:clamp(3rem,6.2vw,6.4rem);line-height:.95}
+.wl-card{margin-top:clamp(32px,4vw,48px);padding-top:clamp(24px,3vw,36px);border-top:1px solid var(--line)}
+.wl-card h3{margin:0 0 8px;font-family:var(--display);font-weight:400;font-size:clamp(1.6rem,2.4vw,2.2rem);line-height:1;text-transform:uppercase;color:var(--sand)}
+.wl-card p{margin:0 0 20px;color:var(--green-90)}
+.wl-card .btn,.intro .btn{background:var(--sand);color:var(--green);border-color:var(--sand)}
+.wl-card .btn:hover,.wl-card .btn:focus-visible,.intro .btn:hover,.intro .btn:focus-visible{background:transparent;color:var(--sand)}
+#wl,#jobs,#inq{padding-top:70px}
+.intro h1{margin:0;color:var(--sand);font-size:clamp(2.7rem,5.4vw,5.6rem);line-height:.95}
+.intro .btn{margin-top:22px}
+.steps{list-style:none;margin:0;padding:clamp(48px,6vw,88px) var(--gut);display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(28px,4vw,64px);background:var(--paper);border-top:2px solid var(--green);counter-reset:step}
+.steps li{counter-increment:step;min-width:0}
+.steps li::before{content:counter(step);display:block;margin-bottom:12px;font-family:var(--display);font-size:clamp(2.8rem,5vw,4.4rem);line-height:1;color:var(--green-mid)}
+.steps h3{margin:0 0 10px;font-family:var(--display);font-weight:400;font-size:clamp(1.5rem,2.3vw,2.1rem);line-height:1;text-transform:uppercase}
+.steps p{margin:0;max-width:24rem;color:var(--green-70)}
+@media (max-width:760px){.steps{grid-template-columns:1fr}}
+.wall{border-top:2px solid var(--green)}
+:root{--paper:var(--sand)}
+.intro{background:var(--sand);color:var(--green);border-top:2px solid var(--green)}
+.intro h1,.intro h2{color:var(--green);font-size:clamp(2.2rem,4.2vw,4rem)}
+.intro p{color:var(--green-70)}
+.intro .btn,.wl-card .btn{background:var(--green);color:var(--sand);border-color:var(--green)}
+.intro .btn:hover,.intro .btn:focus-visible,.wl-card .btn:hover,.wl-card .btn:focus-visible{background:transparent;color:var(--green)}
+.intro :focus-visible,.c-copy :focus-visible{outline-color:var(--green)}
+.contact{border-top:2px solid var(--green)}
+.c-copy{--green-90:rgba(9,36,4,.9);--green-70:rgba(9,36,4,.7);--line:rgba(9,36,4,.18);--loc:var(--green-mid);color:var(--green);background:var(--sand);border-right:2px solid var(--green)}
+.c-copy h1,.c-copy h2{color:var(--green);font-size:clamp(2.4rem,4.4vw,4.2rem)}
+.wl-card h3{color:var(--green)}
+@media (max-width:1000px){.c-copy{border-right:0;border-bottom:2px solid var(--green)}}
+.steps{padding:0;gap:2px;background:var(--green)}
+.steps li{background:var(--sand);padding:clamp(32px,4vw,56px) var(--gut)}
+.steps li::before{font-size:clamp(2rem,3.4vw,3rem)}
+.roles-wrap{border-top:2px solid var(--green)}
+.follow{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:12px 32px;text-align:left;padding:clamp(28px,3.5vw,48px) var(--gut)}
+.follow h2{font-size:clamp(1.8rem,3.2vw,3rem)}
+:root{--paper:#FBFAF7}
+.wall li,.intro,.c-copy,.dform,.steps li{background:var(--paper)}
+.wall,.steps{gap:1px}
+.wall,.intro,.contact,.roles-wrap{border-top-width:1px}
+.follow{border-top:1px solid var(--green)}
+.c-copy{border-right-width:1px}
+@media (max-width:1000px){.c-copy{border-bottom-width:1px}}
+.wall .pv,.wall .tile{padding:clamp(24px,3.4vw,52px) 16px clamp(16px,2vw,28px);gap:clamp(10px,1.4vw,18px)}
+.wall img{filter:drop-shadow(0 16px 22px rgba(9,36,4,.13))}
+.wall span{font-size:clamp(.72rem,1.05vw,1.05rem);letter-spacing:.06em}
+.wall .pk:focus-within img{transform:translateY(-4px) scale(1.025)}
+@media (hover:hover){.wall .pk:hover img{transform:translateY(-4px) scale(1.025)}}
+h2{font-size:clamp(1.9rem,3.2vw,3rem)}
+.intro h1,.intro h2{font-size:clamp(2rem,3.4vw,3.3rem);line-height:1}
+.c-copy h1,.c-copy h2{font-size:clamp(2.2rem,3.6vw,3.6rem);line-height:1}
+.follow h2{font-size:clamp(1.5rem,2.4vw,2.2rem)}
+.steps li::before{font-size:clamp(1.6rem,2.4vw,2.2rem);color:var(--green)}
+.steps h3{font-size:clamp(1.2rem,1.8vw,1.6rem)}
+.btn{border-radius:2px;border-width:1px;font-size:.8rem;letter-spacing:.16em;padding:13px 22px}
+.nav .btn{background:transparent;color:var(--sand);border-color:rgba(236,230,215,.6)}
+.nav .btn:hover,.nav .btn:focus-visible{background:var(--sand);color:var(--green)}
+.chip span{border-radius:2px}
+:root{--rule:rgba(9,36,4,.2)}
+.nav-r{grid-column:3;grid-row:1;justify-self:end;display:flex;align-items:center;gap:26px}
+.nav-r .links{margin-left:0}
+.legal-links{display:flex;flex-wrap:wrap;gap:10px 28px;margin-top:16px;padding-top:16px;border-top:1px solid rgba(236,230,215,.18);font-family:var(--body);font-weight:600;font-size:.72rem;letter-spacing:.12em;text-transform:uppercase}
+.legal-links a{color:var(--sand-80);text-decoration:none}
+.legal-links a:hover,.legal-links a[aria-current]{color:var(--sand);text-decoration:underline;text-underline-offset:4px}
+.ck-bar{position:fixed;left:0;right:0;bottom:0;z-index:80;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:14px 32px;padding:18px var(--gut) calc(18px + env(safe-area-inset-bottom,0px));background:var(--green);color:var(--sand);border-top:1px solid rgba(236,230,215,.18)}
+.ck-bar[hidden]{display:none}
+.ck-bar p{flex:1 1 28rem;max-width:48rem;margin:0;font-size:.92rem;line-height:1.5}
+.ck-bar a{color:var(--sand);text-underline-offset:3px}
+.ck-bar .row{display:flex;flex-wrap:wrap;gap:12px}
+.ck-bar .btn{min-width:120px;cursor:pointer;background:var(--sand);color:var(--green);border-color:var(--sand)}
+.ck-bar .btn:hover{background:transparent;color:var(--sand)}
+.ck-bar :focus-visible{outline:2px solid var(--sand);outline-offset:3px}
+#find,#ct,#lg{padding-top:70px}
+.lg{display:grid;grid-template-columns:minmax(0,14rem) minmax(0,46rem);gap:28px clamp(32px,6vw,96px);padding:clamp(40px,5vw,72px) var(--gut) clamp(64px,8vw,120px);background:var(--paper);border-top:1px solid var(--rule)}
+.draft{grid-column:1/-1;max-width:62rem;margin:0;padding:16px 20px;border:1px solid var(--green);font-size:.95rem;line-height:1.5}
+.toc{position:sticky;top:94px;align-self:start;max-height:calc(100vh - 110px);overflow:auto}
+.toc h2{margin:0 0 14px;font-size:1.1rem}
+.toc ol{list-style:none;display:grid;gap:9px;margin:0;padding:0;font-size:.88rem;line-height:1.35}
+.toc a{color:var(--green-70);text-decoration:none}
+.toc a:hover{color:var(--green);text-decoration:underline}
+.prose{min-width:0;font-size:1rem;line-height:1.65;color:var(--green)}
+.prose>p:first-child{margin-top:0}
+.prose h2{margin:52px 0 14px;font-size:clamp(1.35rem,2vw,1.7rem);line-height:1.1;scroll-margin-top:90px}
+.prose h3{margin:30px 0 10px;font-family:var(--display);font-weight:400;font-size:1.1rem;line-height:1.15;text-transform:uppercase}
+.prose p{margin:0 0 14px}
+.prose ul{display:grid;gap:8px;margin:0 0 18px;padding-left:1.2em}
+.prose a{color:var(--green)}
+.prose .linklist{list-style:none;padding-left:0}
+.tbl{overflow-x:auto;margin:6px 0 20px;border:1px solid var(--rule)}
+.tbl table{width:100%;min-width:640px;border-collapse:collapse;font-size:.88rem;line-height:1.45}
+.tbl th,.tbl td{padding:10px 12px;text-align:left;vertical-align:top;border-bottom:1px solid var(--rule)}
+.tbl tr:last-child td{border-bottom:0}
+.tbl th{font-family:var(--display);font-weight:400;letter-spacing:.03em;text-transform:uppercase;background:rgba(9,36,4,.04)}
+.prose .dform{margin:8px 0 22px;padding:28px 0 0;border-top:1px solid var(--rule)}
+.dform .checks,.ckf .checks{display:grid;gap:12px}
+.dform .ck,.ckf .ck{display:flex;align-items:flex-start;gap:12px;font-family:var(--body);font-weight:400;font-size:.98rem;letter-spacing:0;line-height:1.4;text-transform:none;color:var(--green);cursor:pointer}
+.dform .ck input,.ckf .ck input{flex:none;width:18px;height:18px;margin:2px 0 0;accent-color:var(--green)}
+.ckf{margin:8px 0 26px;padding:24px 0 0;border-top:1px solid var(--rule)}
+.ckf h3{margin-top:0}
+.ckf .checks{gap:16px;margin-bottom:22px}
+.ckf .ck input:disabled{opacity:.55;cursor:default}
+.ckf .btn{cursor:pointer}
+.ck-gpc{margin:-6px 0 18px;font-size:.92rem;color:var(--green-70)}
+.ck-status{margin:14px 0 0;font-weight:600}
+.ck-status:empty{display:none}
+@media (max-width:900px){.lg{grid-template-columns:1fr}.toc{position:static;max-height:none}}
 </style>
 </head>
 <body>
 
 
-<header class="nav">
-  <a class="brand" href="index.html" aria-label="Tru Leaf Tobacco, home"><span class="wm"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 168.8655 41.9885"><g><g><path d="M8.7,5.2v23.4h6.4V5.2h-6.4ZM0,0v4.7h23.5V0H0Z" style="fill:#ECE6D7;"/><path d="M26.4.3l.2,28.2h5.8l-.2-28.2h-5.8Z" style="fill:#ECE6D7;"/><path d="M32.7,10.9h2.8c2.8,0,3.9-.4,3.9-.4.9-.3,1.9-.6,2.4-1.7.4-.8.5-1.9,0-2.8-.2-.3-.4-.6-1-.9-1.2-.7-2.3-.8-4.5-.8h-3.7V.3h3.7c4.2,0,5.3.4,6.1.7,1.3.6,2.1,1.4,2.3,1.6,1.8,1.8,2,4,2,4.6,0,1.3-.3,2.3-.3,2.5-.1.3-.7,1.7-2,2.9,0,0-1.2,1-3.8,1.8h-.3c-.2,0-.5.1-.7.2l8.6,14h-7l-8.4-13.7v-3.9l-.1-.1Z" style="fill:#ECE6D7;"/><path d="M64.1904.309l.2,20.8c0,.2.1,1.3-.6,2.1-1,1.1-2.5.9-2.6.9v4.4c.2,0,4.8.8,7.6-2.6,2-2.3,1.8-5.1,1.8-5.7l-.2-19.9h-6.3.1ZM57.6,21l-.2-20.8h-6.1l.2,19.8c0,.7,0,3.4,1.8,5.7,2.7,3.4,7,2.8,7.3,2.8v-4.4c-.1,0-1.4,0-2.3-1-.7-.9-.7-1.9-.7-2.1Z" style="fill:#ECE6D7;"/><path d="M88.2655.1056v28.0888h-6.1V.1056h6.1ZM100.5655,28.1944h-11.7v-4.7519h11.7v4.7519Z" style="fill:#ECE6D7;"/><path d="M109.2655.1056v28.0888h-6.1V.1056h6.1ZM109.8655.1056h10v4.7519h-10V.1056ZM109.8655,11.2989h7.5v4.6463h-7.5v-4.6463ZM119.9655,28.1944h-10.1v-4.8575h10.1v4.8575Z" style="fill:#ECE6D7;"/><path d="M139.8655,0c2.5,9.3981,5.1,18.7963,7.6,28.1944h-6.9l-1.5-5.9134h-7.3l1.1-4.5407c1.7,0,3.4,0,5-.1056l-2.6-11.4045-5.7,22.0698h-6.6c2.7-9.3981,5.3-18.6907,8-28.0888h8.8l.1-.2112Z" style="fill:#ECE6D7;"/><path d="M156.2655,0v28.0888h-6V0h6ZM156.6655,0h12.2v4.6463h-12.2V0ZM156.7655,11.0877h7.8v4.6463h-7.8v-4.6463Z" style="fill:#ECE6D7;"/><path d="M50.494,41.8557v-.2651h.835v-7.6909h-.623c-1.0078,0-1.9756.3979-1.9756,1.9624h-.2646v-2.2275h7.3193v2.2275h-.2656c0-1.5645-.8223-1.9624-1.6973-1.9624h-.9014v7.6909h.835v.2651h-3.2617Z" style="fill:#ECE6D7;"/><path d="M62.6453,41.9885c-1.9355,0-4.1631-1.2598-4.1631-4.2432s2.2275-4.2432,4.1631-4.2432c1.9492,0,4.1641,1.2593,4.1641,4.2432s-2.2148,4.2432-4.1641,4.2432ZM62.6453,33.7673c-1.6709,0-2.4795,1.1934-2.4795,3.978,0,2.771.8086,3.9775,2.4795,3.9775,1.6182,0,2.4795-1.2065,2.4795-3.9775,0-2.7847-.8613-3.978-2.4795-3.978Z" style="fill:#ECE6D7;"/><path d="M74.6238,37.427c1.7236.1592,2.7051.8223,2.7051,2.188,0,1.79-1.79,2.2407-3.7656,2.2407h-3.7129v-.2651h.8359v-7.6909h-.8359v-.2651h3.501c1.8164,0,3.3945.3315,3.3945,1.8696,0,1.1934-.9551,1.7236-2.1221,1.8564v.0664ZM72.2772,33.8996v3.4478h1.0742c1.2598,0,1.8291-.4907,1.8291-1.7505,0-1.2197-.543-1.6973-1.8291-1.6973h-1.0742ZM72.2772,37.6125v3.978h1.2861c1.4717,0,2.0947-.5303,2.0947-1.9893,0-1.4053-.6631-1.9888-2.1748-1.9888h-1.2061Z" style="fill:#ECE6D7;"/><path d="M82.2547,41.8557h-2.4531v-.2651h.9814l3.208-8.0884h.332l3.4609,8.0884h.8086v.2651h-3.4346v-.2651h1.0215l-.9814-2.3472h-3.1562l-.9277,2.3472h1.1406v.2651ZM85.0789,38.965l-1.498-3.5933-1.4189,3.5933h2.917Z" style="fill:#ECE6D7;"/><path d="M97.786,36.5783c-.0791-1.2598-.7422-2.811-2.6914-2.811-1.6973,0-2.5195,1.1934-2.5195,3.978,0,2.7578.8223,3.9775,2.4932,3.9644,1.498,0,2.5195-.7954,2.6777-2.2539h.2393c-.1064,1.5513-1.2334,2.5327-2.9834,2.5327-1.9629,0-4.1104-1.2598-4.1104-4.2432s2.1475-4.2432,4.2031-4.2432c1.3262,0,1.8027.5566,2.2412.5566.2783,0,.3975-.252.3975-.4243h.2383v2.9438h-.1855Z" style="fill:#ECE6D7;"/><path d="M108.0545,36.5783c-.0791-1.2598-.7422-2.811-2.6914-2.811-1.6973,0-2.5195,1.1934-2.5195,3.978,0,2.7578.8223,3.9775,2.4932,3.9644,1.498,0,2.5195-.7954,2.6777-2.2539h.2393c-.1064,1.5513-1.2334,2.5327-2.9834,2.5327-1.9629,0-4.1104-1.2598-4.1104-4.2432s2.1475-4.2432,4.2031-4.2432c1.3262,0,1.8027.5566,2.2412.5566.2783,0,.3975-.252.3975-.4243h.2383v2.9438h-.1855Z" style="fill:#ECE6D7;"/><path d="M115.5916,41.9885c-1.9355,0-4.1631-1.2598-4.1631-4.2432s2.2275-4.2432,4.1631-4.2432c1.9492,0,4.1641,1.2593,4.1641,4.2432s-2.2148,4.2432-4.1641,4.2432ZM115.5916,33.7673c-1.6709,0-2.4795,1.1934-2.4795,3.978,0,2.771.8086,3.9775,2.4795,3.9775,1.6182,0,2.4795-1.2065,2.4795-3.9775,0-2.7847-.8613-3.978-2.4795-3.978Z" style="fill:#ECE6D7;"/></g></g></svg></span></a>
-  <a class="back" href="index.html">Back to site</a>
-</header>
-
-<header class="head">
-  <div class="wrap">
-    <h1>Privacy Notice</h1>
-    <p class="updated">Last updated <span class="fill">[date]</span></p>
+<div class="gate" id="gate" role="dialog" aria-modal="true" aria-labelledby="gate-q">
+  <div class="mark"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 168.8655 41.9885"><g><g><path d="M8.7,5.2v23.4h6.4V5.2h-6.4ZM0,0v4.7h23.5V0H0Z" style="fill:#ECE6D7;"/><path d="M26.4.3l.2,28.2h5.8l-.2-28.2h-5.8Z" style="fill:#ECE6D7;"/><path d="M32.7,10.9h2.8c2.8,0,3.9-.4,3.9-.4.9-.3,1.9-.6,2.4-1.7.4-.8.5-1.9,0-2.8-.2-.3-.4-.6-1-.9-1.2-.7-2.3-.8-4.5-.8h-3.7V.3h3.7c4.2,0,5.3.4,6.1.7,1.3.6,2.1,1.4,2.3,1.6,1.8,1.8,2,4,2,4.6,0,1.3-.3,2.3-.3,2.5-.1.3-.7,1.7-2,2.9,0,0-1.2,1-3.8,1.8h-.3c-.2,0-.5.1-.7.2l8.6,14h-7l-8.4-13.7v-3.9l-.1-.1Z" style="fill:#ECE6D7;"/><path d="M64.1904.309l.2,20.8c0,.2.1,1.3-.6,2.1-1,1.1-2.5.9-2.6.9v4.4c.2,0,4.8.8,7.6-2.6,2-2.3,1.8-5.1,1.8-5.7l-.2-19.9h-6.3.1ZM57.6,21l-.2-20.8h-6.1l.2,19.8c0,.7,0,3.4,1.8,5.7,2.7,3.4,7,2.8,7.3,2.8v-4.4c-.1,0-1.4,0-2.3-1-.7-.9-.7-1.9-.7-2.1Z" style="fill:#ECE6D7;"/><path d="M88.2655.1056v28.0888h-6.1V.1056h6.1ZM100.5655,28.1944h-11.7v-4.7519h11.7v4.7519Z" style="fill:#ECE6D7;"/><path d="M109.2655.1056v28.0888h-6.1V.1056h6.1ZM109.8655.1056h10v4.7519h-10V.1056ZM109.8655,11.2989h7.5v4.6463h-7.5v-4.6463ZM119.9655,28.1944h-10.1v-4.8575h10.1v4.8575Z" style="fill:#ECE6D7;"/><path d="M139.8655,0c2.5,9.3981,5.1,18.7963,7.6,28.1944h-6.9l-1.5-5.9134h-7.3l1.1-4.5407c1.7,0,3.4,0,5-.1056l-2.6-11.4045-5.7,22.0698h-6.6c2.7-9.3981,5.3-18.6907,8-28.0888h8.8l.1-.2112Z" style="fill:#ECE6D7;"/><path d="M156.2655,0v28.0888h-6V0h6ZM156.6655,0h12.2v4.6463h-12.2V0ZM156.7655,11.0877h7.8v4.6463h-7.8v-4.6463Z" style="fill:#ECE6D7;"/><path d="M50.494,41.8557v-.2651h.835v-7.6909h-.623c-1.0078,0-1.9756.3979-1.9756,1.9624h-.2646v-2.2275h7.3193v2.2275h-.2656c0-1.5645-.8223-1.9624-1.6973-1.9624h-.9014v7.6909h.835v.2651h-3.2617Z" style="fill:#ECE6D7;"/><path d="M62.6453,41.9885c-1.9355,0-4.1631-1.2598-4.1631-4.2432s2.2275-4.2432,4.1631-4.2432c1.9492,0,4.1641,1.2593,4.1641,4.2432s-2.2148,4.2432-4.1641,4.2432ZM62.6453,33.7673c-1.6709,0-2.4795,1.1934-2.4795,3.978,0,2.771.8086,3.9775,2.4795,3.9775,1.6182,0,2.4795-1.2065,2.4795-3.9775,0-2.7847-.8613-3.978-2.4795-3.978Z" style="fill:#ECE6D7;"/><path d="M74.6238,37.427c1.7236.1592,2.7051.8223,2.7051,2.188,0,1.79-1.79,2.2407-3.7656,2.2407h-3.7129v-.2651h.8359v-7.6909h-.8359v-.2651h3.501c1.8164,0,3.3945.3315,3.3945,1.8696,0,1.1934-.9551,1.7236-2.1221,1.8564v.0664ZM72.2772,33.8996v3.4478h1.0742c1.2598,0,1.8291-.4907,1.8291-1.7505,0-1.2197-.543-1.6973-1.8291-1.6973h-1.0742ZM72.2772,37.6125v3.978h1.2861c1.4717,0,2.0947-.5303,2.0947-1.9893,0-1.4053-.6631-1.9888-2.1748-1.9888h-1.2061Z" style="fill:#ECE6D7;"/><path d="M82.2547,41.8557h-2.4531v-.2651h.9814l3.208-8.0884h.332l3.4609,8.0884h.8086v.2651h-3.4346v-.2651h1.0215l-.9814-2.3472h-3.1562l-.9277,2.3472h1.1406v.2651ZM85.0789,38.965l-1.498-3.5933-1.4189,3.5933h2.917Z" style="fill:#ECE6D7;"/><path d="M97.786,36.5783c-.0791-1.2598-.7422-2.811-2.6914-2.811-1.6973,0-2.5195,1.1934-2.5195,3.978,0,2.7578.8223,3.9775,2.4932,3.9644,1.498,0,2.5195-.7954,2.6777-2.2539h.2393c-.1064,1.5513-1.2334,2.5327-2.9834,2.5327-1.9629,0-4.1104-1.2598-4.1104-4.2432s2.1475-4.2432,4.2031-4.2432c1.3262,0,1.8027.5566,2.2412.5566.2783,0,.3975-.252.3975-.4243h.2383v2.9438h-.1855Z" style="fill:#ECE6D7;"/><path d="M108.0545,36.5783c-.0791-1.2598-.7422-2.811-2.6914-2.811-1.6973,0-2.5195,1.1934-2.5195,3.978,0,2.7578.8223,3.9775,2.4932,3.9644,1.498,0,2.5195-.7954,2.6777-2.2539h.2393c-.1064,1.5513-1.2334,2.5327-2.9834,2.5327-1.9629,0-4.1104-1.2598-4.1104-4.2432s2.1475-4.2432,4.2031-4.2432c1.3262,0,1.8027.5566,2.2412.5566.2783,0,.3975-.252.3975-.4243h.2383v2.9438h-.1855Z" style="fill:#ECE6D7;"/><path d="M115.5916,41.9885c-1.9355,0-4.1631-1.2598-4.1631-4.2432s2.2275-4.2432,4.1631-4.2432c1.9492,0,4.1641,1.2593,4.1641,4.2432s-2.2148,4.2432-4.1641,4.2432ZM115.5916,33.7673c-1.6709,0-2.4795,1.1934-2.4795,3.978,0,2.771.8086,3.9775,2.4795,3.9775,1.6182,0,2.4795-1.2065,2.4795-3.9775,0-2.7847-.8613-3.978-2.4795-3.978Z" style="fill:#ECE6D7;"/></g></g></svg></div>
+  <p class="q" id="gate-q">Are you 21 or older?</p>
+  <div class="row">
+    <button class="btn" id="gate-yes" type="button">Yes</button>
+    <button class="btn" id="gate-no" type="button">No</button>
   </div>
+  <p class="deny" id="gate-deny" role="alert" tabindex="-1">You must be 21 or older to view this site.</p>
+  <p class="note">Tru Leaf products are for adults 21 and over</p>
+</div>
+
+<header class="nav" id="top">
+  <a class="brand" href="index.html" aria-label="Tru Leaf Tobacco, home"><span class="wm"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 168.8655 41.9885"><g><g><path d="M8.7,5.2v23.4h6.4V5.2h-6.4ZM0,0v4.7h23.5V0H0Z" style="fill:#ECE6D7;"/><path d="M26.4.3l.2,28.2h5.8l-.2-28.2h-5.8Z" style="fill:#ECE6D7;"/><path d="M32.7,10.9h2.8c2.8,0,3.9-.4,3.9-.4.9-.3,1.9-.6,2.4-1.7.4-.8.5-1.9,0-2.8-.2-.3-.4-.6-1-.9-1.2-.7-2.3-.8-4.5-.8h-3.7V.3h3.7c4.2,0,5.3.4,6.1.7,1.3.6,2.1,1.4,2.3,1.6,1.8,1.8,2,4,2,4.6,0,1.3-.3,2.3-.3,2.5-.1.3-.7,1.7-2,2.9,0,0-1.2,1-3.8,1.8h-.3c-.2,0-.5.1-.7.2l8.6,14h-7l-8.4-13.7v-3.9l-.1-.1Z" style="fill:#ECE6D7;"/><path d="M64.1904.309l.2,20.8c0,.2.1,1.3-.6,2.1-1,1.1-2.5.9-2.6.9v4.4c.2,0,4.8.8,7.6-2.6,2-2.3,1.8-5.1,1.8-5.7l-.2-19.9h-6.3.1ZM57.6,21l-.2-20.8h-6.1l.2,19.8c0,.7,0,3.4,1.8,5.7,2.7,3.4,7,2.8,7.3,2.8v-4.4c-.1,0-1.4,0-2.3-1-.7-.9-.7-1.9-.7-2.1Z" style="fill:#ECE6D7;"/><path d="M88.2655.1056v28.0888h-6.1V.1056h6.1ZM100.5655,28.1944h-11.7v-4.7519h11.7v4.7519Z" style="fill:#ECE6D7;"/><path d="M109.2655.1056v28.0888h-6.1V.1056h6.1ZM109.8655.1056h10v4.7519h-10V.1056ZM109.8655,11.2989h7.5v4.6463h-7.5v-4.6463ZM119.9655,28.1944h-10.1v-4.8575h10.1v4.8575Z" style="fill:#ECE6D7;"/><path d="M139.8655,0c2.5,9.3981,5.1,18.7963,7.6,28.1944h-6.9l-1.5-5.9134h-7.3l1.1-4.5407c1.7,0,3.4,0,5-.1056l-2.6-11.4045-5.7,22.0698h-6.6c2.7-9.3981,5.3-18.6907,8-28.0888h8.8l.1-.2112Z" style="fill:#ECE6D7;"/><path d="M156.2655,0v28.0888h-6V0h6ZM156.6655,0h12.2v4.6463h-12.2V0ZM156.7655,11.0877h7.8v4.6463h-7.8v-4.6463Z" style="fill:#ECE6D7;"/><path d="M50.494,41.8557v-.2651h.835v-7.6909h-.623c-1.0078,0-1.9756.3979-1.9756,1.9624h-.2646v-2.2275h7.3193v2.2275h-.2656c0-1.5645-.8223-1.9624-1.6973-1.9624h-.9014v7.6909h.835v.2651h-3.2617Z" style="fill:#ECE6D7;"/><path d="M62.6453,41.9885c-1.9355,0-4.1631-1.2598-4.1631-4.2432s2.2275-4.2432,4.1631-4.2432c1.9492,0,4.1641,1.2593,4.1641,4.2432s-2.2148,4.2432-4.1641,4.2432ZM62.6453,33.7673c-1.6709,0-2.4795,1.1934-2.4795,3.978,0,2.771.8086,3.9775,2.4795,3.9775,1.6182,0,2.4795-1.2065,2.4795-3.9775,0-2.7847-.8613-3.978-2.4795-3.978Z" style="fill:#ECE6D7;"/><path d="M74.6238,37.427c1.7236.1592,2.7051.8223,2.7051,2.188,0,1.79-1.79,2.2407-3.7656,2.2407h-3.7129v-.2651h.8359v-7.6909h-.8359v-.2651h3.501c1.8164,0,3.3945.3315,3.3945,1.8696,0,1.1934-.9551,1.7236-2.1221,1.8564v.0664ZM72.2772,33.8996v3.4478h1.0742c1.2598,0,1.8291-.4907,1.8291-1.7505,0-1.2197-.543-1.6973-1.8291-1.6973h-1.0742ZM72.2772,37.6125v3.978h1.2861c1.4717,0,2.0947-.5303,2.0947-1.9893,0-1.4053-.6631-1.9888-2.1748-1.9888h-1.2061Z" style="fill:#ECE6D7;"/><path d="M82.2547,41.8557h-2.4531v-.2651h.9814l3.208-8.0884h.332l3.4609,8.0884h.8086v.2651h-3.4346v-.2651h1.0215l-.9814-2.3472h-3.1562l-.9277,2.3472h1.1406v.2651ZM85.0789,38.965l-1.498-3.5933-1.4189,3.5933h2.917Z" style="fill:#ECE6D7;"/><path d="M97.786,36.5783c-.0791-1.2598-.7422-2.811-2.6914-2.811-1.6973,0-2.5195,1.1934-2.5195,3.978,0,2.7578.8223,3.9775,2.4932,3.9644,1.498,0,2.5195-.7954,2.6777-2.2539h.2393c-.1064,1.5513-1.2334,2.5327-2.9834,2.5327-1.9629,0-4.1104-1.2598-4.1104-4.2432s2.1475-4.2432,4.2031-4.2432c1.3262,0,1.8027.5566,2.2412.5566.2783,0,.3975-.252.3975-.4243h.2383v2.9438h-.1855Z" style="fill:#ECE6D7;"/><path d="M108.0545,36.5783c-.0791-1.2598-.7422-2.811-2.6914-2.811-1.6973,0-2.5195,1.1934-2.5195,3.978,0,2.7578.8223,3.9775,2.4932,3.9644,1.498,0,2.5195-.7954,2.6777-2.2539h.2393c-.1064,1.5513-1.2334,2.5327-2.9834,2.5327-1.9629,0-4.1104-1.2598-4.1104-4.2432s2.1475-4.2432,4.2031-4.2432c1.3262,0,1.8027.5566,2.2412.5566.2783,0,.3975-.252.3975-.4243h.2383v2.9438h-.1855Z" style="fill:#ECE6D7;"/><path d="M115.5916,41.9885c-1.9355,0-4.1631-1.2598-4.1631-4.2432s2.2275-4.2432,4.1631-4.2432c1.9492,0,4.1641,1.2593,4.1641,4.2432s-2.2148,4.2432-4.1641,4.2432ZM115.5916,33.7673c-1.6709,0-2.4795,1.1934-2.4795,3.978,0,2.771.8086,3.9775,2.4795,3.9775,1.6182,0,2.4795-1.2065,2.4795-3.9775,0-2.7847-.8613-3.978-2.4795-3.978Z" style="fill:#ECE6D7;"/></g></g></svg></span></a>
+  <details class="menu"><summary>Menu</summary><nav aria-label="Pages"><a href="index.html#packs">Products</a><a href="find-a-store.html">Find a Store</a><a href="white-label.html">White Label</a><a href="careers.html">Careers</a><a href="contact.html">Contact</a><a href="inquire.html">Inquire</a></nav></details>
+  <nav class="links" aria-label="Pages"><a href="index.html#packs">Products</a><a href="find-a-store.html">Find a Store</a><a href="white-label.html">White Label</a></nav>
+  <div class="nav-r"><nav class="links" aria-label="More pages"><a href="careers.html">Careers</a><a href="contact.html">Contact</a></nav><a class="btn" href="inquire.html">Inquire</a></div>
 </header>
 
-<main>
-  <div class="wrap">
-    <div class="draft" role="note">
-      <strong>Draft for review</strong>
-      This notice has not been reviewed by an attorney. Bracketed items need to be filled in, and counsel should check the whole text before the site goes live.
-    </div>
+<main id="lg">
+  <div class="intro">
+    <h1>Privacy<br>Policy</h1>
+    <div><p>Tru Leaf International LLC<br>Last updated [date]</p></div>
+  </div>
+  <div class="lg">
+    <p class="draft" role="note"><strong>Draft for review.</strong> No attorney has reviewed this page yet. Items in square brackets still need real details, and counsel should check the whole text before it goes live.</p>
+    <nav class="toc" aria-label="On this page"><h2>On this page</h2><ol><li><a href="#who">1. Who we are</a></li><li><a href="#scope">2. What this policy covers</a></li><li><a href="#collect">3. Personal information we collect</a></li><li><a href="#use">4. How we use personal information</a></li><li><a href="#disclose">5. How we disclose personal information</a></li><li><a href="#sale">6. Sale and sharing of personal information</a></li><li><a href="#cookies">7. Cookies, browser storage and similar technologies</a></li><li><a href="#signals">8. Global Privacy Control and Do Not Track</a></li><li><a href="#location">9. Location information</a></li><li><a href="#social">10. Social media and links to other sites</a></li><li><a href="#retention">11. How long we keep personal information</a></li><li><a href="#security">12. How we protect personal information</a></li><li><a href="#age">13. Age requirement and children’s privacy</a></li><li><a href="#rights">14. Your privacy rights</a></li><li><a href="#requests">15. How to make a request</a></li><li><a href="#nondiscrimination">16. No discrimination or retaliation</a></li><li><a href="#california">17. California residents</a></li><li><a href="#nevada">18. Nevada residents</a></li><li><a href="#states">19. Residents of other states with privacy laws</a></li><li><a href="#florida">20. Florida residents</a></li><li><a href="#business">21. Business contacts</a></li><li><a href="#international">22. Visitors outside the United States</a></li><li><a href="#contact-us">23. Contact us</a></li><li><a href="#changes">24. Changes to this policy</a></li></ol></nav>
+    <article class="prose">
+<p>This Privacy Policy explains how Tru Leaf International LLC collects, uses, discloses and protects personal information when you visit truleaf-tobacco.com, contact us, apply to sell our products, apply for our white-label program or apply for a job with us. It also explains the choices and rights you have.</p>
+<p>Please read it together with our <a href="terms.html">Terms of Use</a>. If you live in California, our <a href="california-notice.html">California Privacy Notice</a> gives further detail required by California law.</p>
 
-    <h2>1. Who we are</h2>
-    <p>This notice explains how Tru Leaf International LLC, of Miami, Florida (&ldquo;Tru Leaf&rdquo;, &ldquo;we&rdquo;, &ldquo;us&rdquo;), handles personal information collected through this website. You can reach us at <a href="mailto:distributors@truleaf-tobacco.com">distributors@<wbr>truleaf-tobacco.com</a>.</p>
+<h2 id="who">1. Who we are</h2>
+<p>Tru Leaf International LLC (“Tru Leaf”, “we”, “us” or “our”) is a Florida limited liability company based in Miami, Florida. We grow and cure tobacco leaf in Nicaragua and sell tobacco leaf wraps, whole tobacco leaf, natural cigar blunts and tobacco cones to licensed retailers and distributors in the United States.</p>
+<p>Tru Leaf is the business responsible for the personal information described in this policy. You can reach us using the details in <a href="#contact-us">section 23</a>.</p>
 
-    <h2>2. What we collect</h2>
-    <p>We only collect what you choose to send us through the distributor inquiry form:</p>
-    <ul>
-      <li>your name and company;</li>
-      <li>your email address and, if you give it, your phone number;</li>
-      <li>your city and state;</li>
-      <li>the product families you are interested in; and</li>
-      <li>anything you write in the message box.</li>
-    </ul>
-    <p>We do not ask for payment details, and the site does not use analytics or advertising cookies. <span class="fill">[Confirm this is still true before launch.]</span></p>
+<h2 id="scope">2. What this policy covers</h2>
+<p>This policy applies to personal information we collect:</p>
+<ul>
+<li>through this website and every page on it (the “site”);</li>
+<li>through the forms on the site, including the wholesale inquiry, white-label application, contact, careers and privacy request forms;</li>
+<li>when you email, call or message us, including through our Instagram account; and</li>
+<li>when we deal with you as a current or prospective retailer, distributor, white-label customer, supplier or job applicant.</li>
+</ul>
+<p>It does not apply to websites, apps or services run by other companies, even if the site links to them. Those companies have their own privacy policies.</p>
+<p>“Personal information” means information that identifies, relates to or could reasonably be linked with you or your household. It does not include information that has been de-identified or aggregated so that it can no longer reasonably be linked to you, or information that is lawfully made available to the public.</p>
 
-    <h2>3. Why we use it</h2>
-    <p>We use these details to reply to your inquiry and to assess whether we can work together as supplier and distributor. We do not sell your information, and we do not use it for unrelated marketing without your consent.</p>
+<h2 id="collect">3. Personal information we collect</h2>
+<p>What we collect depends on how you use the site and how you deal with us. We collect only what we need for the purposes described in <a href="#use">section 4</a>.</p>
 
-    <h2>4. Who handles it for us</h2>
-    <p>The form is processed by our website host, <span class="fill">[hosting and form provider, for example Netlify, Inc.]</span>, which stores each submission and forwards it to us by email. It acts on our behalf, under its own security and privacy terms. We do not share your details with anyone else unless the law requires it.</p>
+<h3>Information you give us</h3>
+<ul>
+<li><strong>Wholesale inquiries.</strong> Your name, company, email address, phone number, business type, city and state, the product families you are interested in, and anything you write in your message.</li>
+<li><strong>White-label applications.</strong> Your company name, your name, email address and phone number, business type, website or social media account, business address, and, if you choose to give them, your business tax ID (EIN) and tobacco license number. We also collect the products you want, your estimated first order, the status of your branding, whether you want help with packaging design or distribution, and anything you write in your message. Please use your business EIN and never a Social Security number.</li>
+<li><strong>Contact messages.</strong> Your name, email address, phone number if you give it, the topic of your message and what you write.</li>
+<li><strong>Job applications.</strong> Your name, email address, phone number, the city you live in, your LinkedIn profile, the role and type of work you want, when you could start, whether you are authorized to work in the United States and whether you would need visa sponsorship, your experience, your current or most recent job, what you tell us about yourself, your resume and anything it contains, and how you heard about us.</li>
+<li><strong>Privacy requests.</strong> Your name, email address, postal address, the choices you make and, if you act for someone else, information about your authority to do so.</li>
+<li><strong>Business dealings.</strong> If we go on to work together, we collect the information needed to run that relationship, such as names and job titles of contacts, delivery and billing addresses, license and tax registration details, orders, invoices and correspondence.</li>
+<li><strong>Other communications.</strong> Anything you send us by email, phone, text or direct message, including attachments and artwork.</li>
+</ul>
+<p>Please do not send us sensitive information we have not asked for, such as health information, Social Security numbers, financial account numbers or information about other people without their permission.</p>
 
-    <h2>5. How long we keep it</h2>
-    <p>We keep inquiry details for <span class="fill">[retention period, for example 24 months]</span> after our last contact with you, or until you ask us to delete them, whichever comes first, unless the law requires us to keep them longer.</p>
+<h3>Information collected automatically</h3>
+<ul>
+<li><strong>Server and security logs.</strong> When your browser loads a page, our hosting provider receives technical information as a matter of course: your IP address, the date and time of the request, the page requested, the referring page, and your browser type, device type and operating system. From the IP address it may be possible to infer an approximate location, such as a city or region. We use these logs to deliver the site, keep it secure and fix problems.</li>
+<li><strong>Information stored in your browser.</strong> The site stores a small number of records in your own browser so that it works properly. They are described in <a href="#cookies">section 7</a>.</li>
+<li><strong>Analytics, only if you agree.</strong> If you accept analytics cookies, Google Analytics records how you use the site: the pages you view, how you arrived, how long you stay, scrolling and clicks on links, your approximate location (city or region), your device, browser and operating system, and a cookie identifier for your browser.</li>
+<li><strong>Advertising, only if you agree.</strong> If you accept advertising cookies, the Meta Pixel sends Meta Platforms, Inc. the pages you view, together with a cookie identifier, your IP address and browser details. Meta may link this to your Facebook or Instagram account.</li>
+</ul>
+<p>Neither tool runs until you accept it in the cookie banner or in <a href="do-not-sell.html#cookies">Cookie Choices</a>, and you can turn either off at any time. They do not record what you type into our forms. The site does not use session recording, keystroke logging or fingerprinting.</p>
 
-    <h2>6. Your choices</h2>
-    <p>You can ask to see the information we hold about you, to correct it, or to delete it, by writing to <a href="mailto:distributors@truleaf-tobacco.com">distributors@<wbr>truleaf-tobacco.com</a>. Depending on where you live, state law may give you further rights, and we will honor them.</p>
+<h3>Information from other sources</h3>
+<ul>
+<li><strong>Public and licensing records.</strong> To confirm that we sell only to licensed tobacco businesses, we may check state and local license records, business registrations and other public sources about your business.</li>
+<li><strong>References and recruiting sources.</strong> If you apply for a job, we may receive information from people who refer you, from references you name, and from public professional profiles you point us to.</li>
+<li><strong>Business partners.</strong> Distributors and sales representatives may pass us contact details of retailers who want to stock our products.</li>
+<li><strong>Social media.</strong> If you interact with our Instagram account, we see the information Instagram makes available to us under its own terms, such as your handle, your public profile and your messages to us.</li>
+</ul>
 
-    <h2>7. Age</h2>
-    <p>This site is intended only for adults aged 21 and over. We do not knowingly collect information from anyone under 21. If you believe someone under 21 has sent us their details, contact us and we will delete them.</p>
+<h2 id="use">4. How we use personal information</h2>
+<p>We use personal information to:</p>
+<ul>
+<li>reply to your messages and inquiries and give you the information you ask for;</li>
+<li>assess wholesale, distribution and white-label applications, including checking that a business is licensed to buy and sell tobacco products;</li>
+<li>prepare quotes, samples and proposals, and set up and manage customer and supplier relationships, orders, deliveries, invoices and payments;</li>
+<li>produce white-label products to your specifications, including designing your packaging, handling your artwork and labelling;</li>
+<li>if you ask, introduce you to distributors and retailers that may sell your white-label products;</li>
+<li>help people find stores that carry our products;</li>
+<li>consider you for a job, contact you about your application, check your references and keep records of our hiring decisions;</li>
+<li>keep the site, our systems and our business secure, and detect, prevent and respond to fraud, abuse, security incidents and unlawful activity;</li>
+<li>confirm that visitors are 21 or older and keep our marketing directed to adults;</li>
+<li>comply with the law, including tobacco licensing, labelling, tax, record-keeping and employment laws, and respond to lawful requests from public authorities;</li>
+<li>establish, exercise or defend legal claims and enforce our agreements;</li>
+<li>maintain and improve the site and our products and services;</li>
+<li>if you accept analytics cookies, measure how the site is used so we can improve it; and</li>
+<li>if you accept advertising cookies, measure and improve our marketing on Facebook and Instagram.</li>
+</ul>
+<p>We may also send business contacts information about our products, such as new formats or availability. You can ask us to stop at any time by replying to the message or contacting us. We do not send marketing to consumers through this site.</p>
+<p>If we want to use personal information for a purpose that is materially different from those listed here, we will tell you first and, where the law requires it, ask for your consent.</p>
 
-    <h2>8. Information stored in your browser</h2>
-    <p>When you confirm your age, the site keeps a small record in your own browser so you are not asked again for <span class="fill">[30]</span> days. It stays on your device, does not identify you and is not sent to us. The site also loads fonts from Google Fonts, so your browser contacts a Google server when a page loads.</p>
+<h2 id="disclose">5. How we disclose personal information</h2>
+<p>We disclose personal information only as described here.</p>
+<ul>
+<li><strong>Service providers.</strong> Companies that work for us under contract and may use the information only to provide their services to us. These include our website host and form processor (currently Netlify, Inc.), our email and office software provider, our font provider (Google Fonts, which receives your IP address when a page loads), and providers of storage, IT, security, shipping, accounting and payment services.</li>
+<li><strong>Analytics provider, with your consent.</strong> Google LLC, which provides Google Analytics, receives information about your visit if you accept analytics cookies. We have turned off Google signals and ad personalization for it, so it is used to measure the site only.</li>
+<li><strong>Advertising platform, with your consent.</strong> Meta Platforms, Inc. receives information about your visit through the Meta Pixel if you accept advertising cookies. Meta may use it for its own purposes under its own policies, including advertising. <a href="#sale">Section 6</a> explains what this means under state privacy laws.</li>
+<li><strong>Professional advisers.</strong> Our lawyers, accountants, auditors and insurers, where they need the information to advise or protect us.</li>
+<li><strong>Manufacturing and logistics partners.</strong> For white-label orders, the farms, factories, printers and carriers that make, pack and ship your products, to the extent they need your specifications, artwork and delivery details.</li>
+<li><strong>At your direction.</strong> Other parties you ask us to share information with, or that you allow us to share with, such as a distributor that serves your area.</li>
+<li><strong>Legal and safety reasons.</strong> Courts, regulators, law enforcement and other public authorities when we believe the law requires it, and others when we believe disclosure is needed to protect the rights, property or safety of Tru Leaf, our customers, our staff or the public, or to enforce our terms.</li>
+<li><strong>Business transfers.</strong> A buyer, investor, successor or other party in connection with a merger, financing, acquisition, reorganization or sale of all or part of our business or assets, including during negotiations. Personal information would remain subject to this policy or to a policy that is at least as protective.</li>
+<li><strong>Affiliates.</strong> Companies under common ownership or control with Tru Leaf, which will handle it in line with this policy.</li>
+</ul>
 
-    <h2>9. Security</h2>
-    <p>The site is served over an encrypted connection, and we limit who can see inquiries. No method of sending or storing information is completely secure, so we cannot promise absolute security.</p>
+<h2 id="sale">6. Sale and sharing of personal information</h2>
+<p>We do not sell personal information for money. If you accept advertising cookies, the Meta Pixel sends Meta information about your visit, which Meta may use for its own advertising. Under some state laws, including California’s, that counts as “sharing” personal information for cross-context behavioral advertising, also called targeted advertising, and it may count as a “sale”. We do it only with your consent, and you can stop it at any time. [Counsel to confirm how each state law treats the Meta Pixel and Google Analytics.]</p>
+<p>Google Analytics is used only to measure the site, with Google signals and ad personalization turned off.</p>
+<p>Before [date the tags go live], the site used no analytics or advertising tools. We do not knowingly sell or share the personal information of anyone under 16. The site is for adults 21 and older.</p>
+<p>To opt out, turn off advertising in <a href="do-not-sell.html#cookies">Cookie Choices</a>, send a request on our <a href="do-not-sell.html">Do Not Sell or Share My Personal Information</a> page, or turn on Global Privacy Control in your browser (see <a href="#signals">section 8</a>).</p>
 
-    <h2>10. Changes to this notice</h2>
-    <p>We may update this notice. The date at the top shows when it last changed.</p>
+<h2 id="cookies">7. Cookies, browser storage and similar technologies</h2>
+<p>Cookies are small text files a website stores in your browser. Browser storage, such as localStorage and sessionStorage, works in a similar way. The site uses three kinds:</p>
+<ul>
+<li><strong>Needed for the site to work.</strong> Always on.</li>
+<li><strong>Analytics.</strong> Off until you accept them.</li>
+<li><strong>Advertising.</strong> Off until you accept them, and kept off if your browser sends a Global Privacy Control signal.</li>
+</ul>
+<div class="tbl"><table>
+<thead><tr><th scope="col">Name</th><th scope="col">Kind</th><th scope="col">Set by</th><th scope="col">What it does</th><th scope="col">How long it lasts</th></tr></thead>
+<tbody>
+<tr><td>tl21</td><td>Needed</td><td>Tru Leaf (localStorage)</td><td>Records that you confirmed you are 21 or older, so the age check does not appear on every page. It holds a date and time only.</td><td>30 days</td></tr>
+<tr><td>tlconsent</td><td>Needed</td><td>Tru Leaf (localStorage)</td><td>Remembers your cookie choices.</td><td>12 months</td></tr>
+<tr><td>tlfam</td><td>Needed</td><td>Tru Leaf (sessionStorage)</td><td>Remembers which product you chose to ask about, so the inquiry form can tick it for you.</td><td>Until you close the tab</td></tr>
+<tr><td>_ga</td><td>Analytics</td><td>Google Analytics</td><td>Tells one browser from another so visits can be counted.</td><td>2 years</td></tr>
+<tr><td>_ga_[ID]</td><td>Analytics</td><td>Google Analytics</td><td>Keeps track of the current visit.</td><td>2 years</td></tr>
+<tr><td>_fbp</td><td>Advertising</td><td>Meta Pixel</td><td>Tells one browser from another so Meta can measure visits from Facebook and Instagram.</td><td>90 days</td></tr>
+</tbody>
+</table></div>
+<p>The needed records stay in your browser. They do not identify you and are not sent to us. Meta may also read or set cookies on its own domains, such as facebook.com, under its own cookie policy.</p>
+<p>You can change your choices at any time in <a href="do-not-sell.html#cookies">Cookie Choices</a>. When you turn analytics or advertising off, the site deletes the cookies it set for it in your browser. You can also remove everything by clearing your browser’s site data; the site will then ask you to confirm your age and choose again.</p>
+<p>The site loads its fonts from Google Fonts. When a page loads, your browser connects to Google’s servers, which receive your IP address and browser details. Google handles that information under its own privacy policy.</p>
+<p>You can also control cookies through your browser settings; the <a href="do-not-sell.html#cookies">Cookie Choices</a> section explains how.</p>
 
-    <h2>11. Contact</h2>
-    <p>Questions about this notice, or requests about your information, can go to <a href="mailto:distributors@truleaf-tobacco.com">distributors@<wbr>truleaf-tobacco.com</a>.</p>
+<h2 id="signals">8. Global Privacy Control and Do Not Track</h2>
+<p><strong>Global Privacy Control.</strong> Some browsers and extensions can send a Global Privacy Control (GPC) signal to tell websites you do not want your personal information sold or shared. We treat a GPC signal as a valid request to opt out of the sale and sharing of personal information for that browser, and for any account or identity we can link to that browser. When the site detects the signal, it does not load the Meta Pixel, even if advertising cookies were accepted before.</p>
+<p><strong>Do Not Track.</strong> Some browsers send a “Do Not Track” signal. There is no common industry standard for how to respond to it, so the site does not respond to it. To stop analytics or advertising, use <a href="do-not-sell.html#cookies">Cookie Choices</a> or Global Privacy Control.</p>
+
+<h2 id="location">9. Location information</h2>
+<p>The Find a Store page has a “Use my location” button. If you press it, your browser asks for your permission before sharing your location with the page. If you allow it, your location is used inside your browser only, to sort the list of stores by distance. It is not sent to us or stored.</p>
+<p>You can also search by city, state or ZIP code instead. What you type is processed in your browser in the same way.</p>
+
+<h2 id="social">10. Social media and links to other sites</h2>
+<p>The site links to our Instagram account and shows a preview of it. The preview is a set of images stored on our site. It does not load anything from Instagram until you follow a link. Once you visit Instagram, or any other site we link to, that company’s own privacy policy applies. We are not responsible for the privacy practices of other companies.</p>
+<p>When you follow us, message us or comment on our posts on Instagram, Meta Platforms, Inc. collects and handles that information under its own terms. We can see what Instagram shows account holders and may keep copies of messages you send us so we can reply.</p>
+
+<h2 id="retention">11. How long we keep personal information</h2>
+<p>We keep personal information only as long as we need it for the purposes described in this policy, unless the law requires or permits us to keep it longer. In deciding how long to keep it, we consider what it is, why we have it, the risk of harm from keeping it, and our legal, tax and accounting obligations.</p>
+<ul>
+<li><strong>Inquiries and messages</strong> that do not lead to a business relationship: [24 months] after our last contact with you.</li>
+<li><strong>White-label applications</strong> that do not go ahead: [24 months] after our last contact with you.</li>
+<li><strong>Customer and supplier records</strong>, including orders, invoices, license details and correspondence: for the life of the relationship and then [7 years], to meet tax, accounting and tobacco record-keeping rules.</li>
+<li><strong>Job applications</strong>: [4 years] after the hiring decision, to meet employment record-keeping rules and defend legal claims.</li>
+<li><strong>Privacy requests</strong>: at least 24 months, so we can show how we handled them.</li>
+<li><strong>Server and security logs</strong>: as long as our hosting provider keeps them, which is usually a short period unless a log is needed to investigate a security incident.</li>
+<li><strong>Analytics data</strong>: Google Analytics keeps it for [14 months] and then deletes it.</li>
+<li><strong>Meta Pixel data</strong>: Meta keeps it under its own data policy.</li>
+<li><strong>Cookie choices</strong>: 12 months, after which the site asks again.</li>
+</ul>
+<p>When we no longer need personal information, we delete it or de-identify it so it can no longer be linked to you.</p>
+
+<h2 id="security">12. How we protect personal information</h2>
+<p>We use reasonable administrative, technical and physical safeguards suited to the information we hold. The site is served only over an encrypted (HTTPS) connection. Form submissions are stored by our hosting provider and forwarded to a limited number of people at Tru Leaf who need them for their work. We limit who can access personal information and require our service providers to protect it.</p>
+<p>No website, transmission or storage system is completely secure, so we cannot guarantee the security of information you send us. Please do not email us information you would not want intercepted.</p>
+<p>If a security breach affects your personal information, we will notify you and the authorities where the law requires it, including under Florida’s data security law (section 501.171 of the Florida Statutes) and the laws of the state where you live.</p>
+
+<h2 id="age">13. Age requirement and children’s privacy</h2>
+<p>The site and our products are only for adults 21 and older. The site asks visitors to confirm they are 21 or older before showing them any content. We do not knowingly collect personal information from anyone under 21, and the site is not directed to children under 13 within the meaning of the Children’s Online Privacy Protection Act.</p>
+<p>If you believe someone under 21 has sent us personal information, please contact us and we will delete it.</p>
+
+<h2 id="rights">14. Your privacy rights</h2>
+<p>Depending on where you live, you may have some or all of the following rights over your personal information. Some rights apply only if the privacy law of your state applies to Tru Leaf, which depends on the size of our business and how much personal information we handle. We will honor the requests described here from anyone in the United States wherever we reasonably can, even if the law does not require us to.</p>
+<ul>
+<li><strong>Access.</strong> To confirm whether we hold personal information about you, and to receive a copy of it.</li>
+<li><strong>Portability.</strong> To receive personal information you gave us in a portable, commonly used format.</li>
+<li><strong>Correction.</strong> To correct personal information that is inaccurate.</li>
+<li><strong>Deletion.</strong> To have us delete personal information about you, subject to exceptions, for example where we must keep it by law or need it to complete a transaction you asked for.</li>
+<li><strong>Opt out of sale, sharing and targeted advertising.</strong> To opt out of the sale of your personal information, its sharing for cross-context behavioral advertising, and its use for targeted advertising. The only activity of this kind on the site is the Meta Pixel, which runs only if you accept advertising cookies. You can turn it off in <a href="do-not-sell.html#cookies">Cookie Choices</a>.</li>
+<li><strong>Opt out of profiling.</strong> To opt out of profiling in furtherance of decisions that produce legal or similarly significant effects. We do not make decisions of that kind using automated processing.</li>
+<li><strong>Limit use of sensitive personal information.</strong> To limit our use of sensitive personal information. We use it only for the purposes the law permits, as explained in our California Privacy Notice.</li>
+<li><strong>Know about disclosures.</strong> In some states, to receive a list of the categories of third parties, or the specific third parties, to which we have disclosed personal information.</li>
+<li><strong>Appeal.</strong> To appeal our decision if we decline to act on your request.</li>
+<li><strong>Non-discrimination.</strong> Not to be treated differently for using any of these rights.</li>
+</ul>
+
+<h2 id="requests">15. How to make a request</h2>
+<p>You can make a request in any of these ways:</p>
+<ul>
+<li>use the form on our <a href="do-not-sell.html">Do Not Sell or Share My Personal Information</a> page, which also accepts access, correction and deletion requests, or change your choices in <a href="do-not-sell.html#cookies">Cookie Choices</a>;</li>
+<li>email <a href="mailto:distributors@truleaf-tobacco.com?subject=Privacy%20request">distributors@truleaf-tobacco.com</a> with “Privacy request” in the subject line; or</li>
+<li>call us at <a href="tel:+16452439880">+1 (645) 243-9880</a>. [Add a toll-free number here if counsel advises one is required.]</li>
+</ul>
+<p>Please tell us what you are asking for and give us enough information to find the records that relate to you, such as the name, email address and company you used when you contacted us.</p>
+
+<h3>Verifying your identity</h3>
+<p>To protect you, we need to verify your identity before we give out or delete personal information. We do this by matching the information you give us with what we already hold, usually your name and the email address you used with us. For requests about more sensitive information, we may ask for more details. We will use the information you give us for verification only to verify your request, and we will delete it once we have finished with it, unless we need to keep it as a record of the request. You do not need to verify your identity to opt out of the sale or sharing of personal information.</p>
+
+<h3>Authorized agents</h3>
+<p>You can ask someone else to make a request for you. We will ask the agent for proof that you have authorized them, such as signed written permission or a valid power of attorney, and we may also ask you to verify your own identity with us directly or to confirm that you gave the agent permission.</p>
+
+<h3>How long we take</h3>
+<p>We will confirm that we have received your request within 10 business days and respond within 45 calendar days. If we need more time, we may extend that period by up to another 45 days, and we will tell you why. We do not charge for requests unless they are manifestly unfounded, excessive or repetitive, in which case we may charge a reasonable fee or decline them, and we will explain our reasons.</p>
+
+<h3>Appeals</h3>
+<p>If we decline your request, in whole or in part, we will tell you why. You can appeal by replying to our decision or emailing us with “Privacy appeal” in the subject line within a reasonable time. We will respond to your appeal in writing within 60 days, or sooner if the law of your state requires it, and explain the outcome. If you are not satisfied with our response to your appeal, you can contact the attorney general of your state.</p>
+
+<h2 id="nondiscrimination">16. No discrimination or retaliation</h2>
+<p>We will not deny you goods or services, charge you a different price, give you a different level of quality, or otherwise treat you differently because you used your privacy rights. We will not retaliate against a job applicant or employee for using these rights.</p>
+
+<h2 id="california">17. California residents</h2>
+<p>If you live in California, the California Consumer Privacy Act, as amended by the California Privacy Rights Act (together, the “CCPA”), may give you the rights described in <a href="#rights">section 14</a>. Our <a href="california-notice.html">California Privacy Notice</a> contains our notice at collection, the categories of personal information we collect and disclose, and how we handle the personal information of job applicants.</p>
+<p><strong>Shine the Light.</strong> California Civil Code section 1798.83 lets California residents ask for information about the personal information a business has disclosed to third parties for those third parties’ own direct marketing. We do not disclose personal information to third parties for their own direct marketing purposes.</p>
+
+<h2 id="nevada">18. Nevada residents</h2>
+<p>Nevada law gives Nevada residents the right to opt out of the sale of certain covered information that a website operator collects about them. We do not sell covered information as Nevada law defines it. You can still send us an opt-out request using any of the methods in <a href="#requests">section 15</a>, and we will record it.</p>
+
+<h2 id="states">19. Residents of other states with privacy laws</h2>
+<p>A growing number of states have comprehensive consumer privacy laws, including Colorado, Connecticut, Delaware, Indiana, Iowa, Kentucky, Maryland, Minnesota, Montana, Nebraska, New Hampshire, New Jersey, Oregon, Rhode Island, Tennessee, Texas, Utah and Virginia. Each law has its own scope and thresholds. Where one applies to us and to you, you have the rights it gives you, which may include the rights to access, correct, delete and port your personal information, to opt out of targeted advertising, sale and certain profiling, and to appeal our decisions. Use the methods in <a href="#requests">section 15</a> to make a request.</p>
+<p>Some of these laws treat certain information as “sensitive data”, which can include information revealing citizenship or immigration status. Where the law requires consent before we process sensitive data, we will ask for it. Our careers form asks whether you are authorized to work in the United States and whether you would need visa sponsorship. We ask only so we know whether we could employ you, and we use the answer for no other purpose.</p>
+
+<h2 id="florida">20. Florida residents</h2>
+<p>Tru Leaf is based in Florida. The Florida Digital Bill of Rights applies only to very large businesses that meet its revenue and other thresholds, and Tru Leaf does not currently meet them. [Counsel to confirm.] We will nonetheless honor access, correction and deletion requests from Florida residents in the way described in this policy. Florida’s data security law requires us to take reasonable measures to protect personal information and to notify affected people of certain security breaches, and we comply with it. Our <a href="florida-notice.html">Florida Privacy Notice</a> explains how each Florida law applies to us.</p>
+
+<h2 id="business">21. Business contacts</h2>
+<p>Much of the personal information we hold relates to people acting for a business, such as store owners, buyers and distributors. We handle it in the same way as other personal information under this policy. If you contact us on behalf of a business, please share other people’s details with us only if you are entitled to do so.</p>
+
+<h2 id="international">22. Visitors outside the United States</h2>
+<p>The site is intended for adults in the United States. We are based in the United States, and our service providers store information in the United States and other countries. If you use the site from elsewhere, your information will be transferred to, stored and processed in the United States, where privacy laws may differ from those in your country.</p>
+
+<h2 id="contact-us">23. Contact us</h2>
+<p>If you have questions about this policy or how we handle personal information, or want to make a request, contact:</p>
+<p>Tru Leaf International LLC<br>Attn: Privacy<br>3131 NE 7th Ave, Unit 4106<br>Miami, Florida 33137<br>Email: <a href="mailto:distributors@truleaf-tobacco.com?subject=Privacy%20question">distributors@truleaf-tobacco.com</a><br>Phone: <a href="tel:+16452439880">+1 (645) 243-9880</a></p>
+
+<h2 id="changes">24. Changes to this policy</h2>
+<p>We may update this policy from time to time, for example when we add a feature to the site or when the law changes. We will post the updated policy on this page and change the “Last updated” date at the top. If we make a material change to how we handle personal information we have already collected, we will tell you in a prominent way before the change takes effect and, where the law requires it, ask for your consent.</p>
+
+    </article>
   </div>
 </main>
 
 <footer class="foot">
-  <div class="wrap" style="width:min(1180px,100%)">
-    <div class="logo"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 168.8655 41.9885"><g><g><path d="M8.7,5.2v23.4h6.4V5.2h-6.4ZM0,0v4.7h23.5V0H0Z" style="fill:#ECE6D7;"/><path d="M26.4.3l.2,28.2h5.8l-.2-28.2h-5.8Z" style="fill:#ECE6D7;"/><path d="M32.7,10.9h2.8c2.8,0,3.9-.4,3.9-.4.9-.3,1.9-.6,2.4-1.7.4-.8.5-1.9,0-2.8-.2-.3-.4-.6-1-.9-1.2-.7-2.3-.8-4.5-.8h-3.7V.3h3.7c4.2,0,5.3.4,6.1.7,1.3.6,2.1,1.4,2.3,1.6,1.8,1.8,2,4,2,4.6,0,1.3-.3,2.3-.3,2.5-.1.3-.7,1.7-2,2.9,0,0-1.2,1-3.8,1.8h-.3c-.2,0-.5.1-.7.2l8.6,14h-7l-8.4-13.7v-3.9l-.1-.1Z" style="fill:#ECE6D7;"/><path d="M64.1904.309l.2,20.8c0,.2.1,1.3-.6,2.1-1,1.1-2.5.9-2.6.9v4.4c.2,0,4.8.8,7.6-2.6,2-2.3,1.8-5.1,1.8-5.7l-.2-19.9h-6.3.1ZM57.6,21l-.2-20.8h-6.1l.2,19.8c0,.7,0,3.4,1.8,5.7,2.7,3.4,7,2.8,7.3,2.8v-4.4c-.1,0-1.4,0-2.3-1-.7-.9-.7-1.9-.7-2.1Z" style="fill:#ECE6D7;"/><path d="M88.2655.1056v28.0888h-6.1V.1056h6.1ZM100.5655,28.1944h-11.7v-4.7519h11.7v4.7519Z" style="fill:#ECE6D7;"/><path d="M109.2655.1056v28.0888h-6.1V.1056h6.1ZM109.8655.1056h10v4.7519h-10V.1056ZM109.8655,11.2989h7.5v4.6463h-7.5v-4.6463ZM119.9655,28.1944h-10.1v-4.8575h10.1v4.8575Z" style="fill:#ECE6D7;"/><path d="M139.8655,0c2.5,9.3981,5.1,18.7963,7.6,28.1944h-6.9l-1.5-5.9134h-7.3l1.1-4.5407c1.7,0,3.4,0,5-.1056l-2.6-11.4045-5.7,22.0698h-6.6c2.7-9.3981,5.3-18.6907,8-28.0888h8.8l.1-.2112Z" style="fill:#ECE6D7;"/><path d="M156.2655,0v28.0888h-6V0h6ZM156.6655,0h12.2v4.6463h-12.2V0ZM156.7655,11.0877h7.8v4.6463h-7.8v-4.6463Z" style="fill:#ECE6D7;"/><path d="M50.494,41.8557v-.2651h.835v-7.6909h-.623c-1.0078,0-1.9756.3979-1.9756,1.9624h-.2646v-2.2275h7.3193v2.2275h-.2656c0-1.5645-.8223-1.9624-1.6973-1.9624h-.9014v7.6909h.835v.2651h-3.2617Z" style="fill:#ECE6D7;"/><path d="M62.6453,41.9885c-1.9355,0-4.1631-1.2598-4.1631-4.2432s2.2275-4.2432,4.1631-4.2432c1.9492,0,4.1641,1.2593,4.1641,4.2432s-2.2148,4.2432-4.1641,4.2432ZM62.6453,33.7673c-1.6709,0-2.4795,1.1934-2.4795,3.978,0,2.771.8086,3.9775,2.4795,3.9775,1.6182,0,2.4795-1.2065,2.4795-3.9775,0-2.7847-.8613-3.978-2.4795-3.978Z" style="fill:#ECE6D7;"/><path d="M74.6238,37.427c1.7236.1592,2.7051.8223,2.7051,2.188,0,1.79-1.79,2.2407-3.7656,2.2407h-3.7129v-.2651h.8359v-7.6909h-.8359v-.2651h3.501c1.8164,0,3.3945.3315,3.3945,1.8696,0,1.1934-.9551,1.7236-2.1221,1.8564v.0664ZM72.2772,33.8996v3.4478h1.0742c1.2598,0,1.8291-.4907,1.8291-1.7505,0-1.2197-.543-1.6973-1.8291-1.6973h-1.0742ZM72.2772,37.6125v3.978h1.2861c1.4717,0,2.0947-.5303,2.0947-1.9893,0-1.4053-.6631-1.9888-2.1748-1.9888h-1.2061Z" style="fill:#ECE6D7;"/><path d="M82.2547,41.8557h-2.4531v-.2651h.9814l3.208-8.0884h.332l3.4609,8.0884h.8086v.2651h-3.4346v-.2651h1.0215l-.9814-2.3472h-3.1562l-.9277,2.3472h1.1406v.2651ZM85.0789,38.965l-1.498-3.5933-1.4189,3.5933h2.917Z" style="fill:#ECE6D7;"/><path d="M97.786,36.5783c-.0791-1.2598-.7422-2.811-2.6914-2.811-1.6973,0-2.5195,1.1934-2.5195,3.978,0,2.7578.8223,3.9775,2.4932,3.9644,1.498,0,2.5195-.7954,2.6777-2.2539h.2393c-.1064,1.5513-1.2334,2.5327-2.9834,2.5327-1.9629,0-4.1104-1.2598-4.1104-4.2432s2.1475-4.2432,4.2031-4.2432c1.3262,0,1.8027.5566,2.2412.5566.2783,0,.3975-.252.3975-.4243h.2383v2.9438h-.1855Z" style="fill:#ECE6D7;"/><path d="M108.0545,36.5783c-.0791-1.2598-.7422-2.811-2.6914-2.811-1.6973,0-2.5195,1.1934-2.5195,3.978,0,2.7578.8223,3.9775,2.4932,3.9644,1.498,0,2.5195-.7954,2.6777-2.2539h.2393c-.1064,1.5513-1.2334,2.5327-2.9834,2.5327-1.9629,0-4.1104-1.2598-4.1104-4.2432s2.1475-4.2432,4.2031-4.2432c1.3262,0,1.8027.5566,2.2412.5566.2783,0,.3975-.252.3975-.4243h.2383v2.9438h-.1855Z" style="fill:#ECE6D7;"/><path d="M115.5916,41.9885c-1.9355,0-4.1631-1.2598-4.1631-4.2432s2.2275-4.2432,4.1631-4.2432c1.9492,0,4.1641,1.2593,4.1641,4.2432s-2.2148,4.2432-4.1641,4.2432ZM115.5916,33.7673c-1.6709,0-2.4795,1.1934-2.4795,3.978,0,2.771.8086,3.9775,2.4795,3.9775,1.6182,0,2.4795-1.2065,2.4795-3.9775,0-2.7847-.8613-3.978-2.4795-3.978Z" style="fill:#ECE6D7;"/></g></g></svg></div>
-    <p>Tru Leaf International LLC<br>Miami, Florida</p>
+  <div class="foot-grid">
+    <div><div class="logo"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 168.8655 41.9885"><g><g><path d="M8.7,5.2v23.4h6.4V5.2h-6.4ZM0,0v4.7h23.5V0H0Z" style="fill:#ECE6D7;"/><path d="M26.4.3l.2,28.2h5.8l-.2-28.2h-5.8Z" style="fill:#ECE6D7;"/><path d="M32.7,10.9h2.8c2.8,0,3.9-.4,3.9-.4.9-.3,1.9-.6,2.4-1.7.4-.8.5-1.9,0-2.8-.2-.3-.4-.6-1-.9-1.2-.7-2.3-.8-4.5-.8h-3.7V.3h3.7c4.2,0,5.3.4,6.1.7,1.3.6,2.1,1.4,2.3,1.6,1.8,1.8,2,4,2,4.6,0,1.3-.3,2.3-.3,2.5-.1.3-.7,1.7-2,2.9,0,0-1.2,1-3.8,1.8h-.3c-.2,0-.5.1-.7.2l8.6,14h-7l-8.4-13.7v-3.9l-.1-.1Z" style="fill:#ECE6D7;"/><path d="M64.1904.309l.2,20.8c0,.2.1,1.3-.6,2.1-1,1.1-2.5.9-2.6.9v4.4c.2,0,4.8.8,7.6-2.6,2-2.3,1.8-5.1,1.8-5.7l-.2-19.9h-6.3.1ZM57.6,21l-.2-20.8h-6.1l.2,19.8c0,.7,0,3.4,1.8,5.7,2.7,3.4,7,2.8,7.3,2.8v-4.4c-.1,0-1.4,0-2.3-1-.7-.9-.7-1.9-.7-2.1Z" style="fill:#ECE6D7;"/><path d="M88.2655.1056v28.0888h-6.1V.1056h6.1ZM100.5655,28.1944h-11.7v-4.7519h11.7v4.7519Z" style="fill:#ECE6D7;"/><path d="M109.2655.1056v28.0888h-6.1V.1056h6.1ZM109.8655.1056h10v4.7519h-10V.1056ZM109.8655,11.2989h7.5v4.6463h-7.5v-4.6463ZM119.9655,28.1944h-10.1v-4.8575h10.1v4.8575Z" style="fill:#ECE6D7;"/><path d="M139.8655,0c2.5,9.3981,5.1,18.7963,7.6,28.1944h-6.9l-1.5-5.9134h-7.3l1.1-4.5407c1.7,0,3.4,0,5-.1056l-2.6-11.4045-5.7,22.0698h-6.6c2.7-9.3981,5.3-18.6907,8-28.0888h8.8l.1-.2112Z" style="fill:#ECE6D7;"/><path d="M156.2655,0v28.0888h-6V0h6ZM156.6655,0h12.2v4.6463h-12.2V0ZM156.7655,11.0877h7.8v4.6463h-7.8v-4.6463Z" style="fill:#ECE6D7;"/><path d="M50.494,41.8557v-.2651h.835v-7.6909h-.623c-1.0078,0-1.9756.3979-1.9756,1.9624h-.2646v-2.2275h7.3193v2.2275h-.2656c0-1.5645-.8223-1.9624-1.6973-1.9624h-.9014v7.6909h.835v.2651h-3.2617Z" style="fill:#ECE6D7;"/><path d="M62.6453,41.9885c-1.9355,0-4.1631-1.2598-4.1631-4.2432s2.2275-4.2432,4.1631-4.2432c1.9492,0,4.1641,1.2593,4.1641,4.2432s-2.2148,4.2432-4.1641,4.2432ZM62.6453,33.7673c-1.6709,0-2.4795,1.1934-2.4795,3.978,0,2.771.8086,3.9775,2.4795,3.9775,1.6182,0,2.4795-1.2065,2.4795-3.9775,0-2.7847-.8613-3.978-2.4795-3.978Z" style="fill:#ECE6D7;"/><path d="M74.6238,37.427c1.7236.1592,2.7051.8223,2.7051,2.188,0,1.79-1.79,2.2407-3.7656,2.2407h-3.7129v-.2651h.8359v-7.6909h-.8359v-.2651h3.501c1.8164,0,3.3945.3315,3.3945,1.8696,0,1.1934-.9551,1.7236-2.1221,1.8564v.0664ZM72.2772,33.8996v3.4478h1.0742c1.2598,0,1.8291-.4907,1.8291-1.7505,0-1.2197-.543-1.6973-1.8291-1.6973h-1.0742ZM72.2772,37.6125v3.978h1.2861c1.4717,0,2.0947-.5303,2.0947-1.9893,0-1.4053-.6631-1.9888-2.1748-1.9888h-1.2061Z" style="fill:#ECE6D7;"/><path d="M82.2547,41.8557h-2.4531v-.2651h.9814l3.208-8.0884h.332l3.4609,8.0884h.8086v.2651h-3.4346v-.2651h1.0215l-.9814-2.3472h-3.1562l-.9277,2.3472h1.1406v.2651ZM85.0789,38.965l-1.498-3.5933-1.4189,3.5933h2.917Z" style="fill:#ECE6D7;"/><path d="M97.786,36.5783c-.0791-1.2598-.7422-2.811-2.6914-2.811-1.6973,0-2.5195,1.1934-2.5195,3.978,0,2.7578.8223,3.9775,2.4932,3.9644,1.498,0,2.5195-.7954,2.6777-2.2539h.2393c-.1064,1.5513-1.2334,2.5327-2.9834,2.5327-1.9629,0-4.1104-1.2598-4.1104-4.2432s2.1475-4.2432,4.2031-4.2432c1.3262,0,1.8027.5566,2.2412.5566.2783,0,.3975-.252.3975-.4243h.2383v2.9438h-.1855Z" style="fill:#ECE6D7;"/><path d="M108.0545,36.5783c-.0791-1.2598-.7422-2.811-2.6914-2.811-1.6973,0-2.5195,1.1934-2.5195,3.978,0,2.7578.8223,3.9775,2.4932,3.9644,1.498,0,2.5195-.7954,2.6777-2.2539h.2393c-.1064,1.5513-1.2334,2.5327-2.9834,2.5327-1.9629,0-4.1104-1.2598-4.1104-4.2432s2.1475-4.2432,4.2031-4.2432c1.3262,0,1.8027.5566,2.2412.5566.2783,0,.3975-.252.3975-.4243h.2383v2.9438h-.1855Z" style="fill:#ECE6D7;"/><path d="M115.5916,41.9885c-1.9355,0-4.1631-1.2598-4.1631-4.2432s2.2275-4.2432,4.1631-4.2432c1.9492,0,4.1641,1.2593,4.1641,4.2432s-2.2148,4.2432-4.1641,4.2432ZM115.5916,33.7673c-1.6709,0-2.4795,1.1934-2.4795,3.978,0,2.771.8086,3.9775,2.4795,3.9775,1.6182,0,2.4795-1.2065,2.4795-3.9775,0-2.7847-.8613-3.978-2.4795-3.978Z" style="fill:#ECE6D7;"/></g></g></svg></div><p>Tru Leaf International LLC<br>Miami, Florida</p></div>
+    <div><h4>Contact</h4><p><a href="mailto:distributors@truleaf-tobacco.com">distributors@<wbr>truleaf-tobacco.com</a><br><a href="tel:+16452439880">+1 (645) 243-9880</a><br><a href="https://www.instagram.com/truleaftobacco/" rel="noopener">@truleaftobacco</a> · truleaf-tobacco.com</p></div>
+    <div><h4>Site</h4><ul><li><a href="index.html">Home</a></li><li><a href="index.html#packs">Products</a></li><li><a href="find-a-store.html">Find a Store</a></li><li><a href="white-label.html">White Label</a></li><li><a href="careers.html">Careers</a></li><li><a href="contact.html">Contact</a></li><li><a href="inquire.html">Inquire</a></li></ul></div>
   </div>
   <div class="warning" role="note">WARNING: This product contains nicotine. Nicotine is an addictive chemical.</div>
-  <div class="legal"><span>&copy; 2026 Tru Leaf International LLC</span><span><a href="index.html">Back to site</a> · <a href="terms.html">Terms of Use</a></span><span>For adults 21 and over. Not for sale to minors.</span></div>
+  <div class="legal"><span>© 2026 Tru Leaf International LLC</span><span>For adults 21 and over. Not for sale to minors.</span></div>
+  <nav class="legal-links" aria-label="Legal"><a href="privacy.html" aria-current="page">Privacy Policy</a><a href="florida-notice.html">Florida Privacy Notice</a><a href="california-notice.html">California Privacy Notice</a><a href="terms.html">Terms of Use</a><a href="do-not-sell.html">Do Not Sell or Share My Personal Information</a><a href="do-not-sell.html#cookies">Cookie Choices</a></nav>
 </footer>
+
+
+<div class="ck-bar" id="ck-bar" role="region" aria-label="Cookie choices" hidden>
+  <p>With your OK, we use Google Analytics to see how the site is used and the Meta Pixel to measure our marketing. Neither runs unless you accept. <a href="do-not-sell.html#cookies">Cookie choices</a></p>
+  <div class="row"><button class="btn" type="button" data-ck="yes">Accept</button><button class="btn" type="button" data-ck="no">Reject</button></div>
+</div>
+
+<script>
+(function(){
+  var GA_ID='',PIXEL_ID=''; // ponytail: fill in the GA4 measurement ID (G-...) and the Meta Pixel ID before launch
+  var KEY='tlconsent',MAX=365*864e5,gpc=navigator.globalPrivacyControl===true;
+  function get(){try{var c=JSON.parse(localStorage.getItem(KEY));if(c&&Date.now()-c.t<MAX)return c}catch(e){}return null}
+  function put(a,m){var c={a:!!a,m:!!m&&!gpc,t:Date.now()};try{localStorage.setItem(KEY,JSON.stringify(c))}catch(e){}return c}
+  function add(src){var s=document.createElement('script');s.async=true;s.src=src;document.head.appendChild(s)}
+  function load(c){
+    if(c.a&&GA_ID&&!window.gtag){window.dataLayer=window.dataLayer||[];window.gtag=function(){dataLayer.push(arguments)};
+      gtag('js',new Date());gtag('config',GA_ID,{allow_google_signals:false,allow_ad_personalization_signals:false});add('https://www.googletagmanager.com/gtag/js?id='+GA_ID)}
+    if(c.m&&!gpc&&PIXEL_ID&&!window.fbq){var n=window.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+      window._fbq=n;n.push=n;n.loaded=true;n.version='2.0';n.queue=[];add('https://connect.facebook.net/en_US/fbevents.js');
+      fbq('set','autoConfig',false,PIXEL_ID);fbq('init',PIXEL_ID);fbq('track','PageView')}}
+  function wipe(pre){document.cookie.split('; ').forEach(function(k){var n=k.split('=')[0];
+    if(pre.some(function(p){return n.indexOf(p)===0}))['',';domain='+location.hostname.replace(/^www\./,'')].forEach(function(d){document.cookie=n+'=;max-age=0;path=/'+d})})}
+  function save(a,m,stay){var old=get(),c=put(a,m);if(!c.a)wipe(['_ga']);if(!c.m)wipe(['_fbp','_fbc']);
+    // ponytail: a tag that has loaded can't be unloaded, so turning one off reloads the page
+    if(!stay&&old&&((old.a&&!c.a)||(old.m&&!c.m))){try{sessionStorage.setItem('tlck','1')}catch(e){}location.reload();return c}
+    load(c);return c}
+  var bar=document.getElementById('ck-bar'),c=get();
+  if(c)load(c);else if(bar&&(GA_ID||PIXEL_ID))bar.hidden=false; // no banner until a tag ID is filled in
+  if(bar)bar.addEventListener('click',function(e){var b=e.target.closest('[data-ck]');if(!b)return;var y=b.getAttribute('data-ck')==='yes';bar.hidden=true;save(y,y)});
+  // Cookie Choices form on do-not-sell.html
+  var f=document.getElementById('ck-form');
+  if(f){var st=document.getElementById('ck-status'),cur=c||{a:false,m:false};
+    f.elements.a.checked=cur.a;f.elements.m.checked=cur.m&&!gpc;
+    if(gpc){f.elements.m.disabled=true;document.getElementById('ck-gpc').hidden=false}
+    function said(c){st.textContent='Saved. Analytics is '+(c.a?'on':'off')+' and advertising is '+(c.m?'on':'off')+' in this browser.'}
+    try{if(sessionStorage.getItem('tlck')){sessionStorage.removeItem('tlck');said(cur)}}catch(e){}
+    f.addEventListener('submit',function(e){e.preventDefault();if(bar)bar.hidden=true;said(save(f.elements.a.checked,f.elements.m.checked))})}
+  // an opt-out of sale or sharing sent through the privacy form also turns advertising off in this browser
+  var o=document.getElementById('optout-form');
+  if(o)o.addEventListener('submit',function(){var x=[].some.call(o.querySelectorAll('input[name=request]'),function(i){return i.checked&&/^Do not (sell|share)/.test(i.value)});
+    if(x){var k=get();save(k?k.a:false,false,true);if(f)f.elements.m.checked=false}});
+})();
+</script>
+<script>
+(function(){
+  var g=document.getElementById('gate');if(!g)return;
+  var KEY='tl21',DAYS=30;
+  function passed(){
+    try{
+      var v=window.localStorage.getItem(KEY);
+      if(!v)return false;
+      var t=parseInt(v,10);
+      return !!t&&(Date.now()-t)<DAYS*864e5;
+    }catch(e){return false}
+  }
+  if(passed()){g.hidden=true;return}
+  document.documentElement.style.overflow='hidden';
+  var behind=[].slice.call(document.querySelectorAll('.nav,#lg,.foot'));behind.forEach(function(el){el.inert=true});
+  var yes=document.getElementById('gate-yes'),no=document.getElementById('gate-no');
+  yes.addEventListener('click',function(){
+    try{window.localStorage.setItem(KEY,String(Date.now()))}catch(e){}
+    document.documentElement.style.overflow='';behind.forEach(function(el){el.inert=false});g.classList.add('leaving');
+    setTimeout(function(){g.hidden=true;g.classList.remove('leaving')},window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches?0:1100);
+  });
+  no.addEventListener('click',function(){
+    g.classList.add('said-no');
+    var d=document.getElementById('gate-deny');if(d)d.focus();
+  });
+  // keep focus inside the gate while it is up
+  g.addEventListener('keydown',function(e){
+    if(e.key!=='Tab'||g.hidden)return;
+    var f=[].filter.call(g.querySelectorAll('button'),function(b){return b.offsetParent!==null});if(!f.length){e.preventDefault();return}
+    var first=f[0],last=f[f.length-1];
+    if(e.shiftKey&&document.activeElement===first){e.preventDefault();last.focus()}
+    else if(!e.shiftKey&&document.activeElement===last){e.preventDefault();first.focus()}
+  });
+  setTimeout(function(){if(!g.hidden)yes.focus()},60);
+})();
+(function(){ // tilt toward the mouse and glide with it; back to rest on leave
+  if(window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches)return;
+  var q=false,ev=null;
+  function frame(){q=false;var li=ev.target.closest&&ev.target.closest('.wall .pk');if(!li)return;var img=li.querySelector('img');if(!img)return;
+    var r=li.getBoundingClientRect(),x=(ev.clientX-r.left)/r.width*2-1,y=(ev.clientY-r.top)/r.height*2-1;
+    img.style.transition='transform .32s cubic-bezier(.2,.7,.3,1)';
+    img.style.transform='perspective(800px) rotateX('+(-y*8).toFixed(2)+'deg) rotateY('+(x*11).toFixed(2)+'deg) translate3d('+(x*9).toFixed(1)+'px,'+(y*7-14).toFixed(1)+'px,0) scale(1.06)'}
+  [].forEach.call(document.querySelectorAll('.wall'),function(shelf){
+    shelf.addEventListener('pointermove',function(e){if(e.pointerType&&e.pointerType!=='mouse')return;ev=e;if(!q){q=true;requestAnimationFrame(frame)}});
+    shelf.addEventListener('pointerout',function(e){var li=e.target.closest&&e.target.closest('.wall .pk');if(!li||li.contains(e.relatedTarget))return;
+      var img=li.querySelector('img');if(img){img.style.transition='transform .8s cubic-bezier(.2,.7,.3,1)';img.style.transform=''}});
+  });
+})();
+(function(){
+  var v=document.getElementById('viewer');if(!v)return;
+  var img=document.getElementById('v-img'),nm=document.getElementById('v-name'),fm=document.getElementById('v-fam'),
+      mt=document.getElementById('v-meta'),ct=document.getElementById('v-count'),
+      pvs=[].slice.call(document.querySelectorAll('.pv')),list=[],idx=0,opener=null;
+  function visible(){return pvs}
+  function swap(src,alt){if(img.src===src){img.alt=alt;img.style.opacity='1';return}img.style.opacity='0';img.onload=img.onerror=function(){img.style.opacity='1'};img.src=src;img.alt=alt}
+  var side=document.getElementById('v-side'),sideBtns=side?[].slice.call(side.querySelectorAll('button')):[];
+  function setSide(which,p){
+    p=p||list[idx];
+    var back=p.getAttribute('data-back'),im=p.querySelector('img');
+    if(side)side.hidden=!back;
+    if(which==='back'&&back)swap(back,im.alt+', back of pack');
+    else{which='front';var fr=p.getAttribute('data-front');swap(fr||im.src,fr?im.alt+', standing in front of its display carton':im.alt)}
+    sideBtns.forEach(function(b){b.setAttribute('aria-pressed',String(b.getAttribute('data-side')===which))});
+  }
+  sideBtns.forEach(function(b){b.addEventListener('click',function(){setSide(b.getAttribute('data-side'))})});
+  function show(i){
+    idx=(i+list.length)%list.length;
+    var p=list[idx],li=p.parentNode;
+    v.style.setProperty('--bg',li.style.getPropertyValue('--bg'));v.style.setProperty('--ink',li.style.getPropertyValue('--ink'));v.style.setProperty('--on',li.style.getPropertyValue('--on'));
+    setSide('front',p);
+    nm.textContent=p.getAttribute('data-name');fm.textContent=p.getAttribute('data-fam');
+    mt.textContent=p.getAttribute('data-meta');ct.textContent=(idx+1)+' / '+list.length;
+  }
+  function open(p){opener=p;list=visible();show(list.indexOf(p));var b=p.getAttribute('data-back');if(b)(new Image()).src=b;v.hidden=false;document.documentElement.style.overflow='hidden';v.querySelector('.v-close').focus()}
+  function close(){v.hidden=true;document.documentElement.style.overflow='';if(opener)opener.focus()}
+  pvs.forEach(function(p){p.addEventListener('click',function(){open(p)})});
+  v.querySelector('.v-close').addEventListener('click',close);
+  v.querySelector('.v-cta').addEventListener('click',function(){ // to the form, with this product's family already ticked
+    try{sessionStorage.setItem('tlfam',list[idx].getAttribute('data-fam'))}catch(e){}});
+  v.querySelector('.v-prev').addEventListener('click',function(){show(idx-1)});
+  v.querySelector('.v-next').addEventListener('click',function(){show(idx+1)});
+  v.addEventListener('click',function(e){if(e.target===v)close()});
+  document.addEventListener('keydown',function(e){
+    if(v.hidden)return;
+    if(e.key==='Escape')close();
+    else if(e.key==='ArrowLeft')show(idx-1);
+    else if(e.key==='ArrowRight')show(idx+1);
+    else if(e.key==='Tab'){
+      var bs=[].slice.call(v.querySelectorAll('button,a.btn')),first=bs[0],end=bs[bs.length-1];
+      if(e.shiftKey&&document.activeElement===first){e.preventDefault();end.focus()}
+      else if(!e.shiftKey&&document.activeElement===end){e.preventDefault();first.focus()}
+    }
+  });
+})();
+
+[].forEach.call(document.querySelectorAll('.menu a'),function(a){a.addEventListener('click',function(){a.closest('details').open=false})});
+(function(){
+  var f=document.querySelector('.dform');if(!f)return;
+  var st=document.getElementById('f-status'),btn=f.querySelector('button[type=submit]');
+  try{var fam=sessionStorage.getItem('tlfam');if(fam){sessionStorage.removeItem('tlfam');[].forEach.call(f.querySelectorAll('.chip input'),function(c){if(c.value===fam)c.checked=true})}}catch(e){}
+  f.addEventListener('submit',function(e){
+    e.preventDefault();
+    var file=f.querySelector('input[type=file]');
+    if(file&&file.files[0]&&file.files[0].size>8e6){st.className='f-status err';st.textContent='That file is over 8 MB. Please attach a smaller PDF or Word file.';st.focus();return}
+    btn.disabled=true;st.className='f-status';st.textContent='Sending\u2026';
+    var fd=new FormData(f);
+    fetch('/',f.enctype==='multipart/form-data'?{method:'POST',body:fd}:{method:'POST',headers:{'Content-Type':'application/x-www-form-urlencoded'},body:new URLSearchParams(fd).toString()})
+      .then(function(r){
+        if(!r.ok)throw new Error('HTTP '+r.status);
+        f.classList.add('sent');st.className='f-status ok';
+        st.textContent=f.getAttribute('data-ok')||'Thank you. We have your details and will be in touch. Need it sooner? Email distributors@truleaf-tobacco.com.';st.focus();
+      })
+      .catch(function(){
+        btn.disabled=false;st.className='f-status err';st.focus();
+        st.innerHTML='That did not send. Please email <a href="mailto:distributors@truleaf-tobacco.com?subject='+encodeURIComponent(f.elements.subject.value)+'">distributors@<wbr>truleaf-tobacco.com</a> instead.';
+      });
+  });
+})();
+</script>
 
 </body>
 </html>
